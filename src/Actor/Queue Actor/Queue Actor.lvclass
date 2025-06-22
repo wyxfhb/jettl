@@ -21,13 +21,13 @@
 		<Item Name="Queue Last Ack.lvlib:Queue Last Ack.lvclass" Type="Parent" URL="../../Msgs/Queue Last Ack/Queue Last Ack/Queue Last Ack.lvclass"/>
 	</Item>
 	<Item Name="Event Is Nested.vi" Type="VI" URL="../Event Is Nested.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#S!!!!"1!%!!!!&amp;E!B%%6W:7ZU)%FT)%ZF=X2F:$]!!!Z!-0````]&amp;17RJ98-!,E"Q!"Y!!"54586F&gt;75A17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!/586F&gt;75A17.U&lt;X)A;7Y!!&amp;1!]!!-!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A!$!A!!?!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!!!!#1!!!!!!%!"!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#S!!!!"1!%!!!!&amp;E!B%%6W:7ZU)%FT)%ZF=X2F:$]!!!Z!-0````]&amp;17RJ98-!,E"Q!"Y!!"54586F&gt;75A17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!/586F&gt;75A17.U&lt;X)A;7Y!!&amp;1!]!!-!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A!$!A!!?!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!B!!!!#1!!!!!!%!"!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1090519176</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
 	</Item>
 	<Item Name="Queue Decorate.vi" Type="VI" URL="../Queue Decorate.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$G!!!!"1!%!!!!,E"Q!"Y!!"54586F&gt;75A17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!0586F&gt;75A17.U&lt;X)A&lt;X6U!#J!=!!?!!!6%V&amp;V:86F)%&amp;D&gt;'^S,GRW9WRB=X-!#V&amp;V:86F)%&amp;D&gt;'^S!#Z!=!!?!!!6%V&amp;V:86F)%&amp;D&gt;'^S,GRW9WRB=X-!$F&amp;V:86F)%&amp;D&gt;'^S)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!)!!Q)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!E!!!!!!"!!1!!!!!</Property>
@@ -55,5 +55,14 @@
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
+	</Item>
+	<Item Name="Event Nested Status.vi" Type="VI" URL="../Event Nested Status.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$R!!!!"Q!91$$`````$UVT:S"2)%275C""&lt;'FB=Q!C1%!!!@````]!!"2&amp;&gt;G6O&gt;#"/:8.U:71A17RJ98.F=Q!!'5!$!"*&amp;&gt;G6O&gt;#"/:8.U:71A1W^V&lt;H1!!""!)1J"&lt;HEA28BJ=X1`!!!%!!!!,E"Q!"Y!!"54586F&gt;75A17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!/586F&gt;75A17.U&lt;X)A;7Y!!&amp;1!]!!-!!%!!A!$!!1!"!!%!!1!"!!%!!1!"!!&amp;!A!!?!!!#1!!!!E!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!"A!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972416</Property>
 	</Item>
 </LVClass>
