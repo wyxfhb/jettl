@@ -36,11 +36,7 @@
 			<Item Name="Ex Event Actor.lvlib" Type="Library" URL="../Example/Ex Event Actor/Ex Event Actor.lvlib"/>
 		</Item>
 		<Item Name="jettl" Type="Folder">
-			<Item Name="jettl Queue Actor.lvlib" Type="Library" URL="../jettl/jettl Queue Actor/jettl Queue Actor.lvlib"/>
-			<Item Name="jettl Event Actor.lvlib" Type="Library" URL="../jettl/jettl Event Actor/jettl Event Actor.lvlib"/>
-			<Item Name="Alias Does Not Exist Error.vi" Type="VI" URL="../jettl/Alias Does Not Exist Error.vi"/>
-			<Item Name="Alias Already Exists Error.vi" Type="VI" URL="../jettl/Alias Already Exists Error.vi"/>
-			<Item Name="Debug Pop Up.vi" Type="VI" URL="../jettl/Debug Pop Up.vi"/>
+			<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
