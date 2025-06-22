@@ -16,9 +16,7 @@
 		<Item Name="Teardown State.lvclass" Type="LVClass" URL="../State/Teardown State/Teardown State.lvclass"/>
 		<Item Name="Error State.lvclass" Type="LVClass" URL="../State/Error State/Error State.lvclass"/>
 	</Item>
-	<Item Name="jettl Event Actor.lvclass" Type="LVClass" URL="../jettl Event Actor/jettl Event Actor.lvclass">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
+	<Item Name="jettl Event Actor.lvclass" Type="LVClass" URL="../jettl Event Actor/jettl Event Actor.lvclass"/>
 	<Item Name="Event Create.vi" Type="VI" URL="../Event Create.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
