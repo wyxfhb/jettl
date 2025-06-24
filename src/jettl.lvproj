@@ -34,7 +34,6 @@
 		</Item>
 		<Item Name="Example" Type="Folder">
 			<Item Name="Pop Up.lvlib" Type="Library" URL="../Example/Pop Up/Pop Up.lvlib"/>
-			<Item Name="Ex Queue Actor.lvlib" Type="Library" URL="../Example/Ex Queue Actor/Ex Queue Actor.lvlib"/>
 			<Item Name="String Indicator.lvlib" Type="Library" URL="../Example/String Indicator/String Indicator.lvlib"/>
 			<Item Name="Ex Event Actor.lvlib" Type="Library" URL="../Example/Ex Event Actor/Ex Event Actor.lvlib"/>
 		</Item>
