@@ -32,12 +32,11 @@
 		<Item Name="jettl" Type="Folder">
 			<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
 		</Item>
-		<Item Name="Example" Type="Folder">
-			<Item Name="Pop Up.lvlib" Type="Library" URL="../Example/Pop Up/Pop Up.lvlib"/>
-			<Item Name="String Indicator.lvlib" Type="Library" URL="../Example/String Indicator/String Indicator.lvlib"/>
-			<Item Name="Ex Event Actor.lvlib" Type="Library" URL="../Example/Ex Event Actor/Ex Event Actor.lvlib"/>
-		</Item>
 		<Item Name="Hello World" Type="Folder">
+			<Item Name="Msgs" Type="Folder">
+				<Item Name="Pop Up.lvlib" Type="Library" URL="../Hello World/Msgs/Pop Up/Pop Up.lvlib"/>
+				<Item Name="String Indicator.lvlib" Type="Library" URL="../Hello World/Msgs/String Indicator/String Indicator.lvlib"/>
+			</Item>
 			<Item Name="Hello World Queue.lvlib" Type="Library" URL="../Hello World/Hello World Queue/Hello World Queue.lvlib"/>
 			<Item Name="Hello World Event.lvlib" Type="Library" URL="../Hello World/Hello World Event/Hello World Event.lvlib"/>
 			<Item Name="Main Hello World.vi" Type="VI" URL="../Hello World/Main Hello World.vi"/>
@@ -75,7 +74,6 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
-				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			</Item>
 		</Item>
