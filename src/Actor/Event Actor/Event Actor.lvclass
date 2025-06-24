@@ -15,6 +15,7 @@
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
 		<Item Name="Actor.lvclass" Type="Parent" URL="../../Actor/Actor.lvclass"/>
+		<Item Name="Update Queue Nested.lvlib:Update Queue Nested.lvclass" Type="Parent" URL="../../Msgs/Update Queue Nested/Update Queue Nested/Update Queue Nested.lvclass"/>
 	</Item>
 	<Item Name="Event Receive.vi" Type="VI" URL="../Event Receive.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$S!!!!"A!%!!!!)E"Q!"Y!!!U,48.H,GRW9WRB=X-!#UVT:SZM&gt;G.M98.T!"2!=!!:!!%!!1F&amp;&gt;G6O&gt;#".=W=!,E"Q!"Y!!"5428:F&lt;H1A17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!028:F&lt;H1A17.U&lt;X)A&lt;X6U!#Z!=!!?!!!6%U6W:7ZU)%&amp;D&gt;'^S,GRW9WRB=X-!$E6W:7ZU)%&amp;D&gt;'^S)'FO!!"5!0!!$!!!!!!!!A!$!!!!!!!!!!!!!!!!!!!!"!)!!(A!!!!!!!!!!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!E!!!!!!"!!5!!!!!</Property>

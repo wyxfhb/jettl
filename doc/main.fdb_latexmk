@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1750779842.32517 "c:/git/jettl/doc/main.tex" "main.pdf" "main" 1750779844.01461 0
-  "c:/git/jettl/doc/main.tex" 1750779841 18130 f3d4a38a4ef10350b1bc7934de027eff ""
+["pdflatex"] 1750781439.36049 "c:/git/jettl/doc/main.tex" "main.pdf" "main" 1750781440.72811 0
+  "c:/git/jettl/doc/main.tex" 1750781436 18288 a62783d4218354c0ccd1a86c868022ac ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1747882180 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1747882871 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1747882580 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -76,9 +76,9 @@
   "figures/justACS_ui_events.png" 1750366351 1523098 40d4b738ff648c378c4bcd05b9d8ab4d ""
   "figures/labview_dmitry_message _transport.png" 1750366351 255796 24fbe0ff00c99c64cf40aa1671db7a50 ""
   "figures/method-template.png" 1750366351 16563 80098b20f0b8bb73b43ebc4780a63f97 ""
-  "main.aux" 1750779843 9865 161ff3328d078c66e0be48071632d636 "pdflatex"
-  "main.out" 1750779843 5131 2b5d0347bd1fa0265f240ea24eae42ec "pdflatex"
-  "main.tex" 1750779841 18130 f3d4a38a4ef10350b1bc7934de027eff ""
+  "main.aux" 1750781440 9861 4c4641184210cbdbcbfae44a245e0421 "pdflatex"
+  "main.out" 1750781440 5131 2b5d0347bd1fa0265f240ea24eae42ec "pdflatex"
+  "main.tex" 1750781436 18288 a62783d4218354c0ccd1a86c868022ac ""
   (generated)
   "main.aux"
   "main.log"

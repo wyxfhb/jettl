@@ -22,6 +22,7 @@
 				<Item Name="Event Last Ack.lvlib" Type="Library" URL="../Actor/Msgs/Event Last Ack/Event Last Ack.lvlib"/>
 				<Item Name="Setup.lvlib" Type="Library" URL="../Actor/Msgs/Setup/Setup.lvlib"/>
 				<Item Name="Teardown.lvlib" Type="Library" URL="../Actor/Msgs/Teardown/Teardown.lvlib"/>
+				<Item Name="Update Queue Nested.lvlib" Type="Library" URL="../Actor/Msgs/Update Queue Nested/Update Queue Nested.lvlib"/>
 			</Item>
 			<Item Name="Msg.lvclass" Type="LVClass" URL="../Actor/Msg/Msg.lvclass"/>
 			<Item Name="Actor.lvclass" Type="LVClass" URL="../Actor/Actor/Actor.lvclass"/>
@@ -32,7 +33,6 @@
 			<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
 		</Item>
 		<Item Name="Example" Type="Folder">
-			<Item Name="Main.vi" Type="VI" URL="../Example/Main.vi"/>
 			<Item Name="Pop Up.lvlib" Type="Library" URL="../Example/Pop Up/Pop Up.lvlib"/>
 			<Item Name="Ex Queue Actor.lvlib" Type="Library" URL="../Example/Ex Queue Actor/Ex Queue Actor.lvlib"/>
 			<Item Name="String Indicator.lvlib" Type="Library" URL="../Example/String Indicator/String Indicator.lvlib"/>
