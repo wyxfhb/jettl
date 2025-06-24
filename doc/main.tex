@@ -3,13 +3,11 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 
-\title{\textbf{jettl} \\ An Interface-Composition based LabVIEW Asynchronous Actor Framework}
+\title{\textbf{jettl} \\ An Interface-Composition based LabVIEW Actor Model}
 \author{Nathan Davis}
 \date{\today}
 
 \begin{document}
-
-\maketitle
 
 \maketitle
 
@@ -54,9 +52,8 @@ In particular, there exist design patterns such as the Strategy Pattern, State P
 \subsection{Actor Benefits}
 \label{subsec:actor-benefits}
 
-Actors do not create their own references OR destroy their own references.
-They conform to the tree like hierarchy of creation where Caller owns Nested Actors reference i.e. Caller received Nested Actors Last Ack, safe to release their reference.
-Actors are queue based.
+jettl Queue Actor: Obtains and releases its own references.
+jettl Event Actor: Creates, Registers, Unregisters, and Destroys its own references.
 
 \section{LabVIEW Interfaces}
 \label{sec:labview-interfaces}
@@ -109,6 +106,16 @@ The objects are linked together by “who launches who”.
 Same as with the pub-sub pattern, everything is a publisher-subscriber.
 It's just that most relationships are just one way.
 Same with Git, the philosophy is that all branches are created equal
+
+
+\section{Unit Testing}
+\label{sec:unit-testing}
+
+This model is interface-composition based, so unit testing is built in.
+In effect, instead of wrapping the Queue Base with your developed class, you can wrap the Queue Base with a Queue Base Debug class, which is wrapped with your developed class.
+This occurs since these all inherit from the same Queue jettl interface.
+
+This allows for arbitrary wrapping of classes, which is a powerful feature of the interface-composition based design pattern.
 
 \section{Debugging}
 \label{sec:debugging}
@@ -182,6 +189,13 @@ Noting that Fig~\ref{fig:dmitry-liskov-sub-principle} shows the naming conventio
 
 \quad Method.vi “State”
 
+\subsubsection{State Pattern Privacy}
+\label{subsubsec:state-pattern-privacy}
+
+Context classes should be private, since only interface objects should be composed into a class.
+Dependency Inversion Principle.
+Since the context class is private to the library it is in (and the State Interface with its concrete state classes), public static dispatch methods can be used in the context class AND concrete state classes without worrying that they'll be used outside the library since the context class is private.
+
 \subsection{Memento Pattern}
 \label{subsec:memento-pattern}
 
@@ -211,10 +225,6 @@ Now, because helper loops are async and own their own references.
 Their references can be passed around the actor tree.
 This provides a modular way of sharing async references, following the observer pattern.
 
-\section{External Packages}
-\label{sec:external-packages}
-
-\href{https://www.vipm.io/package/illuminatedg_lib_ig_oopanel/}{IG OOPanel}
 
 \section{Helper Loops}
 \label{sec:helper-loops}
@@ -289,8 +299,12 @@ Note, they do not need to be implemented.
 Actor messages error on generation of message.
 Error when creating a message and wiring in the interface object as an input, the message scripting doesn't know how to differentiate the class input and the parameter input.
 
-\subsection{Error Msg}
-\label{subsec:error-msg}
+\subsection{Private Messages}
+\label{subsec:private-messages}
+
+Private messages that aren't exposed to external callers: Library access scope.
+To conform to this, the Last Ack messages should be private messages to the Queue Base class.
+This is because the Last Ack messages are not intended to be used by external callers.
 
 \begin{figure}
     \centering
@@ -366,11 +380,6 @@ It's a step in the right direction having no “error input” for methods.
 Now it's time to get rid of the error out.
 It's almost like branching an objects wire, in a way. There should only be one thing coming out of a method.
 
-\section{Orderly Teardown}
-\label{sec:orderly-teardown}
-
-Boolean flag for orderly teardown i.e.'teardown nested actors before destroying self'
-
 \section{Example}
 \label{sec:example}
 
@@ -379,5 +388,50 @@ Boolean flag for orderly teardown i.e.'teardown nested actors before destroying 
 
 Merge Error and Override Error are decorators used.
 Otherwise, the other DD methods are trivial and only used once.
+
+
+\section{Creation}
+\label{sec:creation}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/Creation}
+    \caption{This image shows the creation of Base Actors.}
+    \label{fig:creation}
+\end{figure}
+
+Queue Actor
+\begin{itemize}
+    \item Has One Caller Queue Actor
+    \item Is a Nested Queue Actor of Queue Actor
+    \item Is a Self Queue Actor
+\end{itemize}
+
+Event Actor
+\begin{itemize}
+    \item Has One Caller Queue Actor
+    \item Is a Nested Event Actor of Queue Actor
+    \item Is a Self Event Actor
+\end{itemize}
+
+Framework constraint:
+A Queue Actor can create both Queue Actors and Event Actors whereas an Event Actor cannot create either.
+The Event Actor can queue itself either Queue Create or Event Create messages, but this goes to the Queue Actor to handle these.
+The handling does not occur in the Event Actor since the Event Actor cannot create.
+
+A future question: Should Launch.vi exist outside the Queue Base class?
+If it does, then Queue Base can be marked as a private class, and the Launch.vi can be public.
+
+Only Queue Actors can create Queue Actors and Event Actors.
+Event actors cannot create either.
+Further, because of these rules, only queue actors can receive the Last Ack from Nesteds.
+This is respectively the Queue Last Ack and Event Last Ack.
+Event Actors cannot receive either Last Ack.
+These Last Ack messages are not used by the developer.
+These occur in the framework itself, though functionality can be wrapped in the developed queue actor.
+
+
+
+
 
 \end{document}

@@ -1,19 +1,3 @@
-# Create / Launch
-
-Should Launch exist or does Create do the job?
-
-Only Queue Actors can create Queue Actors and Event Actors.
-Event actors cannot create either.
-Further, because of these rules, only queue actors can receive the Last Ack from Nesteds. This is respectively the Queue Last Ack and Event Last Ack. Event Actors cannot receive either Last Ack.
-These Last Ack messages are not used by the developer. These occur in the framework itself, though functionality can be wrapped in the developed queue actor.
-
-
-# Event Actor
-
-Event structure: Teardown Event
-This is where the Teardown method goes?
-
-
 # Events
 
 Event doesn’t dequeue a message, rather the Event is immediately after "Name.vi". And this message is just to generate an event.
