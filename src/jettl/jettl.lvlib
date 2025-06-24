@@ -50,6 +50,9 @@
 	<Item Name="Event Generate.vi" Type="VI" URL="../Event Generate.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Event Msg.vi" Type="VI" URL="../Event Msg.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Event Destroy.vi" Type="VI" URL="../Event Destroy.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
