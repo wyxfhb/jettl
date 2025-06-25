@@ -14,24 +14,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Actor" Type="Folder">
-			<Item Name="Msgs" Type="Folder">
-				<Item Name="Queue Create.lvlib" Type="Library" URL="../Actor/Msgs/Queue Create/Queue Create.lvlib"/>
-				<Item Name="Event Create.lvlib" Type="Library" URL="../Actor/Msgs/Event Create/Event Create.lvlib"/>
-				<Item Name="Queue Last Ack.lvlib" Type="Library" URL="../Actor/Msgs/Queue Last Ack/Queue Last Ack.lvlib"/>
-				<Item Name="Event Last Ack.lvlib" Type="Library" URL="../Actor/Msgs/Event Last Ack/Event Last Ack.lvlib"/>
-				<Item Name="Setup.lvlib" Type="Library" URL="../Actor/Msgs/Setup/Setup.lvlib"/>
-				<Item Name="Teardown.lvlib" Type="Library" URL="../Actor/Msgs/Teardown/Teardown.lvlib"/>
-				<Item Name="Update Queue Nested.lvlib" Type="Library" URL="../Actor/Msgs/Update Queue Nested/Update Queue Nested.lvlib"/>
-			</Item>
-			<Item Name="Msg.lvclass" Type="LVClass" URL="../Actor/Msg/Msg.lvclass"/>
-			<Item Name="Actor.lvclass" Type="LVClass" URL="../Actor/Actor/Actor.lvclass"/>
-			<Item Name="Queue Actor.lvclass" Type="LVClass" URL="../Actor/Queue Actor/Queue Actor.lvclass"/>
-			<Item Name="Event Actor.lvclass" Type="LVClass" URL="../Actor/Event Actor/Event Actor.lvclass"/>
-		</Item>
-		<Item Name="jettl" Type="Folder">
-			<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
-		</Item>
 		<Item Name="Hello World" Type="Folder">
 			<Item Name="Msgs" Type="Folder">
 				<Item Name="Pop Up.lvlib" Type="Library" URL="../Hello World/Msgs/Pop Up/Pop Up.lvlib"/>
@@ -41,6 +23,7 @@
 			<Item Name="Hello World Event.lvlib" Type="Library" URL="../Hello World/Hello World Event/Hello World Event.lvlib"/>
 			<Item Name="Main Hello World.vi" Type="VI" URL="../Hello World/Main Hello World.vi"/>
 		</Item>
+		<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>

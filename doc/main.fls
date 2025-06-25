@@ -130,11 +130,11 @@ INPUT ./figures/class-hierarchy.png
 INPUT ./figures/class-hierarchy.png
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT ./figures/labview_dmitry_message _transport.png
+INPUT ./figures/labview_dmitry_message _transport.png
+INPUT ./figures/labview_dmitry_message _transport.png
+INPUT ./figures/labview_dmitry_message _transport.png
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-INPUT ./figures/labview_dmitry_message _transport.png
-INPUT ./figures/labview_dmitry_message _transport.png
-INPUT ./figures/labview_dmitry_message _transport.png
-INPUT ./figures/labview_dmitry_message _transport.png
 INPUT ./figures/dmitry_liskov_sub_principle.png
 INPUT ./figures/dmitry_liskov_sub_principle.png
 INPUT ./figures/dmitry_liskov_sub_principle.png
