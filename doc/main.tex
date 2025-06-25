@@ -35,25 +35,6 @@ jettl also has the newer banners for vis. Easy adoption for the new age of LV de
 State pattern with decorators.
 It is interface composition, so stick with the same rule set for naming methods
 
-\section{Philosophy}
-\label{sec:philosophy}
-
-\subsection{Access Scope}
-\label{subsec:access-scope}
-
-Only public and private.
-Interfaces, classes, and methods have text in the icon/banner that are black for public and red for private.
-
-\subsection{Errors}
-\label{subsec:errors}
-
-Except the error that could potentially occur at the end of Queue Actor.vi and Event Actor.vi, no error goes unrecognized.
-Why are there are so many error case structures?
-All methods in Base jettl are assumed to run unconditionally when they are called.
-Also, no serialization of errors.
-Instead, it is serialization of the object wire since internally, the class on the iterface object in the private data has an error cluster.
-The merge errors method (which internally has the “Is Error.vi”, dictating if Base jettl should enter the respective Error State.
-
 \section{Class Hierarchy}
 \label{sec:class-hierarchy}
 
@@ -73,35 +54,11 @@ In particular, there exist design patterns such as the Strategy Pattern, State P
 \subsection{Actor Benefits}
 \label{subsec:actor-benefits}
 
-jettl Queue Actor: Obtains and releases its own references.
-jettl Event Actor: Creates, Registers, Unregisters, and Destroys its own references.
+\begin{itemize}
+    \item jettl Queue Actor: Obtains and releases its own references
+    \item jettl Event Actor: Creates, Registers, Unregisters, and Destroys its own references
+\end{itemize}
 
-\section{LabVIEW Interfaces}
-\label{sec:labview-interfaces}
-
-The default implementation idea works so only as there is only one method implementation across all interfaces.
-
-For example, \\
-class implements interface 1 and interface 2 \\
-interface 1: method \\
-interface 2: method \\
-This cannot exist unless the class overrides the method.
-Otherwise, at runtime, LabVIEW does not know to execute interface 1: method or interface 2: method.
-
-\subsection{Descendants Must Override}
-\label{subsec:descendants-must-override}
-
-Interface methods: check the 'descendants must override' checkbox and see which errors pop up.
-Attempt to fix them, and if you can't, then justify the reasoning.
-
-For example, in the Self Actor State.lvclass, the DD methods are not required to be overridden.
-This is because the Self Actor State.lvclass has default functionality in the interface methods.
-Maybe this is bad practice, but it is a design choice showing only the methods that are required to be overridden with different functionality.
-
-Another example, the DD methods in the Dev Actor.lvclass are not required to be overridden.
-This is because the methods here are all decorator methods that are not required to be overridden.
-Using the Actor.lvclass methods are sufficient for the Dev Actor.lvclass.
-These will be found in the palette.
 
 \section{Future Scope}
 \label{sec:future-scope}
@@ -109,9 +66,6 @@ These will be found in the palette.
 Creating an actor is NOT connected to the actor that creates it.
 Rather, this actor exists on its own in the “liquid” message transport.
 The overall “application” has access to the actor's reference (unique message address)
-
-\subsection{Pub-Sub Messaging}
-\label{subsec:pub-sub-messaging}
 
 \begin{figure}[ht]
     \centering
@@ -122,7 +76,7 @@ The overall “application” has access to the actor's reference (unique messag
 
 As shown in Fig~\ref{fig:message-transport}, it is as though the actors are just objects that “float” in this “liquid” messaging transport.
 So that way you can perform this pub-sub messaging.
-The objects are linked together by “who launches who”.
+The objects are linked together by “who creates who”.
 
 Same as with the pub-sub pattern, everything is a publisher-subscriber.
 It's just that most relationships are just one way.
@@ -283,6 +237,8 @@ This provides a modular way of sharing async references, following the observer 
 This is to declutter the actor by offloading certain tasks such as panel display or subprocesses that do not require an additional actor to be created.
 Since the Event Actors are not dependent on the Queue Actor, we can unit test an Event Actor.
 
+Event Actors are created using Event Create.vi, where the wired in object optionally has a method for bundling in the necessary private data.
+
 \subsection{Event Actor Best Practices}
 \label{subsec:event-actor-best-practices}
 
@@ -315,6 +271,48 @@ Split the events as controls and indicators as shown in Fig~\ref{fig:justacs-ui-
 Since Queue Actors should always be ready to dequeue messages, it should not wait on a response.
 Rather, the Queue Actor should create the Synchronous Event Actor.
 When the Event Actor is waiting for response, that's okay since when the event actor is waiting, it is also ready to teardown whenever since it is always waiting for an event.
+
+\subsection{Event Observer}
+\label{subsec:event-observer}
+
+A Queue Actor has in its project an Event Actor that another Actor can create. And here can send its Event Actor Ref to the Libraries Queue Actor to pump messages across the tree.
+For reusability, a Queue Actor has in its project the Event Actor that another Actor can create.
+And here can send its Event Actor Ref to the Libraries Queue Actor to pump messages across the tree.
+
+\begin{itemize}
+    \item NIAF: 2-Dimensional tree hierarchy
+    \item Base jettl: 3-Dimensional hierarchy
+\end{itemize}
+
+In Base Queue, a tree hierarchy of Queue Actors (follows 2-dimensional NIAF messaging scheme) and a single layer tree hierarchy of Event Actors for a given Queue Actor.
+The 3-Dimensional aspect comes from Event Actors being able to share their references with other Queue Actors and/or Event Actors.
+This allows these latter Actors to send events to the respective Event Actor who has shared their reference.
+This “messaging across the tree” in three dimensions can occur giving rise to a type of observer pattern (publisher/subscriber).
+
+\section{Notifier Actors}
+\label{sec:notifier-actors}
+
+Notifier Actors are created using Notifier Create.vi, where the wired in object optionally has a method for bundling in the necessary private data.
+
+\subsection{Notifier Periodic}
+\label{subsec:notifier-periodic}
+
+This could be an event actor, but notifiers work well with timing.
+If it was an event actor, then the event actor would have to wait for the next event to occur via the timeout case in the event loop.
+But there would be interruptions in the event loop, which would cause the event actor to not be able to send messages at the correct time.
+
+Private Data:
+\begin{itemize}
+    \item Iteration (0 = infinite) (U32)
+    \item Period (ms) (default 1000) (U32?) (cannot = 0)
+    \item Initial Wait (ms) (default 0) (U32?) (cannot = 0)
+\end{itemize}
+
+Along with the Stage Pattern used in the Base Notifier.lvclass, State Pattern can be used in the Notifier Periodic.lvclass such as
+\begin{itemize}
+    \item Idle State
+    \item Running State
+\end{itemize}
 
 
 \section{Messaging}
@@ -507,6 +505,22 @@ Further points include:
     \item Blue Interface: RGB (104,136,190)
     \item Green Class: RGB (110,149,108)
 \end{itemize}
+
+\subsection{Access Scope}
+\label{subsec:access-scope}
+
+Only public and private.
+Interfaces, classes, and methods have text in the icon/banner that are black for public and red for private.
+
+\subsection{Errors}
+\label{subsec:errors}
+
+Except the error that could potentially occur at the end of Queue Actor.vi and Event Actor.vi, no error goes unrecognized.
+Why are there are so many error case structures?
+All methods in Base jettl are assumed to run unconditionally when they are called.
+Also, no serialization of errors.
+Instead, it is serialization of the object wire since internally, the class on the interface object in the private data has an error cluster.
+The merge errors method (which internally has the Is Error.vi), dictating if Base jettl should enter the respective Error State.
 
 
 \end{document}

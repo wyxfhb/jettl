@@ -5,3 +5,7 @@
 {"rule":"LC_AFTER_PERIOD","sentence":"^\\QBest Practice: use this Method.vi in other methods, rather than the Method.vi “State” itself\\E$"}
 {"rule":"LC_AFTER_PERIOD","sentence":"^\\QState.lvclass (interface): Concrete State.lvclass Method.vi “State”\\E$"}
 {"rule":"LC_AFTER_PERIOD","sentence":"^\\QContext: Method.vi (just a wrapper for Method.vi “State”).\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QNotifier Periodic.\\E$"}
+{"rule":"LC_AFTER_PERIOD","sentence":"^\\QExcept the error that could potentially occur at the end of Queue Actor.vi and Event Actor.vi, no error goes unrecognized.\\E$"}
+{"rule":"LC_AFTER_PERIOD","sentence":"^\\QThe merge errors method (which internally has the “Is Error.vi”), dictating if Base jettl should enter the respective Error State.\\E$"}
+{"rule":"LC_AFTER_PERIOD","sentence":"^\\QThe merge errors method (which internally has the Is Error.vi), dictating if Base jettl should enter the respective Error State.\\E$"}
