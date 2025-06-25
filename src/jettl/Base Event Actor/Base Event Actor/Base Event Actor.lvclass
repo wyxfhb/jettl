@@ -27,7 +27,7 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="jettl.lvlib:Event Actor.lvclass" Type="Parent" URL="../../../Event Actor/Event Actor.lvclass"/>
+		<Item Name="jettl.lvlib:Event Actor.lvclass" Type="Parent" URL="../../../Actor/Event Actor/Event Actor.lvclass"/>
 	</Item>
 	<Item Name="Base Event Actor.ctl" Type="Class Private Data" URL="Base Event Actor.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>

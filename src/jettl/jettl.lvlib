@@ -20,16 +20,10 @@
 		</Item>
 		<Item Name="Msg.lvclass" Type="LVClass" URL="../Msg/Msg/Msg.lvclass"/>
 	</Item>
-	<Item Name="Base Queue Actor" Type="Folder">
-		<Item Name="Queue State" Type="Folder">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="Queue State.lvclass" Type="LVClass" URL="../Base Queue Actor/Queue State/Queue State/Queue State.lvclass"/>
-			<Item Name="Nominal Queue State.lvclass" Type="LVClass" URL="../Base Queue Actor/Queue State/Nominal Queue State/Nominal Queue State.lvclass"/>
-			<Item Name="Teardown Queue State.lvclass" Type="LVClass" URL="../Base Queue Actor/Queue State/Teardown Queue State/Teardown Queue State.lvclass"/>
-			<Item Name="Error Queue State.lvclass" Type="LVClass" URL="../Base Queue Actor/Queue State/Error Queue State/Error Queue State.lvclass"/>
-		</Item>
-		<Item Name="Base Queue Actor.lvclass" Type="LVClass" URL="../Base Queue Actor/Base Queue Actor/Base Queue Actor.lvclass"/>
+	<Item Name="Actor" Type="Folder">
+		<Item Name="Actor.lvclass" Type="LVClass" URL="../Actor/Actor/Actor.lvclass"/>
+		<Item Name="Queue Actor.lvclass" Type="LVClass" URL="../Actor/Queue Actor/Queue Actor.lvclass"/>
+		<Item Name="Event Actor.lvclass" Type="LVClass" URL="../Actor/Event Actor/Event Actor.lvclass"/>
 	</Item>
 	<Item Name="Base Event Actor" Type="Folder">
 		<Item Name="Event State" Type="Folder">
@@ -74,7 +68,5 @@
 			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		</Item>
 	</Item>
-	<Item Name="Actor.lvclass" Type="LVClass" URL="../Actor/Actor.lvclass"/>
-	<Item Name="Queue Actor.lvclass" Type="LVClass" URL="../Queue Actor/Queue Actor.lvclass"/>
-	<Item Name="Event Actor.lvclass" Type="LVClass" URL="../Event Actor/Event Actor.lvclass"/>
+	<Item Name="Base Queue jettl.lvlib" Type="Library" URL="../Base Queue jettl/Base Queue jettl.lvlib"/>
 </Library>
