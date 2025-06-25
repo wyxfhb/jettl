@@ -1,8 +1,6 @@
 # jettl
 
-*Insert Image of jettl*
-
-`jettl` is a lightweight library used for decorating classes with Actor methods via composition and implementation of the `Actor` interface.
+`jettl` is a lightweight library used for decorating classes with Actor methods via composition and implementation of the `Queue Actor` or `Event Actor` interfaces.
 
 ## Motivation
 
@@ -49,51 +47,3 @@ Along with scripting tools including:
 ## Benchmarks
 
 *Insert Benchmarks .md here*
-
-## Philosophy
-
-### Dev Actor
-- Internal (VF): As a baseline, everything is a static method, which is private and are found in the internal folder.
-- Implemented (VF): Dynamic dispatch are public and MUST be implemented by an interface to follow SOLID principles. For example, (Actor (VF)) the Actor methods are overrides from the Actor Interface. Another example, (Msg (VF)) the Msg methods are overrides from the respective Msg Interface. For example, (Other (VF)) other interface implementations.
-
-Actor messages must be implemented since called in algorithm.
-Other DD from Actor interface do not since not called in algorithm.
-
-## TODO
-
-### Would be Nice
-
-Use the Event and Other methods (in Dev Panel) in Dev Actor.
-There are of course other methods that can be created, such as the auto generated references in the private data of Dev Panel.
-See the Other folder for examples.
-
-
-Look down at the green grass, look up to the blue sky, and look further to the purple galaxy.
-Purple Library RGB (0,0,0) 
-Blue Interface RGB (0,0,0) 
-Green Class RGB (0,0,0)
-
-
-jettl: "#Should be preserve?" in Launch jettl
-
-
-Replace all strings with the \code option
-
-
-Does the same happen for objects, that also happens with references?
-Have dedicated method in Dev Panel that takes the obejct, unbundles the object and rewrites the object into a new initialized object
-(forum trick you posted about)
-
-
-Maybe these should resemble the Msgs?
-
-
-Way to tell is to destroy Dev Actor, but Dev Panel keeps running.
-With a “Button”, THAT DOESNT NEED TO BE ASSOCIATED WITH A MSG, property node to change “String Indicator Text”
-
-Refs (Interface)
-Dev Panel Refs (Class) has get / set methods
-
-Input of TSC and Refs (Interface) DD
-TSC to Bundle by name
-

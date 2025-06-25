@@ -1,9 +1,9 @@
-\documentclass{article}
+\documentclass{book}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
 
-\title{\textbf{jettl} \\ An Interface-Composition based LabVIEW Actor Model}
+\title{\textbf{jettl} \\ An Interface-Composition based \\ LabVIEW Actor Model}
 \author{Nathan Davis}
 \date{\today}
 
@@ -11,8 +11,24 @@
 
 \maketitle
 
+\tableofcontents
+
+\section{A Community Effort}
+\label{sec:community-effort}
+
+This document is a community effort to create a LabVIEW Actor Model that is interface-composition based.
+The goal is to create a design pattern that is easy to use, understand, and extend.
+This document is a living document, and contributions are welcome.
+
+Along with reading this document, the model will be best understood with examples that occur in projects.
+To show the power of the interface-composition based approach, in particular, examples that are difficult in DQMH, Actor Framework, and other frameworks will be of upmost importance.
+This document is not meant to be a complete guide to the jettl framework, but rather a starting point for understanding the design philosophy and implementation details.
+
 \section{Introduction}
 \label{sec:introduction}
+
+“The fundamental situation is, that we don't know much and some of it's wrong.”
+-Carl Hewitt, creator of Actor Model
 
 Strictly interface composition based asynchronous actor oriented design pattern for LabVIEW Applications.
 jettl also has the newer banners for vis. Easy adoption for the new age of LV developers.
@@ -31,7 +47,12 @@ Interfaces, classes, and methods have text in the icon/banner that are black for
 \subsection{Errors}
 \label{subsec:errors}
 
-No error goes unrecognized
+Except the error that could potentially occur at the end of Queue Actor.vi and Event Actor.vi, no error goes unrecognized.
+Why are there are so many error case structures?
+All methods in Base jettl are assumed to run unconditionally when they are called.
+Also, no serialization of errors.
+Instead, it is serialization of the object wire since internally, the class on the iterface object in the private data has an error cluster.
+The merge errors method (which internally has the “Is Error.vi”, dictating if Base jettl should enter the respective Error State.
 
 \section{Class Hierarchy}
 \label{sec:class-hierarchy}
@@ -117,6 +138,8 @@ This occurs since these all inherit from the same Queue jettl interface.
 
 This allows for arbitrary wrapping of classes, which is a powerful feature of the interface-composition based design pattern.
 
+For the wrapping, it is as easy as have to wire in the object in the decorator method for debugging??
+
 \section{Debugging}
 \label{sec:debugging}
 
@@ -134,12 +157,6 @@ Two project conditional blocks:
 These conditionals occur in Self Actor.lvclass.
 If either conditional is true, debug panel that displays the names of actors (columns), along with timestamps (rows) of when methods (data) are executed.
 Think discrete time water fall display.
-
-\subsection{Debug General LabVIEW}
-\label{subsec:debug-general-labview}
-
-General way to see which methods are being executed in the system?
-Used to see which actors are presently running / which methods are used?
 
 \section{Git}
 \label{sec:git}
@@ -172,6 +189,40 @@ Noting that Fig~\ref{fig:dmitry-liskov-sub-principle} shows the naming conventio
 \end{itemize}
 
 \noindent Note: Avoid underscores and spaces.
+
+
+\section{Examples}
+\label{sec:examples}
+
+\subsection{Hello World}
+\label{subsec:hello-world}
+
+Hello World Example:
+Don't need to send yourself Teardown for Hello World.. just have Teardown method itself at the end of the Hello World Msg.
+
+\subsection{Nested Actors}
+\label{subsec:nested-actors}
+
+\href{https://youtu.be/N6X9KyJJ-D4?feature=shared}{2018 NIWeek Allen C Smith Efficient Actor Framework Development}
+25:58
+Teardown vs Orderly Teardown:
+Allen wanted a “Stop Nested Actors Msg”, SLM against.
+There include two methods: Event Nested Teardown.vi and Queue Nested Teardown.vi.
+These two methods are used to teardown the respective nested actors.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/Hello-World}
+    \caption{This image shows the hello world example.}
+    \label{fig:hello-world}
+\end{figure}
+
+\subsection{Sending Event Message}
+\label{subsec:sending-event-message}
+
+Button press sends message to Self (queue actor).
+Queue actor internally sends a string indicator Event which occurs in event loop.
+
 
 \section{Design Patterns}
 \label{sec:design-patterns}
@@ -226,50 +277,28 @@ Their references can be passed around the actor tree.
 This provides a modular way of sharing async references, following the observer pattern.
 
 
-\section{Helper Loops}
-\label{sec:helper-loops}
+\section{Event Actors}
+\label{sec:event-actors}
 
-\subsection{Helper Loop Best Practices}
-\label{subsec:helper-loop-best-practices}
-
-References cannot change after they are created.
-
-\subsection{Helper Loop Benefits}
-\label{subsec:helper-loop-benefits}
-
-Helper Loops are designed to be reused.
-Actors depend on the interface for the helper references, but that's it.
-
-They are orphan processes since they create and release their own references.
-They are not tied to the actor that launches them.
-Furthermore, they are not tied to the lifetime of the actor that launches them.
-Helper Loops are event based.
-
-\subsection{Panels}
-\label{subsec:panels}
-
-Actor helpers, not helper actors.
-Helper Loop → Async Actor Helper.
-These are helper loops that are created async which help an actor with its task.
 This is to declutter the actor by offloading certain tasks such as panel display or subprocesses that do not require an additional actor to be created.
+Since the Event Actors are not dependent on the Queue Actor, we can unit test an Event Actor.
 
-Modular UI.
-Since the UIs and its references' dependency is NOT dependent on the actor, we can unit test the UIs.
+\subsection{Event Actor Best Practices}
+\label{subsec:event-actor-best-practices}
 
-\subsection{UI Events}
-\label{subsec:ui-events}
+References should not change after they are created.
 
-Indicators: Instead of generating an event, bundle in the reference of the indicator and have a property node (write)in the subVI.
+\subsection{Event Actor Benefits}
+\label{subsec:event-actor-benefits}
 
-The same can be said for the control, which has a right click menu, that bundles in the reference for the control and creates a subVI that writes the value to the front panel.
-Or creates a signal, something that automatically puts the control in the event loop and bundles in the reference for the control to the subVI.
-Create control which does the same as the indicators but added the reference of the control to the private data.
+Event are designed to be reusable and modular.
+Event Actors are not tied to the Queue Actor that creates them.
+Furthermore, Queue Actors should not depend on Event Actors.
 
-In prelaunch, have a subVI that internally has the creation of the user events.
-Script to create the subVI first.
+These can be orphan processes i.e. they are not tied to the lifetime of the actor that creates them.
 
-Interface with DD methods:
-No need for template to replace the placeholder methods with new ones, just have DD methods as “placeholders” which change their implementation depending on the class that's on the wire
+\subsection{Window and Subpanel Event Actors}
+\label{subsec:panels}
 
 \begin{figure}[ht]
     \centering
@@ -280,10 +309,13 @@ No need for template to replace the placeholder methods with new ones, just have
 
 Split the events as controls and indicators as shown in Fig~\ref{fig:justacs-ui-events}.
 
-\subsection{Right Click creates library with interface}
+\subsection{Synchronous Event Actor}
+\label{subsec:synchronous-event-actor}
 
-Method in actor: \\
-Creates library containing interface and method along with message class with Send and Do methods
+Since Queue Actors should always be ready to dequeue messages, it should not wait on a response.
+Rather, the Queue Actor should create the Synchronous Event Actor.
+When the Event Actor is waiting for response, that's okay since when the event actor is waiting, it is also ready to teardown whenever since it is always waiting for an event.
+
 
 \section{Messaging}
 \label{sec:messaging}
@@ -314,22 +346,40 @@ Further, this should also be done for the Update Queue Nested message. This shou
     \label{fig:error-msg}
 \end{figure}
 
-\section{Scripting}
-\label{sec:scripting}
+\subsection{Messages Up and Down the Tree}
+\label{subsec:messages-up-and-down-tree}
 
+When messages are sent up the queue tree, followed by being sent down the tree, the developer could consider using event actors to message across the tree.
+This is a direct use case for using an Event Actor.
+Sharing the event actor reference to the necessary Queue Actors or Event Actors for direct communication.
+This is the power of Event Actors.
+Gives rise to the Observer (Pub-Sub) Pattern, sending NOT Msgs, but Events across the tree.
+
+\subsection{Messages with Type Definitions}
+\label{subsec:messages-with-type-definitions}
+
+Type definitions as inputs SHOULD be in the library, not the class they're implemented in.
+This is fundamentally an exercise in dependency inversion.
+
+Cluster message with type def inside of the library.
+Good practice to put the type def here and NOT in the class that implements the message.
+This takes care of otherwise awful circular dependencies.
+
+\section{Tools}
+\label{sec:tools}
+
+\subsection{Scripting}
+\label{subsec:scripting}
+
+Tips:
 Go through and replace all the Opens and Traverse with the hidden gem.
-
 User groups for the scripting (quick drop, right click, etc.).
+
+\subsubsection{Right Click Message Creation}
 
 
 \section{TODO}
 \label{sec:todo}
-
-Rename Error to Actor Error.
-
-Check execution for all methods.
-
-Have the interface checkbox for DD methods not required for override doesn't necessarily break subtype rules!
 
 In the DD methods, because they are not required to be overridden, have functionality within them that calls the Self Actor method (some kind of checking mechanism?).
 
@@ -344,14 +394,6 @@ Instead of the Setup method, create a new Actor Write method which ONLY Writes t
 State Enter Core and State Exit Core are NOT check marked.
 That way the developer does not need to override, just to have no functionality anyway.
 Read State and Write State do because they'll have functionality.
-
-\section{Miscellaneous}
-\label{sec:miscellaneous}
-
-\subsection{MEF (Managed Extensibility Framework)}
-\label{subsec:mef}
-
-\href{https://www.youtube.com/watch?v=rrtz7sKCg2A}{LabVIEW Interfaces for Satellite Calibration - SLM and McBee}: 44:50
 
 \section{Errors}
 \label{sec:errors}
@@ -432,7 +474,39 @@ These Last Ack messages are not used by the developer.
 These occur in the framework itself, though functionality can be wrapped in the developed queue actor.
 
 
+\section{PPL Support}
+\label{sec:ppl-support}
 
+PPLs is not currently supported in jettl.
+This otherwise should be a simple task to implement.
+How to change a class to use the PPL version of jettl is to change the implemented interface to the PPL one and compose in the PPL Interface.
+
+For more information on PPLs, Darren Nattinger and Derrick Bommarito have excellent content on this:
+\begin{itemize}
+    \item \href{https://forums.ni.com/t5/Community-Documents/Debugging-Symptoms-Packed-Project-Library-PPL-Dependencies/ta-p/4107786}{Debugging Symptoms - Packed Project Library PPL Dependencies - Searching for Dependencies Dialog When Running Executable}
+    \item \href{https://forums.ni.com/t5/LabVIEW/PPL-Namespaced-Dependencies-Strategy-Design-Discussion/td-p/4276248}{PPL Namespaced Dependencies - Strategy/Design Discussion - Development Issues}
+    \item \href{https://www.youtube.com/watch?v=HKcEYkksW_o}{LUDICROUS ways to Fix Broken LabVIEW Code with Darren Nattinger | GDevConNA 2022}
+\end{itemize}
+
+Further points include:
+\begin{itemize}
+    \item Ensure xnodes are not used in jettl.
+    \item Get rid of all malleable vis (.vim extension)
+\end{itemize}
+
+
+\section{Opinionated Design Choices}
+\label{sec:opinionated-design-choices}
+
+\subsection{Color Scheme}
+\label{subsec:color-scheme}
+
+"Look down at the green grass, look up to the blue sky, and look further to the purple galaxy."
+\begin{itemize}
+    \item Purple Library: RGB (166,153,182)
+    \item Blue Interface: RGB (104,136,190)
+    \item Green Class: RGB (110,149,108)
+\end{itemize}
 
 
 \end{document}

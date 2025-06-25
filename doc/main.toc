@@ -1,0 +1,48 @@
+\contentsline {section}{\numberline {0.1}A Community Effort}{4}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Introduction}{4}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Philosophy}{4}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}Access Scope}{4}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {0.3.2}Errors}{5}{subsection.0.3.2}%
+\contentsline {section}{\numberline {0.4}Class Hierarchy}{5}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Actors}{5}{section.0.5}%
+\contentsline {subsection}{\numberline {0.5.1}Actor Benefits}{5}{subsection.0.5.1}%
+\contentsline {section}{\numberline {0.6}LabVIEW Interfaces}{5}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Descendants Must Override}{6}{subsection.0.6.1}%
+\contentsline {section}{\numberline {0.7}Future Scope}{6}{section.0.7}%
+\contentsline {subsection}{\numberline {0.7.1}Pub-Sub Messaging}{6}{subsection.0.7.1}%
+\contentsline {section}{\numberline {0.8}Unit Testing}{7}{section.0.8}%
+\contentsline {section}{\numberline {0.9}Debugging}{7}{section.0.9}%
+\contentsline {subsection}{\numberline {0.9.1}Displaying Method Execution}{7}{subsection.0.9.1}%
+\contentsline {section}{\numberline {0.10}Git}{7}{section.0.10}%
+\contentsline {section}{\numberline {0.11}Naming Conventions}{8}{section.0.11}%
+\contentsline {section}{\numberline {0.12}Examples}{8}{section.0.12}%
+\contentsline {subsection}{\numberline {0.12.1}Hello World}{8}{subsection.0.12.1}%
+\contentsline {subsection}{\numberline {0.12.2}Nested Actors}{8}{subsection.0.12.2}%
+\contentsline {subsection}{\numberline {0.12.3}Sending Event Message}{9}{subsection.0.12.3}%
+\contentsline {section}{\numberline {0.13}Design Patterns}{9}{section.0.13}%
+\contentsline {subsection}{\numberline {0.13.1}State Pattern}{9}{subsection.0.13.1}%
+\contentsline {subsubsection}{State Pattern Privacy}{9}{section*.2}%
+\contentsline {subsection}{\numberline {0.13.2}Memento Pattern}{10}{subsection.0.13.2}%
+\contentsline {subsection}{\numberline {0.13.3}Decorator Pattern}{10}{subsection.0.13.3}%
+\contentsline {subsection}{\numberline {0.13.4}Strategy Pattern}{10}{subsection.0.13.4}%
+\contentsline {subsection}{\numberline {0.13.5}Observer Pattern}{10}{subsection.0.13.5}%
+\contentsline {section}{\numberline {0.14}Event Actors}{10}{section.0.14}%
+\contentsline {subsection}{\numberline {0.14.1}Event Actor Best Practices}{10}{subsection.0.14.1}%
+\contentsline {subsection}{\numberline {0.14.2}Event Actor Benefits}{10}{subsection.0.14.2}%
+\contentsline {subsection}{\numberline {0.14.3}Window and Subpanel Event Actors}{10}{subsection.0.14.3}%
+\contentsline {subsection}{\numberline {0.14.4}Synchronous Event Actor}{11}{subsection.0.14.4}%
+\contentsline {section}{\numberline {0.15}Messaging}{11}{section.0.15}%
+\contentsline {subsection}{\numberline {0.15.1}Private Messages}{11}{subsection.0.15.1}%
+\contentsline {subsection}{\numberline {0.15.2}Messages Up and Down the Tree}{12}{subsection.0.15.2}%
+\contentsline {subsection}{\numberline {0.15.3}Messages with Type Definitions}{12}{subsection.0.15.3}%
+\contentsline {section}{\numberline {0.16}Tools}{12}{section.0.16}%
+\contentsline {subsection}{\numberline {0.16.1}Scripting}{12}{subsection.0.16.1}%
+\contentsline {subsubsection}{Right Click Message Creation}{12}{section*.3}%
+\contentsline {section}{\numberline {0.17}TODO}{12}{section.0.17}%
+\contentsline {section}{\numberline {0.18}Errors}{13}{section.0.18}%
+\contentsline {section}{\numberline {0.19}Example}{13}{section.0.19}%
+\contentsline {subsection}{\numberline {0.19.1}Dev Actor}{13}{subsection.0.19.1}%
+\contentsline {section}{\numberline {0.20}Creation}{14}{section.0.20}%
+\contentsline {section}{\numberline {0.21}PPL Support}{15}{section.0.21}%
+\contentsline {section}{\numberline {0.22}Opinionated Design Choices}{16}{section.0.22}%
+\contentsline {subsection}{\numberline {0.22.1}Color Scheme}{16}{subsection.0.22.1}%
