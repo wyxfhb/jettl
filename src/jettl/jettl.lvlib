@@ -25,17 +25,6 @@
 		<Item Name="Queue Actor.lvclass" Type="LVClass" URL="../Actor/Queue Actor/Queue Actor.lvclass"/>
 		<Item Name="Event Actor.lvclass" Type="LVClass" URL="../Actor/Event Actor/Event Actor.lvclass"/>
 	</Item>
-	<Item Name="Base Event Actor" Type="Folder">
-		<Item Name="Event State" Type="Folder">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="Event State.lvclass" Type="LVClass" URL="../Base Event Actor/Event State/Event State/Event State.lvclass"/>
-			<Item Name="Nominal Event State.lvclass" Type="LVClass" URL="../Base Event Actor/Event State/Nominal Event State/Nominal Event State.lvclass"/>
-			<Item Name="Teardown Event State.lvclass" Type="LVClass" URL="../Base Event Actor/Event State/Teardown Event State/Teardown Event State.lvclass"/>
-			<Item Name="Error Event State.lvclass" Type="LVClass" URL="../Base Event Actor/Event State/Error Event State/Error Event State.lvclass"/>
-		</Item>
-		<Item Name="Base Event Actor.lvclass" Type="LVClass" URL="../Base Event Actor/Base Event Actor/Base Event Actor.lvclass"/>
-	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="Alias Already Exists Error.vi" Type="VI" URL="../SubVIs/Alias Already Exists Error.vi">
 			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -69,4 +58,5 @@
 		</Item>
 	</Item>
 	<Item Name="Base Queue jettl.lvlib" Type="Library" URL="../Base Queue jettl/Base Queue jettl.lvlib"/>
+	<Item Name="Base Event jettl.lvlib" Type="Library" URL="../Base Event jettl/Base Event jettl.lvlib"/>
 </Library>
