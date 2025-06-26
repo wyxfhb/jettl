@@ -1,10 +1,10 @@
 # jettl
 
-![](README-images/hierarchy.png)
-![](README-images/queue-actor-method.png)
-![](README-images/event-actor-method.png)
+*Dedicated to Stephen Loftus-Mercer for his pioneering work in introducing interfaces to LabVIEW development.*
 
-`jettl` is a lightweight library used for decorating developed classes with either the `Queue jettl` interface or `Event jettl` interface via composition and implementation of the methods in either of the implemented interfaces.
+*Please message with your suggestions on how I shoul demonstrate more clear explanations, what I can do to improve this for the developers needs, and examples you'd like to see.*
+
+`jettl` is a lightweight library used for decorating developed classes with either the `Queue jettl` interface or `Event jettl` interface via composition and implementation of the methods from either of the implemented interfaces. Included here are crucial design patterns including Strategy Pattern, Decorator Pattern, State Pattern, and Observer Pattern. SOLID principles, especially dependency inversion/injection, hence strategy pattern for dynamic dispatch messaging.
 
 ## Motivation
 
@@ -29,3 +29,7 @@ A Hello World Example is here in the project in `jettl\scr\jettl.proj`. Run the 
 ## documentation
 
 look in the `doc` folder, and older documentation in the `doc_old` folder
+
+![](README-images/hierarchy.png)
+![](README-images/queue-actor-method.png)
+![](README-images/event-actor-method.png)
