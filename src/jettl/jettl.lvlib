@@ -19,9 +19,9 @@
 		<Item Name="Update Queue Nested.lvlib" Type="Library" URL="../Msg Strategy/Update Queue Nested/Update Queue Nested.lvlib"/>
 	</Item>
 	<Item Name="jettl" Type="Folder">
-		<Item Name="Actor.lvclass" Type="LVClass" URL="../jettl/Actor/Actor.lvclass"/>
-		<Item Name="Queue Actor.lvclass" Type="LVClass" URL="../jettl/Queue Actor/Queue Actor.lvclass"/>
-		<Item Name="Event Actor.lvclass" Type="LVClass" URL="../jettl/Event Actor/Event Actor.lvclass"/>
+		<Item Name="jettl.lvclass" Type="LVClass" URL="../jettl/jettl/jettl.lvclass"/>
+		<Item Name="Queue jettl.lvclass" Type="LVClass" URL="../jettl/Queue jettl/Queue jettl.lvclass"/>
+		<Item Name="Event jettl.lvclass" Type="LVClass" URL="../jettl/Event jettl/Event jettl.lvclass"/>
 		<Item Name="Base Queue jettl.lvlib" Type="Library" URL="../jettl/Base Queue jettl/Base Queue jettl.lvlib"/>
 		<Item Name="Base Event jettl.lvlib" Type="Library" URL="../jettl/Base Event jettl/Base Event jettl.lvlib"/>
 	</Item>
