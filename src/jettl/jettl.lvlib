@@ -12,11 +12,19 @@
 		<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="../Msg Strategy/Msg Strategy/Msg Strategy.lvclass"/>
 		<Item Name="Queue Create.lvlib" Type="Library" URL="../Msg Strategy/Queue Create/Queue Create.lvlib"/>
 		<Item Name="Event Create.lvlib" Type="Library" URL="../Msg Strategy/Event Create/Event Create.lvlib"/>
-		<Item Name="Queue Last Ack.lvlib" Type="Library" URL="../Msg Strategy/Queue Last Ack/Queue Last Ack.lvlib"/>
-		<Item Name="Event Last Ack.lvlib" Type="Library" URL="../Msg Strategy/Event Last Ack/Event Last Ack.lvlib"/>
+		<Item Name="Queue Last Ack.lvlib" Type="Library" URL="../Msg Strategy/Queue Last Ack/Queue Last Ack.lvlib">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
+		<Item Name="Event Last Ack.lvlib" Type="Library" URL="../Msg Strategy/Event Last Ack/Event Last Ack.lvlib">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
 		<Item Name="Setup.lvlib" Type="Library" URL="../Msg Strategy/Setup/Setup.lvlib"/>
 		<Item Name="Teardown.lvlib" Type="Library" URL="../Msg Strategy/Teardown/Teardown.lvlib"/>
-		<Item Name="Update Queue Nested.lvlib" Type="Library" URL="../Msg Strategy/Update Queue Nested/Update Queue Nested.lvlib"/>
+		<Item Name="Update Queue Nested.lvlib" Type="Library" URL="../Msg Strategy/Update Queue Nested/Update Queue Nested.lvlib">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
+		<Item Name="Merge Error.lvlib" Type="Library" URL="../Msg Strategy/Merge Error/Merge Error.lvlib"/>
+		<Item Name="Override Error.lvlib" Type="Library" URL="../Msg Strategy/Override Error/Override Error.lvlib"/>
 	</Item>
 	<Item Name="jettl" Type="Folder">
 		<Item Name="jettl.lvclass" Type="LVClass" URL="../jettl/jettl/jettl.lvclass"/>
