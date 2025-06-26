@@ -1,6 +1,10 @@
 # jettl
 
-`jettl` is a lightweight library used for decorating classes with Actor methods via composition and implementation of the `Queue Actor` or `Event Actor` interfaces.
+![](README-images/hierarchy.png)
+![](README-images/queue-actor-method.png)
+![](README-images/event-actor-method.png)
+
+`jettl` is a lightweight library used for decorating developed classes with either the `Queue jettl` interface or `Event jettl` interface via composition and implementation of the methods in either of the implemented interfaces.
 
 ## Motivation
 
@@ -8,42 +12,20 @@ For a little over a year (currently 2025), I have had success designing applicat
 
 ## Advantage
 
-- **Advantage One**: This is an advantage
-
-## Abstractions
-
-`Actor`: Provides abstraction for methods that are wrapped and optionally decorated in `Dev Actor`. 
-
-### Implementations
-
-`jettl`: Encapsulates the state and references to other actors. Providing the concrete implementation for messages.
+- **Composition over inheritance**. More specifically, interface composition. Interface composition allows for dynamic wrapping of classes via their common interface. In particular, debugging, unit testing, swapping panels, etc.
+- **Separation of Concerns**. Actors are split into `Queue Actors` (following the tree messaging hierarchy) and `Event Actors` (which can only be created by `Queue Actors`). Dynamic creation of `Event Actors` can occur leading to `Event Actors` being able to enqueue messages to a `Queue Actors` Caller, Self, and Nested Actors, dynamically.
+- **Messaging**. Both `Queue Actors` and `Event Actors` use DVR queues and events to send messages. These messages are exclusively interface driven messages, fully abstracted. Simple methods (`Queue Caller`, `Queue Self`, `Queue Nested`, `Event Self`, `Event Nested`) are used to send a message to the respective DVR.
+- **Reference Abstaction**. The `Queue Actors` DVR Queues are fully abstracted away. The `Event Actors` have their DVR Event available to the developer, giving rise to a observer pattern, allowing cross tree messaging via the Event Actors.
 
 ## Examples
 
-The `Dev Actor` is currently the only example, which also show cases the `Panel` add-on.
+A Hello World Example is here in the project in `jettl\scr\jettl.proj`. Run the `Main Hello World.vi` to spawn a `Queue Actor` and an `Event Actor` (acting as the front panel). This is where you should start when learning `jettl`, by example.
 
-This is where you should start when learning `jettl`, by example.
+## Future Scripting
 
-## Add-ons
-
-`jettl` is minimal, and extended functionality using the dependency inversion priciple of composing in interfaces (and potentially implementing them) include:
-
-- `Panel` displaying windows (and soon subpanels)
-
-Along with scripting tools including:
-
-- Creating wrapper methods of classes / interfaces
-- Creating decorator methods
+- Creating template for `Queue Actors` / `Event Actors`
 - Creating Messages
 
-## Best Practices
+## documentation
 
-*Insert Best Practices .md here*
-
-## Design Decisions
-
-*Insert Design Decisions .md here*
-
-## Benchmarks
-
-*Insert Benchmarks .md here*
+look in the `doc` folder, and older documentation in the `doc_old` folder

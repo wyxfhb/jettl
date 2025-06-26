@@ -1,4 +1,0 @@
-jettl
-LabVIEW
-Subpanel
-subprocesses
