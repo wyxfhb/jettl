@@ -2,7 +2,7 @@
 
 *Dedicated to Stephen Loftus-Mercer for his pioneering work in introducing interfaces to LabVIEW development.*
 
-*Please message with your suggestions on how I shoul demonstrate more clear explanations, what I can do to improve this for the developers needs, and examples you'd like to see.*
+*Please message me with your suggestions on how I should demonstrate more clear explanations, what I can do to improve the codebase for the developers needs, and examples you'd like to see. Especially this.*
 
 `jettl` is a lightweight library used for decorating developed classes with either the `Queue jettl` interface or `Event jettl` interface via composition and implementation of the methods from either of the implemented interfaces. Included here are crucial design patterns including Strategy Pattern, Decorator Pattern, State Pattern, and Observer Pattern. SOLID principles, especially dependency inversion/injection, hence strategy pattern for dynamic dispatch messaging.
 
