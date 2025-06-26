@@ -27,7 +27,7 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="jettl.lvlib:Msg.lvclass" Type="Parent" URL="../../../../../jettl/Msg Strategy/Msg/Msg.lvclass"/>
+		<Item Name="jettl.lvlib:Msg Strategy.lvclass" Type="Parent" URL="../../../../../jettl/Msg Strategy/Msg Strategy/Msg Strategy.lvclass"/>
 	</Item>
 	<Item Name="Pop Up Msg.ctl" Type="Class Private Data" URL="Pop Up Msg.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>

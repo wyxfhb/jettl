@@ -8,5 +8,5 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Setup.lvclass" Type="LVClass" URL="../Setup/Setup.lvclass"/>
-	<Item Name="Setup Msg.lvclass" Type="LVClass" URL="../Setup Msg/Setup Msg.lvclass"/>
+	<Item Name="Setup Msg Strategy.lvclass" Type="LVClass" URL="../Setup Msg Strategy/Setup Msg Strategy.lvclass"/>
 </Library>

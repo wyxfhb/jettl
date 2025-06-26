@@ -9,7 +9,7 @@
 
 </Property>
 	<Item Name="Msg Strategy" Type="Folder">
-		<Item Name="Msg.lvclass" Type="LVClass" URL="../Msg Strategy/Msg/Msg.lvclass"/>
+		<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="../Msg Strategy/Msg Strategy/Msg Strategy.lvclass"/>
 		<Item Name="Queue Create.lvlib" Type="Library" URL="../Msg Strategy/Queue Create/Queue Create.lvlib"/>
 		<Item Name="Event Create.lvlib" Type="Library" URL="../Msg Strategy/Event Create/Event Create.lvlib"/>
 		<Item Name="Queue Last Ack.lvlib" Type="Library" URL="../Msg Strategy/Queue Last Ack/Queue Last Ack.lvlib"/>

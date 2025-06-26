@@ -8,5 +8,5 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Event Create.lvclass" Type="LVClass" URL="../Event Create/Event Create.lvclass"/>
-	<Item Name="Event Create Msg.lvclass" Type="LVClass" URL="../Event Create Msg/Event Create Msg.lvclass"/>
+	<Item Name="Event Create Msg Strategy.lvclass" Type="LVClass" URL="../Event Create Msg Strategy/Event Create Msg Strategy.lvclass"/>
 </Library>

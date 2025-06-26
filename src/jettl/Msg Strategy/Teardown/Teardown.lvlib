@@ -8,5 +8,5 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Teardown.lvclass" Type="LVClass" URL="../Teardown/Teardown.lvclass"/>
-	<Item Name="Teardown Msg.lvclass" Type="LVClass" URL="../Teardown Msg/Teardown Msg.lvclass"/>
+	<Item Name="Teardown Msg Strategy.lvclass" Type="LVClass" URL="../Teardown Msg Strategy/Teardown Msg Strategy.lvclass"/>
 </Library>

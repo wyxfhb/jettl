@@ -8,5 +8,5 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Queue Create.lvclass" Type="LVClass" URL="../Queue Create/Queue Create.lvclass"/>
-	<Item Name="Queue Create Msg.lvclass" Type="LVClass" URL="../Queue Create Msg/Queue Create Msg.lvclass"/>
+	<Item Name="Queue Create Msg Strategy.lvclass" Type="LVClass" URL="../Queue Create Msg Strategy/Queue Create Msg Strategy.lvclass"/>
 </Library>

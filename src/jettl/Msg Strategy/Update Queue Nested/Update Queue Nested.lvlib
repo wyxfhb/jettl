@@ -8,5 +8,5 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Update Queue Nested.lvclass" Type="LVClass" URL="../Update Queue Nested/Update Queue Nested.lvclass"/>
-	<Item Name="Update Queue Nested Msg.lvclass" Type="LVClass" URL="../Update Queue Nested Msg/Update Queue Nested Msg.lvclass"/>
+	<Item Name="Update Queue Nested Msg Strategy.lvclass" Type="LVClass" URL="../Update Queue Nested Msg Strategy/Update Queue Nested Msg Strategy.lvclass"/>
 </Library>
