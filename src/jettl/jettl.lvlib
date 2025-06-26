@@ -34,6 +34,9 @@
 		<Item Name="Base Event jettl.lvlib" Type="Library" URL="../jettl/Base Event jettl/Base Event jettl.lvlib"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Count Actors.vi" Type="VI" URL="../SubVIs/Count Actors.vi">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
 		<Item Name="Alias Already Exists Error.vi" Type="VI" URL="../SubVIs/Alias Already Exists Error.vi">
 			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		</Item>
