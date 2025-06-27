@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-06-08 10:32:39" Modified_Date="2025-06-26 19:11:20" Creator="natev" Comments="" ID="4694710f2fa320330a6961879f4f404f">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-06-08 10:32:39" Modified_Date="2025-06-26 19:39:18" Creator="natev" Comments="" ID="e1815c55daee76d73e708a0f56d2de61">
   <Library_General_Settings>
     <Package_File_Name>jettl_lib_jettl</Package_File_Name>
-    <Library_Version>0.0.0.33</Library_Version>
+    <Library_Version>0.0.0.35</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\lvbuilds</Library_Output_Folder>
@@ -228,7 +228,7 @@
         <Path>..\src\Msgs</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>529CFD237C397FE74777B6970843C22E</GUID>
+      <GUID>0115A9596E8DAAAB2679113893BA47BB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -270,8 +270,8 @@
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
-          <Row>1</Row>
-          <Column>2</Column>
+          <Row>2</Row>
+          <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
         <Path>..\src\jettl\Msg Strategy\Setup\Setup Msg Strategy\Msg To.vi</Path>
@@ -285,7 +285,7 @@
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
           <Row>1</Row>
-          <Column>3</Column>
+          <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
         <Path>..\src\jettl\Msg Strategy\Queue Create\Queue Create Msg Strategy\Msg To.vi</Path>
@@ -299,7 +299,7 @@
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
           <Row>2</Row>
-          <Column>3</Column>
+          <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
         <Path>..\src\jettl\Msg Strategy\Event Create\Event Create Msg Strategy\Msg To.vi</Path>
@@ -313,7 +313,7 @@
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
           <Row>1</Row>
-          <Column>4</Column>
+          <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
         <Path>..\src\jettl\Msg Strategy\Merge Error\Merge Error Msg Strategy\Msg To.vi</Path>
@@ -327,13 +327,13 @@
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
           <Row>2</Row>
-          <Column>4</Column>
+          <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
         <Path>..\src\jettl\Msg Strategy\Override Error\Override Error Msg Strategy\Msg To.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2404E4FF36E988BB49017CCC5957EB53</GUID>
+      <GUID>F00BFC27EE2A4D6EE7BA99F04C974ECF</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

@@ -24,9 +24,8 @@ A Hello World Example is here in the project in `jettl\scr\jettl.proj`. Run the 
 # Things Necessary To Become Successful
 
 - Script messages
-- Script right click menu for creating `Queue Actor`
-- Script right click menu for creating `Event Actor`
-- Script `Event Actor` right click menu for creating event message library, creation, and destroy methods
+- Script right click menu for creating template for `Queue Actor`, creating the decorator override methods with necessary functionality
+- Script right click menu for creating template for `Event Actor`, creating the decorator override methods with necessary functionality
 - For `Panel Event Actors`, dedicate message methods for `Show Panel`, `Hide Panel`, `Change Panel`
 - Interchanging panels example using the interface composition based State Pattern
 - Subpanel example
