@@ -21,12 +21,21 @@ For a little over a year (currently 2025), I have had success designing applicat
 
 A Hello World Example is here in the project in `jettl\scr\jettl.proj`. Run the `Main Hello World.vi` to spawn a `Queue Actor` and an `Event Actor` (acting as the front panel). This is where you should start when learning `jettl`, by example.
 
-## Future Scripting
+# Things Necessary To Become Successful
 
-- Creating template for `Queue Actors` / `Event Actors`
-- Creating Messages
+- Script messages
+- Script right click menu for creating `Queue Actor`
+- Script right click menu for creating `Event Actor`
+- Script `Event Actor` right click menu for creating event message library, creation, and destroy methods
+- For `Panel Event Actors`, dedicate message methods for `Show Panel`, `Hide Panel`, `Change Panel`
+- Interchanging panels example using the interface composition based State Pattern
+- Subpanel example
+- `Notifier Actor`
+- `Periodic Message Notifier Actor` example
+- `Channel Wire Actor`
+- Debug / Unit Test class wrapping. Some kind of diagram disable in the developed actor `Decorator.vi`, surrounding the (yet to be made) `Base Debug.lvclass`. That way debug code does not exist in Base classes, and is held exclusively in the `Base Debug.lvclass`.
 
-## documentation
+## Documentation
 
 look in the `doc` folder, and older documentation in the `doc_old` folder
 
