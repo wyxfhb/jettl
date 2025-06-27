@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-06-08 10:32:39" Modified_Date="2025-06-26 14:59:29" Creator="natev" Comments="" ID="b2ffac589f30aa62f041004f5137a53c">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-06-08 10:32:39" Modified_Date="2025-06-26 19:11:20" Creator="natev" Comments="" ID="4694710f2fa320330a6961879f4f404f">
   <Library_General_Settings>
     <Package_File_Name>jettl_lib_jettl</Package_File_Name>
-    <Library_Version>0.0.0.32</Library_Version>
+    <Library_Version>0.0.0.33</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\lvbuilds</Library_Output_Folder>
@@ -228,7 +228,7 @@
         <Path>..\src\Msgs</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AD6366D43B886561D0BDBDC6145E49BF</GUID>
+      <GUID>529CFD237C397FE74777B6970843C22E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -333,7 +333,7 @@
         <Path>..\src\jettl\Msg Strategy\Override Error\Override Error Msg Strategy\Msg To.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CB5DBDB77FC92986511B04BDE4675BC4</GUID>
+      <GUID>2404E4FF36E988BB49017CCC5957EB53</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
