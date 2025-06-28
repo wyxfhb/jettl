@@ -41,3 +41,44 @@ look in the `doc` folder, and older documentation in the `doc_old` folder
 ![](README-images/hierarchy.png)
 ![](README-images/queue-actor-method.png)
 ![](README-images/event-actor-method.png)
+
+## What I'm Woring On
+
+jettl Event structure
+Neither controls or indicators should be updated with events, these should be updated with property nodes and move evoked as a message method (can be a standalone method) where the Event Msg is executed leading to the DD message being executed, hence updating the control / indicator with the property node.
+
+
+Errors are built into jettl. For every actor being wrapped, there is an error cluster within their private data. The errors are abstracted away from you, but if there does exist an error you may handle it in the Handle.vi override.
+
+
+Interesting idea.. only single layer of queues?
+Caller and infinite nesteds?
+
+Really these queues are for transporting the necessary references to other queue actors.
+
+It is these actors that create the event, notifier, channel wire actors which potentially share should their references to others, giving rise to a distributed system.
+
+I think of this from a low frequency circuit design where most field energy is contained near the wire from device to device. But with higher frequencies, this field energy becomes distributed where the different devices intercept this energy for better or worse.
+
+So the layers are simply single layers. But the single layers have each other references, leading to a distributed design.
+
+This change in thinking of a distributed model is easier to understand as well with only single layers.
+
+
+Update event actor.vi in readme
+
+
+Can rename, for the event structure, the event registration node to something better like “Msg Strategy”
+https://youtu.be/772lcXI8tCY?feature=shared
+22:02
+
+
+Make sure there do not exist any xnodes OR malleable vis
+
+
+For wrapping wrappers:
+Decorator pattern needs one class for decorating multiple times.. is there a way to use the **four** videos to refactor the decorator pattern without class inheritance?
+This should be applied to jettl for multiple wrappings of objects inheriting from the same interface.
+
+
+The Event Init and Queue Init methods *could* be DD instead of private, that way with the debug library, the debug wrappers can be used to tap into this private data. Maybe Debug has one async process launched that just takes in this data ie queue caller, queue self, queue nested, event nested etc
