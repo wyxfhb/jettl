@@ -38,111 +38,85 @@ A Hello World Example is here in the project in `jettl\scr\jettl.proj`. Run the 
 
 look in the `doc` folder, and older documentation in the `doc_old` folder
 
-![](README-images/hierarchy.png)
-![](README-images/queue-actor-method.png)
-![](README-images/event-actor-method.png)
+![](images-readme/hierarchy.png)
+![](images-readme/queue-actor-method.png)
+![](images-readme/event-actor-method.png)
 
 ## What I'm Woring On
 
-jettl Event structure
-Neither controls or indicators should be updated with events, these should be updated with property nodes and move evoked as a message method (can be a standalone method) where the Event Msg is executed leading to the DD message being executed, hence updating the control / indicator with the property node.
+### Speak on design pattern used for Messaging in jettl
 
 
-Errors are built into jettl. For every actor being wrapped, there is an error cluster within their private data. The errors are abstracted away from you, but if there does exist an error you may handle it in the Handle.vi override.
+### jettl is the alias for Actor.
 
 
-Interesting idea.. only single layer of queues?
-Caller and infinite nesteds?
+### Emphasis of encapsulated classes are classes marked private.
+Class encapsulation. Any class should be marked as private to the library containing them.
+That way, it is not encouraged to use the classes in other projects, leading to use of dependency inversion.
 
-Really these queues are for transporting the necessary references to other queue actors.
-
-It is these actors that create the event, notifier, channel wire actors which potentially share should their references to others, giving rise to a distributed system.
-
-I think of this from a low frequency circuit design where most field energy is contained near the wire from device to device. But with higher frequencies, this field energy becomes distributed where the different devices intercept this energy for better or worse.
-
-So the layers are simply single layers. But the single layers have each other references, leading to a distributed design.
-
-This change in thinking of a distributed model is easier to understand as well with only single layers.
+### Event jettl
+Controls and indicators are updated with property nodes.
+These can be in message methods.
 
 
-Update event actor.vi in readme
+### Errors are built into jettl.
+For every actor being wrapped, there is an error cluster within their private data.
+The errors are abstracted away from you, but if there does exist an error you may handle it in the Handle.vi override.
 
 
-Can rename, for the event structure, the event registration node to something better like “Msg Strategy”
-https://youtu.be/772lcXI8tCY?feature=shared
-22:02
+### Queue jettl not enforced, but encouraged to use a double layer for the Queue jettl i.e. a single Queue jettl top layer and infinite Queue jettls in the second layer.
+This provides very easy to understand messaging from self up to caller, and back down to a nested.
+The Queue jettls are for:
+- creating the Event, Notifier, Channel Wire jettls,
+- *mainly* for transporting the necessary references to other jettls, and
+- communicating with other application instances / executables.
+This transporting of references leads to the observer pattern distributed system.
+This change in thinking of a distributed model is easier to understand as well.
+Note: The Event jettls are inherently a single layer since they cannot create Queue jettls or Event jettls
 
 
-Make sure there do not exist any xnodes OR malleable vis
+### Make sure there do not exist any xnodes OR malleable vis
 
 
-For wrapping wrappers:
-Decorator pattern needs one class for decorating multiple times.. is there a way to use the **four** videos to refactor the decorator pattern without class inheritance?
+### Refactor Decorator Pattern:
+Requires one context class for decorating multiple times.
+Is there a way to use the **four** videos to refactor the decorator pattern without class inheritance?
 This should be applied to jettl for multiple wrappings of objects inheriting from the same interface.
 
 
-The Event Init and Queue Init methods *could* be DD instead of private, that way with the debug library, the debug wrappers can be used to tap into this private data. Maybe Debug has one async process launched that just takes in this data ie queue caller, queue self, queue nested, event nested etc
+### Message method execution: shared clone
+A shift in the developers' mindset: Develop message methods at the interface level.
+Things that can change for the message:
+1. `Rename jettl Message`: right click library
+2. `Change Inputs For jettl Message`: right click interface method (change connector pane in interface method first)
+
+jettl Name.lvlib
+Msg.lvclass
+-Name.vi
+Concrete Msg.lvclass (private)
+-Init.vi (public) (initializes the class object)
+-Msg.vi
+Msg.vi (library banner color)
 
 
-Template Script from right click project.
-Class name required, that’s it. It’s immediately saved to the directory the project is in.
-Checks if folder exists already, if it doesn’t exist, continue to do script.
-
-
-above: jettl, do not have init be DD, keep private to abstract the queues
-
-
-Message method execution: shared clone
-Shift of mindset:
-Developer *should* be developing messages at the interface level.
-
-Rescript Message (right click menu) on classes method DOES NOT EXIST. This occurs only for interface method.
-Things that can change in the interface:
-1. Data input
-2. Name
-
-Emphasize encapsulated classes are classes marked private.
-Message
-Init.vi (initializes the class object)
-Class then set to private
-Msg To.vi outside of class (library banner color)
-
-
-What design pattern is the Messaging in jettl?
-
-
-Name.lvlib
-Queue jettl.lvclass (private)
 
 
 (Within jettl)
 Base.lvlib
 Queue jettl.lvclass (private)
 
-
-String.lvlib
-Msg.lvclass
--String.vi
-Concrete Msg.lvclass (private)
--Init.vi (public)
--Msg.vi
-Msg.vi
+Queue Script
+Required: Name.
+Checks if folder exists, saved to directory where the project resides.
+Name.lvlib
+Queue jettl.lvclass (private)
 
 
-Maybe instead of the right click menu, instead these are all project templates
-Ie
-Queue jettl
-Event jettl
+Event Script
+Required: Name.
+Checks if folder exists, saved to directory where the project resides.
 
 
-Change the 2 Last Ack and 1 nested libraries to NOT private. Change their interfaces (and classes) to private 
-
-
-Class encapsulation. Any class should be marked as private to the library containing them. That way, it is not encouraged to use the classes in other projects, leading to use of dependency inversion
-
-
-Not enforced, but encouraged to use a double layer for the queue jettl. This provides very easy messaging from self up to caller, and back down to a nested.
-The Event jettls are inherently since later since they cannot create Queue jettls or Event jettls
-
-
-jettl is the alias for Actor.
+Message Script
+Required: Name.
+Checks if folder exists, saved to directory where the project resides.
