@@ -30,15 +30,10 @@
 		<Item Name="jettl.lvclass" Type="LVClass" URL="../jettl/jettl/jettl.lvclass"/>
 		<Item Name="Queue jettl.lvclass" Type="LVClass" URL="../jettl/Queue jettl/Queue jettl.lvclass"/>
 		<Item Name="Event jettl.lvclass" Type="LVClass" URL="../jettl/Event jettl/Event jettl.lvclass"/>
-		<Item Name="Base Queue jettl.lvlib" Type="Library" URL="../jettl/Base Queue jettl/Base Queue jettl.lvlib">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		</Item>
-		<Item Name="Base Event jettl.lvlib" Type="Library" URL="../jettl/Base Event jettl/Base Event jettl.lvlib">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		</Item>
+		<Item Name="Base Queue jettl.lvlib" Type="Library" URL="../jettl/Base Queue jettl/Base Queue jettl.lvlib"/>
+		<Item Name="Base Event jettl.lvlib" Type="Library" URL="../jettl/Base Event jettl/Base Event jettl.lvlib"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
-		<Item Name="Launch Base Queue.vi" Type="VI" URL="../SubVIs/Launch Base Queue.vi"/>
 		<Item Name="Count Actors.vi" Type="VI" URL="../SubVIs/Count Actors.vi">
 			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		</Item>

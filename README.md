@@ -82,3 +82,67 @@ This should be applied to jettl for multiple wrappings of objects inheriting fro
 
 
 The Event Init and Queue Init methods *could* be DD instead of private, that way with the debug library, the debug wrappers can be used to tap into this private data. Maybe Debug has one async process launched that just takes in this data ie queue caller, queue self, queue nested, event nested etc
+
+
+Template Script from right click project.
+Class name required, that’s it. It’s immediately saved to the directory the project is in.
+Checks if folder exists already, if it doesn’t exist, continue to do script.
+
+
+above: jettl, do not have init be DD, keep private to abstract the queues
+
+
+Message method execution: shared clone
+Shift of mindset:
+Developer *should* be developing messages at the interface level.
+
+Rescript Message (right click menu) on classes method DOES NOT EXIST. This occurs only for interface method.
+Things that can change in the interface:
+1. Data input
+2. Name
+
+Emphasize encapsulated classes are classes marked private.
+Message
+Init.vi (initializes the class object)
+Class then set to private
+Msg To.vi outside of class (library banner color)
+
+
+What design pattern is the Messaging in jettl?
+
+
+Name.lvlib
+Queue jettl.lvclass (private)
+
+
+(Within jettl)
+Base.lvlib
+Queue jettl.lvclass (private)
+
+
+String.lvlib
+Msg.lvclass
+-String.vi
+Concrete Msg.lvclass (private)
+-Init.vi (public)
+-Msg.vi
+Msg.vi
+
+
+Maybe instead of the right click menu, instead these are all project templates
+Ie
+Queue jettl
+Event jettl
+
+
+Change the 2 Last Ack and 1 nested libraries to NOT private. Change their interfaces (and classes) to private 
+
+
+Class encapsulation. Any class should be marked as private to the library containing them. That way, it is not encouraged to use the classes in other projects, leading to use of dependency inversion
+
+
+Not enforced, but encouraged to use a double layer for the queue jettl. This provides very easy messaging from self up to caller, and back down to a nested.
+The Event jettls are inherently since later since they cannot create Queue jettls or Event jettls
+
+
+jettl is the alias for Actor.
