@@ -56,6 +56,8 @@ That way, it is not encouraged to use the classes in other projects, leading to 
 
 ### Event jettl
 Controls and indicators are updated with property nodes.
+Note an excellent idea: https://www.youtube.com/watch?v=RJ7FHrzIu68&t=270s: 13:29
+For functionality of `Add Reference to Class Data`
 These can be in message methods.
 
 
