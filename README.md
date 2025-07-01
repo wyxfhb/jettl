@@ -36,7 +36,8 @@ A Hello World Example is here in the project in `jettl\src\jettl.proj`. Run the 
 
 ## Documentation
 
-look in the `doc` folder, and older documentation in the `doc_old` folder
+look in the `doc` folder, and older documentation in the `doc_old` folder.
+These images are high resolution, click them to zoom in and see the simple algorithm of data flow.
 
 ![](images-readme/event-loop.png)
 ![](images-readme/palette.png)
