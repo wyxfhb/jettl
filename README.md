@@ -38,6 +38,7 @@ A Hello World Example is here in the project in `jettl\src\jettl.proj`. Run the 
 
 look in the `doc` folder, and older documentation in the `doc_old` folder
 
+![](images-readme/palette.png)
 ![](images-readme/hierarchy.png)
 ![](images-readme/queue-actor-method.png)
 ![](images-readme/event-actor-method.png)
