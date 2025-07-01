@@ -33,7 +33,9 @@ This document is not meant to be a complete guide to the jettl framework, but ra
 Strictly interface composition based asynchronous actor oriented design pattern for LabVIEW Applications.
 jettl also has the newer banners for vis. Easy adoption for the new age of LV developers.
 State pattern with decorators.
-It is interface composition, so stick with the same rule set for naming methods
+It is interface composition, so stick with the same rule set for naming methods.
+
+jettl is the alias for Actor.
 
 \section{Class Hierarchy}
 \label{sec:class-hierarchy}
@@ -252,6 +254,16 @@ Event Actors are not tied to the Queue Actor that creates them.
 Furthermore, Queue Actors should not depend on Event Actors.
 
 These can be orphan processes i.e. they are not tied to the lifetime of the actor that creates them.
+
+\section{Event Loop}
+\label{sec:event-loop}
+
+It is safe to send messages to the Caller, Self, AND Nested Actors.
+Nested actors will have the correct Msg Queue since they're updated when a Queue Nested is created in the Queue Actor.
+Check details outlined in the Queue Actor.vi within jettl Queue Actor.lvclass.
+
+This method works for all types of Event Actors.
+In particular, ones with shown panels since the window appearance can be changed between DD methods.
 
 \subsection{Window and Subpanel Event Actors}
 \label{subsec:panels}
@@ -481,23 +493,29 @@ These occur in the framework itself, though functionality can be wrapped in the 
 \section{PPL Support}
 \label{sec:ppl-support}
 
-PPLs is not currently supported in jettl.
-This otherwise should be a simple task to implement.
-How to change a class to use the PPL version of jettl is to change the implemented interface to the PPL one and compose in the PPL Interface.
+Note that jettl is designed with PPLs in mind!
+This is because
+\begin{itemize}
+    \item jettl comes as a single library, so it can be packed into a PPL without external dependencies
+    \item To change a class to use the PPL version of jettl is to change the
+          \begin{itemize}
+              \item implemented interface to the PPL one and
+              \item compose in the PPL Interface.
+          \end{itemize}
+    \item jettl does not include:
+          \begin{itemize}
+              \item xnodes
+              \item malleable VIs
+          \end{itemize}
+          xnodes and malleable VIs cause build issues with PPLs, they do not exist in jettl.
+\end{itemize}
 
-For more information on PPLs, Darren Nattinger and Derrick Bommarito have excellent content on this:
+For more information on PPLs, Darren Nattinger and Derrick Bommarito have excellent content:
 \begin{itemize}
     \item \href{https://forums.ni.com/t5/Community-Documents/Debugging-Symptoms-Packed-Project-Library-PPL-Dependencies/ta-p/4107786}{Debugging Symptoms - Packed Project Library PPL Dependencies - Searching for Dependencies Dialog When Running Executable}
     \item \href{https://forums.ni.com/t5/LabVIEW/PPL-Namespaced-Dependencies-Strategy-Design-Discussion/td-p/4276248}{PPL Namespaced Dependencies - Strategy/Design Discussion - Development Issues}
     \item \href{https://www.youtube.com/watch?v=HKcEYkksW_o}{LUDICROUS ways to Fix Broken LabVIEW Code with Darren Nattinger | GDevConNA 2022}
 \end{itemize}
-
-Further points include:
-\begin{itemize}
-    \item Ensure xnodes are not used in jettl.
-    \item Get rid of all malleable vis (.vim extension)
-\end{itemize}
-
 
 \section{Opinionated Design Choices}
 \label{sec:opinionated-design-choices}
@@ -517,9 +535,21 @@ Further points include:
 
 Only public and private.
 Interfaces, classes, and methods have text in the icon/banner that are black for public and red for private.
+Private data text icon is red for class private data since inherently private.
+
+Emphasis is put on encapsulated classes are classes (maybe container libraries) marked private.
+Class encapsulation. Any class should be marked as private to the library containing them.
+That way, it is not encouraged to use the classes in other projects, leading to use of dependency inversion.
+Or, stipulation, classes that are held in libraries, the library should be marked as private.
+Red private banner, even if the class is public but in a privately marked library
+This occurs when the classes are tightly coupled, such as with the state pattern.
 
 \subsection{Errors}
 \label{subsec:errors}
+
+Errors are built into jettl.
+For every actor being wrapped, there is an error cluster within their private data.
+The errors are abstracted away from you, but if there does exist an error you may handle it in the Handle.vi override.
 
 Except the error that could potentially occur at the end of Queue Actor.vi and Event Actor.vi, no error goes unrecognized.
 Why are there are so many error case structures?

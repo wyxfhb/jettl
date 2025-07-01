@@ -38,31 +38,15 @@ A Hello World Example is here in the project in `jettl\src\jettl.proj`. Run the 
 
 look in the `doc` folder, and older documentation in the `doc_old` folder
 
+![](images-readme/event-loop.png)
 ![](images-readme/palette.png)
 ![](images-readme/hierarchy.png)
 ![](images-readme/queue-actor-method.png)
 ![](images-readme/event-actor-method.png)
 
-## What I'm Woring On
+## What I'm Working On
 
-### Speak on design pattern used for Messaging in jettl
-
-
-### jettl is the alias for Actor.
-
-
-### Private data text is red since inherently private.
-
-
-### Avoidance of virtual folders
-
-
-### Emphasis of encapsulated classes are classes \ containing libraries marked private.
-Class encapsulation. Any class should be marked as private to the library containing them.
-That way, it is not encouraged to use the classes in other projects, leading to use of dependency inversion.
-Or, stipulation, classes that are held in libraries, the library should be marked as private.
-Red private banner, even if the class is public but in a privately marked library
-This occurs when the classes are tightly coupled, such as with the state pattern.
+### Detail the strategy pattern used for Messaging in jettl
 
 
 ### Event jettl
@@ -70,11 +54,6 @@ Controls and indicators are updated with property nodes.
 Note an excellent idea: https://www.youtube.com/watch?v=RJ7FHrzIu68&t=270s: 13:29
 For functionality of `Add Reference to Class Data`
 These can be in message methods.
-
-
-### Errors are built into jettl.
-For every actor being wrapped, there is an error cluster within their private data.
-The errors are abstracted away from you, but if there does exist an error you may handle it in the Handle.vi override.
 
 
 ### Queue jettl not enforced, but encouraged to use a double layer for the Queue jettl i.e. a single Queue jettl top layer and infinite Queue jettls in the second layer.
@@ -88,9 +67,6 @@ This change in thinking of a distributed model is easier to understand as well.
 Note: The Event jettls are inherently a single layer since they cannot create Queue jettls or Event jettls
 
 
-### Make sure there do not exist any xnodes OR malleable vis
-
-
 ### Refactor Decorator Pattern:
 Requires one context class for decorating multiple times.
 Is there a way to use the **four** videos to refactor the decorator pattern without class inheritance?
@@ -102,9 +78,6 @@ A shift in the developers' mindset: Develop message methods at the interface lev
 Things that can change for the message:
 1. `Rename jettl Msg`: right click library
 2. `Change Inputs For jettl Msg`: right click interface method (change connector pane in interface method first)
-
-
-
 
 
 ### 
