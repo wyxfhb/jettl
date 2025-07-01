@@ -7,9 +7,6 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="SubVIs" Type="Folder">
-		<Item Name="Launch Base Queue.vi" Type="VI" URL="../SubVIs/Launch Base Queue.vi"/>
-	</Item>
 	<Item Name="State" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
@@ -21,4 +18,5 @@
 	<Item Name="Base Queue jettl.lvclass" Type="LVClass" URL="../Base Queue jettl/Base Queue jettl.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Launch Base Queue.vi" Type="VI" URL="../Launch Base Queue.vi"/>
 </Library>

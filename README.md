@@ -50,9 +50,13 @@ look in the `doc` folder, and older documentation in the `doc_old` folder
 ### jettl is the alias for Actor.
 
 
+### Avoidance of virtual folders
+
+
 ### Emphasis of encapsulated classes are classes marked private.
 Class encapsulation. Any class should be marked as private to the library containing them.
 That way, it is not encouraged to use the classes in other projects, leading to use of dependency inversion.
+Or, stipulation, classes that are held in libraries, the library should be marked as private.
 
 ### Event jettl
 Controls and indicators are updated with property nodes.

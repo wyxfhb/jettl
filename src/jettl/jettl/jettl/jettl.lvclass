@@ -16,10 +16,10 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="jettl.lvlib:Merge Error.lvlib:Merge Error.lvclass" Type="Parent" URL="../../../Msg Strategy/Merge Error/Merge Error/Merge Error.lvclass"/>
-		<Item Name="jettl.lvlib:Override Error.lvlib:Override Error.lvclass" Type="Parent" URL="../../../Msg Strategy/Override Error/Override Error/Override Error.lvclass"/>
-		<Item Name="jettl.lvlib:Setup.lvlib:Setup.lvclass" Type="Parent" URL="../../../Msg Strategy/Setup/Setup/Setup.lvclass"/>
-		<Item Name="jettl.lvlib:Teardown.lvlib:Teardown.lvclass" Type="Parent" URL="../../../Msg Strategy/Teardown/Teardown/Teardown.lvclass"/>
+		<Item Name="jettl.lvlib:Merge Error.lvlib:Merge Error.lvclass" Type="Parent" URL="../../../Merge Error/Merge Error/Merge Error.lvclass"/>
+		<Item Name="jettl.lvlib:Override Error.lvlib:Override Error.lvclass" Type="Parent" URL="../../../Override Error/Override Error/Override Error.lvclass"/>
+		<Item Name="jettl.lvlib:Setup.lvlib:Setup.lvclass" Type="Parent" URL="../../../Setup/Setup/Setup.lvclass"/>
+		<Item Name="jettl.lvlib:Teardown.lvlib:Teardown.lvclass" Type="Parent" URL="../../../Teardown/Teardown/Teardown.lvclass"/>
 	</Item>
 	<Item Name="Queue Caller.vi" Type="VI" URL="../Queue Caller.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%%!!!!"A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!!Z!)1F1=GFP=GFU?4]!/E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!R.=W=A5X2S982F:XE!!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#'JF&gt;(2M)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!#!!-!"!)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!1!!!!E!!!!!!"!!5!!!!!</Property>
