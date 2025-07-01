@@ -4,7 +4,7 @@
 
 *Please message me with your suggestions on how I should demonstrate more clear explanations, what I can do to improve the codebase for the developers needs, and examples you'd like to see. Especially this.*
 
-`jettl` is a lightweight library used for decorating developed classes with either the `Queue jettl` interface or `Event jettl` interface via composition and implementation of the methods from either of the implemented interfaces. Included here are crucial design patterns including Strategy Pattern, Decorator Pattern, State Pattern, and Observer Pattern. SOLID principles, especially dependency inversion/injection, hence strategy pattern for dynamic dispatch messaging.
+`jettl` is a lightweight library used for decorating developed classes with either the `Queue` interface or `Event` interface via composition and implementation of the methods from either of the implemented interfaces. Included here are crucial design patterns including Strategy Pattern, Decorator Pattern, State Pattern, and Observer Pattern. SOLID principles, especially dependency inversion/injection, hence strategy pattern for dynamic dispatch messaging.
 
 ## Motivation
 
@@ -19,20 +19,20 @@ For a little over a year (currently 2025), I have had success designing applicat
 
 ## Examples
 
-A Hello World Example is here in the project in `jettl\scr\jettl.proj`. Run the `Main Hello World.vi` to spawn a `Queue Actor` and an `Event Actor` (acting as the front panel). This is where you should start when learning `jettl`, by example.
+A Hello World Example is here in the project in `jettl\src\jettl.proj`. Run the `Main Hello World.vi` to spawn a `Queue` and an `Event` (acting as the front panel). This is where you should start when learning `jettl`, by example.
 
 # Things Necessary To Become Successful
 
 - Script messages
-- Script right click menu for creating template for `Queue Actor`, creating the decorator override methods with necessary functionality
-- Script right click menu for creating template for `Event Actor`, creating the decorator override methods with necessary functionality
-- For `Panel Event Actors`, dedicate message methods for `Show Panel`, `Hide Panel`, `Change Panel`
+- Script right click menu for creating template for `Queue`, creating the decorator override methods with necessary functionality
+- Script right click menu for creating template for `Event`, creating the decorator override methods with necessary functionality
+- For `Panel Event`, dedicate message methods for `Show Panel`, `Hide Panel`, `Change Panel`
 - Interchanging panels example using the interface composition based State Pattern
 - Subpanel example
-- `Notifier Actor`
-- `Periodic Message Notifier Actor` example
-- `Channel Wire Actor`
-- Debug / Unit Test class wrapping. Some kind of diagram disable in the developed actor `Decorator.vi`, surrounding the (yet to be made) `Base Debug.lvclass`. That way debug code does not exist in Base classes, and is held exclusively in the `Base Debug.lvclass`.
+- `Notifier jettl`
+- `Periodic Message Notifier` example
+- `Channel Wire jettl`
+- Debug / Unit Test class wrapping. Some kind of diagram disable in the developed actor `Decorator.vi`, surrounding the (yet to be made) `Debug Queue.lvclass`. That way debug code does not exist in Base classes, and is held exclusively in the `Debug Queue.lvclass`.
 
 ## Documentation
 
@@ -57,6 +57,9 @@ look in the `doc` folder, and older documentation in the `doc_old` folder
 Class encapsulation. Any class should be marked as private to the library containing them.
 That way, it is not encouraged to use the classes in other projects, leading to use of dependency inversion.
 Or, stipulation, classes that are held in libraries, the library should be marked as private.
+Red private banner, even if the class is public but in a privately marked library
+This occurs when the classes are tightly coupled, such as with the state pattern.
+
 
 ### Event jettl
 Controls and indicators are updated with property nodes.
@@ -73,7 +76,7 @@ The errors are abstracted away from you, but if there does exist an error you ma
 ### Queue jettl not enforced, but encouraged to use a double layer for the Queue jettl i.e. a single Queue jettl top layer and infinite Queue jettls in the second layer.
 This provides very easy to understand messaging from self up to caller, and back down to a nested.
 The Queue jettls are for:
-- creating the Event, Notifier, Channel Wire jettls,
+- creating the Event jettl, Notifier jettl, and Channel Wire jettl,
 - *mainly* for transporting the necessary references to other jettls, and
 - communicating with other application instances / executables.
 This transporting of references leads to the observer pattern distributed system.
@@ -93,36 +96,33 @@ This should be applied to jettl for multiple wrappings of objects inheriting fro
 ### Message method execution: shared clone
 A shift in the developers' mindset: Develop message methods at the interface level.
 Things that can change for the message:
-1. `Rename jettl Message`: right click library
-2. `Change Inputs For jettl Message`: right click interface method (change connector pane in interface method first)
+1. `Rename jettl Msg`: right click library
+2. `Change Inputs For jettl Msg`: right click interface method (change connector pane in interface method first)
+
+
+Base Queue.lvlib
+    Queue.lvclass (private)
+
+
+Base Event.lvlib
+    Event.lvclass (private)
+
 
 jettl Name.lvlib
-Msg.lvclass
--Name.vi
-Concrete Msg.lvclass (private)
--Init.vi (public) (initializes the class object)
--Msg.vi
-Msg.vi (library banner color)
+    Msg.lvclass
+        Name.vi
+    Concrete Msg.lvclass (private)
+        Init.vi (public) (initializes the class object)
+        Msg.vi
+    Msg.vi (public) (library banner color)
 
 
-
-
-(Within jettl)
-Base.lvlib
-Queue jettl.lvclass (private)
-
-Queue Script
-Required: Name.
-Checks if folder exists, saved to directory where the project resides.
 Name.lvlib
-Queue jettl.lvclass (private)
+    Queue.lvclass
 
 
-Event Script
-Required: Name.
-Checks if folder exists, saved to directory where the project resides.
+Name.lvlib
+    Event.lvclass
 
 
-Message Script
-Required: Name.
-Checks if folder exists, saved to directory where the project resides.
+### 
