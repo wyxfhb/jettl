@@ -28,7 +28,9 @@
 	<Item Name="Queue jettl.lvclass" Type="LVClass" URL="../Queue jettl/Queue jettl.lvclass"/>
 	<Item Name="Event jettl.lvclass" Type="LVClass" URL="../Event jettl/Event jettl.lvclass"/>
 	<Item Name="Base Queue jettl.lvlib" Type="Library" URL="../Base Queue jettl/Base Queue jettl.lvlib"/>
-	<Item Name="Base Event jettl.lvlib" Type="Library" URL="../Base Event jettl/Base Event jettl.lvlib"/>
+	<Item Name="Base Event jettl.lvlib" Type="Library" URL="../Base Event jettl/Base Event jettl.lvlib">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Count Actors.vi" Type="VI" URL="../Count Actors.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
