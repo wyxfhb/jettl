@@ -50,10 +50,13 @@ look in the `doc` folder, and older documentation in the `doc_old` folder
 ### jettl is the alias for Actor.
 
 
+### Private data text is red since inherently private.
+
+
 ### Avoidance of virtual folders
 
 
-### Emphasis of encapsulated classes are classes marked private.
+### Emphasis of encapsulated classes are classes \ containing libraries marked private.
 Class encapsulation. Any class should be marked as private to the library containing them.
 That way, it is not encouraged to use the classes in other projects, leading to use of dependency inversion.
 Or, stipulation, classes that are held in libraries, the library should be marked as private.
@@ -100,29 +103,7 @@ Things that can change for the message:
 2. `Change Inputs For jettl Msg`: right click interface method (change connector pane in interface method first)
 
 
-Base Queue.lvlib
-    Queue.lvclass (private)
 
-
-Base Event.lvlib
-    Event.lvclass (private)
-
-
-jettl Name.lvlib
-    Msg.lvclass
-        Name.vi
-    Concrete Msg.lvclass (private)
-        Init.vi (public) (initializes the class object)
-        Msg.vi
-    Msg.vi (public) (library banner color)
-
-
-Name.lvlib
-    Queue.lvclass
-
-
-Name.lvlib
-    Event.lvclass
 
 
 ### 
