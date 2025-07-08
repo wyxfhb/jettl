@@ -91,7 +91,4 @@
 	<Item Name="Delete Queue Mailbox.vi" Type="VI" URL="../Delete Queue Mailbox.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Queue Self SubVI.vi" Type="VI" URL="../Queue Self SubVI.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 </Library>
