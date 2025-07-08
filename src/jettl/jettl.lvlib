@@ -64,4 +64,34 @@
 	<Item Name="Event Destroy.vi" Type="VI" URL="../Event Destroy.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Queue Mailbox.lvclass" Type="LVClass" URL="../Queue Mailbox/Queue Mailbox.lvclass">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="New Queue Mailbox.vi" Type="VI" URL="../New Queue Mailbox.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Get Self Alias.vi" Type="VI" URL="../Get Self Alias.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Get Self.vi" Type="VI" URL="../Get Self.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Get Creator Alias.vi" Type="VI" URL="../Get Creator Alias.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Get Creator.vi" Type="VI" URL="../Get Creator.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Get Created.vi" Type="VI" URL="../Get Created.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Get Event.vi" Type="VI" URL="../Get Event.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Delete Queue Mailbox.vi" Type="VI" URL="../Delete Queue Mailbox.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Queue Self SubVI.vi" Type="VI" URL="../Queue Self SubVI.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 </Library>
