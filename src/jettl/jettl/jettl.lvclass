@@ -36,7 +36,7 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 	</Item>
-	<Item Name="Queue Self SubVI.vi" Type="VI" URL="../Queue Self SubVI.vi">
+	<Item Name="Queue Self Core.vi" Type="VI" URL="../Queue Self Core.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;S!!!!#!!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!!Z!)1F1=GFP=GFU?4]!/E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!R.=W=A5X2S982F:XE!!%B!=!!?!!!D#WJF&gt;(2M,GRW&lt;'FC&amp;6&amp;V:86F)%VB;7RC&lt;XAO&lt;(:D&lt;'&amp;T=Q!&lt;;G6U&gt;'QO&lt;(:M;7)[47&amp;J&lt;'*P?#ZM&gt;G.M98.T!"F!=!!A!!%!"!!.586F&gt;75A47&amp;J&lt;'*P?!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AVK:82U&lt;#ZM&gt;G.M98.T!!BK:82U&lt;#"J&lt;A!!91$Q!!Q!!!!!!!!!!1!!!!!!!A!!!!!!!Q!&amp;!!9$!!"Y!!!!!!!!!!!!!!!!!!!.#Q!!!!!!!!!!!!!1!!!!!!!!!!!!!!!3!!!!%!!!!")!!!U!!!!-!!!!!!!!!!!!!!%!"Q!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
@@ -90,7 +90,7 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
 	</Item>
-	<Item Name="Queue Nested Status SubVI.vi" Type="VI" URL="../Queue Nested Status SubVI.vi">
+	<Item Name="Queue Nested Status Core.vi" Type="VI" URL="../Queue Nested Status Core.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'.!!!!#A!:1!-!%F&amp;V:86F)%ZF=X2F:#"$&lt;X6O&gt;!!!'%!Q`````Q^.=W=A53"%6F)A17RJ98-!)E"!!!(`````!!%5586F&gt;75A4G6T&gt;'6E)%&amp;M;7&amp;T:8-!!""!)1J"&lt;HEA28BJ=X1`!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AVK:82U&lt;#ZM&gt;G.M98.T!!FK:82U&lt;#"P&gt;81!"!!!!%B!=!!?!!!D#WJF&gt;(2M,GRW&lt;'FC&amp;6&amp;V:86F)%VB;7RC&lt;XAO&lt;(:D&lt;'&amp;T=Q!&lt;;G6U&gt;'QO&lt;(:M;7)[47&amp;J&lt;'*P?#ZM&gt;G.M98.T!"F!=!!A!!%!"A!.586F&gt;75A47&amp;J&lt;'*P?!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AVK:82U&lt;#ZM&gt;G.M98.T!!BK:82U&lt;#"J&lt;A!!91$Q!!Q!!!!#!!-!"!!&amp;!!5!"1!&amp;!!5!"1!(!!A$!!"Y!!!*!!!!#1!!!!E!!!!.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%!!!!")!!!U!!!!-!!!!!!!!!!!!!!%!#1!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
@@ -100,13 +100,22 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
 	</Item>
 	<Item Name="Queue Is Nested.vi" Type="VI" URL="../Queue Is Nested.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#S!!!!"1!%!!!!&amp;E!B%&amp;&amp;V:86F)%FT)%ZF=X2F:$]!!!Z!-0````]&amp;17RJ98-!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!);G6U&gt;'QA;7Y!!&amp;1!]!!-!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A!$!A!!?!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!B!!!!#1!!!!!!%!"!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$A!!!!"A!%!!!!&amp;E!B%&amp;&amp;V:86F)%FT)%ZF=X2F:$]!!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#7JF&gt;(2M)'^V&gt;!!/1$$`````"5&amp;M;7&amp;T!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#'JF&gt;(2M)'FO!!"5!0!!$!!!!!!!!1!#!!!!!!!!!!!!!!!!!!-!"!)!!(A!!!!!!!!!!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)1!!!!E!!!!!!"!!5!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
+	</Item>
+	<Item Name="Queue Is Nested Core.vi" Type="VI" URL="../Queue Is Nested Core.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;/!!!!#!!%!!!!&amp;E!B%&amp;&amp;V:86F)%FT)%ZF=X2F:$]!!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#7JF&gt;(2M)'^V&gt;!!/1$$`````"5&amp;M;7&amp;T!%B!=!!?!!!D#WJF&gt;(2M,GRW&lt;'FC&amp;6&amp;V:86F)%VB;7RC&lt;XAO&lt;(:D&lt;'&amp;T=Q!&lt;;G6U&gt;'QO&lt;(:M;7)[47&amp;J&lt;'*P?#ZM&gt;G.M98.T!"F!=!!A!!%!"!!.586F&gt;75A47&amp;J&lt;'*P?!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AVK:82U&lt;#ZM&gt;G.M98.T!!BK:82U&lt;#"J&lt;A!!91$Q!!Q!!!!!!!%!!A!!!!!!!!!!!!!!!Q!&amp;!!9$!!"Y!!!!!!!!!!!!!!E!!!!.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!%3!!!!%!!!!")!!!U!!!!-!!!!!!!!!!!!!!%!"Q!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
 	</Item>
 	<Item Name="Queue Self Alias.vi" Type="VI" URL="../Queue Self Alias.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#I!!!!"!!%!!!!'E!Q`````R"2&gt;76V:3"4:7RG)%&amp;M;7&amp;T!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AVK:82U&lt;#ZM&gt;G.M98.T!!BK:82U&lt;#"J&lt;A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!!!!!!!!!!!!!!)#!!"Y!!!!!!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!$!!!!!!</Property>
