@@ -20,7 +20,6 @@
 		<Item Name="jettl.lvlib:Override Error.lvlib:Override Error.lvclass" Type="Parent" URL="../../Override Error/Override Error/Override Error.lvclass"/>
 		<Item Name="jettl.lvlib:Setup.lvlib:Setup.lvclass" Type="Parent" URL="../../Setup/Setup/Setup.lvclass"/>
 		<Item Name="jettl.lvlib:Teardown.lvlib:Teardown.lvclass" Type="Parent" URL="../../Teardown/Teardown/Teardown.lvclass"/>
-		<Item Name="jettl.lvlib:Update Queue Nested.lvlib:Update Queue Nested.lvclass" Type="Parent" URL="../../Update Queue Nested/Update Queue Nested/Update Queue Nested.lvclass"/>
 	</Item>
 	<Item Name="Event Receive.vi" Type="VI" URL="../Event Receive.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;=!!!!"Q!%!!!!/%"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!N.=W=O&lt;(:D&lt;'&amp;T=Q!?1(!!'1!"!!%328:F&lt;H1A48.H)&amp;.U=G&amp;U:7&gt;Z!!!S1(!!&amp;Q!!!!%!!1!!!_A!!B^.=W=A5X2S982F:XEA28:F&lt;H1A5G6H;8.U=G&amp;U;7^O!$J!=!!?!!!B#WJF&gt;(2M,GRW&lt;'FC%U6W:7ZU)'JF&gt;(2M,GRW9WRB=X-!$U6W:7ZU)'JF&gt;(2M)'^V&gt;!![1(!!(A!!)1NK:82U&lt;#ZM&gt;GRJ9B.&amp;&gt;G6O&gt;#"K:82U&lt;#ZM&gt;G.M98.T!!Z&amp;&gt;G6O&gt;#"K:82U&lt;#"J&lt;A!!6!$Q!!Q!!!!!!!-!"!!!!!!!!!!!!!!!!!!!!!5#!!"Y!!!!!!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!'!!!!!!</Property>

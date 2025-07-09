@@ -21,9 +21,6 @@
 	<Item Name="Event Last Ack.lvlib" Type="Library" URL="../Event Last Ack/Event Last Ack.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Update Queue Nested.lvlib" Type="Library" URL="../Update Queue Nested/Update Queue Nested.lvlib">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="jettl.lvclass" Type="LVClass" URL="../jettl/jettl.lvclass"/>
 	<Item Name="Queue jettl.lvclass" Type="LVClass" URL="../Queue jettl/Queue jettl.lvclass"/>
 	<Item Name="Event jettl.lvclass" Type="LVClass" URL="../Event jettl/Event jettl.lvclass"/>
@@ -89,6 +86,18 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Delete Queue Mailbox.vi" Type="VI" URL="../Delete Queue Mailbox.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Insert Created.vi" Type="VI" URL="../Insert Created.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Remove Created.vi" Type="VI" URL="../Remove Created.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Insert Event.vi" Type="VI" URL="../Insert Event.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Remove Event.vi" Type="VI" URL="../Remove Event.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 </Library>
