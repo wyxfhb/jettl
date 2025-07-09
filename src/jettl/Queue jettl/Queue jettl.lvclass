@@ -34,6 +34,15 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 	</Item>
+	<Item Name="Queue Loop.vi" Type="VI" URL="../Queue Loop.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$B!!!!"!!%!!!!/E"Q!"Y!!#%,;G6U&gt;'QO&lt;(:M;7)4586F&gt;75A;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!0586F&gt;75A;G6U&gt;'QA&lt;X6U!$J!=!!?!!!B#WJF&gt;(2M,GRW&lt;'FC%V&amp;V:86F)'JF&gt;(2M,GRW9WRB=X-!$F&amp;V:86F)'JF&gt;(2M)'FO!!"B!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A-!!(A!!!!!!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%A!!$1!!!!Q!!!!!!!!!!!!!!1!$!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
+	</Item>
 	<Item Name="Queue Receive.vi" Type="VI" URL="../Queue Receive.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%/!!!!"1!%!!!!/E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!R.=W=A5X2S982F:XE!!$J!=!!?!!!B#WJF&gt;(2M,GRW&lt;'FC%V&amp;V:86F)'JF&gt;(2M,GRW9WRB=X-!$V&amp;V:86F)'JF&gt;(2M)'^V&gt;!![1(!!(A!!)1NK:82U&lt;#ZM&gt;GRJ9B.2&gt;76V:3"K:82U&lt;#ZM&gt;G.M98.T!!Z2&gt;76V:3"K:82U&lt;#"J&lt;A!!6!$Q!!Q!!!!!!!%!!A!!!!!!!!!!!!!!!!!!!!-#!!"Y!!!!!!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!%!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>

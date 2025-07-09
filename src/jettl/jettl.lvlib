@@ -85,9 +85,6 @@
 	<Item Name="Get Event.vi" Type="VI" URL="../Get Event.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Delete Queue Mailbox.vi" Type="VI" URL="../Delete Queue Mailbox.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="Insert Created.vi" Type="VI" URL="../Insert Created.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
@@ -98,6 +95,9 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Remove Event.vi" Type="VI" URL="../Remove Event.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Delete Queue Mailbox.vi" Type="VI" URL="../Delete Queue Mailbox.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 </Library>
