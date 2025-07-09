@@ -37,6 +37,21 @@
 	<Item Name="Alias Does Not Exist Error.vi" Type="VI" URL="../Alias Does Not Exist Error.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Queue Caller Core.vi" Type="VI" URL="../Queue Caller Core.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Queue Self Core.vi" Type="VI" URL="../Queue Self Core.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Queue Nested Core.vi" Type="VI" URL="../Queue Nested Core.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Queue Nested Status Core.vi" Type="VI" URL="../Queue Nested Status Core.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Queue Is Nested Core.vi" Type="VI" URL="../Queue Is Nested Core.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Queue Obtain.vi" Type="VI" URL="../Queue Obtain.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
@@ -61,58 +76,7 @@
 	<Item Name="Event Destroy.vi" Type="VI" URL="../Event Destroy.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Queue Mailbox.lvclass" Type="LVClass" URL="../Queue Mailbox/Queue Mailbox.lvclass">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="New Queue Mailbox.vi" Type="VI" URL="../New Queue Mailbox.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Get Self Alias.vi" Type="VI" URL="../Get Self Alias.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Get Self.vi" Type="VI" URL="../Get Self.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Get Creator Alias.vi" Type="VI" URL="../Get Creator Alias.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Get Creator.vi" Type="VI" URL="../Get Creator.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Get Created.vi" Type="VI" URL="../Get Created.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Get Event.vi" Type="VI" URL="../Get Event.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Insert Created.vi" Type="VI" URL="../Insert Created.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Remove Created.vi" Type="VI" URL="../Remove Created.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Insert Event.vi" Type="VI" URL="../Insert Event.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Remove Event.vi" Type="VI" URL="../Remove Event.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Delete Queue Mailbox.vi" Type="VI" URL="../Delete Queue Mailbox.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Caller Core.vi" Type="VI" URL="../Queue Caller Core.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Self Core.vi" Type="VI" URL="../Queue Self Core.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Nested Core.vi" Type="VI" URL="../Queue Nested Core.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Nested Status Core.vi" Type="VI" URL="../Queue Nested Status Core.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Is Nested Core.vi" Type="VI" URL="../Queue Is Nested Core.vi">
+	<Item Name="Mailbox.lvlib" Type="Library" URL="../Mailbox/Mailbox.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 </Library>
