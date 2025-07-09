@@ -66,4 +66,13 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082667520</Property>
 	</Item>
+	<Item Name="Event Queue Self Alias.vi" Type="VI" URL="../Event Queue Self Alias.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$O!!!!"1!%!!!!'E!Q`````R"2&gt;76V:3"4:7RG)%&amp;M;7&amp;T!!![1(!!(A!!)1NK:82U&lt;#ZM&gt;GRJ9B.&amp;&gt;G6O&gt;#"K:82U&lt;#ZM&gt;G.M98.T!!^&amp;&gt;G6O&gt;#"K:82U&lt;#"P&gt;81!/E"Q!"Y!!#%,;G6U&gt;'QO&lt;(:M;7)428:F&lt;H1A;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!/28:F&lt;H1A;G6U&gt;'QA;7Y!!&amp;1!]!!-!!!!!!!"!!)!!!!!!!!!!!!!!!!!!!!$!A!!?!!!!!!!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!"!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">16777352</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
+	</Item>
 </LVClass>
