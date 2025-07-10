@@ -43,7 +43,7 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Create Base Queue.vi" Type="VI" URL="../Create Base Queue.vi"/>
-	<Item Name="Queue Caller.vi" Type="VI" URL="../Queue Caller.vi">
+	<Item Name="Creator Queue.vi" Type="VI" URL="../Creator Queue.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Queue Self.vi" Type="VI" URL="../Queue Self.vi">
