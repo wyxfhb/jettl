@@ -43,19 +43,4 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Create Base Queue.vi" Type="VI" URL="../Create Base Queue.vi"/>
-	<Item Name="Creator Queue.vi" Type="VI" URL="../Creator Queue.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Self.vi" Type="VI" URL="../Queue Self.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Nested.vi" Type="VI" URL="../Queue Nested.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Nested Status.vi" Type="VI" URL="../Queue Nested Status.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Is Nested.vi" Type="VI" URL="../Queue Is Nested.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 </Library>
