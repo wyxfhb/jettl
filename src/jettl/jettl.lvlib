@@ -46,19 +46,19 @@
 	<Item Name="Alias Does Not Exist Error.vi" Type="VI" URL="../Alias Does Not Exist Error.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Queue Caller Core.vi" Type="VI" URL="../Queue Caller Core.vi">
+	<Item Name="Queue Caller.vi" Type="VI" URL="../Queue Caller.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Queue Self Core.vi" Type="VI" URL="../Queue Self Core.vi">
+	<Item Name="Queue Self.vi" Type="VI" URL="../Queue Self.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Queue Nested Core.vi" Type="VI" URL="../Queue Nested Core.vi">
+	<Item Name="Queue Nested.vi" Type="VI" URL="../Queue Nested.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Queue Nested Status Core.vi" Type="VI" URL="../Queue Nested Status Core.vi">
+	<Item Name="Queue Nested Status.vi" Type="VI" URL="../Queue Nested Status.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Queue Is Nested Core.vi" Type="VI" URL="../Queue Is Nested Core.vi">
+	<Item Name="Queue Is Nested.vi" Type="VI" URL="../Queue Is Nested.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 </Library>
