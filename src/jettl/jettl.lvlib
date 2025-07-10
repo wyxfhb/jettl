@@ -76,7 +76,7 @@
 	<Item Name="Event Destroy.vi" Type="VI" URL="../Event Destroy.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Mailbox.lvlib" Type="Library" URL="../Mailbox/Mailbox.lvlib">
+	<Item Name="Queue Mailbox.lvlib" Type="Library" URL="../Queue Mailbox/Queue Mailbox.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 </Library>
