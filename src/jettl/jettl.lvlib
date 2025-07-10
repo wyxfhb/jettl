@@ -28,6 +28,15 @@
 	<Item Name="Base Event jettl.lvlib" Type="Library" URL="../Base Event jettl/Base Event jettl.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Queue Mailbox.lvlib" Type="Library" URL="../Queue Mailbox/Queue Mailbox.lvlib">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Self Queue.lvlib" Type="Library" URL="../Self Queue/Self Queue.lvlib">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Self Event.lvlib" Type="Library" URL="../Self Event/Self Event.lvlib">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Count Actors.vi" Type="VI" URL="../Count Actors.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
@@ -50,24 +59,6 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Queue Is Nested Core.vi" Type="VI" URL="../Queue Is Nested Core.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Event Create.vi" Type="VI" URL="../Event Create.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Event Generate.vi" Type="VI" URL="../Event Generate.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Event Msg.vi" Type="VI" URL="../Event Msg.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Event Destroy.vi" Type="VI" URL="../Event Destroy.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Mailbox.lvlib" Type="Library" URL="../Queue Mailbox/Queue Mailbox.lvlib">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Self Queue.lvlib" Type="Library" URL="../Self Queue/Self Queue.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 </Library>
