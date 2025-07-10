@@ -42,6 +42,7 @@
 	<Item Name="Alias Does Not Exist Error.vi" Type="VI" URL="../Alias Does Not Exist Error.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Create Base Queue.vi" Type="VI" URL="../Create Base Queue.vi"/>
 	<Item Name="Queue Caller.vi" Type="VI" URL="../Queue Caller.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
@@ -57,5 +58,4 @@
 	<Item Name="Queue Is Nested.vi" Type="VI" URL="../Queue Is Nested.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Create Base Queue.vi" Type="VI" URL="../Create Base Queue.vi"/>
 </Library>

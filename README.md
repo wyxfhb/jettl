@@ -80,3 +80,6 @@ A shift in the developers' mindset: Develop message methods at the interface lev
 Things that can change for the message:
 1. `Rename jettl Msg`: right click library
 2. `Change Inputs For jettl Msg`: right click interface method (change connector pane in interface method first)
+
+
+### in message classes, take away the `_` leading the method name

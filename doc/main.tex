@@ -61,6 +61,16 @@ In particular, there exist design patterns such as the Strategy Pattern, State P
     \item jettl Event Actor: Creates, Registers, Unregisters, and Destroys its own references
 \end{itemize}
 
+\section{Last Ack}
+\label{sec:last-ack}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/queue-mailbox-duplicates}
+    \caption{There exist duplicates in the Queue Mailbox and respective Base Queue jettl and Base Event jettl because the Last Ack message uses the alias of the closed down actor and this cannot be in the Queue Mailbox DVR since the DVR will have already been released.
+        So there exists duplicates for the Self Queue Alias, Self Queue, Self Event Alias, and Self Event so that the Last Ack can still access these, even after the DVRs have been released.}
+    \label{fig:queue-mailbox-duplicates}
+\end{figure}
 
 \section{Future Scope}
 \label{sec:future-scope}
