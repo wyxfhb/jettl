@@ -52,18 +52,6 @@
 	<Item Name="Queue Is Nested Core.vi" Type="VI" URL="../Queue Is Nested Core.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Queue Obtain.vi" Type="VI" URL="../Queue Obtain.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Enqueue.vi" Type="VI" URL="../Queue Enqueue.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Dequeue.vi" Type="VI" URL="../Queue Dequeue.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Queue Release.vi" Type="VI" URL="../Queue Release.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="Event Create.vi" Type="VI" URL="../Event Create.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
@@ -77,6 +65,9 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Queue Mailbox.lvlib" Type="Library" URL="../Queue Mailbox/Queue Mailbox.lvlib">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Self Queue.lvlib" Type="Library" URL="../Self Queue/Self Queue.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 </Library>
