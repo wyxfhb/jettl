@@ -16,7 +16,7 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="jettl.lvlib:Merge Error.lvlib:Merge Error.lvclass" Type="Parent" URL="../../Merge Error/Merge Error/Merge Error.lvclass"/>
+		<Item Name="jettl Msg Merge Error.lvlib:Merge Error.lvclass" Type="Parent" URL="../../../jettl Msg Merge Error/Merge Error/Merge Error.lvclass"/>
 	</Item>
 	<Item Name="Get Error.vi" Type="VI" URL="../Get Error.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$(!!!!"Q!%!!!!$%!B"H.U982V=Q!!#U!$!!2D&lt;W2F!!!11$$`````"H.P&gt;8*D:1!!%E"1!!-!!1!#!!-&amp;28*S&lt;X)!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!);G6U&gt;'QA;7Y!!&amp;1!]!!-!!!!!!!%!!!!!!!!!!!!!!!!!!!!!!!&amp;!A!!?!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!"A!!!!!</Property>
