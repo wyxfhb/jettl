@@ -239,12 +239,3 @@ old_doc -> misc
 
 refer to scarfe notes
 antidoc etc
-
-
-
-
-
-Queue Create -> Create Queue
-Event Create -> Create Event
-Queue Last Ack -> Last Ack Queue
-Event Last Ack -> Last Ack Event
