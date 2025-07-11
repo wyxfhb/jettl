@@ -25,7 +25,7 @@
 		<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="../jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
 		<Item Name="jettl Msg Merge Error.lvlib" Type="Library" URL="../jettl Msg Merge Error/jettl Msg Merge Error.lvlib"/>
 		<Item Name="jettl Msg Override Error.lvlib" Type="Library" URL="../jettl Msg Override Error/jettl Msg Override Error.lvlib"/>
-		<Item Name="jettl Msg Queue Create.lvlib" Type="Library" URL="../jettl Msg Queue Create/jettl Msg Queue Create.lvlib"/>
+		<Item Name="jettl Msg Create Queue.lvlib" Type="Library" URL="../jettl Msg Create Queue/jettl Msg Create Queue.lvlib"/>
 		<Item Name="jettl Msg Event Create.lvlib" Type="Library" URL="../jettl Msg Event Create/jettl Msg Event Create.lvlib"/>
 		<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
