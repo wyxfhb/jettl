@@ -83,3 +83,30 @@ Things that can change for the message:
 
 
 ### in message classes, take away the `_` leading the method name
+
+
+
+
+
+This should be where the new queue nested should be sent via event to update the Queue Nested in jettl Event Actor. Yes, it is not instant, but gives the Event Actor(s) the reference so they can send messages to this newly created Queue Actor. Beware, here with these being async processes, temporal issue may arise..
+
+
+Comments about the Queue Mailbox.
+Ideally speaking, there would be a Mailbox interface that Queue Mailbox implements.
+But since the interface checkbox is checked and cannot be changed: "Data Value References - Restrictions On New and Delete: Enabled: Restrict references of this class type to member VIs of this class", that means that Interfaces cannot be a DVR.
+Further, this immediately voids any dependency inversion since an object in a DVR cannot change it's object, by definition such as what dependency inversion does.
+Therefore, the Queue Mailbox in the Queue Mailbox library cannot be marked private, allowing other classes in the jettl library have access to it via the DVR.
+This really isn't a problem though since the Queue Mailbox library is marked private, so nothing outside the jettl can use this class and DVR methods, encapsulating the DVR, as intended by jettl.
+
+
+
+
+
+post question about renaming project method
+
+
+
+Queue Create -> Create Queue
+Event Create -> Create Event
+Queue Last Ack -> Last Ack Queue
+Event Last Ack -> Last Ack Event
