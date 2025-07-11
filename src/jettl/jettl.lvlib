@@ -16,8 +16,8 @@
 	</Item>
 	<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="../Msg Strategy/Msg Strategy.lvclass"/>
 	<Item Name="jettl.lvclass" Type="LVClass" URL="../jettl/jettl.lvclass"/>
-	<Item Name="Queue jettl.lvclass" Type="LVClass" URL="../Queue jettl/Queue jettl.lvclass"/>
-	<Item Name="Event jettl.lvclass" Type="LVClass" URL="../Event jettl/Event jettl.lvclass"/>
+	<Item Name="Queue.lvclass" Type="LVClass" URL="../Queue/Queue.lvclass"/>
+	<Item Name="Event.lvclass" Type="LVClass" URL="../Event/Event.lvclass"/>
 	<Item Name="Base Queue jettl.lvlib" Type="Library" URL="../Base Queue jettl/Base Queue jettl.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
