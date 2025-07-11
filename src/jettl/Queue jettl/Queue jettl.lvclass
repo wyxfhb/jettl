@@ -22,7 +22,7 @@
 		<Item Name="jettl Msg Setup.lvlib:Setup.lvclass" Type="Parent" URL="../../../jettl Msg Setup/Setup/Setup.lvclass"/>
 		<Item Name="jettl Msg Teardown.lvlib:Teardown.lvclass" Type="Parent" URL="../../../jettl Msg Teardown/Teardown/Teardown.lvclass"/>
 		<Item Name="jettl.lvlib:jettl Msg Event Last Ack.lvlib:Event Last Ack.lvclass" Type="Parent" URL="../../jettl Msg Event Last Ack/Event Last Ack/Event Last Ack.lvclass"/>
-		<Item Name="jettl.lvlib:jettl Msg Queue Last Ack.lvlib:Queue Last Ack.lvclass" Type="Parent" URL="../../jettl Msg Queue Last Ack/Queue Last Ack/Queue Last Ack.lvclass"/>
+		<Item Name="jettl.lvlib:jettl Msg Last Ack Queue.lvlib:Last Ack Queue.lvclass" Type="Parent" URL="../../jettl Msg Last Ack Queue/Last Ack Queue/Last Ack Queue.lvclass"/>
 		<Item Name="jettl.lvlib:jettl.lvclass" Type="Parent" URL="../../jettl/jettl.lvclass"/>
 	</Item>
 	<Item Name="Decorate.vi" Type="VI" URL="../Decorate.vi">
