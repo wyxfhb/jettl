@@ -106,10 +106,7 @@ post question about renaming project method
 
 
 
-Queue Create -> Create Queue
-Event Create -> Create Event
-Queue Last Ack -> Last Ack Queue
-Event Last Ack -> Last Ack Event
+
 
 
 
@@ -226,7 +223,28 @@ These are only convenience in the LabVIEW project.
 
 
 
-
+### Error idea to consider
 There might be unnecessary overhead with the `Is Error.vi` in the `Merge Error` and `Override Error` overrides.
 Instead this `Is Error` can be put at the front of the `Handle Error.vi` override.
 Note that there are four occurrences of these.
+
+
+
+Delete images-readme
+
+
+old_doc -> misc
+- combine some docs into main
+
+
+refer to scarfe notes
+antidoc etc
+
+
+
+
+
+Queue Create -> Create Queue
+Event Create -> Create Event
+Queue Last Ack -> Last Ack Queue
+Event Last Ack -> Last Ack Event
