@@ -16,8 +16,8 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
+		<Item Name="jettl Msg Create Event.lvlib:Create Event.lvclass" Type="Parent" URL="../../../jettl Msg Create Event/Create Event/Create Event.lvclass"/>
 		<Item Name="jettl Msg Create Queue.lvlib:Create Queue.lvclass" Type="Parent" URL="../../../jettl Msg Create Queue/Create Queue/Create Queue.lvclass"/>
-		<Item Name="jettl Msg Event Create.lvlib:Event Create.lvclass" Type="Parent" URL="../../../jettl Msg Event Create/Event Create/Event Create.lvclass"/>
 		<Item Name="jettl Msg Override Error.lvlib:Override Error.lvclass" Type="Parent" URL="../../../jettl Msg Override Error/Override Error/Override Error.lvclass"/>
 		<Item Name="jettl Msg Setup.lvlib:Setup.lvclass" Type="Parent" URL="../../../jettl Msg Setup/Setup/Setup.lvclass"/>
 		<Item Name="jettl Msg Teardown.lvlib:Teardown.lvclass" Type="Parent" URL="../../../jettl Msg Teardown/Teardown/Teardown.lvclass"/>
