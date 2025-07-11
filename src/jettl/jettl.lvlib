@@ -11,7 +11,7 @@
 	<Item Name="jettl Msg Last Ack Queue.lvlib" Type="Library" URL="../jettl Msg Last Ack Queue/jettl Msg Last Ack Queue.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="jettl Msg Event Last Ack.lvlib" Type="Library" URL="../jettl Msg Event Last Ack/jettl Msg Event Last Ack.lvlib">
+	<Item Name="jettl Msg Last Ack Event.lvlib" Type="Library" URL="../jettl Msg Last Ack Event/jettl Msg Last Ack Event.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="../Msg Strategy/Msg Strategy.lvclass"/>

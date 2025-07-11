@@ -21,7 +21,7 @@
 		<Item Name="jettl Msg Queue Create.lvlib:Queue Create.lvclass" Type="Parent" URL="../../../jettl Msg Queue Create/Queue Create/Queue Create.lvclass"/>
 		<Item Name="jettl Msg Setup.lvlib:Setup.lvclass" Type="Parent" URL="../../../jettl Msg Setup/Setup/Setup.lvclass"/>
 		<Item Name="jettl Msg Teardown.lvlib:Teardown.lvclass" Type="Parent" URL="../../../jettl Msg Teardown/Teardown/Teardown.lvclass"/>
-		<Item Name="jettl.lvlib:jettl Msg Event Last Ack.lvlib:Event Last Ack.lvclass" Type="Parent" URL="../../jettl Msg Event Last Ack/Event Last Ack/Event Last Ack.lvclass"/>
+		<Item Name="jettl.lvlib:jettl Msg Last Ack Event.lvlib:Last Ack Event.lvclass" Type="Parent" URL="../../jettl Msg Last Ack Event/Last Ack Event/Last Ack Event.lvclass"/>
 		<Item Name="jettl.lvlib:jettl Msg Last Ack Queue.lvlib:Last Ack Queue.lvclass" Type="Parent" URL="../../jettl Msg Last Ack Queue/Last Ack Queue/Last Ack Queue.lvclass"/>
 		<Item Name="jettl.lvlib:jettl.lvclass" Type="Parent" URL="../../jettl/jettl.lvclass"/>
 	</Item>
