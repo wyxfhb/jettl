@@ -110,3 +110,123 @@ Queue Create -> Create Queue
 Event Create -> Create Event
 Queue Last Ack -> Last Ack Queue
 Event Last Ack -> Last Ack Event
+
+
+
+Create the necessary methods for sending messages:
+Find and replace the old ones :)
+
+
+
+
+
+
+TODO jettl Test Panel
+Automatically generated test panel providing buttons / necessary inputs for all messages the actor expects.
+have the test panel display payloads from messages received.
+Could rename message to `NAME jettl Msg.lvlib` for script to find messages.
+This “Test Panel” can be a specialty “Test Panel Event jettl” which communicates with the “Developed Queue jettl” or “Developed Event jettl”. 
+These jettls (Actors) are designed to be modular without dependencies of other jettls.
+Of some test bench with a “Unit Test Queue jettl” which creates both the “Developed Queue jettl” and the “Test Panel Event jettl” for the front panel testing you refer to.
+This is excellent and shows very quickly which messages belong to the jettl.. and potentially which messages it is able to send (since these are static on the block diagram).
+Since the jettls use the decorator pattern, there might be some merit to having a “Debug jettl” which can act as a tertiary wrapping layer around any jettl
+
+
+
+TODO: Observer Pattern
+When sending the `Subscribe Msg` up the tree and down to the Actor to be subscribed to, also send with it the Queue Self so that the jettl that is created can `Unsubscribe`.
+This `Unsubscribe` is like the Last Ack, but to the creator of the Queue jettl across the tree.
+Yes, this `Queue jettl` across the tree gets `Unsubscribe` AND the actual Queue jettl Creator gets the Last Ack.
+
+Communicating across the tree requires the `Observer jettl`.
+Communicating across the tree can happen with `Queue jettls` and `Event jettls` (Ex: Update front panel)
+`Observer Queue jettl` has Queues under the hood, but act as the observer pattern, limited like Event jettls where it cannot create jettls AND only have on their private data the Observer jettl DVR. Note that Observer Queue jettls CAN send over Events across the tree
+
+To fulfill the observer requirement, the necessary Mailboxes are sent to the Mediator
+
+
+
+### Batch message necessary..? Or developer should make custom message that executes 
+Enqueues? Message methods:
+back to back to back to ..
+This is a single message that is sent AND this message contains 
+
+
+
+### jettl conventions:
+Icon text: (NRE, SCRE, PCRE)
+Label used for ALL methods / classes
+boarder is RED for private methods / classes
+
+That means the text is always BLACK, boarders can be RED.
+
+
+
+Access Scope
+Public and Private
+
+Rule:
+- Nested Libraries should be marked private, otherwise, put the nested library outside the containing library
+- Classes should be within a library AND marked private
+
+Libraries / Interfaces / Classes / Methods are private if they themselves are private
+
+If Library containing is private, then banner text is RED.
+
+Banners / Banner Text
+Library
+- Private: red text. Public: black text
+Interface
+- Private: red text. Public: black text
+Class
+- Private: red text. Public: black text
+Method
+- Private: red text. Public: black text
+Control
+- Private: red text. Public: black text
+
+
+
+Label: Remove “.vi”
+
+
+Icon
+DD       DD    (or combos of “  “, DD, SD)
+SCRE
+
+
+
+
+### no assembler / mediator?
+
+
+###
+Maybe instead of sharing the individual mailboxes with Event jettls.. there is an object that holds them inside and this is also a by-reference that has only one address so if an Event jettl uses the (i.e.) Created Queue Mailbox, then it is already updated without message since pointing to the reference that holds the references to all the Queue jettls Mailboxes
+
+
+
+### Assember
+Maybe there is some assembler, with a map inside holding the references of all the DVR maps? They’re unique 
+![alt text](image.png)
+
+
+### Observer
+With Observer Actors: should eliminate the developers use of DVRs since cross tree communication is permitted
+
+
+
+virtual folders are not saved on disc.
+These are only convenience in the LabVIEW project.
+
+
+
+
+
+
+
+
+
+
+There might be unnecessary overhead with the `Is Error.vi` in the `Merge Error` and `Override Error` overrides.
+Instead this `Is Error` can be put at the front of the `Handle Error.vi` override.
+Note that there are four occurrences of these.

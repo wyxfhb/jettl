@@ -21,12 +21,12 @@
 			<Item Name="Hello World Event.lvlib" Type="Library" URL="../Hello World/Hello World Event/Hello World Event.lvlib"/>
 			<Item Name="Main Hello World.vi" Type="VI" URL="../Hello World/Main Hello World.vi"/>
 		</Item>
-		<Item Name="jettl Msg Queue Create.lvlib" Type="Library" URL="../jettl Msg Queue Create/jettl Msg Queue Create.lvlib"/>
-		<Item Name="jettl Msg Event Create.lvlib" Type="Library" URL="../jettl Msg Event Create/jettl Msg Event Create.lvlib"/>
 		<Item Name="jettl Msg Setup.lvlib" Type="Library" URL="../jettl Msg Setup/jettl Msg Setup.lvlib"/>
 		<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="../jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
 		<Item Name="jettl Msg Merge Error.lvlib" Type="Library" URL="../jettl Msg Merge Error/jettl Msg Merge Error.lvlib"/>
 		<Item Name="jettl Msg Override Error.lvlib" Type="Library" URL="../jettl Msg Override Error/jettl Msg Override Error.lvlib"/>
+		<Item Name="jettl Msg Queue Create.lvlib" Type="Library" URL="../jettl Msg Queue Create/jettl Msg Queue Create.lvlib"/>
+		<Item Name="jettl Msg Event Create.lvlib" Type="Library" URL="../jettl Msg Event Create/jettl Msg Event Create.lvlib"/>
 		<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">

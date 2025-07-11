@@ -32,12 +32,15 @@
 		<Item Name="Remove Created Event.vi" Type="VI" URL="../Remove Created Event.vi"/>
 		<Item Name="Delete.vi" Type="VI" URL="../Delete.vi"/>
 	</Item>
+	<Item Name="Queue Mailbox" Type="Folder">
+		<Item Name="Creator Queue Alias.vi" Type="VI" URL="../Creator Queue Alias.vi"/>
+		<Item Name="Creator Queue.vi" Type="VI" URL="../Creator Queue.vi"/>
+		<Item Name="Created Queues.vi" Type="VI" URL="../Created Queues.vi"/>
+		<Item Name="Status Created Queues.vi" Type="VI" URL="../Status Created Queues.vi"/>
+		<Item Name="Is Created Queue.vi" Type="VI" URL="../Is Created Queue.vi"/>
+		<Item Name="Created Events.vi" Type="VI" URL="../Created Events.vi"/>
+		<Item Name="Status Created Events.vi" Type="VI" URL="../Status Created Events.vi"/>
+		<Item Name="Is Created Event.vi" Type="VI" URL="../Is Created Event.vi"/>
+	</Item>
 	<Item Name="Queue Mailbox.lvclass" Type="LVClass" URL="../Queue Mailbox/Queue Mailbox.lvclass"/>
-	<Item Name="Creator Queue.vi" Type="VI" URL="../Creator Queue.vi"/>
-	<Item Name="Created Queues.vi" Type="VI" URL="../Created Queues.vi"/>
-	<Item Name="Status Created Queues.vi" Type="VI" URL="../Status Created Queues.vi"/>
-	<Item Name="Is Created Queue.vi" Type="VI" URL="../Is Created Queue.vi"/>
-	<Item Name="Created Events.vi" Type="VI" URL="../Created Events.vi"/>
-	<Item Name="Status Created Events.vi" Type="VI" URL="../Status Created Events.vi"/>
-	<Item Name="Is Created Event.vi" Type="VI" URL="../Is Created Event.vi"/>
 </Library>
