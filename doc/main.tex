@@ -37,6 +37,10 @@ It is interface composition, so stick with the same rule set for naming methods.
 
 jettl is the alias for Actor.
 
+Package Best Practices:
+Reuse code between libraries occurs **only** by relation (implementation/association/dependency/composition/aggregation) to interfaces.
+This is dependency inversion through packages to properly decouple them.
+
 \section{Class Hierarchy}
 \label{sec:class-hierarchy}
 
@@ -274,6 +278,11 @@ Check details outlined in the Queue Actor.vi within jettl Queue Actor.lvclass.
 
 This method works for all types of Event Actors.
 In particular, ones with shown panels since the window appearance can be changed between DD methods.
+
+Philosophy:
+An actor messaging should be running for the entirety of the actor.
+That means if you want to change an actors panel, some other entity should be changing its panel for the actor.
+This separates the concerns from the actor and the panel.
 
 \subsection{Window and Subpanel Event Actors}
 \label{subsec:panels}
@@ -530,6 +539,16 @@ For more information on PPLs, Darren Nattinger and Derrick Bommarito have excell
 \section{Opinionated Design Choices}
 \label{sec:opinionated-design-choices}
 
+Virtual folders are not saved on disc.
+These are only convenience in the LabVIEW project.
+
+\subsection{Accessors}
+\label{subsec:accessors}
+
+Since class inheritance is not used, accessors **are not** used very often (aside from tightly coupled classes such as State Pattern).
+This is especially true with Actors.
+Actors are self-contained and will rarely allow other classes to use its attributes.
+
 \subsection{Color Scheme}
 \label{subsec:color-scheme}
 
@@ -538,6 +557,16 @@ For more information on PPLs, Darren Nattinger and Derrick Bommarito have excell
     \item Purple Library: RGB (166,153,182)
     \item Blue Interface: RGB (104,136,190)
     \item Green Class: RGB (110,149,108)
+\end{itemize}
+
+\subsection{Icons}
+\label{subsec:icons}
+
+\begin{itemize}
+    \item Shows interface / class name.
+    \item Color of banner indicates if a library/interface/class container.
+    \item Text of method name.
+    \item Color of method name indicates access scope of method/control.
 \end{itemize}
 
 \subsection{Access Scope}
@@ -554,6 +583,18 @@ Or, stipulation, classes that are held in libraries, the library should be marke
 Red private banner, even if the class is public but in a privately marked library
 This occurs when the classes are tightly coupled, such as with the state pattern.
 
+Rules:
+\begin{itemize}
+    \item Nested Libraries should be marked private, otherwise, put the nested library outside the containing library
+    \item Classes should be within at least one library
+    \item To promote dependency inversion: A class should be marked private, but only public IFF within a private nested library. This keeps from others from using the class in the containing library, BUT breaks true dependency since other classes can use the class in the containing library
+    \item Interfaces and classes must be contained in at least one library
+\end{itemize}
+
+To promote dependency inversion:
+A class can be marked public IFF within a private nested library
+This keeps from others from using the class in the containing library, BUT breaks true dependency since other classes can use the class in the containing library.
+
 \subsection{Errors}
 \label{subsec:errors}
 
@@ -568,11 +609,125 @@ Also, no serialization of errors.
 Instead, it is serialization of the object wire since internally, the class on the interface object in the private data has an error cluster.
 The merge errors method (which internally has the Is Error.vi), dictating if Base jettl should enter the respective Error State.
 
-Best Practices
+Abandoning Data type IO Serialization:
+An indication that the data in the data type will *potentially* be manipulated is when a data type is being passed in and out through a method.
+Unless a data type can be manipulated in an Interface/Subclass/Subinterface, then the data type should not have an output.
 
-Design Decisions
+If a method must be serialized, embrace the flat sequence structure / error case structure.
+DO NOT pass a data type from the input to the output of the method for the *sole purpose* of serialization.
+Understand that other developers will not know your intent and will assume that the data in the datatype will *potentially* be manipulated.
+Not wiring the outputs gets rid of this thinking entirely for better readability.
+Further, do not serialize by using an error cluster input and output.
+This provides difficulty for readability since the developer does not know if the error is being manipulated by the method.
 
-Benchmarks
+No error goes unnoticed in the framework, everything is reported (except for releasing references).
 
+Error Serialization:
+The traditional error input is not allowed.
+A method should execute unconditionally.
+
+
+\section{Queue Mailbox}
+\label{sec:queue-mailbox}
+
+Ideally speaking, there would be a Mailbox interface that Queue Mailbox implements.
+But since the interface checkbox is checked and cannot be changed: "Data Value References - Restrictions On New and Delete: Enabled: Restrict references of this class type to member VI's of this class", that means that Interfaces cannot be a DVR.
+Further, this immediately voids any dependency inversion since an object in a DVR cannot change its object, by definition such as what dependency inversion does.
+Therefore, the Queue Mailbox in the Queue Mailbox library cannot be marked private, allowing other classes in the jettl library have access to it via the DVR.
+This really isn't a problem though since the Queue Mailbox library is marked private, so nothing outside the jettl can use this class and DVR methods, encapsulating the DVR, as intended by jettl.
+
+This should be where the new queue nested should be sent via event to update the Queue Nested in Event Actor.
+Yes, it is not instant, but gives the Event Actor(s) the reference so they can send messages to this newly created Queue Actor.
+Beware, here with these being async processes, temporal issue may arise.
+
+\section{TO ORGANIZE}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/event-loop}
+    \caption{Event Loop. This shows the event loop in jettl.}
+    \label{fig:event-loop}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/palette}
+    \caption{Palette. This shows the palette in jettl.}
+    \label{fig:palette}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/class-hierarchy}
+    \caption{Class Hierarchy. This shows the class hierarchy in jettl.}
+    \label{fig:class-hierarchy}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/queue-actor-method}
+    \caption{Queue Actor Method. This shows the method for the Queue Actor in jettl.}
+    \label{fig:queue-actor-method}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/event-actor-method}
+    \caption{Event Actor Method. This shows the method for the Event Actor in jettl.}
+    \label{fig:event-actor-method}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/alternate-start-async}
+    \caption{Alternate Start Async. This shows the alternate start async in jettl. Note this is outdated naming, but the functionality is still the same.}
+    \label{fig:alternate-start-async}
+\end{figure}
+
+\section{Assembler}
+\label{sec:assembler}
+
+Previous idea to *maybe* get back to..
+Mediator pattern is data flow friendly and DOES NOT cause memory leaks since a created Actor only occurs once at a time, through the mediator.
+And can only shut down if the mediator says that the Actor should shut down.
+The mediator knows who has whose reference to send messages.
+This helps establish the observer pattern too.
+No deadlocks can occur since the mediator operates one by one.
+It is the all-knowing for the program, only forwarding messages to references that the message is intended for.
+An actor ever only knows about the mediator.
+
+Kind of the same framework you currently have.. just that the messages interact with a mediator that then (since it has references to everything) sends the message to the necessary actor.
+Note the Self Actor still has references to its Creator, Self, and Created.. it’s just that the mediator ALSO knows who has these references and easily sends the message to those who have the reference that the message is going to has.
+This provides well for the observer pattern i.e. publisher and subscriber.
+There are effectively two places references are saved: Mediator and Self Actor.
+The Mediator always has the references and shares the necessary duplicates of references that pertain to the Self Actor since these are references to identify the Actor and how the mediator should allow the actor to interact with other actors (though, remember, the Actor doesn't know other actors exist.. only that there is a mediator).
+Further, the mediator knows which methods are messages of the actor.
+This is known at compile time since messages are all through interfaces, allowing the mediator to know which messages the actor can execute by checking which interfaces the actor implements.
+This check happens in the mediator, not in the actor.
+This can be a set of strings relating to the method name?, so upon creation of an actor (by the mediator), the mediator holds the reference to the actor and a *set* of method names that are tied to messages.
+
+Just thinking out loud, here is a concrete component that basically handles the business logic of the system with other sub business logic components that are more specialized / reusable. This can be thought of as some top level actor.
+
+Multiple application instances Idea:
+Application mediator that is between all.
+Or there is always a double layer of mediators?
+Where the top layer facilitates what the lower mediator does.. and when there is another application instance (which has its two mediators), the top mediators of both communicate to each other.
+The top mediators know about each other's references, so they can communicate with each other.
+
+If two applications are talking with each other, there now exist two mediators.
+An idea for this: there is again a mediator that is *above?* these two mediators?
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/assembler-hierarchy}
+    \caption{Assembler. This shows the assembler in jettl.}
+    \label{fig:assembler-hierarchy}
+\end{figure}
+
+Assembler strictly for passing references to other Queue jettls for the Observer Pattern.
+
+Queue jettl cannot create Queue jettls or Event jettls.
+Only the Assembler can create Queue jettls and Event jettls.
+They have to ASK the Assembler to create these.
 
 \end{document}
