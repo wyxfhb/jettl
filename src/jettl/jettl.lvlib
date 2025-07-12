@@ -21,7 +21,7 @@
 	<Item Name="Base Queue.lvlib" Type="Library" URL="../Base Queue/Base Queue.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Base Event jettl.lvlib" Type="Library" URL="../Base Event jettl/Base Event jettl.lvlib">
+	<Item Name="Base Event.lvlib" Type="Library" URL="../Base Event/Base Event.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Queue Mailbox.lvlib" Type="Library" URL="../Queue Mailbox/Queue Mailbox.lvlib">
