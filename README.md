@@ -102,8 +102,6 @@ This really isn't a problem though since the Queue Mailbox library is marked pri
 
 
 
-post question about renaming project method
-
 
 
 
