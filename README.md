@@ -75,13 +75,6 @@ Is there a way to use the **four** videos to refactor the decorator pattern with
 This should be applied to jettl for multiple wrappings of objects inheriting from the same interface.
 
 
-### Message method execution: shared clone
-A shift in the developers' mindset: Develop message methods at the interface level.
-Things that can change for the message:
-1. `Rename jettl Msg`: right click library
-2. `Change Inputs For jettl Msg`: right click interface method (change connector pane in interface method first)
-
-
 ### in message classes, take away the `_` leading the method name
 
 
@@ -124,14 +117,28 @@ Maybe there is some assembler, with a map inside holding the references of all t
 With Observer Actors: should eliminate the developers use of DVRs since cross tree communication is permitted
 
 
-### Error idea to consider
-There might be unnecessary overhead with the `Is Error.vi` in the `Merge Error` and `Override Error` overrides.
-Instead this `Is Error` can be put at the front of the `Handle.vi` override.
-Note that there are four occurrences of these.
+### Scripting
+Go back and go through VI scripting repos
+note: Message method execution should be set to shared clone
+
+Project Right-click:
+- jettl
+   - Msg (Name)
+   - Queue (Name)
+   - Event (Name)
+
+Library Right-click:
+If “jettl Msg xxxxxxxx.lvlib”:
+`jettl Msg Rename`: (this is the normal scripting for message)
+
+Interface Right-click:
+A shift in the developers' mindset: Develop message methods at the interface level.
+If “jettl Msg xxxxxxxx.lvlib” and right clicking interface:
+`jettl Msg Change Inputs`: (this is the normal operation for creating the input connector pane)
+right click interface method (change connector pane in interface method first)
 
 
-### YouTube videos
-After template scripting is done
+### YouTube
 
 Create YouTube video of a light introduction and hello world
 

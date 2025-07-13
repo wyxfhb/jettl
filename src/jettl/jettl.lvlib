@@ -36,11 +36,8 @@
 	<Item Name="Count Actors.vi" Type="VI" URL="../Count Actors.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Alias Already Exists Error.vi" Type="VI" URL="../Alias Already Exists Error.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Alias Does Not Exist Error.vi" Type="VI" URL="../Alias Does Not Exist Error.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="Create Base Queue.vi" Type="VI" URL="../Create Base Queue.vi"/>
+	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 </Library>
