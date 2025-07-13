@@ -41,7 +41,8 @@ Older outdated documentation in the `doc_old` folder.
 *These images are high resolution, click them to zoom in and see the simple algorithm of data flow.*
 
 ![](doc/figures/event-loop.png)
-![](doc/figures/palette.png)
+![](doc/figures/jettl-palette.png)
+![](doc/figures/jettl-palette-msg.png)
 ![](doc/figures/class-hierarchy.png)
 ![](doc/figures/queue-actor-method.png)
 ![](doc/figures/event-actor-method.png)
