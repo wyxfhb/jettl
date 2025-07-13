@@ -123,17 +123,21 @@ note: Message method execution should be set to shared clone
 
 Project Right-click:
 - jettl
-   - Msg (Name)
+   - Msg (Name) (these are public messages)
    - Queue (Name)
    - Event (Name)
 
 Library Right-click:
+- jettl
+   - Msg (Name) (these are private messages)
+
+Library Right-click:
 If “jettl Msg xxxxxxxx.lvlib”:
-`jettl Msg Rename`: (this is the normal scripting for message)
+`jettl Msg Rename`: (this is the normal scripting for message, checks if library is private)
 
 Interface Right-click:
 A shift in the developers' mindset: Develop message methods at the interface level.
-If “jettl Msg xxxxxxxx.lvlib” and right clicking interface:
+If “jettl Msg xxxxxxxx.lvlib” and right-clicking interface:
 `jettl Msg Change Inputs`: (this is the normal operation for creating the input connector pane)
 right click interface method (change connector pane in interface method first)
 

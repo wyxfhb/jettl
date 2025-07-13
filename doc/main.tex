@@ -13,16 +13,28 @@
 
 \tableofcontents
 
+\section{Preface}
+\label{sec:preface}
+
+This document is a maximally detailed self-contained document written for LabVIEW developers seeking a proficient understanding of jettl, object-oriented design, and SOLID principles.
+To develop not only a strong understanding of jettl, but a strong understanding of modern object-oriented design in LabVIEW by teaching the classical and modernly adopted design patterns along with the SOLID principles.
+
 \section{A Community Effort}
 \label{sec:community-effort}
 
 This document is a community effort to create a LabVIEW Actor Model that is interface-composition based.
 The goal is to create a design pattern that is easy to use, understand, and extend.
-This document is a living document, and contributions are welcome.
+This document is a living document, and contributions are welcome through the
+\begin{itemize}
+    \item \href{https://discord.gg/tVkvTyBxqa}{jettl Discord Server}
+    \item \href{https://github.com/natev51/jettl}{jettl Github Repository}
+    \item \href{https://www.google.com/}{jettl User Group(broken link)}
+    \item \href{https://www.linkedin.com/in/nathan-davis-0b020a348/}{Personal LinkedIn}
+\end{itemize}
 
 Along with reading this document, the model will be best understood with examples that occur in projects.
 To show the power of the interface-composition based approach, in particular, examples that are difficult in DQMH, Actor Framework, and other frameworks will be of upmost importance.
-This document is not meant to be a complete guide to the jettl framework, but rather a starting point for understanding the design philosophy and implementation details.
+This document is meant to be a complete guide to the jettl framework, outlining a starting point for understanding the design philosophy and implementation details.
 
 \section{Introduction}
 \label{sec:introduction}
@@ -30,16 +42,27 @@ This document is not meant to be a complete guide to the jettl framework, but ra
 “The fundamental situation is, that we don't know much and some of it's wrong.”
 -Carl Hewitt, creator of Actor Model
 
-Strictly interface composition based asynchronous actor oriented design pattern for LabVIEW Applications.
-jettl also has the newer banners for vis. Easy adoption for the new age of LV developers.
-State pattern with decorators.
-It is interface composition, so stick with the same rule set for naming methods.
-
-jettl is the alias for Actor.
-
 Package Best Practices:
-Reuse code between libraries occurs **only** by relation (implementation/association/dependency/composition/aggregation) to interfaces.
+Reuse code between libraries occurs only by relation (implementation/association/dependency/composition/aggregation) to interfaces.
 This is dependency inversion through packages to properly decouple them.
+
+\section{Getting Started}
+\label{sec:getting-started}
+
+Before going into any of the internals of jettl, it is important to understand the basic concepts of the framework.
+
+\subsection{Hello World}
+\label{subsec:hello-world}
+
+Don't need to send yourself Teardown for Hello World. Just have Teardown method itself at the end of the Hello World Msg.
+Since this message is being sent to yourself, the message will be in the actors library and marked private, so other actors cannot implement this message.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/Hello-World}
+    \caption{This image shows the hello world example.}
+    \label{fig:hello-world}
+\end{figure}
 
 \section{Class Hierarchy}
 \label{sec:class-hierarchy}
@@ -52,18 +75,20 @@ This is dependency inversion through packages to properly decouple them.
 \end{figure}
 
 Fig~\ref{fig:jettl-class-hierarchy} shows the class hierarchy of jettl.
-In particular, there exist design patterns such as the Strategy Pattern, State Pattern, and Decorator Pattern.
 
-\section{Actors}
-\label{sec:actors}
-
-\subsection{Actor Benefits}
-\label{subsec:actor-benefits}
-
+Actors are responsible for their own references. In particular:
 \begin{itemize}
-    \item jettl Queue Actor: Obtains and releases its own references
-    \item jettl Event Actor: Creates, Registers, Unregisters, and Destroys its own references
+    \item Queue: Obtains and releases its own references.
+    \item Event: Creates, Registers, Unregisters, and Destroys its own references.
 \end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[]{figures/project-screenshot}
+    \caption{This image shows the jettl project in LabVIEW.
+        The project contains the jettl library, which contains the Base Queue and Base Event classes, along with the Queue Mailbox class.}
+    \label{fig:project-screenshot}
+\end{figure}
 
 \section{Last Ack}
 \label{sec:last-ack}
@@ -76,39 +101,27 @@ In particular, there exist design patterns such as the Strategy Pattern, State P
     \label{fig:queue-mailbox-duplicates}
 \end{figure}
 
-\section{Future Scope}
-\label{sec:future-scope}
 
-Creating an actor is NOT connected to the actor that creates it.
-Rather, this actor exists on its own in the “liquid” message transport.
-The overall “application” has access to the actor's reference (unique message address)
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/labview_dmitry_message _transport}
-    \caption{LabVIEW Actor Framework Message Transport.}
-    \label{fig:message-transport}
-\end{figure}
-
-As shown in Fig~\ref{fig:message-transport}, it is as though the actors are just objects that “float” in this “liquid” messaging transport.
-So that way you can perform this pub-sub messaging.
-The objects are linked together by “who creates who”.
-
-Same as with the pub-sub pattern, everything is a publisher-subscriber.
-It's just that most relationships are just one way.
-Same with Git, the philosophy is that all branches are created equal
 
 
 \section{Unit Testing}
 \label{sec:unit-testing}
 
-This model is interface-composition based, so unit testing is built in.
-In effect, instead of wrapping the Queue Base with your developed class, you can wrap the Queue Base with a Queue Base Debug class, which is wrapped with your developed class.
-This occurs since these all inherit from the same Queue jettl interface.
+With the Queue interface, this model is interface-composition based with the decorator Pattern, so unit testing is built in by decorating the Base Queue class with other classes that implement the Queue interface or Event interface.
+In effect, instead of wrapping the Base Queue with your Develop class, you can wrap the Base Queue with a Debug Queue class, which is wrapped with your developed class.
+This occurs since these all inherit from the same Queue interface.
 
-This allows for arbitrary wrapping of classes, which is a powerful feature of the interface-composition based design pattern.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/wrapping-idea}
+    \caption{This image shows the Queue Base Debug class and is a wrapper around the Queue Base class for debugging purposes.}
+    \label{fig:wrapping-idea}
+\end{figure}
 
-For the wrapping, it is as easy as have to wire in the object in the decorator method for debugging??
+One can see immediately that an infinite number of classes can be decorated, leading to a powerful feature of the interface-composition based decorator pattern.
+
+\section{Tools}
+\label{sec:tools}
 
 \section{Debugging}
 \label{sec:debugging}
@@ -120,55 +133,17 @@ What a log for which methods are executed, instead of the dialog popups
 
 Two project conditional blocks:
 \begin{enumerate}
-    \item Occurs in all methods
+    \item Occurs in all methods(?)
     \item Occurs only in message specific methods
 \end{enumerate}
 
-These conditionals occur in Self Actor.lvclass.
+These conditionals occur in both Base Queue and Base Event classes.
 If either conditional is true, debug panel that displays the names of actors (columns), along with timestamps (rows) of when methods (data) are executed.
 Think discrete time water fall display.
-
-\section{Git}
-\label{sec:git}
-
-This might be of interest for submodules in git for LabVIEW.
-Find here: \href{https://www.youtube.com/watch?v=iv7WwDgyb0U}{Git Submodules: An Alternative Approach to Code Reuse - Greg Payne - GDevCon2}.
-
-In the repos, use the tag to have different "stable" versions of the repo such as v0.1.1 or v3.8.3
-This allows others to easily look at the different versions of the repo without much thought.
-This could also help with submodules that are referenced in other repos.
-Check this video near the end for reference: \href{https://www.youtube.com/watch?v=tRZGeaHPoaw&list=PLvDxiIkwuMQs0Uu6AIhTGqXahndMmfUyx&index=19}{Git and GitHub Tutorial for Beginners}
-
-\section{Naming Conventions}
-\label{sec:naming-conventions}
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/dmitry_liskov_sub_principle}
-    \caption{This image shows the naming convention for LabVIEW classes and methods.}
-    \label{fig:dmitry-liskov-sub-principle}
-\end{figure}
-
-Noting that Fig~\ref{fig:dmitry-liskov-sub-principle} shows the naming convention for LabVIEW classes and methods.
-\begin{itemize}
-    \item{Library-Name.lvlib}
-    \item{Interface-Name.lvclass}
-    \item{Class-Name.lvclass (control is capital by default!)}
-    \item{method-Name.vi}
-    \item{control-Name.ctl (this control, which is not tied to a class is lowercase!)}
-\end{itemize}
-
-\noindent Note: Avoid underscores and spaces.
 
 
 \section{Examples}
 \label{sec:examples}
-
-\subsection{Hello World}
-\label{subsec:hello-world}
-
-Hello World Example:
-Don't need to send yourself Teardown for Hello World.. just have Teardown method itself at the end of the Hello World Msg.
 
 \subsection{Nested Actors}
 \label{subsec:nested-actors}
@@ -180,13 +155,6 @@ Allen wanted a “Stop Nested Actors Msg”, SLM against.
 There include two methods: Event Nested Teardown.vi and Queue Nested Teardown.vi.
 These two methods are used to teardown the respective nested actors.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/Hello-World}
-    \caption{This image shows the hello world example.}
-    \label{fig:hello-world}
-\end{figure}
-
 \subsection{Sending Event Message}
 \label{subsec:sending-event-message}
 
@@ -196,6 +164,9 @@ Queue actor internally sends a string indicator Event which occurs in event loop
 
 \section{Design Patterns}
 \label{sec:design-patterns}
+
+\subsection{Strategy Pattern}
+\label{subsec:strategy-pattern}
 
 \subsection{State Pattern}
 \label{subsec:state-pattern}
@@ -217,6 +188,9 @@ Context classes should be private, since only interface objects should be compos
 Dependency Inversion Principle.
 Since the context class is private to the library it is in (and the State Interface with its concrete state classes), public static dispatch methods can be used in the context class AND concrete state classes without worrying that they'll be used outside the library since the context class is private.
 
+\subsection{Decorator Pattern}
+\label{subsec:decorator-pattern}
+
 \subsection{Memento Pattern}
 \label{subsec:memento-pattern}
 
@@ -227,14 +201,13 @@ This has not been done, but it is a good idea to implement this in the future.
 Memento, actors shouldn't know about each other, so if the state of a nested is to be saved, then there is a separate message for this since last ack shouldn't know about this.
 Rather, this specialty message couples with last ack if the developer wants this functionality.
 
-\subsection{Decorator Pattern}
-\label{subsec:decorator-pattern}
 
+\subsection{Factory Pattern}
+\label{subsec:factory-pattern}
 
-
-\subsection{Strategy Pattern}
-\label{subsec:strategy-pattern}
-
+The Factory Pattern is used to create instances of actors without specifying the exact class of the actor that will be created.
+This allows for greater modularity in the actor design.
+Easy Factory pattern integration with Queue and Event Interfaces for plug and play architectures.
 
 
 \subsection{Observer Pattern}
@@ -246,6 +219,31 @@ Now, because helper loops are async and own their own references.
 Their references can be passed around the actor tree.
 This provides a modular way of sharing async references, following the observer pattern.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/Observer-idea}
+    \caption{This image shows the observer pattern in jettl. The observer pattern is used to send messages across the actor tree.}
+    \label{fig:observer-idea}
+\end{figure}
+
+An actor is NOT connected to the actor that creates it, but does have its immediate references to send messages.
+Rather, this actor exists on its own in the “liquid” message transport.
+The overall “application” has access to the actor's reference (unique message address), defined from the DVR in the Base classes private data.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/labview_dmitry_message _transport}
+    \caption{LabVIEW Actor Framework Message Transport.}
+    \label{fig:message-transport}
+\end{figure}
+
+As shown in Fig~\ref{fig:message-transport}, it is as though the actors are just objects that “float” in this “liquid” messaging transport.
+So that way you can perform this pub-sub messaging.
+The objects are linked together by “who creates who”.
+
+Same as with the pub-sub pattern, everything is a publisher-subscriber.
+It's just that most relationships are just one way.
+Same with Git, the philosophy is that all branches are created equal.
 
 \section{Event Actors}
 \label{sec:event-actors}
@@ -303,7 +301,7 @@ Since Queue Actors should always be ready to dequeue messages, it should not wai
 Rather, the Queue Actor should create the Synchronous Event Actor.
 When the Event Actor is waiting for response, that's okay since when the event actor is waiting, it is also ready to teardown whenever since it is always waiting for an event.
 
-\subsection{Event Observer}
+\subsection{Event(?) Observer}
 \label{subsec:event-observer}
 
 A Queue Actor has in its project an Event Actor that another Actor can create. And here can send its Event Actor Ref to the Libraries Queue Actor to pump messages across the tree.
@@ -345,15 +343,13 @@ Along with the Stage Pattern used in the Base Notifier.lvclass, State Pattern ca
     \item Running State
 \end{itemize}
 
-\section{GB Transfer Actors}
-\label{sec:gb-transfer-actors}
-
-These Gigabit Transfer Actors are used to transfer high rates of data.
-There is some overhead in the DD that occurs in the Actors.
-This Actor does not use the DD methods for messaging, and uses functional reentrant methods instead.
-
 \section{Messaging}
 \label{sec:messaging}
+
+Messages do not have error wires since errors are handled internally in the Base classes.
+This is because the Base classes have an error cluster in their private data.
+
+These messages follow the Interface Segregation Principle (ISP) by having one method in the messages interface.
 
 All messages come from an interface and follow ISP where one message belongs to one interface.
 If there is a naming issue, that is a good thing.
@@ -374,13 +370,6 @@ To conform to this, the Last Ack messages should be private messages to the Queu
 This is because the Last Ack messages are not intended to be used by external callers.
 Further, this should also be done for the Update Queue Nested message. This should not be used by external callers, but rather only by the Event Base class.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/Need_for_error_msg}
-    \caption{This is the Error message in jettl. This is a custom error message that occurs when an error occurs asynchronously.}
-    \label{fig:error-msg}
-\end{figure}
-
 \subsection{Messages Up and Down the Tree}
 \label{subsec:messages-up-and-down-tree}
 
@@ -399,9 +388,6 @@ This is fundamentally an exercise in dependency inversion.
 Cluster message with type def inside of the library.
 Good practice to put the type def here and NOT in the class that implements the message.
 This takes care of otherwise awful circular dependencies.
-
-\section{Tools}
-\label{sec:tools}
 
 \subsection{Scripting}
 \label{subsec:scripting}
@@ -440,14 +426,6 @@ Error philosophy: Errors occur ONLY from unexpected events.
 For example, the error case in Msg.vi: in the case structure, a custom error saying that a message could not be executed occurs when 'message name' occurs for 'actor name'. This is unexpected behavior since this SHOULD be known at edit time. This is a legit error.
 
 'That was handled, or I wouldn't have been called' - SLM (\href{https://www.youtube.com/watch?v=00TZxeyt8_A}{The Errors of our Ways | Stephen Loftus-Mercer GDevCon N.A. 2021: 52:08})
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/method-template}
-    \caption{Method template. This has no error terminals, and the error cluster is handled internally. This is a different approach to error handling in LabVIEW methods.}
-    \label{fig:method-template}
-\end{figure}
-% have the actual method template here, from the example. These are scripted and autogenerated when one creates an actor.
 
 Wouldn't this make the API more beautiful and easy to understand? Having just the object wire come out of the method, and ONLY the object wire coming out of the method?
 I suppose, adopting the OO paradigm.
@@ -644,42 +622,49 @@ Beware, here with these being async processes, temporal issue may arise.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/event-loop}
+    \includegraphics[width=\textwidth]{figures/event-loop}
     \caption{Event Loop. This shows the event loop in jettl.}
     \label{fig:event-loop}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/palette}
-    \caption{Palette. This shows the palette in jettl.}
-    \label{fig:palette}
+    \includegraphics[]{figures/jettl-palette}
+    \caption{jettl palette.}
+    \label{fig:jettl-palette}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/class-hierarchy}
+    \includegraphics[]{figures/jettl-palette-msg}
+    \caption{jettl message palette.}
+    \label{fig:jettl-palette-msg}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/class-hierarchy}
     \caption{Class Hierarchy. This shows the class hierarchy in jettl.}
     \label{fig:class-hierarchy}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/queue-actor-method}
+    \includegraphics[width=\textwidth]{figures/queue-actor-method}
     \caption{Queue Actor Method. This shows the method for the Queue Actor in jettl.}
     \label{fig:queue-actor-method}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/event-actor-method}
+    \includegraphics[width=\textwidth]{figures/event-actor-method}
     \caption{Event Actor Method. This shows the method for the Event Actor in jettl.}
     \label{fig:event-actor-method}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/alternate-start-async}
+    \includegraphics[width=\textwidth]{figures/alternate-start-async}
     \caption{Alternate Start Async. This shows the alternate start async in jettl. Note this is outdated naming, but the functionality is still the same.}
     \label{fig:alternate-start-async}
 \end{figure}
