@@ -148,3 +148,78 @@ right click interface method (change connector pane in interface method first)
 Create YouTube video of a light introduction and hello world
 
 advanced videos of sending messages, creating queues and events, sub panels, etc
+
+Tools are shipped with the VIPM package
+
+DONT say anything about OOP, keep it crazy simple
+
+Outline that the message method is just a regular `.vi`, that is not tied to a class.
+
+Create single YouTube video of hello world
+Start project (can be named anything, independent of class name)
+Create queue template: “My First”
+(blank red (drfault) text green banner, red Queue Decorator private data icon, class marked private to library, object wire the green one used)
+- edit icon for class
+- Outline the queue interface in private data
+- wrapper functions created and default functionality in Decorator and Handle
+- show source code for Actor Queue.vi showing flow of method execution, setting up references, setup, error? Then destroy, otherwise while loop to receive messages, execute messages, and handle general outputs from messages including errors. The loop finishes when an error occurs or Teardown.vi is executed either as a message or method within a message, such as we will do in Hello World.vi.
+- create PRIVATE message in My First, generates private Hello World message, does not require inputs
+- implement Hello World Interface in My First
+- override, one button dialog box, Hello World
+- in Setup.vi, “_Hello World.vi to Self Queue.vi”
+- but need to Teardown, so can either Self Queue Teardown or execute Teardown. We’ll execute Teardown at the end of Hello World.vi
+- run
+- now, say we want to customize the text of the popup.
+- change connector pane to have string input “Dialog String” for Hello World interface method, then right click menu for changing connector pane. This emphasizes the use of programming at the interface level. Now, the overridden method is broken, wire in the necessary string input to get rid of the error.. (maybe a different way of doing this can happen in the future like creating a temporary method with same internal block diagram, and overriding method with the new connector pane, and copy and pasting from the temporary created method, that you’ll have to delete..)
+- now wire in the input for the message in Setup, say the string is “This is a Pop Up”
+- run
+- but now hello world doesn’t make sense as a message name since this function is just a message pop up
+- right click the messages library and rename to Pop Up
+- rename overridden method name as Pop Up
+- run
+- what’s to come, creating a Created Queue, moving a message to be public, creating a user interface with Events
+
+!!!
+Right click menu to move jettl Msg from private to public and vice versa
+!!!
+
+Reach out to
+- Darren (user group)
+- Tom (VIPM)
+for suggestions
+
+Just to start, have the tools just be some arbitrary pop up from the necessary right click menus
+
+
+
+Hello World
+
+Notice that the other jettl Msgs are implemented already for the queue actor
+Therefore, it is simple to find which messages to implement such as the message that has just been created
+
+
+
+Mention in video to join the discord and checkout the GitHub repository
+Or download on VIPM (other package managers later)
+
+Also mention that I watch a great deal of YouTube to passively learn, I would like to make YouTube videos that address topics you’d like to see applied with the necessary best practices. Leave these in the comment section of this video, reach out to me on LinkedIn, GitHub, Discord.
+If there is a feature you’d like to implement or see implemented, please reach out to me so I can work with you to improve the framework. Pull requests on GitHub are always welcome
+
+
+
+
+
+New class template from right click menu
+
+Right click to
+create library that contains class with name specified
+
+Private data of interface
+With methods with IPES and method name
+
+Easy naming, in C:\ drive!
+
+
+UI Events Actor, how to script in the backend? Is this simply contained within the tool
+OR
+is the creation of library and class within the “Actor” right click menu?

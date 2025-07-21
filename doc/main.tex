@@ -46,6 +46,21 @@ Package Best Practices:
 Reuse code between libraries occurs only by relation (implementation/association/dependency/composition/aggregation) to interfaces.
 This is dependency inversion through packages to properly decouple them.
 
+Fundamentally, when the object is initialized, it will stay active and cannot be replaced until the actor is finished ie at the end of the actor queue.vi when the object exits to the flag sequence structure. This object is the same throughout because every method it enter into is dynamic dispatch, including message methods. This is fundamentally significant in this design since the system is deterministic, within the object and only the object that has been created.
+
+Fundamentally when an actor sends a message to another actor, if an error occurs in the sender, that means the message would have never reached its destination and the 1556 errors tells you that this actor doesn't exist (reference invalid)
+But an actor can send a message to any actor, even if that actor cannot accept that message. It is not up to the sender if the message is valid, it is up to the receiving actor itself.
+
+Should change all methods to be DD input and output, this promotes NOT branching the class wire..
+Even if it’s not more readable..
+This must be a change (hello world setup rewire output)
+This is beneficial because there exist by references under the hood, and splitting the wire now splits the state. Very bad.
+
+Separation of concerns
+Only the Event inherits the Panel messages
+Show, Hide, Change, etc
+A Queue cannot display its front panel, only Events can display their front panel
+
 \section{Getting Started}
 \label{sec:getting-started}
 
@@ -190,6 +205,9 @@ Since the context class is private to the library it is in (and the State Interf
 
 \subsection{Decorator Pattern}
 \label{subsec:decorator-pattern}
+
+From class inheritance to interface composition and implementation.
+This will enable infinite layers to be wrapped.
 
 \subsection{Memento Pattern}
 \label{subsec:memento-pattern}
@@ -345,6 +363,9 @@ Along with the Stage Pattern used in the Base Notifier.lvclass, State Pattern ca
 
 \section{Messaging}
 \label{sec:messaging}
+
+For the send message methods, internally, there could be an error output if message can't be sent or something, or some kind of Boolean output for all of them that says “Msg Delivered?”
+
 
 Messages do not have error wires since errors are handled internally in the Base classes.
 This is because the Base classes have an error cluster in their private data.
@@ -516,6 +537,8 @@ For more information on PPLs, Darren Nattinger and Derrick Bommarito have excell
 
 \section{Opinionated Design Choices}
 \label{sec:opinionated-design-choices}
+
+The top left and top right connector panes are reserved for object input and object output
 
 Virtual folders are not saved on disc.
 These are only convenience in the LabVIEW project.
