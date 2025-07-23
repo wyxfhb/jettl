@@ -14,13 +14,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Hello World" Type="Folder">
-			<Item Name="jettl Msg Pop Up.lvlib" Type="Library" URL="../Hello World/jettl Msg Pop Up/jettl Msg Pop Up.lvlib"/>
-			<Item Name="jettl Msg String Indicator.lvlib" Type="Library" URL="../Hello World/jettl Msg String Indicator/jettl Msg String Indicator.lvlib"/>
-			<Item Name="Hello World Queue.lvlib" Type="Library" URL="../Hello World/Hello World Queue/Hello World Queue.lvlib"/>
-			<Item Name="Hello World Event.lvlib" Type="Library" URL="../Hello World/Hello World Event/Hello World Event.lvlib"/>
-			<Item Name="Main Hello World.vi" Type="VI" URL="../Hello World/Main Hello World.vi"/>
-		</Item>
 		<Item Name="jettl Msg Setup.lvlib" Type="Library" URL="../jettl Msg Setup/jettl Msg Setup.lvlib"/>
 		<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="../jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
 		<Item Name="jettl Msg Merge Error.lvlib" Type="Library" URL="../jettl Msg Merge Error/jettl Msg Merge Error.lvlib"/>
@@ -28,7 +21,7 @@
 		<Item Name="jettl Msg Create Queue.lvlib" Type="Library" URL="../jettl Msg Create Queue/jettl Msg Create Queue.lvlib"/>
 		<Item Name="jettl Msg Create Event.lvlib" Type="Library" URL="../jettl Msg Create Event/jettl Msg Create Event.lvlib"/>
 		<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
-		<Item Name="Providers.lvlib" Type="Library" URL="../Providers/Providers.lvlib"/>
+		<Item Name="jettl Tools.lvlib" Type="Library" URL="../jettl Tools/jettl Tools.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -63,11 +56,6 @@
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Random Number (Range) U64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) U64.vi"/>
-				<Item Name="Random Number (Range) I64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) I64.vi"/>
-				<Item Name="Random Number (Range) DBL.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) DBL.vi"/>
-				<Item Name="Random Number (Range).vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range).vi"/>
-				<Item Name="sub_Random U32.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/sub_Random U32.vi"/>
 				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
 			</Item>
 		</Item>
