@@ -10,6 +10,5 @@
 </Property>
 	<Item Name="Templates.lvlib" Type="Library" URL="../Templates/Templates.lvlib"/>
 	<Item Name="Script Strategy.lvlib" Type="Library" URL="../Script Strategy/Script Strategy.lvlib"/>
-	<Item Name="Build.vi" Type="VI" URL="../Build.vi"/>
-	<Item Name="Template Path.vi" Type="VI" URL="../Template Path.vi"/>
+	<Item Name="Base To Template Path.vi" Type="VI" URL="../Base To Template Path.vi"/>
 </Library>
