@@ -13,7 +13,7 @@
 	<Item Name="Script Strategy.lvclass" Type="LVClass" URL="../Script Strategy/Script Strategy.lvclass"/>
 	<Item Name="Msg Script Strategy.lvclass" Type="LVClass" URL="../Msg Script Strategy/Msg Script Strategy.lvclass"/>
 	<Item Name="Actor Script Strategy.lvclass" Type="LVClass" URL="../Actor Script Strategy/Actor Script Strategy.lvclass"/>
-	<Item Name="Determine Strategy.vi" Type="VI" URL="../Determine Strategy.vi"/>
+	<Item Name="Determine Script Strategy.vi" Type="VI" URL="../Determine Script Strategy.vi"/>
 	<Item Name="Create lvlib Folder.vi" Type="VI" URL="../Create lvlib Folder.vi"/>
 	<Item Name="Create lvclass Folder.vi" Type="VI" URL="../Create lvclass Folder.vi"/>
 	<Item Name="Copy lvclass.vi" Type="VI" URL="../Copy lvclass.vi"/>
