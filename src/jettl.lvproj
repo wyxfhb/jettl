@@ -21,7 +21,6 @@
 		<Item Name="jettl Msg Create Queue.lvlib" Type="Library" URL="../jettl Msg Create Queue/jettl Msg Create Queue.lvlib"/>
 		<Item Name="jettl Msg Create Event.lvlib" Type="Library" URL="../jettl Msg Create Event/jettl Msg Create Event.lvlib"/>
 		<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
-		<Item Name="jettl Tools.lvlib" Type="Library" URL="../jettl Tools/jettl Tools.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
