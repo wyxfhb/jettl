@@ -16,7 +16,6 @@
 		<Item Name="Template.vi" Type="VI" URL="../Template.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Edit LVLibs.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/EditLVLibs/Edit LVLibs.lvlib"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -47,11 +46,6 @@
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
-				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
-				<Item Name="Set Cursor (Cursor ID).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Cursor ID).vi"/>
-				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
-				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
 				<Item Name="jettl.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl/jettl.lvlib"/>
 				<Item Name="jettl Msg Create Event.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Create Event/jettl Msg Create Event.lvlib"/>
 				<Item Name="jettl Msg Create Queue.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Create Queue/jettl Msg Create Queue.lvlib"/>
@@ -59,9 +53,6 @@
 				<Item Name="jettl Msg Setup.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Setup/jettl Msg Setup.lvlib"/>
 				<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
 				<Item Name="jettl Msg Merge Error.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Merge Error/jettl Msg Merge Error.lvlib"/>
-				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
