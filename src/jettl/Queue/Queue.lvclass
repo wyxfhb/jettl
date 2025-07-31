@@ -133,7 +133,7 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
 	</Item>
-	<Item Name="Teardown Created Queues.vi" Type="VI" URL="../Teardown Created Queues.vi">
+	<Item Name="All Created Queues.vi" Type="VI" URL="../All Created Queues.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#]!!!!"!!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#&amp;&amp;V:86F)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!E!!!!!!"!!-!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
@@ -142,7 +142,7 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
 	</Item>
-	<Item Name="Teardown Created Events.vi" Type="VI" URL="../Teardown Created Events.vi">
+	<Item Name="All Created Events.vi" Type="VI" URL="../All Created Events.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#]!!!!"!!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#&amp;&amp;V:86F)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!E!!!!!!"!!-!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
