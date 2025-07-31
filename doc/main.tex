@@ -42,6 +42,12 @@ This document is meant to be a complete guide to the jettl framework, outlining 
 “The fundamental situation is, that we don't know much and some of it's wrong.”
 -Carl Hewitt, creator of Actor Model
 
+Good practice to NOT send other actors Teardown?
+
+messages received are written is respect to the actor the receives them (methods they execute)
+for example, the last ack messages so
+last ack created queue is executed says that it is the last ack from created queue
+
 Package Best Practices:
 Reuse code between libraries occurs only by relation (implementation/association/dependency/composition/aggregation) to interfaces.
 This is dependency inversion through packages to properly decouple them.
@@ -697,7 +703,7 @@ It is the all-knowing for the program, only forwarding messages to references th
 An actor ever only knows about the mediator.
 
 Kind of the same framework you currently have.. just that the messages interact with a mediator that then (since it has references to everything) sends the message to the necessary actor.
-Note the Self Actor still has references to its Creator, Self, and Created.. it’s just that the mediator ALSO knows who has these references and easily sends the message to those who have the reference that the message is going to has.
+Note the Self Actor still has references to its Creator, Self, and Created.. it's just that the mediator ALSO knows who has these references and easily sends the message to those who have the reference that the message is going to has.
 This provides well for the observer pattern i.e. publisher and subscriber.
 There are effectively two places references are saved: Mediator and Self Actor.
 The Mediator always has the references and shares the necessary duplicates of references that pertain to the Self Actor since these are references to identify the Actor and how the mediator should allow the actor to interact with other actors (though, remember, the Actor doesn't know other actors exist.. only that there is a mediator).
