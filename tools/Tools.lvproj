@@ -50,13 +50,7 @@
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="jettl.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl/jettl.lvlib"/>
-				<Item Name="jettl Msg Create Event.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Create Event/jettl Msg Create Event.lvlib"/>
-				<Item Name="jettl Msg Create Queue.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Create Queue/jettl Msg Create Queue.lvlib"/>
-				<Item Name="jettl Msg Override Error.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Override Error/jettl Msg Override Error.lvlib"/>
-				<Item Name="jettl Msg Setup.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Setup/jettl Msg Setup.lvlib"/>
-				<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
-				<Item Name="jettl Msg Merge Error.lvlib" Type="Library" URL="/&lt;vilib&gt;/jettl/jettl/jettl Msg Merge Error/jettl Msg Merge Error.lvlib"/>
+				<Item Name="jettl.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl/jettl.lvlib"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
 				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
@@ -77,6 +71,12 @@
 				<Item Name="TRef Find Object By Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Find Object By Label.vi"/>
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
+				<Item Name="jettl Msg Merge Error.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Merge Error/jettl Msg Merge Error.lvlib"/>
+				<Item Name="jettl Msg Create Event.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Create Event/jettl Msg Create Event.lvlib"/>
+				<Item Name="jettl Msg Create Queue.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Create Queue/jettl Msg Create Queue.lvlib"/>
+				<Item Name="jettl Msg Override Error.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Override Error/jettl Msg Override Error.lvlib"/>
+				<Item Name="jettl Msg Setup.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Setup/jettl Msg Setup.lvlib"/>
+				<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
 			</Item>
 			<Item Name="LV Config Read Numeric (I32).vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Numeric (I32).vi"/>
 		</Item>

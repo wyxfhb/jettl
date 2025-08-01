@@ -5,7 +5,6 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="jettl Msg Template.lvlib" Type="Library" URL="../jettl Msg Template/jettl Msg Template.lvlib"/>
 	<Item Name="Control To Private Data.lvlib" Type="Library" URL="../Control To Private Data/Control To Private Data.lvlib"/>
 	<Item Name="Attain Controls.vi" Type="VI" URL="../Attain Controls.vi"/>
 	<Item Name="Modify Init VI.vi" Type="VI" URL="../Modify Init VI.vi"/>

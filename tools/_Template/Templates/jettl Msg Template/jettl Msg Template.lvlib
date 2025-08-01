@@ -11,4 +11,8 @@
 
 </Property>
 	<Item Name="jettl Msg Template.lvclass" Type="LVClass" URL="../jettl Msg Template/jettl Msg Template.lvclass"/>
+	<Item Name="Template Msg Strategy.lvclass" Type="LVClass" URL="../Template Msg Strategy/Template Msg Strategy.lvclass">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="jettl Msg Template.vi" Type="VI" URL="../jettl Msg Template.vi"/>
 </Library>
