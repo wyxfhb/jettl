@@ -16,4 +16,5 @@
 	<Item Name="Add File.vi" Type="VI" URL="../Add File.vi"/>
 	<Item Name="Name Folder Path.vi" Type="VI" URL="../Name Folder Path.vi"/>
 	<Item Name="Get New Library Path.vi" Type="VI" URL="../Get New Library Path.vi"/>
+	<Item Name="Script.lvlib" Type="Library" URL="../Script/Script.lvlib"/>
 </Library>

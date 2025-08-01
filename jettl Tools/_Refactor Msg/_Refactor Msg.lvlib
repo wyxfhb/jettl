@@ -11,4 +11,5 @@
 	<Item Name="Modify jettl Msg VI.vi" Type="VI" URL="../Modify jettl Msg VI.vi"/>
 	<Item Name="Modify Msg VI.vi" Type="VI" URL="../Modify Msg VI.vi"/>
 	<Item Name="Modify Private Data.vi" Type="VI" URL="../Modify Private Data.vi"/>
+	<Item Name="Script.lvlib" Type="Library" URL="../Script/Script.lvlib"/>
 </Library>
