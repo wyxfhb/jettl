@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-01 09:16:00" Modified_Date="2025-08-01 09:17:24" Creator="Erik" Comments="" ID="4e46947a200090a3e3d1398ad8177edd">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-01 09:16:00" Modified_Date="2025-08-01 09:37:00" Creator="Erik" Comments="" ID="81fd77a51eb5cfded846c07ef12411d1">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl_Tools</Package_File_Name>
-    <Library_Version>1.0.0.2</Library_Version>
+    <Library_Version>1.0.0.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\lvbuilds</Library_Output_Folder>
@@ -71,7 +71,7 @@
       <Tools_Menu>
         <LLB>false</LLB>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path>&lt;project&gt;\jettl</Path>
+        <Path>&lt;project&gt;\jettl Tools</Path>
       </Tools_Menu>
       <Help_Menu>
         <LLB>false</LLB>
@@ -115,11 +115,8 @@
         <Path>.gitignore</Path>
       </Exclusions>
       <Exclusions>
-        <Path>Tools.lvproj</Path>
+        <Path>jettl Tools.lvproj</Path>
       </Exclusions>
-      <Compile_Exclusions>
-        <Path/>
-      </Compile_Exclusions>
       <Place_Folder_Contents>
         <Path/>
       </Place_Folder_Contents>
