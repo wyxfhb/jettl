@@ -9,12 +9,5 @@
 
 </Property>
 	<Item Name="SAS.lvlib" Type="Library" URL="../SAS/SAS.lvlib"/>
-	<Item Name="Rename Class Controls.vi" Type="VI" URL="../Rename Class Controls.vi"/>
-	<Item Name="Rename Any Implemented Method.vi" Type="VI" URL="../Rename Any Implemented Method.vi"/>
-	<Item Name="Strip Extension.vi" Type="VI" URL="../Strip Extension.vi"/>
-	<Item Name="Find Class Method Reference.vi" Type="VI" URL="../Find Class Method Reference.vi"/>
-	<Item Name="Add File.vi" Type="VI" URL="../Add File.vi"/>
-	<Item Name="Name Folder Path.vi" Type="VI" URL="../Name Folder Path.vi"/>
-	<Item Name="Get New Library Path.vi" Type="VI" URL="../Get New Library Path.vi"/>
 	<Item Name="Script.lvlib" Type="Library" URL="../Script/Script.lvlib"/>
 </Library>
