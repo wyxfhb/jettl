@@ -16,8 +16,13 @@
 		<Item Name="Template.vi" Type="VI" URL="../Template.vi"/>
 		<Item Name="_Rename.lvlib" Type="Library" URL="../_Rename/_Rename.lvlib"/>
 		<Item Name="Rename.vi" Type="VI" URL="../Rename.vi"/>
-		<Item Name="_Refactor Msg.lvlib" Type="Library" URL="../_Refactor Msg/_Refactor Msg.lvlib"/>
-		<Item Name="Refactor Msg.vi" Type="VI" URL="../Refactor Msg.vi"/>
+		<Item Name="_Rescript Msg.lvlib" Type="Library" URL="../_Rescript Msg/_Rescript Msg.lvlib"/>
+		<Item Name="Rescript Msg.vi" Type="VI" URL="../Rescript Msg.vi"/>
+		<Item Name="_Shared.lvlib" Type="Library" URL="../_Shared/_Shared.lvlib"/>
+		<Item Name="_Future Ideas.vi" Type="VI" URL="../_Future Ideas.vi"/>
+		<Item Name="jettl Msg Template.lvlib" Type="Library" URL="../jettl Msg Template/jettl Msg Template.lvlib"/>
+		<Item Name="Template Event.lvlib" Type="Library" URL="../Template Event/Template Event.lvlib"/>
+		<Item Name="Template Queue.lvlib" Type="Library" URL="../Template Queue/Template Queue.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -77,6 +82,10 @@
 				<Item Name="jettl Msg Override Error.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Override Error/jettl Msg Override Error.lvlib"/>
 				<Item Name="jettl Msg Setup.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Setup/jettl Msg Setup.lvlib"/>
 				<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
+				<Item Name="Queue.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Queue/Queue.lvclass"/>
+				<Item Name="Event.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Event/Event.lvclass"/>
+				<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Msg Strategy/Msg Strategy.lvclass"/>
+				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
 			</Item>
 			<Item Name="LV Config Read Numeric (I32).vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Numeric (I32).vi"/>
 		</Item>
