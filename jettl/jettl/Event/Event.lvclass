@@ -16,11 +16,11 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="jettl Msg Override Error.lvlib:jettl Msg Override Error.lvclass" Type="Parent" URL="../../../jettl Msg Override Error/jettl Msg Override Error/jettl Msg Override Error.lvclass"/>
-		<Item Name="jettl Msg Setup.lvlib:jettl Msg Setup.lvclass" Type="Parent" URL="../../../jettl Msg Setup/jettl Msg Setup/jettl Msg Setup.lvclass"/>
-		<Item Name="jettl Msg Teardown.lvlib:jettl Msg Teardown.lvclass" Type="Parent" URL="../../../jettl Msg Teardown/jettl Msg Teardown/jettl Msg Teardown.lvclass"/>
-		<Item Name="jettl.lvlib:jettl Msg Last Ack Creator Queue.lvlib:jettl Msg Last Ack Creator Queue.lvclass" Type="Parent" URL="../../jettl Msg Last Ack Creator Queue/jettl Msg Last Ack Creator Queue/jettl Msg Last Ack Creator Queue.lvclass"/>
 		<Item Name="jettl.lvlib:jettl.lvclass" Type="Parent" URL="../../jettl/jettl.lvclass"/>
+		<Item Name="jettl.lvlib:Last Ack Creator Queue Msg Strategy.lvlib:jettl Msg Last Ack Creator Queue.lvclass" Type="Parent" URL="../../Last Ack Creator Queue Msg Strategy/jettl Msg Last Ack Creator Queue/jettl Msg Last Ack Creator Queue.lvclass"/>
+		<Item Name="Override Error Msg Strategy.lvlib:jettl Msg Override Error.lvclass" Type="Parent" URL="../../../Override Error Msg Strategy/jettl Msg Override Error/jettl Msg Override Error.lvclass"/>
+		<Item Name="Setup Msg Strategy.lvlib:jettl Msg Setup.lvclass" Type="Parent" URL="../../../Setup Msg Strategy/jettl Msg Setup/jettl Msg Setup.lvclass"/>
+		<Item Name="Teardown Msg Strategy.lvlib:jettl Msg Teardown.lvclass" Type="Parent" URL="../../../Teardown Msg Strategy/jettl Msg Teardown/jettl Msg Teardown.lvclass"/>
 	</Item>
 	<Item Name="Queue Mailbox" Type="Folder">
 		<Item Name="Creators Self Queue Alias.vi" Type="VI" URL="../Creators Self Queue Alias.vi">
@@ -142,13 +142,13 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
 	</Item>
 	<Item Name="Receive.vi" Type="VI" URL="../Receive.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%W!!!!"A!%!!!!0E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!"".=W=A5X2S982F:XEA&lt;X6U!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV&amp;&gt;G6O&gt;#ZM&gt;G.M98.T!!F&amp;&gt;G6O&gt;#"P&gt;81!0%"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!^.=W=A5X2S982F:XEA;7Y!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).28:F&lt;H1O&lt;(:D&lt;'&amp;T=Q!)28:F&lt;H1A;7Y!!&amp;1!]!!-!!!!!!!"!!)!!!!!!!!!!!!!!!!!!Q!%!A!!?!!!!!!!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!!!!#1!!!!!!%!"1!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%W!!!!"A!%!!!!0E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!"".=W=A5X2S982F:XEA&lt;X6U!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV&amp;&gt;G6O&gt;#ZM&gt;G.M98.T!!F&amp;&gt;G6O&gt;#"P&gt;81!0%"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!^.=W=A5X2S982F:XEA;7Y!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).28:F&lt;H1O&lt;(:D&lt;'&amp;T=Q!)28:F&lt;H1A;7Y!!&amp;1!]!!-!!!!!!!"!!)!!!!!!!!!!!!!!!!!!Q!%!A!!?!!!!!!!!!!!!!!.#A!!D1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!!!!#1!!!!!!%!"1!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">16777352</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1117782528</Property>
 	</Item>
 	<Item Name="Self Event Alias.vi" Type="VI" URL="../Self Event Alias.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#I!!!!"!!%!!!!'E!Q`````R"4:7RG)%6W:7ZU)%&amp;M;7&amp;T!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV&amp;&gt;G6O&gt;#ZM&gt;G.M98.T!!B&amp;&gt;G6O&gt;#"J&lt;A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!!!!!!!!!!!!!!)#!!"Y!!!!!!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!$!!!!!!</Property>
