@@ -20,9 +20,6 @@
 		<Item Name="Rescript Msg.vi" Type="VI" URL="../Rescript Msg.vi"/>
 		<Item Name="_Shared.lvlib" Type="Library" URL="../_Shared/_Shared.lvlib"/>
 		<Item Name="_Future Ideas.vi" Type="VI" URL="../_Future Ideas.vi"/>
-		<Item Name="jettl Msg Template.lvlib" Type="Library" URL="../jettl Msg Template/jettl Msg Template.lvlib"/>
-		<Item Name="Template Event.lvlib" Type="Library" URL="../Template Event/Template Event.lvlib"/>
-		<Item Name="Template Queue.lvlib" Type="Library" URL="../Template Queue/Template Queue.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -84,9 +81,6 @@
 				<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
 				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="Queue.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Queue/Queue.lvclass"/>
-				<Item Name="Event.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Event/Event.lvclass"/>
-				<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Msg Strategy/Msg Strategy.lvclass"/>
 			</Item>
 			<Item Name="LV Config Read Numeric (I32).vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Numeric (I32).vi"/>
 		</Item>
