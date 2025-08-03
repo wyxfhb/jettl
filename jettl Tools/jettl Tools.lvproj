@@ -82,11 +82,11 @@
 				<Item Name="jettl Msg Override Error.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Override Error/jettl Msg Override Error.lvlib"/>
 				<Item Name="jettl Msg Setup.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Setup/jettl Msg Setup.lvlib"/>
 				<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
+				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Queue.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Queue/Queue.lvclass"/>
 				<Item Name="Event.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Event/Event.lvclass"/>
 				<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Msg Strategy/Msg Strategy.lvclass"/>
-				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
 			<Item Name="LV Config Read Numeric (I32).vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Numeric (I32).vi"/>
 		</Item>
