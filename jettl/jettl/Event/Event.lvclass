@@ -17,10 +17,10 @@
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
 		<Item Name="jettl.lvlib:jettl.lvclass" Type="Parent" URL="../../jettl/jettl.lvclass"/>
-		<Item Name="jettl.lvlib:Last Ack Creator Queue Msg Strategy.lvlib:jettl Msg Last Ack Creator Queue.lvclass" Type="Parent" URL="../../Last Ack Creator Queue Msg Strategy/jettl Msg Last Ack Creator Queue/jettl Msg Last Ack Creator Queue.lvclass"/>
-		<Item Name="Override Error Msg Strategy.lvlib:jettl Msg Override Error.lvclass" Type="Parent" URL="../../../Override Error Msg Strategy/jettl Msg Override Error/jettl Msg Override Error.lvclass"/>
-		<Item Name="Setup Msg Strategy.lvlib:jettl Msg Setup.lvclass" Type="Parent" URL="../../../Setup Msg Strategy/jettl Msg Setup/jettl Msg Setup.lvclass"/>
-		<Item Name="Teardown Msg Strategy.lvlib:jettl Msg Teardown.lvclass" Type="Parent" URL="../../../Teardown Msg Strategy/jettl Msg Teardown/jettl Msg Teardown.lvclass"/>
+		<Item Name="jettl.lvlib:Last Ack Creator Queue Msg Strategy.lvlib:Last Ack Creator Queue.lvclass" Type="Parent" URL="../../Last Ack Creator Queue Msg Strategy/Last Ack Creator Queue/Last Ack Creator Queue.lvclass"/>
+		<Item Name="Override Error Msg Strategy.lvlib:Override Error.lvclass" Type="Parent" URL="../../../Override Error Msg Strategy/Override Error/Override Error.lvclass"/>
+		<Item Name="Setup Msg Strategy.lvlib:Setup.lvclass" Type="Parent" URL="../../../Setup Msg Strategy/Setup/Setup.lvclass"/>
+		<Item Name="Teardown Msg Strategy.lvlib:Teardown.lvclass" Type="Parent" URL="../../../Teardown Msg Strategy/Teardown/Teardown.lvclass"/>
 	</Item>
 	<Item Name="Queue Mailbox" Type="Folder">
 		<Item Name="Creators Self Queue Alias.vi" Type="VI" URL="../Creators Self Queue Alias.vi">
