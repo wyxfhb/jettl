@@ -86,6 +86,7 @@
 				<Item Name="Event.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Event/Event.lvclass"/>
 				<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/jettl/jettl/jettl/Msg Strategy/Msg Strategy.lvclass"/>
 				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
 			<Item Name="LV Config Read Numeric (I32).vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Numeric (I32).vi"/>
 		</Item>
