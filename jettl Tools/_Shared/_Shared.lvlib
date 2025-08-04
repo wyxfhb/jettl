@@ -10,5 +10,4 @@
 </Property>
 	<Item Name="Get Map.vi" Type="VI" URL="../Get Map.vi"/>
 	<Item Name="Immediate Children.vi" Type="VI" URL="../Immediate Children.vi"/>
-	<Item Name="_Shared.lvclass" Type="LVClass" URL="../_Shared/_Shared.lvclass"/>
 </Library>
