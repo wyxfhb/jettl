@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-07-25 19:04:00" Modified_Date="2025-08-01 17:38:45" Creator="natev" Comments="" ID="5fc2fe5190519e959f8fd627f36300b1">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-07-25 19:04:00" Modified_Date="2025-08-03 16:55:52" Creator="natev" Comments="" ID="9d5e7ec8b1f8b1fda241b98245d903de">
   <Library_General_Settings>
     <Package_File_Name>jettl_lib_jettl</Package_File_Name>
-    <Library_Version>1.1.0.15</Library_Version>
+    <Library_Version>1.1.0.16</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\lvbuilds</Library_Output_Folder>
@@ -223,35 +223,7 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>jettl Msg Create Queue.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>jettl Msg Create Queue\jettl Msg Create Queue.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>jettl Msg Create Event.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>jettl Msg Create Event\jettl Msg Create Event.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>jettl Msg Merge Error.vi</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Merge Error.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -259,13 +231,13 @@
           <Column>5</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>jettl Msg Merge Error\jettl Msg Merge Error.vi</Path>
+        <Path>Merge Error Msg Strategy\Merge Error.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>jettl Msg Override Error.vi</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Override Error.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -273,13 +245,41 @@
           <Column>5</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>jettl Msg Override Error\jettl Msg Override Error.vi</Path>
+        <Path>Override Error Msg Strategy\Override Error.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>jettl Msg Setup.vi</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Create Queue.vi</NameSub_Menu_Name>
+        <Short_Name/>
+        <is_Merge_VI>false</is_Merge_VI>
+        <Position>
+          <Row>1</Row>
+          <Column>4</Column>
+        </Position>
+        <Icon>00000000</Icon>
+        <Path>Create Queue Msg Strategy\Create Queue.vi</Path>
+        <VI_Title/>
+      </Items_Data>
+      <Items_Data>
+        <Type>Item</Type>
+        <Sub_Palette_Index>-1</Sub_Palette_Index>
+        <NameSub_Menu_Name>Create Event.vi</NameSub_Menu_Name>
+        <Short_Name/>
+        <is_Merge_VI>false</is_Merge_VI>
+        <Position>
+          <Row>2</Row>
+          <Column>4</Column>
+        </Position>
+        <Icon>00000000</Icon>
+        <Path>Create Event Msg Strategy\Create Event.vi</Path>
+        <VI_Title/>
+      </Items_Data>
+      <Items_Data>
+        <Type>Item</Type>
+        <Sub_Palette_Index>-1</Sub_Palette_Index>
+        <NameSub_Menu_Name>Setup.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -287,13 +287,13 @@
           <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>jettl Msg Setup\jettl Msg Setup.vi</Path>
+        <Path>Setup Msg Strategy\Setup.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>jettl Msg Teardown.vi</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Teardown.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -301,10 +301,10 @@
           <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>jettl Msg Teardown\jettl Msg Teardown.vi</Path>
+        <Path>Teardown Msg Strategy\Teardown.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B9C7C81C78FA38D998D9CDCE00103D35</GUID>
+      <GUID>3E98717413DF01F97AF68CA5E798EB29</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
