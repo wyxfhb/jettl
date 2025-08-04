@@ -73,14 +73,14 @@
 				<Item Name="TRef Find Object By Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Find Object By Label.vi"/>
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
-				<Item Name="jettl Msg Merge Error.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Merge Error/jettl Msg Merge Error.lvlib"/>
-				<Item Name="jettl Msg Create Event.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Create Event/jettl Msg Create Event.lvlib"/>
-				<Item Name="jettl Msg Create Queue.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Create Queue/jettl Msg Create Queue.lvlib"/>
-				<Item Name="jettl Msg Override Error.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Override Error/jettl Msg Override Error.lvlib"/>
-				<Item Name="jettl Msg Setup.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Setup/jettl Msg Setup.lvlib"/>
-				<Item Name="jettl Msg Teardown.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl Msg Teardown/jettl Msg Teardown.lvlib"/>
 				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="Merge Error Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Merge Error Msg Strategy/Merge Error Msg Strategy.lvlib"/>
+				<Item Name="Create Event Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Create Event Msg Strategy/Create Event Msg Strategy.lvlib"/>
+				<Item Name="Create Queue Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Create Queue Msg Strategy/Create Queue Msg Strategy.lvlib"/>
+				<Item Name="Override Error Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Override Error Msg Strategy/Override Error Msg Strategy.lvlib"/>
+				<Item Name="Setup Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Setup Msg Strategy/Setup Msg Strategy.lvlib"/>
+				<Item Name="Teardown Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Teardown Msg Strategy/Teardown Msg Strategy.lvlib"/>
 			</Item>
 			<Item Name="LV Config Read Numeric (I32).vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Numeric (I32).vi"/>
 		</Item>
