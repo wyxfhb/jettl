@@ -10,4 +10,5 @@
 </Property>
 	<Item Name="Get Project Types.vi" Type="VI" URL="../Get Project Types.vi"/>
 	<Item Name="Immediate Children.vi" Type="VI" URL="../Immediate Children.vi"/>
+	<Item Name="Get Library File Path.vi" Type="VI" URL="../Get Library File Path.vi"/>
 </Library>
