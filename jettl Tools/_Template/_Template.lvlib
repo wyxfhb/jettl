@@ -10,5 +10,4 @@
 </Property>
 	<Item Name="_Template.lvclass" Type="LVClass" URL="../_Template/_Template.lvclass"/>
 	<Item Name="Templates.lvlib" Type="Library" URL="../Templates/Templates.lvlib"/>
-	<Item Name="Templates Directory.vi" Type="VI" URL="../Templates Directory.vi"/>
 </Library>
