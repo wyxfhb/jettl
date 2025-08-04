@@ -11,6 +11,6 @@
 
 </Property>
 	<Item Name="TEMPLATE Msg Strategy.lvlib" Type="Library" URL="../TEMPLATE Msg Strategy/TEMPLATE Msg Strategy.lvlib"/>
-	<Item Name="TEMPLATE Queue.lvlib" Type="Library" URL="../TEMPLATE Queue/TEMPLATE Queue.lvlib"/>
-	<Item Name="TEMPLATE Event.lvlib" Type="Library" URL="../TEMPLATE Event/TEMPLATE Event.lvlib"/>
+	<Item Name="TEM Queue.lvlib" Type="Library" URL="../TEM Queue/TEM Queue.lvlib"/>
+	<Item Name="TEM Event.lvlib" Type="Library" URL="../TEM Event/TEM Event.lvlib"/>
 </Library>

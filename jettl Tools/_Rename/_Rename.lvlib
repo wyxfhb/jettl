@@ -9,6 +9,5 @@
 
 </Property>
 	<Item Name="_Rename.lvclass" Type="LVClass" URL="../_Rename/_Rename.lvclass"/>
-	<Item Name="_Shared.lvclass" Type="LVClass" URL="../_Shared/_Shared.lvclass"/>
 	<Item Name="SAS.lvlib" Type="Library" URL="../SAS/SAS.lvlib"/>
 </Library>
