@@ -82,6 +82,7 @@
 				<Item Name="Teardown Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Teardown Msg Strategy/Teardown Msg Strategy.lvlib"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Enable or Gray Control Refnum.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/Enable or Gray Control Refnum.vi"/>
+				<Item Name="Edit LVProj.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/EditLVProj/Edit LVProj.lvlib"/>
 			</Item>
 			<Item Name="LV Config Read Numeric (I32).vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Numeric (I32).vi"/>
 		</Item>
