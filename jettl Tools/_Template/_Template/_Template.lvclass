@@ -47,15 +47,6 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
 	</Item>
-	<Item Name="Check If Duplicate Name.vi" Type="VI" URL="../Check If Duplicate Name.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%3!!!!#1!%!!!!%%!B#E2V='RJ9W&amp;U:4]!!!Z!-0````]%6(FQ:1!!$E!Q`````Q2/97VF!!!;1$,`````%5RJ9H*B=HEA2GFM:3"1982I!#*!&gt;!!#!!-!"":/97VF)%RJ9H*B=HEA2GFM:3"1982I!!!G1(1!!A!#!!5&lt;6(FQ:3"/97VF)%RJ9H*B=HEA2GFM:3"1982I!#2!-P````];6'6N='RB&gt;'5A4'FC=G&amp;S?3"';7RF)&amp;"B&gt;'A!!&amp;1!]!!-!!!!!!!"!!!!!!!!!!!!!!!!!!9!"Q!!!A!!?!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%!!!!"!!!!!!!!!!!!%!#!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
-	</Item>
 	<Item Name="Main.vi" Type="VI" URL="../Main.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#;!!!!!Q!%!!!!/E"Q!"Y!!#-08V2F&lt;8"M982F,GRW&lt;'FC%6^5:7VQ&lt;'&amp;U:3ZM&gt;G.M98.T!!R@6'6N='RB&gt;'5A;7Y!!&amp;1!]!!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!Q!!?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!3!!!!!!%!!A!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
