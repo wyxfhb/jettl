@@ -11,7 +11,6 @@
 	<Item Name="Get Project Types.vi" Type="VI" URL="../Get Project Types.vi"/>
 	<Item Name="Immediate Children.vi" Type="VI" URL="../Immediate Children.vi"/>
 	<Item Name="class To lvlib File Path.vi" Type="VI" URL="../class To lvlib File Path.vi"/>
-	<Item Name="lvlib To class File Path.vi" Type="VI" URL="../lvlib To class File Path.vi"/>
 	<Item Name="Array Control Enable.vi" Type="VI" URL="../Array Control Enable.vi"/>
 	<Item Name="Array Control Disable.vi" Type="VI" URL="../Array Control Disable.vi"/>
 	<Item Name="Check If Unique lvlib.vi" Type="VI" URL="../Check If Unique lvlib.vi"/>
