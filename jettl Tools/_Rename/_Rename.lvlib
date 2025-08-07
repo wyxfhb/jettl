@@ -9,5 +9,4 @@
 
 </Property>
 	<Item Name="_Rename.lvclass" Type="LVClass" URL="../_Rename/_Rename.lvclass"/>
-	<Item Name="SAS.lvlib" Type="Library" URL="../SAS/SAS.lvlib"/>
 </Library>
