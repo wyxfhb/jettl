@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-07-25 19:04:00" Modified_Date="2025-08-07 11:31:21" Creator="natev" Comments="" ID="b9f70e95991eb44d6c3da3cc965ea76f">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-07-25 19:04:00" Modified_Date="2025-08-08 09:04:33" Creator="natev" Comments="" ID="522d0919005c4f49f852fc799710aefb">
   <Library_General_Settings>
     <Package_File_Name>jettl_lib_jettl</Package_File_Name>
-    <Library_Version>1.1.0.21</Library_Version>
+    <Library_Version>1.1.0.22</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\lvbuilds</Library_Output_Folder>
@@ -304,7 +304,7 @@
         <Path>Teardown Msg Strategy\Teardown.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3DB7705D842F7F823692E892216BC497</GUID>
+      <GUID>23D766F6F5C8C9840DB520A5D31A0807</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
