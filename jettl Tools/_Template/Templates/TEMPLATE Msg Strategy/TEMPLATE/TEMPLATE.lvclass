@@ -15,7 +15,7 @@
 
 </Property>
 	<Item Name="TEMPLATE.vi" Type="VI" URL="../TEMPLATE.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%_!!!!"!!%!!!!=%"Q!"Y!!%Y08V2F&lt;8"M982F,GRW&lt;'FC$V2F&lt;8"M982F=SZM&gt;GRJ9BN525V14%&amp;523".=W=A5X2S982F:XEO&lt;(:M;7)16%6.5%R"6%5O&lt;(:D&lt;'&amp;T=Q!!&amp;GJF&gt;(2M)%VT:S"5:7VQ&lt;'&amp;U:3"P&gt;81!!'Z!=!!?!!"/$V^5:7VQ&lt;'&amp;U:3ZM&gt;GRJ9A^5:7VQ&lt;'&amp;U:8-O&lt;(:M;7)&lt;6%6.5%R"6%5A48.H)&amp;.U=G&amp;U:7&gt;Z,GRW&lt;'FC%&amp;2&amp;46"-162&amp;,GRW9WRB=X-!!"6K:82U&lt;#".=W=A6'6N='RB&gt;'5A;7Y!6!$Q!!Q!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!)#!!"Y!!!!!!!!!!!!!!!!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!$!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%K!!!!"!!%!!!!:E"Q!"Y!!%Y08V2F&lt;8"M982F,GRW&lt;'FC$V2F&lt;8"M982F=SZM&gt;GRJ9BN525V14%&amp;523".=W=A5X2S982F:XEO&lt;(:M;7)16%6.5%R"6%5O&lt;(:D&lt;'&amp;T=Q!!$&amp;2&amp;46"-162&amp;)'^V&gt;!!!:%"Q!"Y!!%Y08V2F&lt;8"M982F,GRW&lt;'FC$V2F&lt;8"M982F=SZM&gt;GRJ9BN525V14%&amp;523".=W=A5X2S982F:XEO&lt;(:M;7)16%6.5%R"6%5O&lt;(:D&lt;'&amp;T=Q!!#V2&amp;46"-162&amp;)'FO!&amp;1!]!!-!!!!!!!!!!%!!!!!!!!!!!!!!!!!!!!#!A!!?!!!!!!!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!!Q!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
