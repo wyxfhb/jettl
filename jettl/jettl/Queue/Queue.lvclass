@@ -26,6 +26,15 @@
 		<Item Name="Setup Msg Strategy.lvlib:Setup.lvclass" Type="Parent" URL="../../../Setup Msg Strategy/Setup/Setup.lvclass"/>
 		<Item Name="Teardown Msg Strategy.lvlib:Teardown.lvclass" Type="Parent" URL="../../../Teardown Msg Strategy/Teardown/Teardown.lvclass"/>
 	</Item>
+	<Item Name="Remaining.vi" Type="VI" URL="../Remaining.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%+!!!!"A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!$B!=!!?!!!C#WJF&gt;(2M,GRW&lt;'FC&amp;%VT:S"4&gt;(*B&gt;'6H?3ZM&gt;G.M98.T!!!,48.H,GRW9WRB=X-!&amp;E"!!!(`````!!)*5G6N97FO;7ZH!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#&amp;&amp;V:86F)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!-!"!)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!E!!!!!!"!!5!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1090519176</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
+	</Item>
 	<Item Name="Decorate.vi" Type="VI" URL="../Decorate.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$G!!!!"1!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!#J!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!"6&amp;V:86F!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#&amp;&amp;V:86F)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!)!!Q)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!E!!!!!!"!!1!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
