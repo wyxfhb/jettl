@@ -7,6 +7,7 @@
 `jettl` is a lightweight library used for decorating developed classes with either the `Queue` interface or `Event` interface via composition and implementation of the methods from either of the implemented interfaces. Included here are crucial design patterns including Strategy Pattern, Decorator Pattern, State Pattern, and Observer Pattern. SOLID principles, especially dependency inversion/injection, hence strategy pattern for dynamic dispatch messaging.
 
 Check out the jettl Discord: https://discord.gg/tVkvTyBxqa
+Check out jettl videos: https://www.youtube.com/@nathandavis6612
 
 ## Motivation
 
@@ -33,7 +34,6 @@ A Hello World Example is here in the project in `src\jettl.proj`. Run the `Main 
 - Subpanel example
 - `Notifier`
 - `Periodic Message Notifier` example
-- `Channel Wire`
 - Debug / Unit Test class wrapping. Some kind of diagram disable in the developed actor `Decorator.vi`, surrounding the (yet to be made) `Debug Queue.lvclass`. That way debug code does not exist in Base classes, and is held exclusively in the `Debug Queue.lvclass`.
 
 ## Documentation
