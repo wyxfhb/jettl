@@ -19,7 +19,6 @@
 		<Item Name="_Msg Rescript.lvlib" Type="Library" URL="../_Msg Rescript/_Msg Rescript.lvlib"/>
 		<Item Name="Msg Rescript.vi" Type="VI" URL="../Msg Rescript.vi"/>
 		<Item Name="_Shared.lvlib" Type="Library" URL="../_Shared/_Shared.lvlib"/>
-		<Item Name="_Future Ideas.vi" Type="VI" URL="../_Future Ideas.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
