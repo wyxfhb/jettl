@@ -182,4 +182,13 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1074278912</Property>
 	</Item>
+	<Item Name="Move Control To ConPane.vi" Type="VI" URL="../Move Control To ConPane.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'&amp;!!!!$A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"2!=!!)!!!!"A!!"U.P&lt;H2S&lt;WQ!%E"Q!!A!!!",!!!%5'&amp;O:1!!&amp;%"Q!!A!!!!#!!!(5G6G,C"731!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!&amp;5!$!!Z5:8*N;7ZB&lt;#"*&lt;G2F?!!!5U!7!!5237ZW97RJ:#"8;8*F)&amp;*V&lt;'5)5G6R&gt;7FS:71,5G6D&lt;WVN:7ZE:71)4X"U;7^O97Q12(FO97VJ9S"%;8.Q982D;!!!#6&gt;J=G5A5H6M:1!;1&amp;!!!A!&amp;!!I01WBB=G&amp;D&gt;'6S;8.U;7.T!":!&gt;!!#!!E!#QN$&lt;WZQ97ZF)%VB=!"5!0!!$!!$!!1!"1!%!!9!"!!(!!1!#!!-!!E!"!-!!(A!!!U)!!!!!!!!#1!!!!!!!!!1!!!!!!!!!"!!!!!!!!!!#A!!!"!!!!!3!!!!!!!!!!!"!!U!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
+	</Item>
 </LVClass>
