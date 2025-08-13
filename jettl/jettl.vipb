@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-07-25 19:04:00" Modified_Date="2025-08-12 12:24:21" Creator="natev" Comments="" ID="c81840fa5ef7cf9b7a036edf3ce040b9">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-07-25 19:04:00" Modified_Date="2025-08-13 09:48:24" Creator="natev" Comments="" ID="346a93b56b4e20d3d5f205b754cb4d88">
   <Library_General_Settings>
     <Package_File_Name>jettl_lib_jettl</Package_File_Name>
-    <Library_Version>1.1.0.29</Library_Version>
+    <Library_Version>1.1.0.31</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\lvbuilds</Library_Output_Folder>
@@ -304,7 +304,7 @@
         <Path>jettl\Create Base Queue.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5907E337B094E7E7A49A4F5D417BDC36</GUID>
+      <GUID>258CBCA1C898AD882A542ECFB0A4D679</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
