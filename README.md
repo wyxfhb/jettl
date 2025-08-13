@@ -7,6 +7,7 @@
 `jettl` is a lightweight library used for decorating developed classes with either the `Queue` interface or `Event` interface via composition and implementation of the methods from either of the implemented interfaces. Included here are crucial design patterns including Strategy Pattern, Decorator Pattern, State Pattern, and Observer Pattern. SOLID principles, especially dependency inversion/injection, hence strategy pattern for dynamic dispatch messaging.
 
 Check out the jettl Discord: https://discord.gg/tVkvTyBxqa
+
 Check out jettl videos: https://www.youtube.com/@nathandavis6612
 
 ## Motivation
