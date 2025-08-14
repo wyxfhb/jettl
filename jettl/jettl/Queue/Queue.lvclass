@@ -23,7 +23,6 @@
 		<Item Name="jettl.lvlib:Last Ack Created Queue Msg Strategy.lvlib:Last Ack Created Queue.lvclass" Type="Parent" URL="../../Last Ack Created Queue Msg Strategy/Last Ack Created Queue/Last Ack Created Queue.lvclass"/>
 		<Item Name="jettl.lvlib:Last Ack Creator Queue Msg Strategy.lvlib:Last Ack Creator Queue.lvclass" Type="Parent" URL="../../Last Ack Creator Queue Msg Strategy/Last Ack Creator Queue/Last Ack Creator Queue.lvclass"/>
 		<Item Name="Override Error Msg Strategy.lvlib:Override Error.lvclass" Type="Parent" URL="../../../Override Error Msg Strategy/Override Error/Override Error.lvclass"/>
-		<Item Name="Set Panel State Msg Strategy.lvlib:Set Panel State.lvclass" Type="Parent" URL="../../../Set Panel State Msg Strategy/Set Panel State/Set Panel State.lvclass"/>
 		<Item Name="Setup Msg Strategy.lvlib:Setup.lvclass" Type="Parent" URL="../../../Setup Msg Strategy/Setup/Setup.lvclass"/>
 		<Item Name="Teardown Msg Strategy.lvlib:Teardown.lvclass" Type="Parent" URL="../../../Teardown Msg Strategy/Teardown/Teardown.lvclass"/>
 	</Item>
