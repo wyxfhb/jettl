@@ -20,6 +20,7 @@
 		<Item Name="Override Error Msg Strategy.lvlib" Type="Library" URL="../Override Error Msg Strategy/Override Error Msg Strategy.lvlib"/>
 		<Item Name="Create Queue Msg Strategy.lvlib" Type="Library" URL="../Create Queue Msg Strategy/Create Queue Msg Strategy.lvlib"/>
 		<Item Name="Create Event Msg Strategy.lvlib" Type="Library" URL="../Create Event Msg Strategy/Create Event Msg Strategy.lvlib"/>
+		<Item Name="Set Panel State Msg Strategy.lvlib" Type="Library" URL="../Set Panel State Msg Strategy/Set Panel State Msg Strategy.lvlib"/>
 		<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
