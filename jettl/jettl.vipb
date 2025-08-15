@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-07-25 19:04:00" Modified_Date="2025-08-15 13:10:57" Creator="natev" Comments="" ID="d41231ae48df055899ebb783d6f5be2c">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-07-25 19:04:00" Modified_Date="2025-08-15 14:07:39" Creator="natev" Comments="" ID="116f8000e9b1fb5b78997641ac12b3e1">
   <Library_General_Settings>
     <Package_File_Name>jettl_lib_jettl</Package_File_Name>
-    <Library_Version>1.1.0.44</Library_Version>
+    <Library_Version>1.1.0.45</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\lvbuilds</Library_Output_Folder>
@@ -262,7 +262,7 @@
         <Path>jettl\Queue</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FF224E3FA3127E16D1118F3F39FE91BC</GUID>
+      <GUID>3B779E4092F1BFBFEB612068CCA53A6F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -801,7 +801,21 @@
         <Path>jettl\jettl\Get This VI.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B6CFC4E646898B8463D17CF8AAD9344C</GUID>
+      <Items_Data>
+        <Type>Item</Type>
+        <Sub_Palette_Index>-1</Sub_Palette_Index>
+        <NameSub_Menu_Name>Remaining.vi</NameSub_Menu_Name>
+        <Short_Name/>
+        <is_Merge_VI>false</is_Merge_VI>
+        <Position>
+          <Row>4</Row>
+          <Column>9</Column>
+        </Position>
+        <Icon>00000000</Icon>
+        <Path>jettl\jettl\Remaining.vi</Path>
+        <VI_Title/>
+      </Items_Data>
+      <GUID>A2ED510382720402FEB848717117C129</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1133,20 +1147,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>Remaining.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>4</Row>
-          <Column>9</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>jettl\Queue\Remaining.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Self Queue.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1368,7 +1368,21 @@
         <Path>jettl\Queue\Creator Queue Alias.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6A1226E965A0824F249A81FB235D75CC</GUID>
+      <Items_Data>
+        <Type>Item</Type>
+        <Sub_Palette_Index>-1</Sub_Palette_Index>
+        <NameSub_Menu_Name>Remaining.vi</NameSub_Menu_Name>
+        <Short_Name/>
+        <is_Merge_VI>false</is_Merge_VI>
+        <Position>
+          <Row>4</Row>
+          <Column>9</Column>
+        </Position>
+        <Icon>00000000</Icon>
+        <Path>jettl\jettl\Remaining.vi</Path>
+        <VI_Title/>
+      </Items_Data>
+      <GUID>368BC95A503DFA69042D33E233A456F3</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

@@ -14,6 +14,7 @@
 		<Item Name="Create.vi" Type="VI" URL="../Create.vi"/>
 		<Item Name="Generate.vi" Type="VI" URL="../Generate.vi"/>
 		<Item Name="Registration.vi" Type="VI" URL="../Registration.vi"/>
+		<Item Name="Unregistration.vi" Type="VI" URL="../Unregistration.vi"/>
 		<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
 	</Item>
 </Library>

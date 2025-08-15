@@ -18,6 +18,15 @@
 	<Item Name="Parent Libraries" Type="Parent Libraries">
 		<Item Name="Merge Error Msg Strategy.lvlib:Merge Error.lvclass" Type="Parent" URL="../../../Merge Error Msg Strategy/Merge Error/Merge Error.lvclass"/>
 	</Item>
+	<Item Name="Remaining.vi" Type="VI" URL="../Remaining.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%+!!!!"A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!$B!=!!?!!!C#WJF&gt;(2M,GRW&lt;'FC&amp;%VT:S"4&gt;(*B&gt;'6H?3ZM&gt;G.M98.T!!!,48.H,GRW9WRB=X-!&amp;E"!!!(`````!!)*5G6N97FO;7ZH!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#'JF&gt;(2M)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!-!"!)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!E!!!!!!"!!5!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">16777352</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
+	</Item>
 	<Item Name="VI Server Setup.vi" Type="VI" URL="../VI Server Setup.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$O!!!!"A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!"2!=!!)!!!!!A!!"V2I;8-A6EE!(E"Q!!A!!!!"!!!16'BJ=S""=("M;7.B&gt;'FP&lt;A!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!);G6U&gt;'QA;7Y!!&amp;1!]!!-!!!!!!!!!!%!!!!!!!!!!!!!!!)!!Q!%!A!!?!!!!!!!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%!!!!"!!!!#1!!!!!!%!"1!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
