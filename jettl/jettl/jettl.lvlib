@@ -36,11 +36,12 @@
 	<Item Name="Self Event.lvlib" Type="Library" URL="../Self Event/Self Event.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Count Actors.vi" Type="VI" URL="../Count Actors.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Create Base Queue.vi" Type="VI" URL="../Create Base Queue.vi"/>
-	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
+	<Item Name="Create Base Event.vi" Type="VI" URL="../Create Base Event.vi"/>
 </Library>

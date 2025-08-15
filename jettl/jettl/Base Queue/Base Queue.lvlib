@@ -17,4 +17,5 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Create Base Queue.vi" Type="VI" URL="../Create Base Queue.vi"/>
+	<Item Name="Create Base Event.vi" Type="VI" URL="../Create Base Event.vi"/>
 </Library>
