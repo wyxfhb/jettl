@@ -18,6 +18,15 @@
 	<Item Name="Parent Libraries" Type="Parent Libraries">
 		<Item Name="Merge Error Msg Strategy.lvlib:Merge Error.lvclass" Type="Parent" URL="../../../Merge Error Msg Strategy/Merge Error/Merge Error.lvclass"/>
 	</Item>
+	<Item Name="Serialize To Inputs.vi" Type="VI" URL="../Serialize To Inputs.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%%!!!!#A!-1&amp;-(37ZQ&gt;81A.A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!!R!5Q&gt;*&lt;H"V&gt;#!V!!R!5Q&gt;*&lt;H"V&gt;#!U!!R!5Q&gt;*&lt;H"V&gt;#!T!!R!5Q&gt;*&lt;H"V&gt;#!S!!R!5Q&gt;*&lt;H"V&gt;#!R!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#'JF&gt;(2M)'FO!!"5!0!!$!!!!!%!!1!#!!-!!1!%!!%!"1!'!!=!#!)!!(A!!"!!!!!!!!!!!!!!!)U,!!!1!!!!!!!!!"!!!!!!!!!!%!!!!"!!!!!1!!!!E!!!!!!"!!E!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+	</Item>
 	<Item Name="Remaining.vi" Type="VI" URL="../Remaining.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%+!!!!"A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!$B!=!!?!!!C#WJF&gt;(2M,GRW&lt;'FC&amp;%VT:S"4&gt;(*B&gt;'6H?3ZM&gt;G.M98.T!!!,48.H,GRW9WRB=X-!&amp;E"!!!(`````!!)*5G6N97FO;7ZH!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#'JF&gt;(2M)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!-!"!)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!E!!!!!!"!!5!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -82,7 +91,7 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 	</Item>
 	<Item Name="Handle.vi" Type="VI" URL="../Handle.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$+!!!!"1!%!!!!$E!B#%2F=X2S&lt;XE`!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AVK:82U&lt;#ZM&gt;G.M98.T!!FK:82U&lt;#"P&gt;81!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!);G6U&gt;'QA;7Y!!&amp;1!]!!-!!!!!!!"!!)!!!!!!!!!!!!!!!!!!!!$!A!!?!!!!!!!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!"!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#]!!!!"!!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#'JF&gt;(2M)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!E!!!!!!"!!-!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
