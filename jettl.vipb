@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-08-18 13:01:22" Creator="Erik" Comments="" ID="e4ceb3b4ecf79231f0eeef9bed6911f3">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-08-18 13:38:20" Creator="Erik" Comments="" ID="4b179e1754005edc22c2a29b93d4934d">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl</Package_File_Name>
-    <Library_Version>0.1.0.3</Library_Version>
+    <Library_Version>0.1.0.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -78,7 +78,7 @@ https://www.youtube.com/@nathandavis6612</Description>
       <Tools_Menu>
         <LLB>false</LLB>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path>&lt;project&gt;\jettl Tools</Path>
+        <Path/>
       </Tools_Menu>
       <Help_Menu>
         <LLB>false</LLB>
@@ -305,7 +305,7 @@ https://www.youtube.com/@nathandavis6612</Description>
         <Path>Event</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1B785314CA53F304A10ED44E8E8794E8</GUID>
+      <GUID>C9BA7757C0AFA04AB6ED13708E2F8388</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -886,7 +886,7 @@ https://www.youtube.com/@nathandavis6612</Description>
         <Path>jettl\jettl\Last Ack Created Event Msg Strategy\Last Ack Created Event\Last Ack Created Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0338141A3FD3D9A2062916E1DD91BAB8</GUID>
+      <GUID>D8B7E40800340706BEBA5A923EC5C85B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1453,7 +1453,7 @@ https://www.youtube.com/@nathandavis6612</Description>
         <Path>jettl\Set Panel State Msg Strategy\Set Panel State\Set Panel State.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3DB43F1DCB12B4FEC0203C739FE966A4</GUID>
+      <GUID>A928C3ED4B3381124A1DBEA16FB83A84</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

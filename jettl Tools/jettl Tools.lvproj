@@ -51,7 +51,6 @@
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="jettl.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl/jettl.lvlib"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
 				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
@@ -68,12 +67,6 @@
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
-				<Item Name="Merge Error Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Merge Error Msg Strategy/Merge Error Msg Strategy.lvlib"/>
-				<Item Name="Create Event Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Create Event Msg Strategy/Create Event Msg Strategy.lvlib"/>
-				<Item Name="Create Queue Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Create Queue Msg Strategy/Create Queue Msg Strategy.lvlib"/>
-				<Item Name="Override Error Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Override Error Msg Strategy/Override Error Msg Strategy.lvlib"/>
-				<Item Name="Setup Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Setup Msg Strategy/Setup Msg Strategy.lvlib"/>
-				<Item Name="Teardown Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Teardown Msg Strategy/Teardown Msg Strategy.lvlib"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Enable or Gray Control Refnum.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/Enable or Gray Control Refnum.vi"/>
 				<Item Name="Edit LVProj.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/EditLVProj/Edit LVProj.lvlib"/>
@@ -82,7 +75,6 @@
 				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
 				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
-				<Item Name="Set Panel State Msg Strategy.lvlib" Type="Library" URL="/&lt;vilib&gt;/Nathan Davis/jettl/Set Panel State Msg Strategy/Set Panel State Msg Strategy.lvlib"/>
 				<Item Name="Icon Framework.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Classes/Icon Framework/Icon Framework.lvclass"/>
 				<Item Name="Font.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/Font.ctl"/>
 				<Item Name="BodyText.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/BodyText.ctl"/>
@@ -124,7 +116,16 @@
 				<Item Name="Get Image Subset.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Get Image Subset.vi"/>
 				<Item Name="Coerce Bad Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Coerce Bad Rect.vi"/>
 				<Item Name="Load &amp; Unload.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Classes/Load_Unload/Load &amp; Unload.lvclass"/>
+				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
 			</Item>
+			<Item Name="Merge Error Msg Strategy.lvlib" Type="Library" URL="../../jettl/Merge Error Msg Strategy/Merge Error Msg Strategy.lvlib"/>
+			<Item Name="Setup Msg Strategy.lvlib" Type="Library" URL="../../jettl/Setup Msg Strategy/Setup Msg Strategy.lvlib"/>
+			<Item Name="Create Queue Msg Strategy.lvlib" Type="Library" URL="../../jettl/Create Queue Msg Strategy/Create Queue Msg Strategy.lvlib"/>
+			<Item Name="Set Panel State Msg Strategy.lvlib" Type="Library" URL="../../jettl/Set Panel State Msg Strategy/Set Panel State Msg Strategy.lvlib"/>
+			<Item Name="Create Event Msg Strategy.lvlib" Type="Library" URL="../../jettl/Create Event Msg Strategy/Create Event Msg Strategy.lvlib"/>
+			<Item Name="Teardown Msg Strategy.lvlib" Type="Library" URL="../../jettl/Teardown Msg Strategy/Teardown Msg Strategy.lvlib"/>
+			<Item Name="Override Error Msg Strategy.lvlib" Type="Library" URL="../../jettl/Override Error Msg Strategy/Override Error Msg Strategy.lvlib"/>
+			<Item Name="jettl.lvlib" Type="Library" URL="../../jettl/jettl/jettl.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
