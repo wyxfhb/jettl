@@ -16,7 +16,6 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="Create Event Msg Strategy.lvlib:Create Event.lvclass" Type="Parent" URL="../../../Create Event Msg Strategy/Create Event/Create Event.lvclass"/>
 		<Item Name="Create Queue Msg Strategy.lvlib:Create Queue.lvclass" Type="Parent" URL="../../../Create Queue Msg Strategy/Create Queue/Create Queue.lvclass"/>
 		<Item Name="jettl.lvlib:jettl.lvclass" Type="Parent" URL="../../jettl/jettl.lvclass"/>
 		<Item Name="jettl.lvlib:Last Ack Created Queue Msg Strategy.lvlib:Last Ack Created Queue.lvclass" Type="Parent" URL="../../Last Ack Created Queue Msg Strategy/Last Ack Created Queue/Last Ack Created Queue.lvclass"/>
@@ -25,17 +24,17 @@
 		<Item Name="Setup Msg Strategy.lvlib:Setup.lvclass" Type="Parent" URL="../../../Setup Msg Strategy/Setup/Setup.lvclass"/>
 		<Item Name="Teardown Msg Strategy.lvlib:Teardown.lvclass" Type="Parent" URL="../../../Teardown Msg Strategy/Teardown/Teardown.lvclass"/>
 	</Item>
-	<Item Name="Decorate.vi" Type="VI" URL="../Decorate.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$G!!!!"1!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!#J!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!"6&amp;V:86F!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#&amp;&amp;V:86F)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!)!!Q)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!E!!!!!!"!!1!!!!!</Property>
+	<Item Name="Dequeue.vi" Type="VI" URL="../Dequeue.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$W!!!!"1!%!!!!/E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!R.=W=A5X2S982F:XE!!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#6&amp;V:86F)'^V&gt;!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV2&gt;76V:3ZM&gt;G.M98.T!!B2&gt;76V:3"J&lt;A!!6!$Q!!Q!!!!!!!%!!A!!!!!!!!!!!!!!!!!!!!-#!!"Y!!!!!!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!%!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1090519176</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
 	</Item>
-	<Item Name="Receive.vi" Type="VI" URL="../Receive.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$W!!!!"1!%!!!!/E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!R.=W=A5X2S982F:XE!!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#6&amp;V:86F)'^V&gt;!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV2&gt;76V:3ZM&gt;G.M98.T!!B2&gt;76V:3"J&lt;A!!6!$Q!!Q!!!!!!!%!!A!!!!!!!!!!!!!!!!!!!!-#!!"Y!!!!!!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!%!!!!!!</Property>
+	<Item Name="Decorate.vi" Type="VI" URL="../Decorate.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$G!!!!"1!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!#J!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!"6&amp;V:86F!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#&amp;&amp;V:86F)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!)!!Q)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!E!!!!!!"!!1!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>

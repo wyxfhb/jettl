@@ -16,5 +16,4 @@
 	<Item Name="State.lvlib" Type="Library" URL="../State/State.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Actor Event Wrapper.vi" Type="VI" URL="../Actor Event Wrapper.vi"/>
 </Library>
