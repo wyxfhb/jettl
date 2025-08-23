@@ -19,7 +19,6 @@
 		<Item Name="Create Event Msg Strategy.lvlib:Create Event.lvclass" Type="Parent" URL="../../../Create Event Msg Strategy/Create Event/Create Event.lvclass"/>
 		<Item Name="Create Queue Msg Strategy.lvlib:Create Queue.lvclass" Type="Parent" URL="../../../Create Queue Msg Strategy/Create Queue/Create Queue.lvclass"/>
 		<Item Name="jettl.lvlib:jettl.lvclass" Type="Parent" URL="../../jettl/jettl.lvclass"/>
-		<Item Name="jettl.lvlib:Last Ack Created Event Msg Strategy.lvlib:Last Ack Created Event.lvclass" Type="Parent" URL="../../Last Ack Created Event Msg Strategy/Last Ack Created Event/Last Ack Created Event.lvclass"/>
 		<Item Name="jettl.lvlib:Last Ack Created Queue Msg Strategy.lvlib:Last Ack Created Queue.lvclass" Type="Parent" URL="../../Last Ack Created Queue Msg Strategy/Last Ack Created Queue/Last Ack Created Queue.lvclass"/>
 		<Item Name="jettl.lvlib:Last Ack Creator Queue Msg Strategy.lvlib:Last Ack Creator Queue.lvclass" Type="Parent" URL="../../Last Ack Creator Queue Msg Strategy/Last Ack Creator Queue/Last Ack Creator Queue.lvclass"/>
 		<Item Name="Override Error Msg Strategy.lvlib:Override Error.lvclass" Type="Parent" URL="../../../Override Error Msg Strategy/Override Error/Override Error.lvclass"/>

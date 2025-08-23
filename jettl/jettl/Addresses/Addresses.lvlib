@@ -12,35 +12,26 @@
 </Property>
 	<Item Name="DVR Specific" Type="Folder">
 		<Item Name="New.vi" Type="VI" URL="../New.vi"/>
-		<Item Name="Get Self Queue Alias.vi" Type="VI" URL="../Get Self Queue Alias.vi"/>
-		<Item Name="Get Self Queue.vi" Type="VI" URL="../Get Self Queue.vi"/>
-		<Item Name="Get Creator Queue Alias.vi" Type="VI" URL="../Get Creator Queue Alias.vi">
+		<Item Name="Get Self Alias.vi" Type="VI" URL="../Get Self Alias.vi"/>
+		<Item Name="Get Self.vi" Type="VI" URL="../Get Self.vi"/>
+		<Item Name="Get Creator Alias.vi" Type="VI" URL="../Get Creator Alias.vi">
 			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		</Item>
-		<Item Name="Get Creator Queue.vi" Type="VI" URL="../Get Creator Queue.vi">
+		<Item Name="Get Creator.vi" Type="VI" URL="../Get Creator.vi">
 			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		</Item>
-		<Item Name="Get Created Queues.vi" Type="VI" URL="../Get Created Queues.vi">
+		<Item Name="Get Created.vi" Type="VI" URL="../Get Created.vi">
 			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		</Item>
-		<Item Name="Get Created Events.vi" Type="VI" URL="../Get Created Events.vi">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		</Item>
-		<Item Name="Insert Created Queue.vi" Type="VI" URL="../Insert Created Queue.vi"/>
-		<Item Name="Remove Created Queue.vi" Type="VI" URL="../Remove Created Queue.vi"/>
-		<Item Name="Insert Created Event.vi" Type="VI" URL="../Insert Created Event.vi"/>
-		<Item Name="Remove Created Event.vi" Type="VI" URL="../Remove Created Event.vi"/>
+		<Item Name="Insert Created.vi" Type="VI" URL="../Insert Created.vi"/>
+		<Item Name="Remove Created.vi" Type="VI" URL="../Remove Created.vi"/>
 		<Item Name="Delete.vi" Type="VI" URL="../Delete.vi"/>
 	</Item>
-	<Item Name="Addresses" Type="Folder">
-		<Item Name="Creator Queue Alias.vi" Type="VI" URL="../Creator Queue Alias.vi"/>
-		<Item Name="Creator Queue.vi" Type="VI" URL="../Creator Queue.vi"/>
-		<Item Name="Created Queues.vi" Type="VI" URL="../Created Queues.vi"/>
-		<Item Name="Status Created Queues.vi" Type="VI" URL="../Status Created Queues.vi"/>
-		<Item Name="Is Created Queue.vi" Type="VI" URL="../Is Created Queue.vi"/>
-		<Item Name="Created Events.vi" Type="VI" URL="../Created Events.vi"/>
-		<Item Name="Status Created Events.vi" Type="VI" URL="../Status Created Events.vi"/>
-		<Item Name="Is Created Event.vi" Type="VI" URL="../Is Created Event.vi"/>
-	</Item>
 	<Item Name="Addresses.lvclass" Type="LVClass" URL="../Addresses/Addresses.lvclass"/>
+	<Item Name="Created.ctl" Type="VI" URL="../Created.ctl"/>
+	<Item Name="Creator Alias.vi" Type="VI" URL="../Creator Alias.vi"/>
+	<Item Name="Creator.vi" Type="VI" URL="../Creator.vi"/>
+	<Item Name="Created.vi" Type="VI" URL="../Created.vi"/>
+	<Item Name="Status Created.vi" Type="VI" URL="../Status Created.vi"/>
+	<Item Name="Is Created.vi" Type="VI" URL="../Is Created.vi"/>
 </Library>

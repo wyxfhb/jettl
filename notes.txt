@@ -5,3 +5,12 @@ https://forums.ni.com/t5/LabVIEW/wire-Class-into-DVR/m-p/4179670#M1208325
 Done for
 - Queue Mailbox -> Addresses
 
+AHHHHHH Receive is the same with Msg Strategy input and output!
+and there are the two DD methods for 1. "dequeue" and 2. "get registration"
+
+
+
+
+
+
+Receive -> Inspect
