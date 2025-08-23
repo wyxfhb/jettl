@@ -16,5 +16,5 @@
 	<Item Name="State.lvlib" Type="Library" URL="../State/State.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Create Base Queue.vi" Type="VI" URL="../Create Base Queue.vi"/>
+	<Item Name="Create Base.vi" Type="VI" URL="../Create Base.vi"/>
 </Library>

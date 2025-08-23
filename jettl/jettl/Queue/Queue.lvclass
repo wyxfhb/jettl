@@ -16,10 +16,10 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="Create Queue Msg Strategy.lvlib:Create Queue.lvclass" Type="Parent" URL="../../../Create Queue Msg Strategy/Create Queue/Create Queue.lvclass"/>
+		<Item Name="Create Msg Strategy.lvlib:Create.lvclass" Type="Parent" URL="../../../Create Msg Strategy/Create/Create.lvclass"/>
 		<Item Name="jettl.lvlib:jettl.lvclass" Type="Parent" URL="../../jettl/jettl.lvclass"/>
-		<Item Name="jettl.lvlib:Last Ack Created Queue Msg Strategy.lvlib:Last Ack Created Queue.lvclass" Type="Parent" URL="../../Last Ack Created Queue Msg Strategy/Last Ack Created Queue/Last Ack Created Queue.lvclass"/>
-		<Item Name="jettl.lvlib:Last Ack Creator Queue Msg Strategy.lvlib:Last Ack Creator Queue.lvclass" Type="Parent" URL="../../Last Ack Creator Queue Msg Strategy/Last Ack Creator Queue/Last Ack Creator Queue.lvclass"/>
+		<Item Name="jettl.lvlib:Last Ack Created Msg Strategy.lvlib:Last Ack Created.lvclass" Type="Parent" URL="../../Last Ack Created Msg Strategy/Last Ack Created/Last Ack Created.lvclass"/>
+		<Item Name="jettl.lvlib:Last Ack Creator Msg Strategy.lvlib:Last Ack Creator.lvclass" Type="Parent" URL="../../Last Ack Creator Msg Strategy/Last Ack Creator/Last Ack Creator.lvclass"/>
 		<Item Name="Override Error Msg Strategy.lvlib:Override Error.lvclass" Type="Parent" URL="../../../Override Error Msg Strategy/Override Error/Override Error.lvclass"/>
 		<Item Name="Setup Msg Strategy.lvlib:Setup.lvclass" Type="Parent" URL="../../../Setup Msg Strategy/Setup/Setup.lvclass"/>
 		<Item Name="Teardown Msg Strategy.lvlib:Teardown.lvclass" Type="Parent" URL="../../../Teardown Msg Strategy/Teardown/Teardown.lvclass"/>
@@ -32,15 +32,6 @@
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
-	</Item>
-	<Item Name="Decorate.vi" Type="VI" URL="../Decorate.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$G!!!!"1!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!#J!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!"6&amp;V:86F!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#&amp;&amp;V:86F)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!)!!Q)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!E!!!!!!"!!1!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
 	</Item>
 	<Item Name="Self Queue Alias.vi" Type="VI" URL="../Self Queue Alias.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#I!!!!"!!%!!!!'E!Q`````R"4:7RG)&amp;&amp;V:86F)%&amp;M;7&amp;T!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV2&gt;76V:3ZM&gt;G.M98.T!!B2&gt;76V:3"J&lt;A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!!!!!!!!!!!!!!)#!!"Y!!!!!!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!$!!!!!!</Property>
@@ -105,43 +96,7 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
 	</Item>
-	<Item Name="Created Events.vi" Type="VI" URL="../Created Events.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%A!!!!"Q!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!"R!-0````]41X*F982F:#"&amp;&gt;G6O&gt;#""&lt;'FB=Q!/1#%*5(*J&lt;X*J&gt;(E`!$J!=!!?!!!C#WJF&gt;(2M,GRW&lt;'FC&amp;%VT:S"4&gt;(*B&gt;'6H?3ZM&gt;G.M98.T!!!-48.H)&amp;.U=G&amp;U:7&gt;Z!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV2&gt;76V:3ZM&gt;G.M98.T!!B2&gt;76V:3"J&lt;A!!6!$Q!!Q!!!!!!!!!!1!!!!!!!!!!!!)!!Q!%!!5#!!"Y!!!!!!!!!!!!!!!!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!B!!!!!)!!!!%!!!!*!!!!!!!1!'!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
-	</Item>
-	<Item Name="Status Created Events.vi" Type="VI" URL="../Status Created Events.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%J!!!!#!!:1!-!%U.S:7&amp;U:71A28:F&lt;H1A1W^V&lt;H1!'%!Q`````Q^.=W=A53"%6F)A17RJ98-!)E"!!!(`````!!%61X*F982F:#"&amp;&gt;G6O&gt;#""&lt;'FB=W6T!"J!)22$=G6B&gt;'6E)%6W:7ZU)%6Y;8.U0Q!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!!1!!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV2&gt;76V:3ZM&gt;G.M98.T!!B2&gt;76V:3"J&lt;A!!6!$Q!!Q!!!!#!!-!"!!&amp;!!5!"1!&amp;!!5!"1!&amp;!!9#!!"Y!!!*!!!!#1!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!(!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
-	</Item>
-	<Item Name="Is Created Event.vi" Type="VI" URL="../Is Created Event.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$O!!!!"A!%!!!!&amp;E!B%5FT)%.S:7&amp;U:71A28:F&lt;H1`!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#6&amp;V:86F)'^V&gt;!!=1$$`````%U.S:7&amp;U:71A28:F&lt;H1A17RJ98-!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!)586F&gt;75A;7Y!!&amp;1!]!!-!!!!!!!"!!)!!!!!!!!!!!!!!!!!!Q!%!A!!?!!!!!!!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!B!!!!#1!!!!!!%!"1!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
-	</Item>
 	<Item Name="All Created Queues.vi" Type="VI" URL="../All Created Queues.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%%!!!!"A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!!Z!)1F1=GFP=GFU?4]!/E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!R.=W=A5X2S982F:XE!!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#&amp;&amp;V:86F)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!#!!-!"!)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!1!!!!E!!!!!!"!!5!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
-	</Item>
-	<Item Name="All Created Events.vi" Type="VI" URL="../All Created Events.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%%!!!!"A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).586F&gt;75O&lt;(:D&lt;'&amp;T=Q!*586F&gt;75A&lt;X6U!!Z!)1F1=GFP=GFU?4]!/E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!R.=W=A5X2S982F:XE!!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$6&amp;V:86F,GRW9WRB=X-!#&amp;&amp;V:86F)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!#!!-!"!)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!1!!!!E!!!!!!"!!5!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
