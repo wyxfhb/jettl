@@ -17,6 +17,7 @@
 	<Item Name="Last Ack Created Event Msg Strategy.lvlib" Type="Library" URL="../Last Ack Created Event Msg Strategy/Last Ack Created Event Msg Strategy.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Msg Type Strategy.lvlib" Type="Library" URL="../Msg Type Strategy/Msg Type Strategy.lvlib"/>
 	<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="../Msg Strategy/Msg Strategy.lvclass"/>
 	<Item Name="jettl.lvclass" Type="LVClass" URL="../jettl/jettl.lvclass"/>
 	<Item Name="Queue.lvclass" Type="LVClass" URL="../Queue/Queue.lvclass"/>
@@ -27,7 +28,7 @@
 	<Item Name="Base Event.lvlib" Type="Library" URL="../Base Event/Base Event.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Queue Mailbox.lvlib" Type="Library" URL="../Queue Mailbox/Queue Mailbox.lvlib">
+	<Item Name="Addresses.lvlib" Type="Library" URL="../Addresses/Addresses.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Self Queue.lvlib" Type="Library" URL="../Self Queue/Self Queue.lvlib">
