@@ -33,24 +33,6 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 	</Item>
-	<Item Name="Self Event Alias.vi" Type="VI" URL="../Self Event Alias.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#I!!!!"!!%!!!!'E!Q`````R"4:7RG)%6W:7ZU)%&amp;M;7&amp;T!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV&amp;&gt;G6O&gt;#ZM&gt;G.M98.T!!B&amp;&gt;G6O&gt;#"J&lt;A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!!!!!!!!!!!!!!)#!!"Y!!!!!!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!$!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
-	</Item>
-	<Item Name="Self Event.vi" Type="VI" URL="../Self Event.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%%!!!!"A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).28:F&lt;H1O&lt;(:D&lt;'&amp;T=Q!*28:F&lt;H1A&lt;X6U!!Z!)1F1=GFP=GFU?4]!/E"Q!"Y!!#),;G6U&gt;'QO&lt;(:M;7)548.H)&amp;.U=G&amp;U:7&gt;Z,GRW9WRB=X-!!!R.=W=A5X2S982F:XE!!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$56W:7ZU,GRW9WRB=X-!#%6W:7ZU)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!#!!-!"!)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!1!!!!E!!!!!!"!!5!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
-	</Item>
 	<Item Name="Creators Self Queue Alias.vi" Type="VI" URL="../Creators Self Queue Alias.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$7!!!!"1!%!!!!'E!Q`````R"4:7RG)&amp;&amp;V:86F)%&amp;M;7&amp;T!!!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AV&amp;&gt;G6O&gt;#ZM&gt;G.M98.T!!F&amp;&gt;G6O&gt;#"P&gt;81!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).28:F&lt;H1O&lt;(:D&lt;'&amp;T=Q!)28:F&lt;H1A;7Y!!&amp;1!]!!-!!!!!!!"!!)!!!!!!!!!!!!!!!!!!!!$!A!!?!!!!!!!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!"!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>

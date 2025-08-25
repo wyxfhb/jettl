@@ -12,5 +12,5 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Merge Error.lvclass" Type="LVClass" URL="../Merge Error/Merge Error.lvclass"/>
-	<Item Name="Merge Error.vi" Type="VI" URL="../Merge Error.vi"/>
+	<Item Name="Merge Error.vi" Type="VI" URL="/&lt;vilib&gt;/Nathan Davis/jettl/jettl/Merge Error Msg Strategy/Merge Error.vi"/>
 </Library>
