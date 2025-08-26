@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-08-26 14:55:40" Creator="Erik" Comments="" ID="e58f2dbf3655a691da902f2488006ddb">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-08-26 16:09:13" Creator="Erik" Comments="" ID="3216df5abd777fd320aa62730f6fb057">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl</Package_File_Name>
-    <Library_Version>1.0.0.7</Library_Version>
+    <Library_Version>1.0.0.8</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -28,18 +28,23 @@
     <VI_Package_Configuration_File>jettl.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>LabVIEW Interface-Composition based Actor Model separating concerns of Event and Queue Actors.</One_Line_Description_Summary>
-      <Description>LabVIEW Interface-Composition based Actor Model separating concerns of Event and Queue Actors. The framework is extended to work with other frameworks and design patterns.
+      <Description>jettl is an object-oriented interface-composition based LabVIEW Actor Model library used for asyncronous processing of messages.
+The framework is based upon SOLID friendly design patterns including the Strategy Pattern and Decorator Pattern.
+SOLID principles, especially dependency inversion/injection, are used throughout the code base to encourage the developer to depend on abstractions.
+Many advanced concepts are used, but not described, for simplicity.
 
-This build includes the source code for the jettl Framework along with the jettl Tools that help speed the process of development.
+Check out the jettl Discord: https://discord.gg/tVkvTyBxqa for conversation and questions.
 
-All of the information necessary is includes in the GitHub repository: https://github.com/natev51/jettl.
-In particular, there exists a jettl Discord and jettl YouTube videos, respectively:
-https://discord.gg/tVkvTyBxqa
-https://www.youtube.com/@nathandavis6612</Description>
+Check out jettl videos: https://www.youtube.com/@nathandavis6612 for developed examples and methodology of design.
+
+The framework is extended to work with other frameworks and design patterns.
+The source code is included for the jettl library along with the jettl Tools that help speed the process of development.
+
+All of the information necessary is includes in the GitHub repository: https://github.com/natev51/jettl.</Description>
       <Copyright/>
       <Packager>Nathan Davis</Packager>
       <URL>https://github.com/natev51/jettl</URL>
-      <Release_Notes>This is a complete rework to jettl, only including Events, currently without internal DVRs. This is a design decision which *should* provide easier understanding of the framework, as a tradeoff of slower performance (though still very performant, benchmarks soon).</Release_Notes>
+      <Release_Notes>Updated the description to the build.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -137,16 +142,10 @@ https://www.youtube.com/@nathandavis6612</Description>
         <Path>examples</Path>
       </Exclusions>
       <Exclusions>
-        <Path>jettl/jettl.lvproj</Path>
-      </Exclusions>
-      <Exclusions>
         <Path>jettl/.gitignore</Path>
       </Exclusions>
       <Exclusions>
         <Path>jettl Tools/.gitignore</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>jettl Tools/jettl Tools.lvproj</Path>
       </Exclusions>
       <Exclusions>
         <Path>LICENSE.txt</Path>
@@ -616,7 +615,7 @@ https://www.youtube.com/@nathandavis6612</Description>
         <Path>Add Ons</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CE096045B0F0CFEB53C70932B5A4E439</GUID>
+      <GUID>56FEF70C875962FF5F0C485B9A45F228</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -637,7 +636,7 @@ https://www.youtube.com/@nathandavis6612</Description>
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>BC9E2EA3F8AADDBFB0772A39BFABE3C3</GUID>
+      <GUID>C9324876FDF51DCC925EB833ED8B198C</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

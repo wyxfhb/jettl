@@ -13,6 +13,9 @@ Check out the [jettl Discord](https://discord.gg/tVkvTyBxqa) for conversation an
 
 Check out [jettl videos](https://www.youtube.com/@nathandavis6612) for developed examples and methodology of design.
 
+The framework is extended to work with other frameworks and design patterns.
+The source code is included for the jettl library along with the jettl Tools that help speed the process of development.
+
 ## Motivation
 
 Over the the course of a couple years, I have designed applications to interface instruments for control of nuclear fusor, control XY stage motors to correlate and display 3D images via the data from a topological scanning laser, perform PID autotune algorithms for high efficiency RF antenna matching circuits, and control mass flow controllers for pressure and flow measurement, mocking a subsystem of a reactive ion etch system.
