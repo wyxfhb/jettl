@@ -61,19 +61,15 @@ That way debug code does not exist in Base classes, and is held exclusively in t
 Look in the `doc` folder for the `main.pdf` for the ongoing documentation for `jettl`.
 Note, this documentation will likely be outdated.
 Please refer to the YouTube videos instead, linked above.
-For housekeeping, the older (and more) outdated documentation in the `doc_old` folder.
 *These images are high resolution, click them to zoom in and see the simple algorithm of data flow.*
 
-![](doc/figures/event-loop.png)
+![](doc/figures/process-method.png)
 ![](doc/figures/jettl-palette.png)
-![](doc/figures/jettl-palette-msg.png)
-![](doc/figures/class-hierarchy.png)
-![](doc/figures/queue-actor-method.png)
-![](doc/figures/event-actor-method.png)
+![](doc/figures/jettl-method.png)
 
 ### Test Panel
 Automatically generated test panel providing controls / necessary inputs for all messages the actor expects.
 have the test panel display payloads from messages received.
 This “Test Panel” is integrated as a part of the actor itself.
 This is to design modular Actors without dependencies of other Actors.
-Advanced: Potentially which messages the actor is able to send and to which relative actor.
+Advanced: Potentially which messages the Actor is able to send and to which relative actor.
