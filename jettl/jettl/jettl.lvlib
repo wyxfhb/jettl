@@ -20,6 +20,7 @@
 	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Sender.lvlib" Type="Library" URL="../Sender/Sender.lvlib"/>
 	<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="../Msg Strategy/Msg Strategy.lvclass"/>
 	<Item Name="jettl.lvclass" Type="LVClass" URL="../jettl/jettl.lvclass"/>
 	<Item Name="Base jettl.lvclass" Type="LVClass" URL="../Base jettl/Base jettl.lvclass">
