@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-08-27 22:46:06" Creator="Erik" Comments="" ID="ad16d8a77885fa1107000884619c5d4b">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-08-28 08:28:16" Creator="Erik" Comments="" ID="32e02028b0074fe1e914dd3f8adbd104">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl</Package_File_Name>
-    <Library_Version>1.0.0.11</Library_Version>
+    <Library_Version>1.0.0.12</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -152,12 +152,6 @@ All of the information necessary is includes in the GitHub repository: https://g
       </Exclusions>
       <Exclusions>
         <Path>README.md</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>notes.txt</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>notes-for-refactor.txt</Path>
       </Exclusions>
       <Exclusions>
         <Path>misc</Path>
@@ -632,7 +626,7 @@ All of the information necessary is includes in the GitHub repository: https://g
         <Path>Add Ons</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>419581C49277D995782EA77B73670F60</GUID>
+      <GUID>58A1A824BB8252185BCADAE1380E8011</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -653,7 +647,7 @@ All of the information necessary is includes in the GitHub repository: https://g
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>98A5BE9865016C4C5C06075BB8FBD722</GUID>
+      <GUID>6D0121A6072DA0E14E3E0A79415A5A91</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
