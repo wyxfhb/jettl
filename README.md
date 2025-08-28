@@ -66,8 +66,8 @@ Note, this documentation will likely be outdated.
 Please refer to the YouTube videos instead, linked above.
 *These images are high resolution, click them to zoom in and see the simple algorithm of data flow.*
 
-![](doc/figures/process-method.png)
 ![](doc/figures/jettl-palette.png)
+![](doc/figures/process-method.png)
 ![](doc/figures/jettl-method.png)
 
 ### Test Panel
