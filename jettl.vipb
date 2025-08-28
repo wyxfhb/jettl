@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-08-28 10:44:02" Creator="Erik" Comments="" ID="b9985be2bf42252376ad2320b3db1af7">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-08-28 11:21:20" Creator="Erik" Comments="" ID="7a60a20fe56a5782cfbdc2e30ac2623e">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl</Package_File_Name>
-    <Library_Version>1.0.0.16</Library_Version>
+    <Library_Version>1.0.0.17</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -626,7 +626,7 @@ All of the information necessary is includes in the GitHub repository: https://g
         <Path>Add Ons</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>003B27EA92CD89B669A35AD5E8E87423</GUID>
+      <GUID>FBE7336765DD8F78C77F92F55CE9F7C3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -647,7 +647,7 @@ All of the information necessary is includes in the GitHub repository: https://g
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>C1683BF79BDB278E540E71DFDDB09241</GUID>
+      <GUID>A52E2F4A2E5FF55BBA668FAC461CD690</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
