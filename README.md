@@ -9,7 +9,7 @@ The framework is based upon SOLID friendly design patterns including the Strateg
 SOLID principles, especially dependency inversion/injection, are used throughout the code base to encourage the developer to depend on abstractions.
 Many advanced concepts are used, but not described, for simplicity.
 
-Install on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/)
+**Install on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/)**
 
 Check out the [jettl Discord](https://discord.gg/tVkvTyBxqa) for conversation and questions.
 
