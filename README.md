@@ -4,7 +4,7 @@
 
 *Please message me with your suggestions on how I can demonstrate more clear explanations, what I can do to improve the codebase for the developers needs, and examples you'd like to see.*
 
-`jettl` is an object-oriented interface-composition based LabVIEW Actor Model library used for asyncronous processing of messages.
+`jettl` is an object-oriented interface-composition based LabVIEW Actor Model library used for asynchronous processing of messages.
 The framework is based upon SOLID friendly design patterns including the Strategy Pattern and Decorator Pattern.
 SOLID principles, especially dependency inversion/injection, are used throughout the code base to encourage the developer to depend on abstractions.
 Many advanced concepts are used, but not described, for simplicity.
