@@ -27,5 +27,6 @@
 	<Item Name="Base jettl.lvclass" Type="LVClass" URL="../Base jettl/Base jettl.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Created Aliases.ctl" Type="VI" URL="../Created Aliases.ctl"/>
 	<Item Name="Create Base.vi" Type="VI" URL="../Create Base.vi"/>
 </Library>
