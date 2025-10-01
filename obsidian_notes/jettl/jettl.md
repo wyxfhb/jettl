@@ -4,6 +4,7 @@ Rename
 *Msg Strategy* -> *Msg*
 *Priority?* -> *Is Priority*
 
+
 Put into **Actor Library**.
 
 ---
@@ -73,7 +74,6 @@ Move the Path into the **Attributes.ctl**?
 
 Rename
 *Serialize To Inputs.vi* -> *Serialize.vi*
-
 
 ---
 
