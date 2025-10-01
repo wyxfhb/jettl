@@ -1,14 +1,15 @@
-Delete Address Strategy class / interface stuff
-So many DD and accessors going on! Can replace with **Map of Relation to Set of Attributes.ctl** (below)
+Rename
+*jettl.vi* -> *Actor.vi*
+*Base jettl.lvclass* -> *Base Actor.lvclass*
+*Msg Strategy* -> *Msg*
+*Priority?* -> *Is Priority*
+
+Put into **Actor Library**.
 
 ---
 
-Rename
-*jettl.vi* -> *Actor.vi*
-*Base jettl.lvclass* -> *jettl Actor.lvclass*
-*Msg Strategy* -> *Msg*
-*Serialize To Inputs.vi* -> *Serialize.vi*
-*Priority?* -> *Is Priority*
+Delete Address Strategy class / interface stuff
+So many DD and accessors going on! Can replace with **Map of Relation to Set of Attributes.ctl** (below)
 
 ---
 
@@ -53,22 +54,6 @@ This being said, can probably get rid of the *Is Refnum.vi* in the *Error.lvlib*
 
 ---
 
-jettl Actor.lvlib
-virtual folders
-jettl
-	Process
-	Reuse
-		Msgs
-			Private
-			Public
-		Utilities
-
----
-
-Msg.vi: take away error structure!
-
----
-
 **Is Normal** (saved default as **TRUE**)
 (delete State enum)
 
@@ -83,3 +68,20 @@ Msg.vi: take away error structure!
 ---
 
 Move the Path into the **Attributes.ctl**?
+
+---
+
+Rename
+*Serialize To Inputs.vi* -> *Serialize.vi*
+
+
+---
+
+Init Cluster instead should be a class that is passed around.
+
+---
+
+nxg error
+
+---
+

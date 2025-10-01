@@ -14,6 +14,6 @@
 	<Item Name="Base Addresses Strategy.lvclass" Type="LVClass" URL="../Base Addresses Strategy/Base Addresses Strategy.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Created.ctl" Type="VI" URL="../Created.ctl"/>
 	<Item Name="Base Init.vi" Type="VI" URL="../Base Init.vi"/>
+	<Item Name="Created.ctl" Type="VI" URL="../Created.ctl"/>
 </Library>
