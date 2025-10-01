@@ -52,20 +52,6 @@ This being said, can probably get rid of the *Is Refnum.vi* in the *Error.lvlib*
 
 ---
 
-jettl.lvlib
-Virtual Folders
-Msg
-- Public
-	- Setup
-	- Teardown
-- Private
-	- Last Ack
-
-**Note**
-	Get rid of the Private jettls (vf)
-
----
-
 jettl Actor.lvlib
 virtual folders
 jettl

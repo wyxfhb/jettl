@@ -17,8 +17,8 @@
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
 		<Item Name="jettl.lvlib:Last Ack Msg Strategy.lvlib:Last Ack.lvclass" Type="Parent" URL="../../Last Ack Msg Strategy/Last Ack/Last Ack.lvclass"/>
-		<Item Name="Setup Msg Strategy.lvlib:Setup.lvclass" Type="Parent" URL="../../../Setup Msg Strategy/Setup/Setup.lvclass"/>
-		<Item Name="Teardown Msg Strategy.lvlib:Teardown.lvclass" Type="Parent" URL="../../../Teardown Msg Strategy/Teardown/Teardown.lvclass"/>
+		<Item Name="jettl.lvlib:Setup Msg Strategy.lvlib:Setup.lvclass" Type="Parent" URL="../../Setup Msg Strategy/Setup/Setup.lvclass"/>
+		<Item Name="jettl.lvlib:Teardown Msg Strategy.lvlib:Teardown.lvclass" Type="Parent" URL="../../Teardown Msg Strategy/Teardown/Teardown.lvclass"/>
 	</Item>
 	<Item Name="jettl" Type="Folder">
 		<Item Name="jettl" Type="Folder">

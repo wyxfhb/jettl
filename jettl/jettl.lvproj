@@ -14,8 +14,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Setup Msg Strategy.lvlib" Type="Library" URL="../Setup Msg Strategy/Setup Msg Strategy.lvlib"/>
-		<Item Name="Teardown Msg Strategy.lvlib" Type="Library" URL="../Teardown Msg Strategy/Teardown Msg Strategy.lvlib"/>
 		<Item Name="jettl.lvlib" Type="Library" URL="../jettl/jettl.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">

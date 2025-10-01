@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <LVClass LVVersion="21008000">
-	<Property Name="NI.Lib.ContainingLib" Type="Str">Setup Msg Strategy.lvlib</Property>
+	<Property Name="NI.Lib.ContainingLib" Type="Str">jettl.lvlib:Setup Msg Strategy.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../Setup Msg Strategy.lvlib</Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*$!!!*Q(C=\&gt;8"&lt;2."&amp;-&lt;RTYA$2^R"Z":?#[Y!S3W]&amp;CROO3#:$PA1"Y\)JVS27XANO!7X90Y\@FB/1$9()DBE._/MPZFZ]]PO;#/.YYXU7M&gt;&lt;R`OLRZ`U8SN#V\HT&gt;[./]U_&gt;9_TR]:+H,^VR=8&amp;:`WG.8_=`8P,J_N?/W`UX$LU=,]?`0?ZP&lt;N*HX\-T43]C7N&amp;-3VJI7OJ9Z%6?Z%6?Z%6O=J/&lt;X/1G.XG3*XG3*XG3*XG1"XG1"XG1"`EYS55O=J&amp;$+B9P&amp;CK+&amp;A7+Q6"5@"3?QF.Y#A^@68A+4_%J0)7()3I]B;@Q&amp;*\#QT16HM*4?!J0Y;(5E.1YS@%5(ML,?)T(?)T(?&amp;B3RG-!:D&amp;4W"3")&gt;.J,IT(?)S(3RG0]2C0]2A0X4)?YT%?YT%?JIS\YK':4H)]F&amp;(C34S**`%E(EIL]33?R*.Y%A`,+@%EHA32,*A5B["E5D)A_:*Y%A_`F(A34_**0)G(LP'%=NS:34/&gt;Z(A#4_!*0)%H]&amp;"#A3@Q"*\!%XAIK]!4?!*0Y!E],+8!%XA#4Q!*&amp;G6Z"=7#C='A)!A]`)T&gt;%O-J?5BCH&amp;*P8P7G6']W^3:3&lt;Q\V1V=`406$5N^]^5V6XSTV46$`=7KU'K.?2$VZ'KA$HXP;DL;F&lt;7BLWIKWJ#VI]WHK8RZY/"SUX__VW_WUX7[VW7SU8K_V7KWU8#[V7#QUH]`0LY%\TP-,Y@2?OO&gt;[;F^I8^^K^OHTQ_T$OW_T\R]@S/^G0`O@[8`J@`"OV#N&gt;VO5?`1"C"=FJ!!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">553680896</Property>
@@ -15,12 +15,12 @@
 
 </Property>
 	<Item Name="Setup.vi" Type="VI" URL="../Setup.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$M!!!!"!!%!!!!2E"Q!"Y!!#A95W6U&gt;8!A48.H)&amp;.U=G&amp;U:7&gt;Z,GRW&lt;'FC$6.F&gt;(6Q,GRW9WRB=X-!!".K:82U&lt;#".=W=A5W6U&gt;8!A&lt;X6U!%:!=!!?!!!I'&amp;.F&gt;(6Q)%VT:S"4&gt;(*B&gt;'6H?3ZM&gt;GRJ9AV4:82V=#ZM&gt;G.M98.T!!!3;G6U&gt;'QA48.H)&amp;.F&gt;(6Q)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!E!!!!!!"!!-!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%K!!!!"1!%!!!!3%"Q!"Y!!$1,;G6U&gt;'QO&lt;(:M;7)95W6U&gt;8!A48.H)&amp;.U=G&amp;U:7&gt;Z,GRW&lt;'FC$6.F&gt;(6Q,GRW9WRB=X-!!!F4:82V=#"P&gt;81!/E"Q!"Y!!#E,;G6U&gt;'QO&lt;(:M;7)-5W6O:'6S,GRW&lt;'FC$F.F&lt;G2F=CZM&gt;G.M98.T!!:4:7ZE:8)!!%B!=!!?!!!U#WJF&gt;(2M,GRW&lt;'FC'&amp;.F&gt;(6Q)%VT:S"4&gt;(*B&gt;'6H?3ZM&gt;GRJ9AV4:82V=#ZM&gt;G.M98.T!!!)5W6U&gt;8!A;7Y!!&amp;1!]!!-!!!!!!!!!!%!!!!!!!!!!A!!!!!!!!!$!A!!?!!!!!!!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!A!!!!!!!!!!!!!!!!!!!#1!!!!!!%!"!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1084236288</Property>
 	</Item>
 </LVClass>
