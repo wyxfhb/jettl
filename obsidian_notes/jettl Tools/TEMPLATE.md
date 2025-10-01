@@ -23,3 +23,8 @@ delete
 
 ---
 
+Msg.vi, get rid of Error Structure
+and the TSC after the interface.
+
+---
+

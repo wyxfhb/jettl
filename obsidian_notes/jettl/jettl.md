@@ -7,7 +7,8 @@ Rename
 *jettl.vi* -> *Actor.vi*
 *Base jettl.lvclass* -> *jettl Actor.lvclass*
 *Msg Strategy* -> *Msg*
-*Serialize To Inputs.vi* -> *Serialize*
+*Serialize To Inputs.vi* -> *Serialize.vi*
+*Priority?* -> *Is Priority*
 
 ---
 
@@ -78,3 +79,7 @@ Msg.vi: take away error structure!
 
 *Is Nominal State.vi* -> *Get Is Normal.vi*
 *Override To Nominal State.vi* -> *Override To Normal.vi*
+
+---
+
+Move the Path into the **Attributes.ctl**?
