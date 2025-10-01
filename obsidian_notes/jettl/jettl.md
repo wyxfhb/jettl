@@ -5,7 +5,7 @@ So many DD and accessors going on! Can replace with **Map of Relation to Set of 
 
 Rename
 *jettl.vi* -> *Actor.vi*
-*Base jettl.lvclass -> *jettl Actor.lvclass*
+*Base jettl.lvclass* -> *jettl Actor.lvclass*
 *Msg Strategy* -> *Msg*
 *Serialize To Inputs.vi* -> *Serialize*
 
@@ -34,21 +34,6 @@ When an actor is created, the Msgs it can implement will be put into the Base j
 1. the created will know the Msgs the creator can receive and  
 2. the creator will know the Msgs the created can receive (sent back from Actor.vi to Create.vi).
 This allows checks to ensure that the Msg being sent has been implemented in the receiving actor.
-
----
-
-REMOVE THE Sender Interface from Interface Msg
-Override in Actor Interface
-- Merge Error
-- Override Error
-- Create
-(move to Utilities)
-
-
-- In Base Actor.lvclass remove Sender Interface
-(move to Utilities)
-
-- delete Msgs!
 
 ---
 

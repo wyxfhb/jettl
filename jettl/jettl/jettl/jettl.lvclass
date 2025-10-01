@@ -16,10 +16,7 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="Create Msg Strategy.lvlib:Create.lvclass" Type="Parent" URL="../../../Create Msg Strategy/Create/Create.lvclass"/>
 		<Item Name="jettl.lvlib:Last Ack Msg Strategy.lvlib:Last Ack.lvclass" Type="Parent" URL="../../Last Ack Msg Strategy/Last Ack/Last Ack.lvclass"/>
-		<Item Name="Merge Error Msg Strategy.lvlib:Merge Error.lvclass" Type="Parent" URL="../../../Merge Error Msg Strategy/Merge Error/Merge Error.lvclass"/>
-		<Item Name="Override Error Msg Strategy.lvlib:Override Error.lvclass" Type="Parent" URL="../../../Override Error Msg Strategy/Override Error/Override Error.lvclass"/>
 		<Item Name="Setup Msg Strategy.lvlib:Setup.lvclass" Type="Parent" URL="../../../Setup Msg Strategy/Setup/Setup.lvclass"/>
 		<Item Name="Teardown Msg Strategy.lvlib:Teardown.lvclass" Type="Parent" URL="../../../Teardown Msg Strategy/Teardown/Teardown.lvclass"/>
 	</Item>
@@ -89,9 +86,9 @@
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
 			<Item Name="Post-Process.vi" Type="VI" URL="../Post-Process.vi">
-				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#/!!!!!Q!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!);G6U&gt;'QA;7Y!!&amp;1!]!!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!A!!?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!!A!!!!!</Property>
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#]!!!!"!!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#'JF&gt;(2M)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A)!!(A!!!!!!!!!!!!!!!!!!)E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!E!!!!!!"!!-!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
@@ -142,9 +139,9 @@
 				<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
 			</Item>
 			<Item Name="Created Aliases.vi" Type="VI" URL="../Created Aliases.vi">
-				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#[!!!!"1!%!!!!%%!Q`````Q:4&gt;(*J&lt;G=!!"R!1!!"`````Q!"$U.S:7&amp;U:71A17RJ98.F=Q!O1(!!(A!!'QNK:82U&lt;#ZM&gt;GRJ9AVK:82U&lt;#ZM&gt;G.M98.T!!BK:82U&lt;#"J&lt;A!!6!$Q!!Q!!!!!!!)!!!!!!!!!!!!!!!!!!!!!!!-#!!"Y!!!!!!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!%!!!!!!</Property>
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$I!!!!"1!%!!!!'%!Q`````Q^$=G6B&gt;'6E)%&amp;M;7&amp;T:8-!1A$R!!!!!!!!!!),;G6U&gt;'QO&lt;(:M;7)41X*F982F:#""&lt;'FB=W6T,G.U&lt;!!;1(-!!1^$=G6B&gt;'6E)%&amp;M;7&amp;T:8-!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!);G6U&gt;'QA;7Y!!&amp;1!]!!-!!!!!!!#!!!!!!!!!!!!!!!!!!!!!!!$!A!!?!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!"!!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
@@ -167,6 +164,33 @@
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+			</Item>
+			<Item Name="Create.vi" Type="VI" URL="../Create.vi">
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$[!!!!"A!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!#J!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!"7JF&gt;(2M!"2!-0````]+5W6M:C""&lt;'FB=Q!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!);G6U&gt;'QA;7Y!!&amp;1!]!!-!!!!!!!!!!%!!!!!!!!!!!!!!!)!!Q!%!A!!?!!!!!!!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%!!!!B!!!!#1!!!!!!%!"1!!!!!</Property>
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">1090519178</Property>
+				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1082667520</Property>
+			</Item>
+			<Item Name="Merge Error.vi" Type="VI" URL="../Merge Error.vi">
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$V!!!!#!!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!!R!)1:T&gt;'&amp;U&gt;8-!!!N!!Q!%9W^E:1!!%%!Q`````Q:T&lt;X6S9W5!!"*!5!!$!!)!!Q!%"56S=G^S!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#'JF&gt;(2M)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!5!"A)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!E!!!!!!"!!=!!!!!</Property>
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">1090519178</Property>
+				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1082667520</Property>
+			</Item>
+			<Item Name="Override Error.vi" Type="VI" URL="../Override Error.vi">
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$V!!!!#!!%!!!!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!*;G6U&gt;'QA&lt;X6U!!R!)1:T&gt;'&amp;U&gt;8-!!!N!!Q!%9W^E:1!!%%!Q`````Q:T&lt;X6S9W5!!"*!5!!$!!)!!Q!%"56S=G^S!#Z!=!!?!!!&lt;#WJF&gt;(2M,GRW&lt;'FC$7JF&gt;(2M,GRW9WRB=X-!#'JF&gt;(2M)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!5!"A)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!E!!!!!!"!!=!!!!!</Property>
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">1090519178</Property>
+				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1082667520</Property>
 			</Item>
 			<Item Name="Get Error.vi" Type="VI" URL="../Get Error.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$(!!!!"Q!%!!!!$%!B"H.U982V=Q!!#U!$!!2D&lt;W2F!!!11$$`````"H.P&gt;8*D:1!!%E"1!!-!!1!#!!-&amp;28*S&lt;X)!,E"Q!"Y!!"M,;G6U&gt;'QO&lt;(:M;7).;G6U&gt;'QO&lt;(:D&lt;'&amp;T=Q!);G6U&gt;'QA;7Y!!&amp;1!]!!-!!!!!!!%!!!!!!!!!!!!!!!!!!!!!!!&amp;!A!!?!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!"A!!!!!</Property>
