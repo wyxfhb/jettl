@@ -34,7 +34,7 @@
 	</Item>
 	<Item Name="jettl" Type="Folder">
 		<Item Name="Process" Type="Folder">
-			<Item Name="Decorator.vi" Type="VI" URL="../Decorator.vi">
+			<Item Name="Decorate.vi" Type="VI" URL="../Decorate.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%A!!!!"1!%!!!!2E"Q!"Y!!#Q,;G6U&gt;'QO&lt;(:M;7),17.U&lt;X)O&lt;(:M;7)31G&amp;T:3""9X2P=CZM&gt;G.M98.T!!!/1G&amp;T:3""9X2P=C"P&gt;81!!$:!=!!?!!!H#WJF&gt;(2M,GRW&lt;'FC#U&amp;D&gt;'^S,GRW&lt;'FC$5&amp;D&gt;'^S,GRW9WRB=X-!"5&amp;D&gt;'^S!%2!=!!?!!!M#WJF&gt;(2M,GRW&lt;'FC#U&amp;D&gt;'^S,GRW&lt;'FC%E*B=W5A17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!!$5*B=W5A17.U&lt;X)A;7Y!6!$Q!!Q!!!!!!!!!!1!!!!!!!!!!!!!!!!!#!!-#!!"Y!!!!!!!!!!!!!!!!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%!!!!*!!!!!!!1!%!!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
@@ -326,16 +326,6 @@
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082401280</Property>
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Init.ctl" Type="VI" URL="../Init.ctl">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!""!!!!!1!Z!0%!!!!!!!!!!QNK:82U&lt;#ZM&gt;GRJ9B*#98.F)'JF&gt;(2M,GRW9WRB=X-*1W^O&gt;(*P&lt;#!R!!A!!!!"!!!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">5242880</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1074536960</Property>
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Init.vi" Type="VI" URL="../Init.vi">

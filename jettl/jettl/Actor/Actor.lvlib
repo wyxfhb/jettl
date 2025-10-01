@@ -15,4 +15,8 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Base Init.vi" Type="VI" URL="../Base Init.vi"/>
+	<Item Name="Created Info.lvclass" Type="LVClass" URL="../Created Info/Created Info.lvclass"/>
+	<Item Name="Find Implemented Msgs.vi" Type="VI" URL="../Find Implemented Msgs.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 </Library>

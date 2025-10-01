@@ -11,5 +11,4 @@
 </Property>
 	<Item Name="Alias Already Exists.vi" Type="VI" URL="../Alias Already Exists.vi"/>
 	<Item Name="Alias Does Not Exist.vi" Type="VI" URL="../Alias Does Not Exist.vi"/>
-	<Item Name="Is Refnum.vi" Type="VI" URL="../Is Refnum.vi"/>
 </Library>
