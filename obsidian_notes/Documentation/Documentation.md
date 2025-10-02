@@ -22,8 +22,17 @@ Second (note order not guaranteed here)
 
 ---
 
-go back to the main release and grab the comments from Msg in Create.
+Put comments that are misc into the documentation
 
 ---
 
-Put comments that are misc into the documentation
+### Msg.vi
+
+NIAF. This comment is taken directly and possibly modified from the Actor Framework.
+"The use of two To More Specific nodes, one with the output object unwired and the other with the error unwired, is a trick to avoid creating a copy of the Actor object while still preserving the original Actor object if the To More Specific fails."
+
+NIAF. This comment is taken directly and possibly modified from the Actor Framework.
+"The case structure is intended to handle instances where the target method has no error input and to handle methods that do not check for error before executing.  It both prevents the operation and protects error throughput back to the actor core."
+
+---
+
