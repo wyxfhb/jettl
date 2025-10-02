@@ -36,3 +36,7 @@ NIAF. This comment is taken directly and possibly modified from the Actor Framew
 
 ---
 
+**Is From Actor** boolean flag to tell whether a Msg has come from an Actor or has been executed as a normal method.
+
+---
+

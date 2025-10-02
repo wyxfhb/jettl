@@ -16,13 +16,9 @@
 	</Item>
 	<Item Name="Base Init.vi" Type="VI" URL="../Base Init.vi"/>
 	<Item Name="Created Aliases.ctl" Type="VI" URL="../Created Aliases.ctl"/>
-	<Item Name="Implemented Msgs.ctl" Type="VI" URL="../Implemented Msgs.ctl">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
+	<Item Name="Implemented Msgs.ctl" Type="VI" URL="../Implemented Msgs.ctl"/>
+	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl"/>
 	<Item Name="Find Implemented Msgs.vi" Type="VI" URL="../Find Implemented Msgs.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Alias to Created Attributes.ctl" Type="VI" URL="../Alias to Created Attributes.ctl">

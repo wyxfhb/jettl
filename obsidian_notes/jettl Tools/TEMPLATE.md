@@ -1,14 +1,6 @@
-Add in the Init.vi
-
----
-
 Process.vi
 	Execution: check box the close when closed but leave the front panel open when ran UNCHECKED!
 	This allows us NOT to need to use the FP.Close invoke node in Destroy method.
-
----
-
-Take away sender interface from Merge Error, Override Error, Create
 
 ---
 
@@ -23,8 +15,12 @@ delete
 
 ---
 
-Msg.vi, get rid of Error Structure
-and the TSC after the interface.
+replace with execute
+sync reply ALSO has execute.
+
+---
+
+TEMPLATE Init (Recommended)
 
 ---
 
