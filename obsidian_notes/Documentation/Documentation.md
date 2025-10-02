@@ -9,6 +9,8 @@ If a method has an object output terminal, you should wire the output to pass th
 
 ---
 
+Revisit the priority stuff
+
 Execution of Msgs determined BEFORE While Loop:
 By definition, nothing should be overridden in Decorator
 First
@@ -37,6 +39,17 @@ NIAF. This comment is taken directly and possibly modified from the Actor Framew
 ---
 
 **Is From Actor** boolean flag to tell whether a Msg has come from an Actor or has been executed as a normal method.
+
+---
+
+Best practice?
+
+Messages should not be reused / forwarded.
+
+Rather, messages should be contained within an actor.
+That way actors use messages either alone OR
+
+Utilities (virtual folder) for type defs
 
 ---
 

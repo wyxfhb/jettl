@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "jettl Tools/TEMPLATE.md",
+                "file": "jettl/jettl.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TEMPLATE"
+              "title": "jettl"
             }
           }
         ]
@@ -168,10 +168,10 @@
   },
   "active": "5521f155aedbca71",
   "lastOpenFiles": [
-    "jettl Tools/Questions.md",
-    "jettl/jettl.md",
     "jettl Tools/TEMPLATE.md",
+    "jettl/jettl.md",
     "Documentation/Documentation.md",
+    "jettl Tools/Questions.md",
     "jettl Tools/Scripting.md",
     "jettl/Would Be Nice To Do.md",
     "Reuse Actors/Reuse Actors.md",

@@ -24,3 +24,11 @@ TEMPLATE Init (Recommended)
 
 ---
 
+Go with the case structure! and setup with handle INSIDE!
+
+---
+
+take away setup and comment in Pre-Process
+
+---
+
