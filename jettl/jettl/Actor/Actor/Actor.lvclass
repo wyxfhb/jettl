@@ -210,16 +210,16 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
 			</Item>
-			<Item Name="Is Nominal State.vi" Type="VI" URL="../Is Nominal State.vi">
-				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#Q!!!!"!!%!!!!&amp;E!B%5FT)%ZP&lt;7FO97QA5X2B&gt;'5`!$J!=!!?!!!H#WJF&gt;(2M,GRW&lt;'FC#U&amp;D&gt;'^S,GRW&lt;'FC$5&amp;D&gt;'^S,GRW9WRB=X-!#%&amp;D&gt;'^S)'FO!!"5!0!!$!!!!!!!!1!!!!!!!!!!!!!!!!!!!!!!!A)!!(A!!!!!!!!!!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!E!!!!!!"!!-!!!!!</Property>
+			<Item Name="Get Is Normal.vi" Type="VI" URL="../Get Is Normal.vi">
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#I!!!!"!!%!!!!$E!B#5FT)%ZP=GVB&lt;!![1(!!(A!!*QNK:82U&lt;#ZM&gt;GRJ9AN"9X2P=CZM&gt;GRJ9AV"9X2P=CZM&gt;G.M98.T!!B"9X2P=C"J&lt;A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!!!!!!!!!!!!!!)#!!"Y!!!!!!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!$!!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Override To Nominal State.vi" Type="VI" URL="../Override To Nominal State.vi">
+			<Item Name="Override To Normal.vi" Type="VI" URL="../Override To Normal.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$5!!!!"!!%!!!!/E"Q!"Y!!#=,;G6U&gt;'QO&lt;(:M;7),17.U&lt;X)O&lt;(:M;7).17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!*17.U&lt;X)A&lt;X6U!$J!=!!?!!!H#WJF&gt;(2M,GRW&lt;'FC#U&amp;D&gt;'^S,GRW&lt;'FC$5&amp;D&gt;'^S,GRW9WRB=X-!#%&amp;D&gt;'^S)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!E!!!!!!"!!-!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>

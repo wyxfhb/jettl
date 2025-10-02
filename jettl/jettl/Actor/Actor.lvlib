@@ -19,4 +19,7 @@
 	<Item Name="Find Implemented Msgs.vi" Type="VI" URL="../Find Implemented Msgs.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Is Implemented Msg.vi" Type="VI" URL="../Is Implemented Msg.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 </Library>
