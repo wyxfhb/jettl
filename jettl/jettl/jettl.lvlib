@@ -16,11 +16,7 @@
 	<Item Name="Msg.lvclass" Type="LVClass" URL="../Msg/Msg.lvclass"/>
 	<Item Name="Sender.lvlib" Type="Library" URL="../Sender/Sender.lvlib"/>
 	<Item Name="Actor.lvlib" Type="Library" URL="../Actor/Actor.lvlib"/>
-	<Item Name="Addresses Strategy.lvlib" Type="Library" URL="../Addresses Strategy/Addresses Strategy.lvlib">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Utilities.lvlib" Type="Library" URL="../Utilities/Utilities.lvlib"/>
 </Library>

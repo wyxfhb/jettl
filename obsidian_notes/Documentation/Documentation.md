@@ -22,3 +22,8 @@ Second (note order not guaranteed here)
 
 ---
 
+go back to the main release and grab the comments from Msg in Create.
+
+---
+
+Put comments that are misc into the documentation

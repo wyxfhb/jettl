@@ -15,4 +15,5 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Base Init.vi" Type="VI" URL="../Base Init.vi"/>
+	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 </Library>
