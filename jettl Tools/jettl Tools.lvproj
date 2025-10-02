@@ -118,8 +118,6 @@
 				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
 			</Item>
 			<Item Name="jettl.lvlib" Type="Library" URL="../../jettl/jettl/jettl.lvlib"/>
-			<Item Name="jettl.lvclass" Type="LVClass" URL="../../jettl/jettl/jettl/jettl.lvclass"/>
-			<Item Name="Msg Strategy.lvclass" Type="LVClass" URL="../../jettl/jettl/Msg Strategy/Msg Strategy.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

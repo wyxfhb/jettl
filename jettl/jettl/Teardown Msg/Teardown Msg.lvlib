@@ -14,5 +14,5 @@
 	<Item Name="Teardown Msg.lvclass" Type="LVClass" URL="../Teardown Msg/Teardown Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Teardown Init.vi" Type="VI" URL="../Teardown Init.vi"/>
+	<Item Name="Teardown.vi" Type="VI" URL="../Teardown.vi"/>
 </Library>
