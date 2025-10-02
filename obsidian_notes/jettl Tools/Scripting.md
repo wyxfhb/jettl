@@ -14,3 +14,8 @@ Have got to find a way to distinguish messages that are private vs public for th
 ---
 
 edit things that deal with Msg Strategy in favor for Msg
+
+---
+
+really, the best practice is to create Msgs **IN** an Actor Library.
+This should be another field of entry to put in the Actor Library to put the Msg library into.
