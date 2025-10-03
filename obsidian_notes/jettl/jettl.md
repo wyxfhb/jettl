@@ -17,3 +17,7 @@ create and created
 ---
 
 still have to finish **Implemented Msg**
+
+---
+
+go back to controls and check red text for NON private controls.
