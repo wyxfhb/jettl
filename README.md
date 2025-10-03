@@ -18,6 +18,8 @@ Many advanced concepts are used, but not described, for simplicity.
 The framework is extended to work with other frameworks and design patterns.
 The source code is included for the jettl library along with the jettl Tools that help speed the process of development.
 
+![](doc/figures/jettl-palette.png)
+
 ## Motivation
 
 Over the the course of a couple years, I have designed applications to interface instruments for control of nuclear fusor, control XY stage motors to correlate and display 3D images via the data from a topological scanning laser, perform PID autotune algorithms for high efficiency RF antenna matching circuits, and control mass flow controllers for pressure and flow measurement, mocking a subsystem of a reactive ion etch system.
@@ -66,11 +68,9 @@ That way debug code does not exist in Base classes, and is held exclusively in t
 Look in the `doc` folder for the `main.pdf` for the ongoing documentation for `jettl`.
 Note, this documentation will likely be outdated.
 Please refer to the YouTube videos instead, linked above.
-*These images are high resolution, click them to zoom in and see the simple algorithm of data flow.*
 
-![](doc/figures/jettl-palette.png)
 ![](doc/figures/process-method.png)
-![](doc/figures/jettl-method.png)
+![](doc/figures/actor-method.png)
 
 ### Test Panel
 Automatically generated test panel providing controls / necessary inputs for all messages the actor expects.
