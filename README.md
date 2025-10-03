@@ -9,11 +9,9 @@ The framework is based upon SOLID friendly design patterns including the Strateg
 SOLID principles, especially dependency inversion/injection, are used throughout the code base to encourage the developer to depend on abstractions.
 Many advanced concepts are used, but not described, for simplicity.
 
-**Install on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/)**
-
-[Discord](https://discord.gg/tVkvTyBxqa) for conversation and questions.
-
-[Videos](https://www.youtube.com/@nathandavis6612) for developed examples and methodology of design.
+**Install the most recent published package on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/)**
+[Discord](https://discord.gg/tVkvTyBxqa)
+[Videos](https://www.youtube.com/@nathandavis6612)
 
 The framework is extended to work with other frameworks and design patterns.
 The source code is included for the jettl library along with the jettl Tools that help speed the process of development.
@@ -21,9 +19,7 @@ The source code is included for the jettl library along with the jettl Tools tha
 ![](doc/figures/jettl-palette.png)
 
 **Note**
-
 This library is compatible with LV 2020 and beyond. If using LV2020, please consider using LV 2020 SP1 and beyond due to issues resolved here:
-
 [LabVIEW 2020 SP1 Bug Fixes](https://www.ni.com/en/support/documentation/bugs/20/labview-2020-sp1-bug-fixes.html?srsltid=AfmBOooUbuV9waHiF74KkrteQY7SRCENumzj1XCdQMWldAIuQMDW1sM6)
 
 ## Motivation
