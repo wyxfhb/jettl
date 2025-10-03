@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-10-02 12:06:40" Creator="Erik" Comments="" ID="49887b1af7ba27495af679280b6d3654">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-10-02 21:35:28" Creator="Erik" Comments="" ID="207c60b2251fb9bd4e77bf6acce1b4b8">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl</Package_File_Name>
-    <Library_Version>2.0.0.21</Library_Version>
+    <Library_Version>2.0.0.22</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -27,24 +27,22 @@
     </Custom_Action_VIs>
     <VI_Package_Configuration_File>jettl.vipc</VI_Package_Configuration_File>
     <Description>
-      <One_Line_Description_Summary>LabVIEW Interface-Composition based Actor Model separating concerns of Event and Queue Actors.</One_Line_Description_Summary>
+      <One_Line_Description_Summary>jettl is an object-oriented interface-composition based LabVIEW Actor Model library used for asynchronous processing of messages. The framework is based upon SOLID friendly design patterns including the Strategy Pattern and Decorator Pattern.</One_Line_Description_Summary>
       <Description>jettl is an object-oriented interface-composition based LabVIEW Actor Model library used for asynchronous processing of messages.
 The framework is based upon SOLID friendly design patterns including the Strategy Pattern and Decorator Pattern.
 SOLID principles, especially dependency inversion/injection, are used throughout the code base to encourage the developer to depend on abstractions.
 Many advanced concepts are used, but not described, for simplicity.
 
-Check out the jettl Discord: https://discord.gg/tVkvTyBxqa for conversation and questions.
-
-Check out jettl videos: https://www.youtube.com/@nathandavis6612 for developed examples and methodology of design.
+Discord: https://discord.gg/tVkvTyBxqa
+Videos: https://www.youtube.com/@nathandavis6612
+GitHub: https://github.com/natev51/jettl
 
 The framework is extended to work with other frameworks and design patterns.
-The source code is included for the jettl library along with the jettl Tools that help speed the process of development.
-
-All of the information necessary is includes in the GitHub repository: https://github.com/natev51/jettl.</Description>
+The source code is included for the jettl library along with the jettl Tools that help speed the process of development.</Description>
       <Copyright/>
       <Packager>Nathan Davis</Packager>
       <URL>https://github.com/natev51/jettl</URL>
-      <Release_Notes/>
+      <Release_Notes>rework to make the api simpler. replaced unnecessary classes and interfaces with clusters (within jettl package). This will provide easier to read API. Also, readability of names such as Msg and Actor are now used. Expanded the functionality for reply messages. Working on synchronous messaging. This is unavailable, but procedural call exist. Ability to access all of the internals of the jettl Actor class. This includes the address of where messages are being sent, this is mostly for advanced users. Also, removed the setup, create, merge error, and override error messages. These have been moved to the utilities section. I think this will provide for a tighter messaging scheme. Many changes have occurred, some bugs may arise from the changes. Please message me for any reason.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -601,7 +599,7 @@ All of the information necessary is includes in the GitHub repository: https://g
         <Path>jettl\jettl\Sender\Sender\Self Attributes.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>55D0AF53F42ED01EAF2568B2222F07ED</GUID>
+      <GUID>52A95C334534680CCF9DAE0AD777BB43</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -622,7 +620,7 @@ All of the information necessary is includes in the GitHub repository: https://g
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>A6EE2EF96356DF1B6C6FB0FE00562329</GUID>
+      <GUID>3D73EE89FFAE2831DC784ECC65245147</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
