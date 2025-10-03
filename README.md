@@ -11,9 +11,9 @@ Many advanced concepts are used, but not described, for simplicity.
 
 **Install on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/)**
 
-Check out the [jettl Discord](https://discord.gg/tVkvTyBxqa) for conversation and questions.
+[jettl Discord](https://discord.gg/tVkvTyBxqa) for conversation and questions.
 
-Check out [jettl videos](https://www.youtube.com/@nathandavis6612) for developed examples and methodology of design.
+[jettl videos](https://www.youtube.com/@nathandavis6612) for developed examples and methodology of design.
 
 The framework is extended to work with other frameworks and design patterns.
 The source code is included for the jettl library along with the jettl Tools that help speed the process of development.
