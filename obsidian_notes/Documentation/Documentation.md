@@ -9,6 +9,8 @@ If a method has an object output terminal, you should wire the output to pass th
 
 ---
 
+Revisit the priority stuff
+
 Execution of Msgs determined BEFORE While Loop:
 By definition, nothing should be overridden in Decorator
 First
@@ -19,6 +21,35 @@ Second (note order not guaranteed here)
 
 **Note**
 	The priority of messages
+
+---
+
+Put comments that are misc into the documentation
+
+---
+
+### Msg.vi
+
+NIAF. This comment is taken directly and possibly modified from the Actor Framework.
+"The use of two To More Specific nodes, one with the output object unwired and the other with the error unwired, is a trick to avoid creating a copy of the Actor object while still preserving the original Actor object if the To More Specific fails."
+
+NIAF. This comment is taken directly and possibly modified from the Actor Framework.
+"The case structure is intended to handle instances where the target method has no error input and to handle methods that do not check for error before executing.  It both prevents the operation and protects error throughput back to the actor core."
+
+---
+
+**Is From Actor** boolean flag to tell whether a Msg has come from an Actor or has been executed as a normal method.
+
+---
+
+Best practice?
+
+Messages should not be reused / forwarded.
+
+Rather, messages should be contained within an actor.
+That way actors use messages either alone OR
+
+Utilities (virtual folder) for type defs
 
 ---
 

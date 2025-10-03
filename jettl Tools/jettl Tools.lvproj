@@ -117,12 +117,7 @@
 				<Item Name="Load &amp; Unload.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Classes/Load_Unload/Load &amp; Unload.lvclass"/>
 				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
 			</Item>
-			<Item Name="Merge Error Msg Strategy.lvlib" Type="Library" URL="../../jettl/Merge Error Msg Strategy/Merge Error Msg Strategy.lvlib"/>
-			<Item Name="Setup Msg Strategy.lvlib" Type="Library" URL="../../jettl/Setup Msg Strategy/Setup Msg Strategy.lvlib"/>
-			<Item Name="Teardown Msg Strategy.lvlib" Type="Library" URL="../../jettl/Teardown Msg Strategy/Teardown Msg Strategy.lvlib"/>
-			<Item Name="Override Error Msg Strategy.lvlib" Type="Library" URL="../../jettl/Override Error Msg Strategy/Override Error Msg Strategy.lvlib"/>
 			<Item Name="jettl.lvlib" Type="Library" URL="../../jettl/jettl/jettl.lvlib"/>
-			<Item Name="Create Msg Strategy.lvlib" Type="Library" URL="../../jettl/Create Msg Strategy/Create Msg Strategy.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
