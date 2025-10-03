@@ -1,4 +1,3 @@
-nxg error
 nxg everything
 
 ---
@@ -11,13 +10,9 @@ have yet to do something with the **Is Sync**
 
 ---
 
-maybe change everything to just alias. lol
-create and created
+maybe change everything to **Alias**
 
 ---
 
 still have to finish **Implemented Msg**
 
----
-
-go back to controls and check red text for NON private controls.
