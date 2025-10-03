@@ -11,14 +11,20 @@ Many advanced concepts are used, but not described, for simplicity.
 
 **Install on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/)**
 
-[jettl Discord](https://discord.gg/tVkvTyBxqa) for conversation and questions.
+[Discord](https://discord.gg/tVkvTyBxqa) for conversation and questions.
 
-[jettl videos](https://www.youtube.com/@nathandavis6612) for developed examples and methodology of design.
+[Videos](https://www.youtube.com/@nathandavis6612) for developed examples and methodology of design.
 
 The framework is extended to work with other frameworks and design patterns.
 The source code is included for the jettl library along with the jettl Tools that help speed the process of development.
 
 ![](doc/figures/jettl-palette.png)
+
+**Note**
+
+This library is compatible with LV 2020 and beyond. If using LV2020, please consider using LV 2020 SP1 and beyond due to issues resolved here:
+
+[LabVIEW 2020 SP1 Bug Fixes](https://www.ni.com/en/support/documentation/bugs/20/labview-2020-sp1-bug-fixes.html?srsltid=AfmBOooUbuV9waHiF74KkrteQY7SRCENumzj1XCdQMWldAIuQMDW1sM6)
 
 ## Motivation
 
@@ -57,12 +63,6 @@ Note, that these are used in reference to the jettl build package.
 - Subpanel example
 - `Periodic Message` example
 
-## Debugging
-
-Debug / Unit Test class wrapping.
-Some kind of diagram disable in the developed actor `Decorator.vi`, surrounding the (yet to be made) `Debug.lvclass`.
-That way debug code does not exist in Base classes, and is held exclusively in the `Base Debug.lvclass` / `Debug.lvclass` interface.
-
 ## Documentation
 
 Look in the `doc` folder for the `main.pdf` for the ongoing documentation for `jettl`.
@@ -78,3 +78,9 @@ have the test panel display payloads from messages received.
 This “Test Panel” is integrated as a part of the actor itself.
 This is to design modular Actors without dependencies of other Actors.
 Advanced: Potentially which messages the Actor is able to send and to which relative actor.
+
+## Debugging
+
+Debug / Unit Test class wrapping.
+Some kind of diagram disable in the developed actor `Decorator.vi`, surrounding the (yet to be made) `Debug.lvclass`.
+That way debug code does not exist in Base classes, and is held exclusively in the `Base Debug.lvclass` / `Debug.lvclass` interface.
