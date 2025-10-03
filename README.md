@@ -20,8 +20,6 @@ The source code is included for the jettl library along with the jettl Tools tha
 
 ![](doc/figures/jettl-palette.png)
 
-**Note**
-
 This library is compatible with LV 2020 and beyond. If using LV2020, please consider using LV 2020 SP1 and beyond due to issues resolved here:
 
 [LabVIEW 2020 SP1 Bug Fixes](https://www.ni.com/en/support/documentation/bugs/20/labview-2020-sp1-bug-fixes.html?srsltid=AfmBOooUbuV9waHiF74KkrteQY7SRCENumzj1XCdQMWldAIuQMDW1sM6)
@@ -51,35 +49,27 @@ These messages are exclusively interface driven messages, fully abstracting the 
 More specifically, interface composition.
 Interface composition allows for dynamic wrapping of classes via their common interface.
 In particular, debugging, unit testing, swapping panels, etc.
-
-## Examples
-
-The `Examples` folder has some examples that can be run.
-Note, that these are used in reference to the jettl build package.
-
-### Further Examples To Be Made
-- Dedicate methods for `Show Panel`, `Hide Panel`, `Change Panel`
-- Interchanging Panels
-- Subpanel example
-- `Periodic Message` example
+- **Inline Object Manipulation in Event Structure**.
+Every Actor comes with an event structure, which has the central object wire passed through it leading to a true by value design.
 
 ## Documentation
 
 Look in the `doc` folder for the `main.pdf` for the ongoing documentation for `jettl`.
 Note, this documentation will likely be outdated.
-Please refer to the YouTube videos instead, linked above.
+Please refer to the [Videos](https://www.youtube.com/@nathandavis6612) linked above, for explanations.
 
 ![](doc/figures/process-method.png)
 ![](doc/figures/actor-method.png)
 
-### Test Panel
+## Test Panel (Not Complete)
+
 Automatically generated test panel providing controls / necessary inputs for all messages the actor expects.
 have the test panel display payloads from messages received.
 This “Test Panel” is integrated as a part of the actor itself.
 This is to design modular Actors without dependencies of other Actors.
 Advanced: Potentially which messages the Actor is able to send and to which relative actor.
 
-## Debugging
+## Debugging (Not Complete)
 
 Debug / Unit Test class wrapping.
 Some kind of diagram disable in the developed actor `Decorator.vi`, surrounding the (yet to be made) `Debug.lvclass`.
