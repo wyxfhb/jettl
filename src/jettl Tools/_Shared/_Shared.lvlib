@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="20008000">
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!**!!!*Q(C=\&gt;7R&lt;2N"%)8B:U/"F:GB-I-N4!OM1!"&lt;G";95H,#!BRI3B"&lt;9!M4'(#EA#UQ6L&lt;[&gt;T5Y('$$&amp;'!,5K!\,HF]NT@\=7^RF-&lt;W2&lt;J1/\?N`\K^^(QP^&amp;P8.JVPU^O@TY`0=&gt;TLN/?_L=X(&lt;\.^&gt;N#GY;&gt;A6GJ^\D@___]`M_FD_^D?&gt;NO?8;3PPG9`K4_);%E,GN.-@;C7Z%G?Z%G?Z%E?Z%%?Z%%?Z%(OZ%\OZ%\OZ%ZOZ%:OZ%:OZ%9_&gt;H+2CVTEE*,"EY'3IEG"J$-5*7_**`%EHM4$6S7?R*.Y%E`CI9M34_**0)EH]8#:%E`C34S**`&amp;1;EBS\/2Y%A`F&amp;8A#4_!*0)'()26Y!E!Q7&amp;!Y+!*$Q=HA)0!%HM$$I1*0Y!E]A3@Q=&amp;K"*`!%HM!4?,BET%I-4&gt;`*]6"'DM@R/"\(YXAI,=@D?"S0YX%]$#@(YXA=B$/A5RS#H)O=$MY8R_.Y_*$D=4S/R`%Y(E[./_2D:LKG\_2Y$)`B-4S'R`"11I&lt;(]"A?QW.Y+#P$9XA-D_%R0!QFQW.Y$)]"-1:F?"H&amp;D!O.4E:A?(C.V7,D,M71W.CF7LSK2;F;&lt;+J&amp;J&amp;I=KJOOOJGKG[3;@.7EKC:,.1GK([&gt;#KT#K1618^YY[]8[E(7B\WI[WI;VJ+^K3NOC8`O?/J^.*R_.2B]."_`V?O^V/G]V'`$&amp;KN6JJO6RKM6B-DY&amp;P\.-$Y@GZN/7YNZO@OLT^KMO&lt;OY?L\@L[`PO08V?0&gt;;[X6`IP@1@02HX7P#ZT^!1^?[V=!!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
@@ -8,9 +9,14 @@
 
 </Property>
 	<Item Name="Get Project Types.vi" Type="VI" URL="../Get Project Types.vi"/>
-	<Item Name="Immediate Children.vi" Type="VI" URL="../Immediate Children.vi"/>
-	<Item Name="class To lvlib File Path.vi" Type="VI" URL="../class To lvlib File Path.vi"/>
+	<Item Name="Immediate Children.vi" Type="VI" URL="../Immediate Children.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="class To lvlib File Path.vi" Type="VI" URL="../class To lvlib File Path.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Array Control Enable.vi" Type="VI" URL="../Array Control Enable.vi"/>
 	<Item Name="Array Control Disable.vi" Type="VI" URL="../Array Control Disable.vi"/>
 	<Item Name="Check If Unique lvlib.vi" Type="VI" URL="../Check If Unique lvlib.vi"/>
+	<Item Name="Type.ctl" Type="VI" URL="../Type.ctl"/>
 </Library>
