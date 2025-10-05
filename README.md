@@ -1,5 +1,9 @@
 # jettl
 
+[![Image](https://www.vipm.io/package/nathan_davis_lib_jettl/badge.svg?metric=installs)](https://www.vipm.io/package/nathan_davis_lib_jettl/) [![Image](https://www.vipm.io/package/nathan_davis_lib_jettl/badge.svg?metric=stars)](https://www.vipm.io/package/nathan_davis_lib_jettl/)
+
+**Install the most recent published package on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/)**
+
 *Dedicated to Stephen Loftus-Mercer for his pioneering work in introducing interfaces to the LabVIEW environment.*
 
 *Please message me with your suggestions on how I can demonstrate more clear explanations, what I can do to improve the codebase for the developers needs, and examples you'd like to see.*
@@ -8,8 +12,6 @@
 The framework is based upon SOLID friendly design patterns including the Strategy Pattern and Decorator Pattern.
 SOLID principles, especially dependency inversion/injection, are used throughout the code base to encourage the developer to depend on abstractions.
 Many advanced concepts are used, but not described, for simplicity.
-
-**Install the most recent published package on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/)**
 
 [Discord](https://discord.gg/tVkvTyBxqa)
 
