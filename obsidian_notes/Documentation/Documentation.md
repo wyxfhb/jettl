@@ -53,3 +53,21 @@ Utilities (virtual folder) for type defs
 
 ---
 
+creating an actor should ONLY occur in the process method and methods within
+
+---
+
+Documentation
+
+  
+
+By knowing what messages an actor can implement,
+
+AND
+
+knowing what messages an actor uses (which ones are in memory?)
+
+Then by process of elimination, we know which messages would otherwise be sent to external actors (creator / created)
+
+---
+
