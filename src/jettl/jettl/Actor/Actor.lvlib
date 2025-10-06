@@ -19,4 +19,5 @@
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Implemented Msgs.ctl" Type="VI" URL="../Implemented Msgs.ctl"/>
 	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl"/>
+	<Item Name="Error Info.ctl" Type="VI" URL="../Error Info.ctl"/>
 </Library>

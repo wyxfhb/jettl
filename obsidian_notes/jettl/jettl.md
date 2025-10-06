@@ -6,3 +6,13 @@ This way sending messages and receiving messages can be logged accordingly.
 extra logging for messages:
 Also, the message itself can be used as a unique reference I.e. identifier
 class that has functionality in every method?
+
+---
+
+Implement the Null Msg
+
+
+put framework errors everywhere (especially in the obtain queue / event ones)
+
+
+add clear error info to palette
