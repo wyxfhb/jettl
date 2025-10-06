@@ -9,6 +9,7 @@
 
 </Property>
 	<Item Name="Teardown Msg.lvlib" Type="Library" URL="../Teardown Msg/Teardown Msg.lvlib"/>
+	<Item Name="No Op Msg.lvlib" Type="Library" URL="../No Op Msg/No Op Msg.lvlib"/>
 	<Item Name="Last Ack Msg.lvlib" Type="Library" URL="../Last Ack Msg/Last Ack Msg.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>

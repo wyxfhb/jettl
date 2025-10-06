@@ -71,3 +71,9 @@ Then by process of elimination, we know which messages would otherwise be sent t
 
 ---
 
+No Op Msg
+
+In case we don’t want to unconditionally execute a msg.. in the inspect method, an incoming msg can be overridden by instead putting the Null Msg on the object wire.
+
+---
+

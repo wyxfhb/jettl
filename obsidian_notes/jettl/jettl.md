@@ -9,10 +9,3 @@ class that has functionality in every method?
 
 ---
 
-Implement the Null Msg
-
-
-put framework errors everywhere (especially in the obtain queue / event ones)
-
-
-add clear error info to palette
