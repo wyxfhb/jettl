@@ -14,5 +14,5 @@
 	<Item Name="Teardown Error Msg.lvclass" Type="LVClass" URL="../Teardown Error Msg/Teardown Error Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Teardown Error.vi" Type="VI" URL="../Teardown Error.vi"/>
+	<Item Name="Teardown Error Msg.vi" Type="VI" URL="../Teardown Error Msg.vi"/>
 </Library>

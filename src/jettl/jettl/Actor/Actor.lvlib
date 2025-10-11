@@ -14,7 +14,7 @@
 	<Item Name="Base Actor.lvclass" Type="LVClass" URL="../Base Actor/Base Actor.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Base Init.vi" Type="VI" URL="../Base Init.vi"/>
+	<Item Name="Base Actor.vi" Type="VI" URL="../Base Actor.vi"/>
 	<Item Name="Created Aliases.ctl" Type="VI" URL="../Created Aliases.ctl"/>
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Implemented Msgs.ctl" Type="VI" URL="../Implemented Msgs.ctl"/>

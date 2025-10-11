@@ -14,5 +14,5 @@
 	<Item Name="TEMPLATE Msg.lvclass" Type="LVClass" URL="../TEMPLATE Msg/TEMPLATE Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="TEMPLATE.vi" Type="VI" URL="../TEMPLATE.vi"/>
+	<Item Name="TEMPLATE Msg.vi" Type="VI" URL="../TEMPLATE Msg.vi"/>
 </Library>

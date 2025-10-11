@@ -77,3 +77,12 @@ In case we don’t want to unconditionally execute a msg.. in the inspect method
 
 ---
 
+The inner layers for wrapping SHOULD NOT have Progress overridden? Way to enforce this?  
+
+---
+
+Best practice:  
+Before creating an actor, cannot send it messages.
+
+---
+
