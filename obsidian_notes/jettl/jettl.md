@@ -1,11 +1,30 @@
-Have some strategy pattern internal to Sender which gives user the ability to get the info of Sender Interface and log things etc.
-
-This can be an interface called Inspect.lvclass with a DD method called Inspect.vi which takes in and out the Msg (just like inspect)
-This way sending messages and receiving messages can be logged accordingly.
-
-extra logging for messages:
-Also, the message itself can be used as a unique reference I.e. identifier
-class that has functionality in every method?
+**Inspect.vi**
+Checks if Msg within current actors **Msgs**, otherwise
 
 ---
 
+**Create.vi**
+Swap
+- Actor
+- Alias
+
+(Four places)
+
+---
+
+Three standard Msgs implement on
+- **Base Actor.lvclass**
+- **TEMPLATE Actor.lvclass**
+
+**Msg Actor Wrapper** DD method called in EVERY Msg, to specifically deal with wrapping of messages.
+
+
+Given the **Msgs** for an actor, c
+
+Think Panel Actor inheriting Actor.. Actor doesn't have the Show Panel Msg? So are there wrappers for these? I guess not...
+
+So as a default, should we wrap all messages too a a default?
+
+So that if outside doesn't implement, a check says go to the next wrapped layer. if that layer implements it, execute that method. and since the wrapper is in that messages method, calls the next until there are no more to be decorated i.e. you're at the **Base Actor.lvclass**.
+
+if the actor doesn't implement the message, then just pass the object through like it is a no op for that layer.
