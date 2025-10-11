@@ -7,13 +7,4 @@ Msg added to after. change in scripting
 
 ---
 
-Setup -> Pre-Loop
-Destroy -> Post-Loop
-
----
-
-Pre-Event
-Post-Event (replaces Handle)
-
----
-
+The set union, for Msgs, write this as its own function, just use the internals of union set SO you don’t have malleables in jettl!
