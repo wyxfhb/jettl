@@ -17,7 +17,7 @@
 	<Item Name="Base Actor.vi" Type="VI" URL="../Base Actor.vi"/>
 	<Item Name="Created Aliases.ctl" Type="VI" URL="../Created Aliases.ctl"/>
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
-	<Item Name="Implemented Msgs.ctl" Type="VI" URL="../Implemented Msgs.ctl"/>
+	<Item Name="Msgs.ctl" Type="VI" URL="../Msgs.ctl"/>
 	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl"/>
 	<Item Name="Error Info.ctl" Type="VI" URL="../Error Info.ctl"/>
 </Library>

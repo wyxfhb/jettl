@@ -86,3 +86,8 @@ Before creating an actor, cannot send it messages.
 
 ---
 
+best practice:
+for an actor, do not decorate after creating actor.
+
+---
+

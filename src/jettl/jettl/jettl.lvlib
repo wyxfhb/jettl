@@ -18,4 +18,5 @@
 	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Attributes.lvlib" Type="Library" URL="../Attributes/Attributes.lvlib"/>
 </Library>
