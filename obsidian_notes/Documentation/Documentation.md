@@ -91,3 +91,25 @@ for an actor, do not decorate after creating actor.
 
 ---
 
+Actor layers where actors decorate each other.
+
+- Implementing a Msg means you will extend functionality to it
+- otherwise not implementing a Msg means you won’t add functionality to the Msg when it is called.
+- If none of the layers implement the Msg, then an error is created in Base Actor.
+
+---
+
+best practice:
+fundamentally, get and set methods should not do anything else but get and set WITHOUT and additional functionality.
+
+---
+
+Best practice:
+Always develop in your own library and compose that library into a jettl actor. That way the code used is decoupled from the Actor.
+
+---
+
+Best practice to NOT use Is Priority flag in developer application
+
+---
+

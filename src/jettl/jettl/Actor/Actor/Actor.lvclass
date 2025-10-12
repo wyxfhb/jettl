@@ -139,8 +139,8 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Get Created Attributes.vi" Type="VI" URL="../Get Created Attributes.vi">
-				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%%!!!!"A!%!!!!$E!B#%FT)%:P&gt;7ZE!!"/1(!!(A!!-1NK:82U&lt;#ZM&gt;GRJ9B""&gt;(2S;7*V&gt;'6T,GRW&lt;'FC%E&amp;U&gt;(*J9H6U:8-O&lt;(:D&lt;'&amp;T=Q!31X*F982F:#""&gt;(2S;7*V&gt;'6T!!!/1$$`````"5&amp;M;7&amp;T!$J!=!!?!!!H#WJF&gt;(2M,GRW&lt;'FC#U&amp;D&gt;'^S,GRW&lt;'FC$5&amp;D&gt;'^S,GRW9WRB=X-!#%&amp;D&gt;'^S)'FO!!"5!0!!$!!!!!%!!A!!!!!!!!!!!!!!!!!!!!-!"!)!!(A!!!!!!!!*!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)1!!!!E!!!!!!"!!5!!!!!</Property>
+			<Item Name="Get Map of Created Attributes.vi" Type="VI" URL="../Get Map of Created Attributes.vi">
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;=!!!!"A!%!!!!$E!Q`````Q6"&lt;'FB=Q"/1(!!(A!!-1NK:82U&lt;#ZM&gt;GRJ9B""&gt;(2S;7*V&gt;'6T,GRW&lt;'FC%E&amp;U&gt;(*J9H6U:8-O&lt;(:D&lt;'&amp;T=Q!31X*F982F:#""&gt;(2S;7*V&gt;'6T!!"G!0%!!!!!!!!!!QNK:82U&lt;#ZM&gt;GRJ9AN"9X2P=CZM&gt;GRJ9BV.98!A&lt;W9A1X*F982F:#""&gt;(2S;7*V&gt;'6T,G.U&lt;!!I1(1!!A!"!!):47&amp;Q)'^G)%.S:7&amp;U:71A182U=GFC&gt;82F=Q![1(!!(A!!*QNK:82U&lt;#ZM&gt;GRJ9AN"9X2P=CZM&gt;GRJ9AV"9X2P=CZM&gt;G.M98.T!!B"9X2P=C"J&lt;A!!6!$Q!!Q!!!!!!!-!!!!!!!!!!!!!!!!!!!!!!!1#!!"Y!!!!!!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!&amp;!!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
@@ -148,7 +148,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Self.vi" Type="VI" URL="../Self.vi">
+			<Item Name="Send Self.vi" Type="VI" URL="../Send Self.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%+!!!!"A!%!!!!/E"Q!"Y!!#=,;G6U&gt;'QO&lt;(:M;7),17.U&lt;X)O&lt;(:M;7).17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!*17.U&lt;X)A&lt;X6U!""!)1N*=S"1=GFP=GFU?1!G1(!!(A!!'1NK:82U&lt;#ZM&gt;GRJ9AN.=W=O&lt;(:D&lt;'&amp;T=Q!$48.H!$J!=!!?!!!H#WJF&gt;(2M,GRW&lt;'FC#U&amp;D&gt;'^S,GRW&lt;'FC$5&amp;D&gt;'^S,GRW9WRB=X-!#%&amp;D&gt;'^S)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!#!!-!"!)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!1!!!!E!!!!!!"!!5!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
@@ -157,7 +157,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Creator.vi" Type="VI" URL="../Creator.vi">
+			<Item Name="Send Creator.vi" Type="VI" URL="../Send Creator.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%+!!!!"A!%!!!!/E"Q!"Y!!#=,;G6U&gt;'QO&lt;(:M;7),17.U&lt;X)O&lt;(:M;7).17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!*17.U&lt;X)A&lt;X6U!""!)1N*=S"1=GFP=GFU?1!G1(!!(A!!'1NK:82U&lt;#ZM&gt;GRJ9AN.=W=O&lt;(:D&lt;'&amp;T=Q!$48.H!$J!=!!?!!!H#WJF&gt;(2M,GRW&lt;'FC#U&amp;D&gt;'^S,GRW&lt;'FC$5&amp;D&gt;'^S,GRW9WRB=X-!#%&amp;D&gt;'^S)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!#!!-!"!)!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!1!!!!E!!!!!!"!!5!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
@@ -166,7 +166,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Created.vi" Type="VI" URL="../Created.vi">
+			<Item Name="Send Created.vi" Type="VI" URL="../Send Created.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%9!!!!"Q!%!!!!/E"Q!"Y!!#=,;G6U&gt;'QO&lt;(:M;7),17.U&lt;X)O&lt;(:M;7).17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!*17.U&lt;X)A&lt;X6U!!Z!-0````]&amp;17RJ98-!%%!B#UFT)&amp;"S;7^S;82Z!#:!=!!?!!!:#WJF&gt;(2M,GRW&lt;'FC#UVT:SZM&gt;G.M98.T!!..=W=!/E"Q!"Y!!#=,;G6U&gt;'QO&lt;(:M;7),17.U&lt;X)O&lt;(:M;7).17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!)17.U&lt;X)A;7Y!!&amp;1!]!!-!!!!!!!!!!%!!!!!!!!!!!!#!!-!"!!&amp;!A!!?!!!!!!!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!)1!!!!#!!!!"!!!!#1!!!!!!%!"A!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
