@@ -123,3 +123,34 @@ For example, a private message called “Begin Msg” is fine, whereas a public 
 
 ---
 
+reason to public and private are used without protected or community scope
+
+it is easier tot test actor because its methods are public so easier to test
+
+---
+
+not recommended to append functionality to methods with the Set and Get prefixes.
+
+---
+
+object wire must never be split unless:
+- directly going to a read only method or
+- unbundle
+
+---
+
+Through enforcing DD in and DD out for the Actor methods, actors always have the same object throughout its lifetime. Furthermore, the object is always contained within the event structure.
+
+---
+
+Key concepts:
+- No Password Protection  
+- No malleable VIs
+- No xnodes
+- RT Compatible
+- No PLLS
+
+---
+
+best practice:
+maybe it is best practice to NOT use the priority on messages. the direct use case is to send yourself a message again if not in the correct state.

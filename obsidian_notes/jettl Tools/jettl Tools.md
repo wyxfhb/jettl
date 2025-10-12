@@ -6,3 +6,9 @@ or maybe not path, but rather the place hierarchy of library(s)?
 
 ---
 
+for the public and private
+
+we can look at the project for XXXX.lvlib:YYYYY.lvlib:ZZZZZ.lvlib:WWWW.lvclass
+
+---
+
