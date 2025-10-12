@@ -14,17 +14,13 @@ Not necessary to have Actor, that’s confusing!
 
 ---
 
-add in attributes as library
 
-replace in private data!
+
+
 
 delete attributes
 - [ ] delete error info
 delete 
-
----
-
-get self, creator, created
 
 ---
 
