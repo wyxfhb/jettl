@@ -113,3 +113,13 @@ Best practice to NOT use Is Priority flag in developer application
 
 ---
 
+Best practice when naming Msgs
+
+For private messages, the names can be fairly simple
+Whereas for public messages, care should be taken to give them somewhat detailed names ~3-4 words.
+This is due to name spacing issues when overriding the method names.
+
+For example, a private message called “Begin Msg” is fine, whereas a public Msg of the same name could lead to naming conflicts for overrides. A better name, depending on context would be, “Begin Pump Sequence Msg” would be more suitable.
+
+---
+

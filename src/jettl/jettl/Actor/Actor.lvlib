@@ -25,6 +25,8 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Suppress Teardown Error.vi" Type="VI" URL="../Suppress Teardown Error.vi"/>
+	<Item Name="Is Created Attribute.vi" Type="VI" URL="../Is Created Attribute.vi"/>
+	<Item Name="Is Already Exists.vi" Type="VI" URL="../Is Already Exists.vi"/>
 	<Item Name="Is Msg.vi" Type="VI" URL="../Is Msg.vi"/>
 	<Item Name="Find Msgs.vi" Type="VI" URL="../Find Msgs.vi"/>
 	<Item Name="Parent Interfaces.vi" Type="VI" URL="../Parent Interfaces.vi">
