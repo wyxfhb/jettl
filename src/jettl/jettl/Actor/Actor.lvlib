@@ -14,10 +14,23 @@
 	<Item Name="Base Actor.lvclass" Type="LVClass" URL="../Base Actor/Base Actor.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Base Init.vi" Type="VI" URL="../Base Init.vi"/>
+	<Item Name="Base Actor.vi" Type="VI" URL="../Base Actor.vi"/>
 	<Item Name="Created Aliases.ctl" Type="VI" URL="../Created Aliases.ctl"/>
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
-	<Item Name="Implemented Msgs.ctl" Type="VI" URL="../Implemented Msgs.ctl"/>
-	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl"/>
-	<Item Name="Error Info.ctl" Type="VI" URL="../Error Info.ctl"/>
+	<Item Name="Msgs.ctl" Type="VI" URL="../Msgs.ctl"/>
+	<Item Name="Map of Created Attributes.ctl" Type="VI" URL="../Map of Created Attributes.ctl"/>
+	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
+	<Item Name="Actor.vi" Type="VI" URL="../Actor.vi"/>
+	<Item Name="Count.vi" Type="VI" URL="../Count.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Suppress Teardown Error.vi" Type="VI" URL="../Suppress Teardown Error.vi"/>
+	<Item Name="Is Created Attribute.vi" Type="VI" URL="../Is Created Attribute.vi"/>
+	<Item Name="Is Already Exists.vi" Type="VI" URL="../Is Already Exists.vi"/>
+	<Item Name="Is Msg.vi" Type="VI" URL="../Is Msg.vi"/>
+	<Item Name="Find Msgs.vi" Type="VI" URL="../Find Msgs.vi"/>
+	<Item Name="Parent Interfaces.vi" Type="VI" URL="../Parent Interfaces.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Send.vi" Type="VI" URL="../Send.vi"/>
 </Library>

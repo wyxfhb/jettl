@@ -77,3 +77,80 @@ In case we don’t want to unconditionally execute a msg.. in the inspect method
 
 ---
 
+The inner layers for wrapping SHOULD NOT have Progress overridden? Way to enforce this?  
+
+---
+
+Best practice:  
+Before creating an actor, cannot send it messages.
+
+---
+
+best practice:
+for an actor, do not decorate after creating actor.
+
+---
+
+Actor layers where actors decorate each other.
+
+- Implementing a Msg means you will extend functionality to it
+- otherwise not implementing a Msg means you won’t add functionality to the Msg when it is called.
+- If none of the layers implement the Msg, then an error is created in Base Actor.
+
+---
+
+best practice:
+fundamentally, get and set methods should not do anything else but get and set WITHOUT and additional functionality.
+
+---
+
+Best practice:
+Always develop in your own library and compose that library into a jettl actor. That way the code used is decoupled from the Actor.
+
+---
+
+Best practice to NOT use Is Priority flag in developer application
+
+---
+
+Best practice when naming Msgs
+
+For private messages, the names can be fairly simple
+Whereas for public messages, care should be taken to give them somewhat detailed names ~3-4 words.
+This is due to name spacing issues when overriding the method names.
+
+For example, a private message called “Begin Msg” is fine, whereas a public Msg of the same name could lead to naming conflicts for overrides. A better name, depending on context would be, “Begin Pump Sequence Msg” would be more suitable.
+
+---
+
+reason to public and private are used without protected or community scope
+
+it is easier tot test actor because its methods are public so easier to test
+
+---
+
+not recommended to append functionality to methods with the Set and Get prefixes.
+
+---
+
+object wire must never be split unless:
+- directly going to a read only method or
+- unbundle
+
+---
+
+Through enforcing DD in and DD out for the Actor methods, actors always have the same object throughout its lifetime. Furthermore, the object is always contained within the event structure.
+
+---
+
+Key concepts:
+- No Password Protection  
+- No malleable VIs
+- No xnodes
+- RT Compatible
+- No PLLS
+
+---
+
+best practice:
+maybe it is best practice to NOT use the priority on messages. the direct use case is to send yourself a message again if not in the correct state.

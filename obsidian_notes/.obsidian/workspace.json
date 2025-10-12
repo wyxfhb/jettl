@@ -8,20 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "66cfdb46630cccd5",
+            "id": "1f4036b57e11f0ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documentation/Documentation.md",
+                "file": "jettl/jettl.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Documentation"
+              "title": "jettl"
+            }
+          },
+          {
+            "id": "2a39bc5668dcdab2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "jettl/jettl.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "jettl"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,12 +181,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "66cfdb46630cccd5",
+  "active": "2a39bc5668dcdab2",
   "lastOpenFiles": [
-    "jettl/jettl.md",
     "Documentation/Documentation.md",
+    "Example.md",
+    "jettl/jettl.md",
+    "jettl Tools/jettl Tools.md",
     "jettl Tools/TEMPLATE.md",
+    "Decorator Pattern.md",
     "jettl/Would Be Nice To Do.md",
+    "jettl Tools/RT.md",
+    "jettl Tools/Images/rt_strings.png",
+    "jettl Tools/Images",
     "jettl Tools/Questions.md",
     "jettl Tools/Scripting.md",
     "Package Release/Package Release.md",

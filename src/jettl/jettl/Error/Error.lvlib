@@ -12,5 +12,5 @@
 	<Item Name="Alias Already Exists.vi" Type="VI" URL="../Alias Already Exists.vi"/>
 	<Item Name="Alias Does Not Exist.vi" Type="VI" URL="../Alias Does Not Exist.vi"/>
 	<Item Name="Msg Not Implemented.vi" Type="VI" URL="../Msg Not Implemented.vi"/>
-	<Item Name="Teardown.vi" Type="VI" URL="../Teardown.vi"/>
+	<Item Name="Teardown Error.vi" Type="VI" URL="../Teardown Error.vi"/>
 </Library>
