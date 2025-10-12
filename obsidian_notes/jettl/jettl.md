@@ -3,10 +3,6 @@ Checks if Msg within Msgs of all decorated actors and then recurse through the d
 
 ---
 
-change the TEMPLATE.vi -> TEMPLATE Msg.vi ?
-
----
-
 add attributes get to palette
 
 ---

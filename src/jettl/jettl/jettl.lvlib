@@ -20,5 +20,5 @@
 	</Item>
 	<Item Name="Attributes.lvlib" Type="Library" URL="../Attributes/Attributes.lvlib"/>
 	<Item Name="Decorator.lvclass" Type="LVClass" URL="../Decorator/Decorator.lvclass"/>
-	<Item Name="Get Msgs.lvclass" Type="LVClass" URL="../Get Msgs/Get Msgs.lvclass"/>
+	<Item Name="Msgs.lvclass" Type="LVClass" URL="../Msgs/Msgs.lvclass"/>
 </Library>

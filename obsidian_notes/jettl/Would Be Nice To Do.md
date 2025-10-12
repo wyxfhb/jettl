@@ -41,3 +41,7 @@ class that has functionality in every method?
 
 ---
 
+change the TEMPLATE.vi -> TEMPLATE Msg.vi ?
+
+---
+
