@@ -14,5 +14,5 @@
 	<Item Name="Last Ack Msg.lvclass" Type="LVClass" URL="../Last Ack Msg/Last Ack Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Last Ack Msg.vi" Type="VI" URL="../Last Ack Msg.vi"/>
+	<Item Name="Last Ack.vi" Type="VI" URL="../Last Ack.vi"/>
 </Library>

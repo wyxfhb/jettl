@@ -1,27 +1,17 @@
 **Inspect.vi**
-Checks if Msg within current actors **Msgs**, otherwise
+Checks if Msg within Msgs of all decorated actors and then recurse through the decorated actors **Msgs**
 
 ---
 
-Msg added to after. change in scripting
-
----
-
-Keep Errors, just accessors
-
-In Create, have two Queues, one of Attributes and one for Error!
-Not necessary to have Actor, that’s confusing!
-
----
-
-
-
-
-
-delete attributes
-- [ ] delete error info
-delete 
+change the TEMPLATE.vi -> TEMPLATE Msg.vi ?
 
 ---
 
 add attributes get to palette
+
+---
+
+delete get sender?
+
+---
+

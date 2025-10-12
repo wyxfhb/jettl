@@ -19,4 +19,6 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Attributes.lvlib" Type="Library" URL="../Attributes/Attributes.lvlib"/>
+	<Item Name="Decorator.lvclass" Type="LVClass" URL="../Decorator/Decorator.lvclass"/>
+	<Item Name="Get Msgs.lvclass" Type="LVClass" URL="../Get Msgs/Get Msgs.lvclass"/>
 </Library>
