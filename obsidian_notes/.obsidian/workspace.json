@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "jettl/Would Be Nice To Do.md",
+                "file": "New Notes/Temporary Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Would Be Nice To Do"
+              "title": "Temporary Notes"
             }
           }
         ]
@@ -168,21 +168,21 @@
   },
   "active": "2a39bc5668dcdab2",
   "lastOpenFiles": [
+    "Documentation/Example.md",
+    "Documentation/Decorator Pattern.md",
+    "jettl/Would Be Nice To Do.md",
     "jettl Tools/RT.md",
     "jettl Tools/Questions.md",
     "jettl Tools/jettl Tools.md",
-    "jettl/Would Be Nice To Do.md",
     "jettl/jettl.md",
     "jettl/Images/wires_off.png",
     "jettl/Images",
-    "New Notes/New Notes.md",
+    "New Notes/Temporary Notes.md",
     "Package Release/Package Release.md",
     "New Notes/Images",
     "New Notes",
     "Documentation/Documentation.md",
-    "Example.md",
     "jettl Tools/TEMPLATE.md",
-    "Decorator Pattern.md",
     "jettl Tools/Images/rt_strings.png",
     "jettl Tools/Images",
     "jettl Tools/Scripting.md",
