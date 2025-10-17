@@ -1,3 +1,4 @@
+
 ### VI Analyzer
 
 Run VI Analyzer tests on NIAF and jettl
@@ -41,18 +42,21 @@ Error for “Not a Valid Sender for Reply”
 ---
 
 Replace most
-“Get Error.vi” with “Can Continue.vi”
+`Read Error.vi` with `Can Proceed.vi`
 
 ---
 
 Delete
 - Pre Process
-- Post Process  
+- Post Process 
+- Cleanup
+- Set Self Attributes
+- Set Creator Attributes
 
 ---
 
 Base Actor : Msg Execute
-Take away the set error in error case
+Take away the `Write Error` in error case
 
 ---
 
@@ -62,19 +66,38 @@ Of Insert and Remove private methods, just replace back.
 ---
 
 Last Ack
-Take out
-- Destroy
-- Set Error
+Take out (all)
+- `Destroy.vi`
+- `Write Error.vi`
 Leave comment in Last Ack about wrapper override
 
 ---
 
 Map of Created Attributes -> Created Attributes Map
 
+Don’t expose the Map
+- `Read Created Attributes.vi`
+- `Read Created Aliases.vi`
+- `Is Created Alias.vi`
+
 ---
 
+Set -> Write
+Get -> Read
 
+---
 
+Last Ack -> Has Destroyed Self
+
+---
+
+`Actor.vi` -> `Run Lifetime.vi`
+
+---
+
+`Pre Loop.vi` -> `Setup.vi`
+`Pre Event.vi` -> `Loop Begin.vi`
+`Post Event.vi` -> `Loop End.vi`
 ### Best Practice
 
 Not all actors need to be individual. Some Actors are made to couple tightly with other Actors.
@@ -95,6 +118,16 @@ Msgs can be sent in `Pre Loop.vi` since register for events before the `Pre Loop
 
 ---
 
+If a method has output object, it SHOULD be wired.
+VI analyzer test that looks if that terminal has an associated wire connection.
+
+---
+
+Since `Process.vi` is NOT a decorator method, that means only the top level process will be executed!
+Get rid of any layer outside of the actor with a process.
+
+---
+
 
 ### Style Best Practice
 
@@ -107,6 +140,16 @@ Only have top two conn panes are Object in / Object out
 All Boolean logic is positive logic.
 
 ---
+
+Justify execution for each method in it's description
+
+---
+
+Base Actor Creates and Destroys all references in the same method call.
+In particular, Queue and Event references.
+
+---
+
 
 ### Edits
 
@@ -131,6 +174,9 @@ Outside of messages methods, the core decorator methods in jettl should only out
 ---
 
 Error:
+
+Errors signify that “intended operation could not be performed”
+
 Indication that a function could not complete it’s assigned task. This is justification why Destroy is not an error.
 
 [https://youtu.be/00TZxeyt8_A?si=C3kbhPJ4HtcmhOfk](https://youtu.be/00TZxeyt8_A?si=C3kbhPJ4HtcmhOfk)
@@ -144,7 +190,65 @@ jettl has build in error propagation where the Error is within the Base Actor pr
 Therefore, all errors within the framework that are generated will immediately be put into the Actor object.
 Since each error that can occur in a method is known, an Actor decorator, for example, can override this behavior by clearing errors as necessary. It is the default behavior to put all jettl errors on the error wire to expose the API to the developer, and the developer can decide which errors to ignore for each individual method.
 
-For example, clearing errors that come from the Send methods if an Address is not registered anymore.
+For example, clearing errors that come from the Send methods if an Address in Transport is not registered anymore.
+
+---
+
+Error
+Documentation
+expected error list with possible reasons the error was created.
+
+Best Practice
+Errors should be handled with the method that generates that error. For example, when an error occurs in a method, DO NOT handle the error in a global method call after the method has finished executing. Rather, handle the error as necessary during execution of the method call (this means in decorated methods too, think in a decorated layer of actor, handling errors that come out of Create.vi in another layer)
+
+Error Library turned Public
+
+---
+
+Error out not used on any actor methods since the error is encapsulated in the object wire. This ensures that the error chain will never be broken.
+`Read Error.vi` should go after the method has executed to ensure the developer is consciously  getting the error after every method call. That or the more general `Can Proceed.vi` which looks either for an error OR `Marked For Destroy`
+
+Should be a distinction between critical errors and errors.
+For example, critical errors occur when the internals of the framework throw an error.
+
+---
+
+Simple Error Handler, no need for general error handler.
+- DNatt
+
+---
+
+jettl Error Code Range
+509xxx
+
+---
+
+Generates error and coverts current error into string for error code.
+Does this in Error method.
+ie Start outputs
+TRUE
+509678
+“
+	*Placeholder Text*
+	
+	Actual Error:
+	Status: TRUE
+	Code: 1
+	Message: Start not working
+	Source: 
+”
+
+Marked as “xxxxxxxxx —[error.vi](http://error.vi/)”
+
+---
+
+Need to document:
+
+For EVERY method / function call, you SHOULD KNOW EVERY ERROR that will come out of that method / function, and document it for the developer. Otherwise, the error *likely* was passed from a previous method / method. You will know this by the call chain.
+
+---
+
+![[generate_error.png]]
 
 ---
 
@@ -166,6 +270,15 @@ After receiving message, logs to file the **Receive Time**
 **Create Time**
 This logging should go into **Create.vi** wrapper actor
 
+---
+
+Wrapper Actor Logging  
+EACH Actor has event logger.
+
+TDMS file is created for EACH Actor in a central application directory, and a time stamp with a call chain / object hierarchy are logged with events etc. This way we can easily stream these values to disk as an internal actor logger.
+
+---
+
 ### Palette
 
 Advanced Palette (in Actor)
@@ -176,6 +289,15 @@ Includes the Actor.vi, Send.vi, etc.
 > Maybe this isn't *Advanced*, but some other name for otherwise *discouraged in practical use*.
 
 Advanced palettes for EACH of the libraries exposed to the developer, in case they want to use dangerous functionality.
+
+---
+
+Best practice:
+Do not put the Msg methods in the palette since they are never called directly.
+
+---
+
+
 
 ### Enqueue and Dequeue
 
@@ -188,12 +310,14 @@ Dequeue: Fundamentally will not output an error since the queue is guaranteed to
 Transport.lvclass
 Event Transport.lvclass
 
-
+`Obtain Address`
+`Read Address`
+`Release Address`
 ### Boolean prefixes
 
 Is, Can, Has, Should, Was
 
-### Process
+### Process.vi
 
 **Process.vi**
 Register for Events before **Process.vi** override
@@ -203,6 +327,26 @@ Register for Events before **Process.vi** override
 > Take out register from Self Attributes
 
 Increase the size
+
+---
+
+Take away decorator. Not a decorator.
+
+---
+
+`Panel Close?` event with default of `Mark For Destroy.vi` function
+
+---
+
+`Process.vi`
+After `Write Attributes`
+`Was Created.vi`
+AND
+`Can Proceed.vi`
+
+---
+
+
 
 ### Wrappers
 
@@ -244,6 +388,34 @@ TRUE set as default
 
 ---
 
+Wrapper
+For the Errors generated in the program..
+In some actor layer, can override this default behavior by decorating the actor
+This Actor Wrapper can come native as a reuse library.
+Error function, and unbundle to get the `code`
+
+---
+
+Unit Testing idea
+Other idea about unit testing:
+The actor object can be logged before and after method execution, along with its inputs to determine potential use case unit tests to be tested for!
+
+---
+
+The `Read` / `Write` accessors never put out errors. That goes for the decorators as well. They should also not put out errors.
+
+---
+
+Sub Panels
+After Create, access to Created Attributes, which has Process Ref, so can easily put this into a Sub Panel here. And further, can modularize where front panels are in Process front panel of self i.e. changing around panels since you directly have access to the Process Ref of the Created Attributes.
+
+---
+
+For typical overrides to functionality.
+One thing is for Last Ack where the Error that was in an Actor.. how to handle, well there is default functionality in the Example Internal Actor that appends these errors to the creators object wire AND if from a creator, Destroys itself.
+
+---
+
 
 ### Msg methods
 
@@ -264,22 +436,80 @@ Msg methods have DD out because more often than not, they’re generating errors
 
 ### Destroy
 
-Documentation
-“Marked For Destroy”
-- always starts as FALSE
-- only be changed to TRUE in  “Destroy.vi”
-- can never be changed to FALSE
+`Mark For Destroy.vi` (Msg)
+`Is Marked For Destroy` (Boolean in PD)
+`Destroy.vi` (happens right before Last Ack)
+
+`Marked For Destroy`
+- always starts as `False`
+- only be changed to `True` in  `Mark For Destroy.vi`
+- can never be changed to `False`
+
+### Can Proceed.vi
+
+`Is Marked For Destroy` = TRUE
+OR
+Error
+outputs `Can Proceed`
+
+---
+
+Duality of Destruction!
+Either You're moving to Destroy because the `Mark For Destroy.vi` has executed or an unhandled error has occurred and the system cannot continue, hence Destroy will commence.
+These currently are two separate entities.
+
+---
+
+
+
+### Has Destroyed Self (Msg)
+
+At end of Actor, DO
+Have two Actor objects going to flat sequence.
+
+---
+
+**Was Created** boolean, this tells if the **Has Destroyed Self** should be sent or not.
+
+---
+
+Don’t need checker in front, but comment, could execute zero times.  
+
+Use flat sequence for Has Destroyed and Release Transport?
+
+---
+
+
+### Was Created
+
+Only TRUE when no errors AND marked for destroy = false
+
+---
+
+### Write Attributes.vi
+
+(mirror the connector pane for Process)
+Inputs of
+- `Queue of Actor` (unbundle the Actor for it's contents)
+- `Creator Attributes`
+- `All individual Self Attributes`
+`Init.vi` (Attributes)
+`Was Created` = True
+Enqueue Self Attributes to creator.
 
 ---
 
 ### Init.vi (Actor)
 
-Init.vi
-“Can Continue.vi”
-Has a case structure which internally has uninit code or not.
+Remove Msgs.vi (both TEMPLATE and Base)
 
 ---
 
+`Can Proceed.vi`
+cs = `False`
+Comment for code to uninitialized in this case
+
+---
 
 ### Project Style
 
@@ -295,6 +525,24 @@ Move to Actor Utilities!
 Tool that allows actor to implement message interface AND auto populates that interfaces message method with Msg Execute.vi, the function, and necessary wiring.
 
 ---
+
+TEMPLATE
+PD: open refs array
+
+---
+
+Actor / Msg Enum
+Replace ALL string types with this one.
+
+---
+
+Target combo box:
+- Rescript
+- Template
+- Rename
+
+---
+
 
 ### Msg Set
 
@@ -319,6 +567,27 @@ Layer Msg Set
 
 ---
 
+`Msg Output.vi` -> `Add To Msg Sets.vi`
+
+`Find Layer Msg Set.vi`, then
+- Bundle into `Layer Msg Set`
+- Union into `Unified Msg Set`
+
+Delete
+- `Write Layer Msg Set`
+- `Read Layer Msg Set`
+
+---
+
+### Contains Msg.vi
+
+output `Contains Msg` Boolean
+Inputs
+- Msg Set
+- Msg
+(Unified Sets Error in case structure)
+
+---
 
 ### Process Refs
 
@@ -335,49 +604,12 @@ Distinguishes messages in different layers
 
 ---
 
-# Working
+### Attributes
 
-Error
-Documentation
-expected error list with possible reasons the error was created.
+- Alias
+- Transport
+- Unified Msg Set
+- Process Ref
+- Application Ref
 
-Process.vi
-Enqueue Errors immediately Set Error.vi
-
-Error Best Practice
-Errors should be handled with the method that generates that error. For example, when an error occurs in a method, DO NOT handle the error in a global method call after the method has finished executing. Rather, handle the error as necessary during execution of the method call (this means in decorated methods too, think in a decorated layer of actor, handling errors that come out of Create.vi in another layer)
-
-Error Library turned Public
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-
-
-  
-
-
-  
-
-
-
-
-
-  
-
-
-  
-
-
-
-  
-
+---
