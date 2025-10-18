@@ -252,7 +252,7 @@ For EVERY method / function call, you SHOULD KNOW EVERY ERROR that will come out
 
 ---
 
-
+Maybe some merit for making an error cluster..
 ### Logging Wrapper
 
 Initialization for Actor tdms Logger.
@@ -305,14 +305,6 @@ Comment
 Enqueue: Fundamentally will not output an error since the queue is guaranteed to be open.
 Dequeue: Fundamentally will not output an error since the queue is guaranteed to be open.
 
-### Transport.lvclass
-
-Transport.lvclass
-Event Transport.lvclass
-
-`Obtain Address`
-`Read Address`
-`Release Address`
 ### Boolean prefixes
 
 Is, Can, Has, Should, Was
@@ -346,8 +338,9 @@ AND
 
 ---
 
-
-
+Actor Refs
+Placeholder Application Ref in Actor Refs
+Wire in default in `Lifetime.vi`
 ### Wrappers
 
 Inner Actor  
@@ -407,16 +400,12 @@ The `Read` / `Write` accessors never put out errors. That goes for the decorator
 ---
 
 Sub Panels
-After Create, access to Created Attributes, which has Process Ref, so can easily put this into a Sub Panel here. And further, can modularize where front panels are in Process front panel of self i.e. changing around panels since you directly have access to the Process Ref of the Created Attributes.
+After Create, access to Created Attributes, which has Actor Ref, so can easily put this into a Sub Panel here. And further, can modularize where front panels are in Process front panel of self i.e. changing around panels since you directly have access to the Actor Ref of the Created Attributes.
 
 ---
 
 For typical overrides to functionality.
 One thing is for Last Ack where the Error that was in an Actor.. how to handle, well there is default functionality in the Example Internal Actor that appends these errors to the creators object wire AND if from a creator, Destroys itself.
-
----
-
-
 ### Msg methods
 
 1. Drop messages method
@@ -434,6 +423,11 @@ Msg methods have DD out because more often than not, they’re generating errors
 
 ---
 
+messages named by the actor that sent the Msg
+i.e.
+Final Msg
+
+---
 ### Destroy
 
 `Mark For Destroy.vi` (Msg)
@@ -496,21 +490,6 @@ Inputs of
 `Init.vi` (Attributes)
 `Was Created` = True
 Enqueue Self Attributes to creator.
-
----
-
-### Init.vi (Actor)
-
-Remove Msgs.vi (both TEMPLATE and Base)
-
----
-
-`Can Proceed.vi`
-cs = `False`
-Comment for code to uninitialized in this case
-
----
-
 ### Project Style
 
 Move to Actor Utilities!  
@@ -587,29 +566,86 @@ Inputs
 - Msg
 (Unified Sets Error in case structure)
 
+# General
+
+
+# Actor
+
+
+
+## Base Actor
+
+### Init.vi
+
+Remove Msgs.vi (both TEMPLATE and Base)
+
 ---
 
-### Process Refs
-
-Placeholder Application Ref in Process Refs
-Wire in default in Process
+`Can Proceed.vi`
+cs = `False`
+Comment for code to uninitialized in this case
+# Miscellaneous
 
 ### jettl Feature  
 
-Last Ack sent to both creator and created
+`Has Destroyed Self` Msg sent to both creator and created
 
 ---
 
 Distinguishes messages in different layers
 
----
 
-### Attributes
 
+# Need to Sort
+
+`Init.vi` (TEMPLATE Actor)
+ONLY use Get Error!!!!
+You have not even created yet, so don’t ever call `Go To Destroy.vi` here.
+This should only be called in methods including and past `Pre Loop.vi`.\
+
+`Lifetime SD.vi` (SD IO) Comment to say this is only used since async start doesn't allow starting DD methods, no a SD method is used.
+Panel Stuff:
+Include the `Count.vi` T and F with fss
+To insert into a sub panel, need to first have standard front panel displayed?
+*Can have hidden FP on RT?*
+Can just run Hidden FP for all actors, then don’t need the `Count.vi`?
+
+`Lifetime.vi` (replaces `Actor.vi`) (DD IO)
+Documentation:
+Run Lifetime has output for potential debugging done outside of the scope of the framework ie for testing, running the “Run Lifetime.vi” on its own.
+Delete `Process.vi`
+Comment:
+In part, it is fine to have `Lifetime SD.vi` for our case because we want to ensure the actor object wire is never changed throughout it's lifetime. So having a DD output terminal on the `Lifetime.vi` minimizes runtime errors preventing the object wire from changing AND for testing, by running the Lifetime.vi in isolation to gain insights to an actor without starting it up asynchronously.
+
+`Set Attributes.vi`
+Create Address
+
+`Pre Loop.vi`
+Output
+	Register
+(release events if an error / destroy after `Setup.vi`
+
+`Pre Handle.vi`
+
+`Handle.vi`
+
+`Post Handle.vi`
+Is Msg (True ONLY for Message Case)
+
+`Post Loop.vi`
+This is where the drop messages can be handled
+
+`Destroy.vi`
+unconditionally called.
+Release Address unconditionally
+
+`Go To Destroy` Msg
+`Has Destroyed` Msg
+
+`Attributes.ctl`
 - Alias
 - Transport
+- Register
 - Unified Msg Set
-- Process Ref
+- Actor Ref
 - Application Ref
-
----

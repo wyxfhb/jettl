@@ -154,3 +154,12 @@ Key concepts:
 
 best practice:
 maybe it is best practice to NOT use the priority on messages. the direct use case is to send yourself a message again if not in the correct state.
+
+---
+
+Documentation:
+"Finally, Actors are multi-instanceable, ....... will behave erratically or crash entirely."
+https://forums.ni.com/t5/Actor-Framework-Discussions/Actor-Framework-Sometimes-I-get-lost/m-p/3425143#M3122
+
+---
+
