@@ -60,16 +60,13 @@ Take away the `Write Error` in error case
 
 ---
 
-Last Ack
+`Has Destroyed`
 Take out (all)
 - `Destroy.vi`
 - `Write Error.vi`
 Leave comment in Last Ack about wrapper override
 
 ---
-
-Map of Created Attributes -> Created Attributes Map
-
 
 `Read Created Attributes.vi`
 `Read Created Aliases.vi`
@@ -80,14 +77,11 @@ Map of Created Attributes -> Created Attributes Map
 Set -> Write
 Get -> Read
 
----
-
-Last Ack -> Has Destroyed
 ### Best Practice
 
 Not all actors need to be individual. Some Actors are made to couple tightly with other Actors.
 
-Because it is emphasized to not branch the actor objects wire, it is encouraged to create an actor that acts as a helper loop. Note that of course the messaging mechanism between them should still be actor messages, though Last Ack overrides etc. could contain information for the particular actor that was created. i.e. for a popup configuration box, this can be a private actor which returns its class contents which can be unbundled in Last Ack to easily get the configuration parameters.
+Because it is emphasized to not branch the actor objects wire, it is encouraged to create an actor that acts as a helper loop. Note that of course the messaging mechanism between them should still be actor messages, though `Has Destroyed` overrides etc. could contain information for the particular actor that was created. i.e. for a popup configuration box, this can be a private actor which returns its class contents which can be unbundled in `Has Destroyed` to easily get the configuration parameters.
 
 ---
 
@@ -359,7 +353,7 @@ For the internal wrapping actors, do not include messages within them? Of course
 
 Wrapper can have
 Init.vi
-Boolean flag for “Destroy on Creator Last Ack”
+Boolean flag for “Destroy on Creator `Has Destroyed`”
 TRUE set as default
 
 ---
@@ -388,7 +382,7 @@ After Create, access to Created Attributes, which has Actor Ref, so can easily 
 ---
 
 For typical overrides to functionality.
-One thing is for Last Ack where the Error that was in an Actor.. how to handle, well there is default functionality in the Example Internal Actor that appends these errors to the creators object wire AND if from a creator, Destroys itself.
+One thing is for `Has Destroyed` where the Error that was in an Actor.. how to handle, well there is default functionality in the Example Internal Actor that appends these errors to the creators object wire AND if from a creator, Destroys itself.
 ### Msg methods
 
 1. Drop messages method
@@ -415,7 +409,7 @@ Final Msg
 
 `Mark For Destroy.vi` (Msg)
 `Is Marked For Destroy` (Boolean in PD)
-`Destroy.vi` (happens right before Last Ack)
+`Destroy.vi` (happens right before `Has Destroyed`)
 
 `Marked For Destroy`
 - always starts as `False`
