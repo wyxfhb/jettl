@@ -60,11 +60,6 @@ Take away the `Write Error` in error case
 
 ---
 
-Get RID
-Of Insert and Remove private methods, just replace back.
-
----
-
 Last Ack
 Take out (all)
 - `Destroy.vi`
@@ -564,10 +559,6 @@ Inputs
 ## Base Actor
 
 ### Init.vi
-
-Remove Msgs.vi (both TEMPLATE and Base)
-
----
 
 `Can Proceed.vi`
 cs = `False`
