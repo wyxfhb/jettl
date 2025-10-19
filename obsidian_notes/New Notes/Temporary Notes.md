@@ -60,14 +60,6 @@ Take away the `Write Error` in error case
 
 ---
 
-`Has Destroyed`
-Take out (all)
-- `Destroy.vi`
-- `Write Error.vi`
-Leave comment in Last Ack about wrapper override
-
----
-
 `Read Created Attributes.vi`
 `Read Created Aliases.vi`
 `Is Created Alias.vi`
