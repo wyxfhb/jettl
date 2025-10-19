@@ -9,7 +9,7 @@
 
 </Property>
 	<Item Name="Go To Destroy Msg.lvlib" Type="Library" URL="../Go To Destroy Msg/Go To Destroy Msg.lvlib"/>
-	<Item Name="Last Ack Msg.lvlib" Type="Library" URL="../Last Ack Msg/Last Ack Msg.lvlib">
+	<Item Name="Has Destroyed Msg.lvlib" Type="Library" URL="../Has Destroyed Msg/Has Destroyed Msg.lvlib">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Msg.lvclass" Type="LVClass" URL="../Msg/Msg.lvclass"/>

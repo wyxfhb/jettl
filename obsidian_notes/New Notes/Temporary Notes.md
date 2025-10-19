@@ -640,11 +640,6 @@ Release Address unconditionally, in case Post Loop has not been called since not
 This is the only place the `Event Ref` is released.
 Internally, checks `Has Created` flag to see if `Has Destroyed should be sent`
 
-`Go To Destroy` Msg
-This should only be called in methods including and past `Pre Loop.vi`.
-
-`Has Destroyed` Msg
-
 `Attributes.ctl`
 - Alias
 - Address
@@ -678,8 +673,14 @@ create references in Actor.vi since other wise they would be released from memor
 Error on IO
 Don’t have terminals on error IO unless they are errors.
 This is the same philosophy used for the object IO terminals.
+- Edit the scripting tools to not include Error in OR, BUT ALWAYS includes Error out
+- outline in message creating that only four inputs are allowed. Two on the side, and two on the bottom.
 
-Edit the scripting tools to not include Error in, BUT ALWAYS includes Error out
 
-Provides extensibility decorator message methods.
-I could see this changing in the future with customizable case structures.
+# Finished
+
+`Go To Destroy` Msg
+This should only be called in methods including and past `Pre Loop.vi`
+
+`Has Destroyed` Msg
+
