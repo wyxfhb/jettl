@@ -673,3 +673,13 @@ Read methods for all private data!
 
 
 create references in Actor.vi since other wise they would be released from memory is the creator is destroyed.
+
+
+Error on IO
+Don’t have terminals on error IO unless they are errors.
+This is the same philosophy used for the object IO terminals.
+
+Edit the scripting tools to not include Error in, BUT ALWAYS includes Error out
+
+Provides extensibility decorator message methods.
+I could see this changing in the future with customizable case structures.
