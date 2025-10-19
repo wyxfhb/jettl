@@ -70,10 +70,10 @@ Leave comment in Last Ack about wrapper override
 
 Map of Created Attributes -> Created Attributes Map
 
-Don’t expose the Map
-- `Read Created Attributes.vi`
-- `Read Created Aliases.vi`
-- `Is Created Alias.vi`
+
+`Read Created Attributes.vi`
+`Read Created Aliases.vi`
+`Is Created Alias.vi`
 
 ---
 

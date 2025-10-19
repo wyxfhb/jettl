@@ -18,7 +18,7 @@
 	<Item Name="Created Aliases.ctl" Type="VI" URL="../Created Aliases.ctl"/>
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
-	<Item Name="Map of Created Attributes.ctl" Type="VI" URL="../Map of Created Attributes.ctl"/>
+	<Item Name="Created Attributes Map.ctl" Type="VI" URL="../Created Attributes Map.ctl"/>
 	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
 	<Item Name="Actor.vi" Type="VI" URL="../Actor.vi"/>
 	<Item Name="Count.vi" Type="VI" URL="../Count.vi">
