@@ -640,20 +640,9 @@ Release Address unconditionally, in case Post Loop has not been called since not
 This is the only place the `Event Ref` is released.
 Internally, checks `Has Created` flag to see if `Has Destroyed should be sent`
 
-`Attributes.ctl`
-- Alias
-- Address
-- Event Ref
-- Unified Msg Set
-- Actor Ref
-- Application Ref
-
 `Read Unhandled Msgs.vi` (Function)
 Note
 	Should be used after override of Post Loop, this is because `Destroy` includes the release of references.
-
-`TEMPLATE Actor.lvclass`
-`Internal Refs`
 
 Condtional:
 
@@ -683,3 +672,13 @@ This is the same philosophy used for the object IO terminals.
 This should only be called in methods including and past `Pre Loop.vi`
 
 `Has Destroyed` Msg
+
+`Attributes.ctl`
+- Alias
+- Address
+- Event Ref
+- Unified Msg Set
+- Actor Ref
+- Application Ref
+
+changed messages and sender and attributes to start with read and write instead of get and set
