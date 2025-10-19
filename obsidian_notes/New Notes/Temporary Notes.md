@@ -644,8 +644,6 @@ Internally, checks `Has Created` flag to see if `Has Destroyed should be sent`
 Note
 	Should be used after override of Post Loop, this is because `Destroy` includes the release of references.
 
-Condtional:
-
 `Is Marked For Destroy` (boolean internal)
 
 `Must Destroy.vi`
@@ -681,4 +679,4 @@ This should only be called in methods including and past `Pre Loop.vi`
 - Actor Ref
 - Application Ref
 
-changed messages and sender and attributes to start with read and write instead of get and set
+Msg Set
