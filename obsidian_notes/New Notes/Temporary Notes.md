@@ -87,17 +87,7 @@ Get -> Read
 
 ---
 
-Last Ack -> Has Destroyed Self
-
----
-
-`Actor.vi` -> `Run Lifetime.vi`
-
----
-
-`Pre Loop.vi` -> `Setup.vi`
-`Pre Event.vi` -> `Loop Begin.vi`
-`Post Event.vi` -> `Loop End.vi`
+Last Ack -> Has Destroyed
 ### Best Practice
 
 Not all actors need to be individual. Some Actors are made to couple tightly with other Actors.
@@ -106,7 +96,7 @@ Because it is emphasized to not branch the actor objects wire, it is encouraged 
 
 ---
 
-Do not release the Register reference, unless after the loop in Process
+Do not release the Event Ref, unless after the loop in Process
 
 ---
 
@@ -190,7 +180,7 @@ jettl has build in error propagation where the Error is within the Base Actor pr
 Therefore, all errors within the framework that are generated will immediately be put into the Actor object.
 Since each error that can occur in a method is known, an Actor decorator, for example, can override this behavior by clearing errors as necessary. It is the default behavior to put all jettl errors on the error wire to expose the API to the developer, and the developer can decide which errors to ignore for each individual method.
 
-For example, clearing errors that come from the Send methods if an Address in Transport is not registered anymore.
+For example, clearing errors that come from the Send methods if an Address is not registered anymore.
 
 ---
 
@@ -316,8 +306,6 @@ Register for Events before **Process.vi** override
 
 > No need for comment about releasing event references
 
-> Take out register from Self Attributes
-
 Increase the size
 
 ---
@@ -340,7 +328,7 @@ AND
 
 Actor Refs
 Placeholder Application Ref in Actor Refs
-Wire in default in `Lifetime.vi`
+Wire in default in `Actor.vi`
 ### Wrappers
 
 Inner Actor  
@@ -456,20 +444,20 @@ These currently are two separate entities.
 
 
 
-### Has Destroyed Self (Msg)
+### Has Destroyed (Msg)
 
 At end of Actor, DO
 Have two Actor objects going to flat sequence.
 
 ---
 
-**Was Created** boolean, this tells if the **Has Destroyed Self** should be sent or not.
+**Was Created** boolean, this tells if the **Has Destroyed** should be sent or not.
 
 ---
 
 Don’t need checker in front, but comment, could execute zero times.  
 
-Use flat sequence for Has Destroyed and Release Transport?
+Use flat sequence for Has Destroyed and Release Address?
 
 ---
 
@@ -542,19 +530,19 @@ Replace the Msgs Unbundle with the proper accessor method!
 
 Msgs -> Msg Set  
 Unified Msg Set
-Layer Msg Set
+Local Msg Set
 
 ---
 
 `Msg Output.vi` -> `Add To Msg Sets.vi`
 
-`Find Layer Msg Set.vi`, then
-- Bundle into `Layer Msg Set`
+`Find Local Msg Set.vi`, then
+- Bundle into `Local Msg Set`
 - Union into `Unified Msg Set`
 
 Delete
-- `Write Layer Msg Set`
-- `Read Layer Msg Set`
+- `Write Local Msg Set`
+- `Read Local Msg Set`
 
 ---
 
@@ -588,7 +576,7 @@ Comment for code to uninitialized in this case
 
 ### jettl Feature  
 
-`Has Destroyed Self` Msg sent to both creator and created
+`Has Destroyed` Msg sent to both creator and created
 
 ---
 
@@ -599,53 +587,89 @@ Distinguishes messages in different layers
 # Need to Sort
 
 `Init.vi` (TEMPLATE Actor)
-ONLY use Get Error!!!!
+`Has Error.vi`
 You have not even created yet, so don’t ever call `Go To Destroy.vi` here.
-This should only be called in methods including and past `Pre Loop.vi`.\
 
-`Lifetime SD.vi` (SD IO) Comment to say this is only used since async start doesn't allow starting DD methods, no a SD method is used.
+`Uninit.vi` (outside `Init.vi`)
+
+`Decorator.vi`
+
+`Create.vi`
+Checks if the Actor input `Must Destroy.vi`, otherwise, throw an error that operation could not continue.
+
+`Actor SD.vi` (SD IO) Comment to say this is only used since async start doesn't allow starting DD methods, no a SD method is used.
 Panel Stuff:
 Include the `Count.vi` T and F with fss
 To insert into a sub panel, need to first have standard front panel displayed?
 *Can have hidden FP on RT?*
 Can just run Hidden FP for all actors, then don’t need the `Count.vi`?
 
-`Lifetime.vi` (replaces `Actor.vi`) (DD IO)
+`Actor.vi` (replaces `Actor.vi`) (DD IO)
 Documentation:
-Run Lifetime has output for potential debugging done outside of the scope of the framework ie for testing, running the “Run Lifetime.vi” on its own.
+`Actor.vi` has output for potential debugging done outside of the scope of the framework ie for testing, running the `Actor.vi` on its own.
 Delete `Process.vi`
 Comment:
-In part, it is fine to have `Lifetime SD.vi` for our case because we want to ensure the actor object wire is never changed throughout it's lifetime. So having a DD output terminal on the `Lifetime.vi` minimizes runtime errors preventing the object wire from changing AND for testing, by running the Lifetime.vi in isolation to gain insights to an actor without starting it up asynchronously.
+In part, it is fine to have `Actor SD.vi` for our case because we want to ensure the actor object wire is never changed throughout it's lifetime. So having a DD output terminal on the `Actor.vi` minimizes runtime errors preventing the object wire from changing AND for testing, by running the `Actor.vi` in isolation to gain insights to an actor without starting it up asynchronously.
 
-`Set Attributes.vi`
+`Write Attributes.vi`
 Create Address
+Creates Event Ref
+Creates Unified Msg Set
+Fundamentally should not put out an error. This error will be sent back to the Creator via the enqueue.
+Execute `Must Destroy.vi` after this method to check if the `Write Attributes.vi` internally creates an error (framework error). It sends the error back to the creator and puts the error on the object wire. These are only framework errors.
+*Write Attributes may only signal errors related to the structural identity of the Actor. Behavioral errors belong to message handling.*
 
 `Pre Loop.vi`
 Output
-	Register
-(release events if an error / destroy after `Setup.vi`
+	Event Ref
+(release events if an error / destroy after `Pre Loop.vi`
 
 `Pre Handle.vi`
 
 `Handle.vi`
 
 `Post Handle.vi`
-Is Msg (True ONLY for Message Case)
+`Was Msg` (True ONLY for Message Case)
 
 `Post Loop.vi`
 This is where the drop messages can be handled
 
 `Destroy.vi`
 unconditionally called.
-Release Address unconditionally
+Release Address unconditionally, in case Post Loop has not been called since not created.
+This is the only place the `Event Ref` is released.
+Internally, checks `Has Created` flag to see if `Has Destroyed should be sent`
 
 `Go To Destroy` Msg
+This should only be called in methods including and past `Pre Loop.vi`.
+
 `Has Destroyed` Msg
 
 `Attributes.ctl`
 - Alias
-- Transport
-- Register
+- Address
+- Event Ref
 - Unified Msg Set
 - Actor Ref
 - Application Ref
+
+`Read Unhandled Msgs.vi` (Function)
+Note
+	Should be used after override of Post Loop, this is because `Destroy` includes the release of references.
+
+`TEMPLATE Actor.lvclass`
+`Internal Refs`
+
+Condtional:
+
+`Is Marked For Destroy` (boolean internal)
+
+`Must Destroy.vi`
+	`Error` or `Is Marked For Destroy`
+
+
+Read methods for all private data!
+`Has Error.vi`
+
+
+create references in Actor.vi since other wise they would be released from memory is the creator is destroyed.
