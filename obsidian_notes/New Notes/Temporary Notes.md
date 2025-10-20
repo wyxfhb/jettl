@@ -556,10 +556,19 @@ Msg Set
 
 `Read Created Attributes.vi`
 `Read Created Aliases.vi`
-`Is Created Alias.vi`
-
-post loop, only change to DD in?
 
 Developer Actors
 Decorator.vi (DD)
 Actor.vi (DD)
+
+
+don't need Has Created.
+
+Read Local Msg Set, move to Developer Utilities?
+Anything else can go into general utilities?
+
+"
+Generate Local Msg Set, should be DD IO and before Write Attributes?
+Write Attributes then should have
+OH, just make this a method that is within the Init for both?
+"
