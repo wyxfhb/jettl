@@ -50,12 +50,6 @@ Delete
 
 ---
 
-`Read Created Attributes.vi`
-`Read Created Aliases.vi`
-`Is Created Alias.vi`
-
----
-
 Set -> Write
 Get -> Read
 
@@ -559,3 +553,7 @@ This should only be called in methods including and past `Pre Loop.vi`
 - Application Ref
 
 Msg Set
+
+`Read Created Attributes.vi`
+`Read Created Aliases.vi`
+`Is Created Alias.vi`
