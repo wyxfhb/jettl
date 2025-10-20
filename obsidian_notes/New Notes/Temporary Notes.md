@@ -41,22 +41,12 @@ Error for “Not a Valid Sender for Reply”
 
 ---
 
-Replace most
-`Read Error.vi` with `Can Proceed.vi`
-
----
-
 Delete
 - Pre Process
 - Post Process 
 - Cleanup
 - Set Self Attributes
 - Set Creator Attributes
-
----
-
-Base Actor : Msg Execute
-Take away the `Write Error` in error case
 
 ---
 
@@ -136,94 +126,20 @@ Instead wire in the inputs to Process
 
 ### Error
 
-`Create.vi`
-Only returns jettl defined Errors.
-
-All errors that can happen in jettl are documented in `jettl.lvlib:Error.lvlib`
-Outside of messages methods, the core decorator methods in jettl should only output errors defined in the `jettl.lvlib:Error.lvlib`
-
----
-
-Error:
-
-Errors signify that “intended operation could not be performed”
-
-Indication that a function could not complete it’s assigned task. This is justification why Destroy is not an error.
+Errors signify that
+- intended operation could not be performed, otherwise said also that
+- Indication that a function could not complete it’s assigned task
 
 [https://youtu.be/00TZxeyt8_A?si=C3kbhPJ4HtcmhOfk](https://youtu.be/00TZxeyt8_A?si=C3kbhPJ4HtcmhOfk)
 
----
-
-NO Error outputs for jettl  
-Why?
-
-jettl has build in error propagation where the Error is within the Base Actor private data.
-Therefore, all errors within the framework that are generated will immediately be put into the Actor object.
 Since each error that can occur in a method is known, an Actor decorator, for example, can override this behavior by clearing errors as necessary. It is the default behavior to put all jettl errors on the error wire to expose the API to the developer, and the developer can decide which errors to ignore for each individual method.
-
 For example, clearing errors that come from the Send methods if an Address is not registered anymore.
-
----
-
-Error
-Documentation
 expected error list with possible reasons the error was created.
+All errors that can happen in jettl are documented in `jettl.lvlib:Error.lvlib`
 
-Best Practice
 Errors should be handled with the method that generates that error. For example, when an error occurs in a method, DO NOT handle the error in a global method call after the method has finished executing. Rather, handle the error as necessary during execution of the method call (this means in decorated methods too, think in a decorated layer of actor, handling errors that come out of Create.vi in another layer)
 
-Error Library turned Public
-
----
-
-Error out not used on any actor methods since the error is encapsulated in the object wire. This ensures that the error chain will never be broken.
-`Read Error.vi` should go after the method has executed to ensure the developer is consciously  getting the error after every method call. That or the more general `Can Proceed.vi` which looks either for an error OR `Marked For Destroy`
-
-Should be a distinction between critical errors and errors.
-For example, critical errors occur when the internals of the framework throw an error.
-
----
-
-Simple Error Handler, no need for general error handler.
-- DNatt
-
----
-
-jettl Error Code Range
-509xxx
-
----
-
-Generates error and coverts current error into string for error code.
-Does this in Error method.
-ie Start outputs
-TRUE
-509678
-“
-	*Placeholder Text*
-	
-	Actual Error:
-	Status: TRUE
-	Code: 1
-	Message: Start not working
-	Source: 
-”
-
-Marked as “xxxxxxxxx —[error.vi](http://error.vi/)”
-
----
-
-Need to document:
-
 For EVERY method / function call, you SHOULD KNOW EVERY ERROR that will come out of that method / function, and document it for the developer. Otherwise, the error *likely* was passed from a previous method / method. You will know this by the call chain.
-
----
-
-![[generate_error.png]]
-
----
-
-Maybe some merit for making an error cluster..
 ### Logging Wrapper
 
 Initialization for Actor tdms Logger.
@@ -535,20 +451,6 @@ Inputs
 - Msg
 (Unified Sets Error in case structure)
 
-# General
-
-
-# Actor
-
-
-
-## Base Actor
-
-### Init.vi
-
-`Can Proceed.vi`
-cs = `False`
-Comment for code to uninitialized in this case
 # Miscellaneous
 
 ### jettl Feature  
