@@ -557,3 +557,9 @@ Msg Set
 `Read Created Attributes.vi`
 `Read Created Aliases.vi`
 `Is Created Alias.vi`
+
+post loop, only change to DD in?
+
+Developer Actors
+Decorator.vi (DD)
+Actor.vi (DD)
