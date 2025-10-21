@@ -134,6 +134,8 @@ All errors that can happen in jettl are documented in `jettl.lvlib:Error.lvlib`
 Errors should be handled with the method that generates that error. For example, when an error occurs in a method, DO NOT handle the error in a global method call after the method has finished executing. Rather, handle the error as necessary during execution of the method call (this means in decorated methods too, think in a decorated layer of actor, handling errors that come out of Create.vi in another layer)
 
 For EVERY method / function call, you SHOULD KNOW EVERY ERROR that will come out of that method / function, and document it for the developer. Otherwise, the error *likely* was passed from a previous method / method. You will know this by the call chain.
+
+[https://forums.ni.com/t5/Actor-Framework-Discussions/Actor-Stopping-Error-Handling/m-p/3632216#M5189](https://forums.ni.com/t5/Actor-Framework-Discussions/Actor-Stopping-Error-Handling/m-p/3632216#M5189)
 ### Logging Wrapper
 
 Initialization for Actor tdms Logger.
