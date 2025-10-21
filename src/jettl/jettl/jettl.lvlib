@@ -16,8 +16,6 @@
 	<Item Name="Sender.lvlib" Type="Library" URL="../Sender/Sender.lvlib"/>
 	<Item Name="Attributes.lvlib" Type="Library" URL="../Attributes/Attributes.lvlib"/>
 	<Item Name="Developer Utilities.lvclass" Type="LVClass" URL="../Developer Utilities/Developer Utilities.lvclass"/>
-	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
+	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib"/>
 	<Item Name="Actor.lvlib" Type="Library" URL="../Actor/Actor.lvlib"/>
 </Library>
