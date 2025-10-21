@@ -23,7 +23,11 @@
 	<Item Name="Count.vi" Type="VI" URL="../Count.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
+	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
+	<Item Name="Pre Destroy.vi" Type="VI" URL="../Pre Destroy.vi"/>
+	<Item Name="Post Destroy.vi" Type="VI" URL="../Post Destroy.vi"/>
+	<Item Name="Check Error.vi" Type="VI" URL="../Check Error.vi"/>
+	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Send.vi" Type="VI" URL="../Send.vi"/>
 </Library>
