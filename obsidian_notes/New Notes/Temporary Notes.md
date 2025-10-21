@@ -383,6 +383,7 @@ Move to Actor Utilities!
 ### jettl Tools
 
 Tool that allows actor to implement message interface AND auto populates that interfaces message method with Msg Execute.vi, the function, and necessary wiring.
+https://forums.ni.com/t5/LabVIEW/Programmatically-add-a-parent-interface-to-a-class/td-p/4239580
 
 ---
 
@@ -577,20 +578,14 @@ OH, just make this a method that is within the Init for both?
 
 
 
+**Post Handle**
+**Input:**
+**Has Handled?**
+**Was Msg?**
 
-
-
-release both references created in Write Attributes
-IF an error occurs!!
-
-Post Handle
-Input:
-Has Handled?
-Was Msg?
-
-Post Loop
-Input:
-Has Looped?
+**Post Loop**
+**Input:**
+**Has Looped?**
 
 IDK, ideas:
 “””””

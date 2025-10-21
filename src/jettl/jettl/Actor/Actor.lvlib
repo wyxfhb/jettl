@@ -25,9 +25,6 @@
 	</Item>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
-	<Item Name="Parent Interfaces.vi" Type="VI" URL="../Parent Interfaces.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="Send.vi" Type="VI" URL="../Send.vi"/>
 	<Item Name="Final Msgs.vi" Type="VI" URL="../Final Msgs.vi"/>
 </Library>
