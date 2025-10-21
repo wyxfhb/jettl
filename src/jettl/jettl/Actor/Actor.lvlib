@@ -29,4 +29,5 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Send.vi" Type="VI" URL="../Send.vi"/>
+	<Item Name="Final Msgs.vi" Type="VI" URL="../Final Msgs.vi"/>
 </Library>
