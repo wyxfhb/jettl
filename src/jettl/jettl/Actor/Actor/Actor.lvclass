@@ -163,8 +163,8 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Is Marked For Destroy.vi" Type="VI" URL="../Is Marked For Destroy.vi">
-				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#U!!!!"!!%!!!!'E!B&amp;5FT)%VB=GNF:#"'&lt;X)A2'6T&gt;(*P?1![1(!!(A!!*QNK:82U&lt;#ZM&gt;GRJ9AN"9X2P=CZM&gt;GRJ9AV"9X2P=CZM&gt;G.M98.T!!B"9X2P=C"J&lt;A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!!!!!!!!!!!!!!)#!!"Y!!!!!!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!$!!!!!!</Property>
+			<Item Name="Read Must Destroy.vi" Type="VI" URL="../Read Must Destroy.vi">
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#M!!!!"!!%!!!!%E!B$%VV=X1A2'6T&gt;(*P?1!!/E"Q!"Y!!#=,;G6U&gt;'QO&lt;(:M;7),17.U&lt;X)O&lt;(:M;7).17.U&lt;X)O&lt;(:D&lt;'&amp;T=Q!)17.U&lt;X)A;7Y!!&amp;1!]!!-!!!!!!!"!!!!!!!!!!!!!!!!!!!!!!!#!A!!?!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!%!!Q!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>

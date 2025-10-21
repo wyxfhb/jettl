@@ -567,9 +567,6 @@ Actor.vi (DD)
 
 don't need Has Created.
 
-Read Local Msg Set, move to Developer Utilities?
-Anything else can go into general utilities?
-
 "
 Generate Local Msg Set, should be DD IO and before Write Attributes?
 Write Attributes then should have
@@ -577,28 +574,6 @@ OH, just make this a method that is within the Init for both?
 "
 
 
-
-**Post Handle**
-**Input:**
-**Has Handled?**
-**Was Msg?**
-
-**Post Loop**
-**Input:**
-**Has Looped?**
-
-IDK, ideas:
-“””””
-- Pre Loop has Error Out  
-If error, then Go To Destroy (if already Marked For Destroy then do nothing), then Is Marked For Destroy.vi (normal cs)
-
-- Pre Handle has Error Out
-WHAT TO DO???
-
-Error Case AFTER Pre Handle, don’t go into the Go To Destroy because Post Handle has the ability to handle that.  
-
-After the Post Handle, if still error, then call Go To Destroy  
-“”””””
 
 Note
 Destroy does not occur since Create has an error!
