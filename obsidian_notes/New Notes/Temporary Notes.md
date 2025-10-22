@@ -543,17 +543,9 @@ This is the same philosophy used for the object IO terminals.
 # Finished
 
 `Go To Destroy` Msg
-This should only be called in methods including and past `Pre Loop.vi`
+This should only be called in methods including and past `Create.vi`
 
 `Has Destroyed` Msg
-
-`Attributes.ctl`
-- Alias
-- Address
-- Event Ref
-- Unified Msg Set
-- Actor Ref
-- Application Ref
 
 Msg Set
 
@@ -577,3 +569,13 @@ OH, just make this a method that is within the Init for both?
 
 Note
 Destroy does not occur since Create has an error!
+
+
+
+This VI ref -> func -> Alias
+func: “Find Alias.vi” VI Ref input 
+name of the function (ensure run time compatible property node)
+Match pattern
+--[alias.vi](http://alias.vi/)
+Before match,
+returns the alias as a string
