@@ -543,20 +543,4 @@ This is the same philosophy used for the object IO terminals.
 # Finished
 
 
-
-Add Uninit.vi
-
-Check Error -> Check Can Destroy  
-**NEW**!! -> Check Can Uninit
-
-Uninit Flag in private data
-
-**NEW** Create.vi in Actor library.
-Wraps the common functionality for uninitializing! !! And errors etc.
-Has Error input and output
-
-
-
 Think more about wrapping common tasks into FUNCTIONS instead of all objects.
-
-“Msg Execute” -> Check Local Msg???

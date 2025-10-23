@@ -173,3 +173,18 @@ In the future, best practice to  have SubVIs with “—[valchg.vi](http://valch
 
 ---
 
+PPL Support
+Although early in the jettl lifecycle, I am open to building the main jettl library into a PPL.
+This may require a jettl Tools rewrite, but might be worth looking into.
+I recommend this presentation before considering the use of using PPLs:
+[https://youtu.be/HKcEYkksW_o?si=_hSmbd662LdCqNOu](https://youtu.be/HKcEYkksW_o?si=_hSmbd662LdCqNOu)
+
+---
+
+Style banner color
+Banner colors, easy to see if interface method is on the class object wire since they’re different colors! And ALWAYS the same colors.
+timestamp: 40:34
+https://www.youtube.com/watch?v=AHOZ7fiuWCA
+
+---
+
