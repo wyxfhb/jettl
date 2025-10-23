@@ -556,11 +556,6 @@ This is the same philosophy used for the object IO terminals.
 
 Think more about wrapping common tasks into FUNCTIONS instead of all objects.
 
-Internal Refs -> Control Refs 
-Read Control Ref.vi (private)
-
-
-
 
 Change the default values in rescript to be instantiated at edit time in init and make private data empty values!
 
