@@ -555,18 +555,3 @@ This is the same philosophy used for the object IO terminals.
 
 
 Think more about wrapping common tasks into FUNCTIONS instead of all objects.
-
-
-Change the default values in rescript to be instantiated at edit time in init and make private data empty values!
-
-
-
-
-
-no dot for wires setting
-
-
-
-
-
-Consider different banner DNatt does this
