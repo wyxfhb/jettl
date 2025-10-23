@@ -30,4 +30,5 @@
 	<Item Name="Check Error.vi" Type="VI" URL="../Check Error.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Send.vi" Type="VI" URL="../Send.vi"/>
+	<Item Name="Find Alias.vi" Type="VI" URL="../Find Alias.vi"/>
 </Library>
