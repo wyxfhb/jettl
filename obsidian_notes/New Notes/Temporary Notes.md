@@ -572,10 +572,4 @@ Destroy does not occur since Create has an error!
 
 
 
-This VI ref -> func -> Alias
-func: “Find Alias.vi” VI Ref input 
-name of the function
-Match pattern
---[alias.vi](http://alias.vi/)
-Before match,
-returns the alias as a string
+Don’t error in the Setup method! Base Actor! Keep references alive!
