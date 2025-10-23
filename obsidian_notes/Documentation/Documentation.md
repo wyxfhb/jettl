@@ -171,6 +171,9 @@ https://forums.ni.com/t5/VI-Analyzer-Enthusiasts/Improving-Your-LabVIEW-Code-wit
 
 In the future, best practice to  have SubVIs with “—[valchg.vi](http://valchg.vi/)”. Of course, this would be scripted and easily findable.
 
+(yes, LabVIEW identifies indicators as controls)
+*You may place in sub clusters (make sure they’re type refs) in the Control Refs cluster to differentiate controls, indicators, sub panels, etc.*  
+
 ---
 
 PPL Support

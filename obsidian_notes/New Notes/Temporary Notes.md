@@ -136,6 +136,17 @@ Errors should be handled with the method that generates that error. For example,
 For EVERY method / function call, you SHOULD KNOW EVERY ERROR that will come out of that method / function, and document it for the developer. Otherwise, the error *likely* was passed from a previous method / method. You will know this by the call chain.
 
 [https://forums.ni.com/t5/Actor-Framework-Discussions/Actor-Stopping-Error-Handling/m-p/3632216#M5189](https://forums.ni.com/t5/Actor-Framework-Discussions/Actor-Stopping-Error-Handling/m-p/3632216#M5189)
+
+---
+
+https://www.youtube.com/watch?v=AHOZ7fiuWCA
+timestamp 42:05
+Embrace the flat sequence structure for serialization, NOT error wires.
+An error wire input and output tells the developer that the error can be modified in the method!
+
+---
+
+
 ### Logging Wrapper
 
 Initialization for Actor tdms Logger.
@@ -544,3 +555,23 @@ This is the same philosophy used for the object IO terminals.
 
 
 Think more about wrapping common tasks into FUNCTIONS instead of all objects.
+
+Internal Refs -> Control Refs 
+Read Control Ref.vi (private)
+
+
+
+
+Change the default values in rescript to be instantiated at edit time in init and make private data empty values!
+
+
+
+
+
+no dot for wires setting
+
+
+
+
+
+Consider different banner DNatt does this
