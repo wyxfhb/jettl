@@ -28,8 +28,10 @@
 	<Item Name="Release Address.vi" Type="VI" URL="../Release Address.vi"/>
 	<Item Name="Unregister Event Ref.vi" Type="VI" URL="../Unregister Event Ref.vi"/>
 	<Item Name="Send Has Destroyed.vi" Type="VI" URL="../Send Has Destroyed.vi"/>
-	<Item Name="Check Error.vi" Type="VI" URL="../Check Error.vi"/>
+	<Item Name="Check Can Uninit.vi" Type="VI" URL="../Check Can Uninit.vi"/>
+	<Item Name="Check Can Destroy.vi" Type="VI" URL="../Check Can Destroy.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Send.vi" Type="VI" URL="../Send.vi"/>
 	<Item Name="Find Alias.vi" Type="VI" URL="../Find Alias.vi"/>
+	<Item Name="Create.vi" Type="VI" URL="../Create.vi"/>
 </Library>

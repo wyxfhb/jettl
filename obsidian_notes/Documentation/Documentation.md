@@ -163,3 +163,13 @@ https://forums.ni.com/t5/Actor-Framework-Discussions/Actor-Framework-Sometimes-I
 
 ---
 
+Documentation:
+**Control Refs**
+"Use of value property is generally discouraged in VIs unless you’re having to do it with a control reference inside of a SubVI" -DNatt
+@00:12:26
+https://forums.ni.com/t5/VI-Analyzer-Enthusiasts/Improving-Your-LabVIEW-Code-with-the-VI-Analyzer/m-p/3415352
+
+In the future, best practice to  have SubVIs with “—[valchg.vi](http://valchg.vi/)”. Of course, this would be scripted and easily findable.
+
+---
+

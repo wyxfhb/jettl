@@ -542,50 +542,21 @@ This is the same philosophy used for the object IO terminals.
 
 # Finished
 
-`Go To Destroy` Msg
-This should only be called in methods including and past `Create.vi`
-
-`Has Destroyed` Msg
-
-Msg Set
-
-`Read Created Attributes.vi`
-`Read Created Aliases.vi`
-
-Developer Actors
-Decorator.vi (DD)
-Actor.vi (DD)
 
 
-don't need Has Created.
+Add Uninit.vi
 
-"
-Generate Local Msg Set, should be DD IO and before Write Attributes?
-Write Attributes then should have
-OH, just make this a method that is within the Init for both?
-"
+Check Error -> Check Can Destroy  
+**NEW**!! -> Check Can Uninit
+
+Uninit Flag in private data
+
+**NEW** Create.vi in Actor library.
+Wraps the common functionality for uninitializing! !! And errors etc.
+Has Error input and output
 
 
 
-Note
-Destroy does not occur since Create has an error!
+Think more about wrapping common tasks into FUNCTIONS instead of all objects.
 
-
-
-
-
-
-
-
-In True case in Actor.vi, Release Address, Destroy, Release Event Ref  
-Only after send back the error on enqueue
-
-Read Destroy = False:
-Queue of Error to enqueue with No Error constant.
-
-Read Destroy = True:
-Queue of Error to enqueue with error from Setup, but ONLY after Release Address so that messages cannot be accepted after Create finishes.
-
-Pre Destory -> Release Address.vi (reuse)  
-Post Destory -> Unregister Event Ref.vi (reuse)
-!**NEW**! Send Has Destroyed.vi
+“Msg Execute” -> Check Local Msg???
