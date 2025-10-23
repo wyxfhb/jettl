@@ -580,8 +580,6 @@ Destroy does not occur since Create has an error!
 In True case in Actor.vi, Release Address, Destroy, Release Event Ref  
 Only after send back the error on enqueue
 
-Queue of Self Attributes goes into Setup!
-
 Read Destroy = False:
 Queue of Error to enqueue with No Error constant.
 
@@ -589,5 +587,5 @@ Read Destroy = True:
 Queue of Error to enqueue with error from Setup, but ONLY after Release Address so that messages cannot be accepted after Create finishes.
 
 Pre Destory -> Release Address.vi (reuse)  
-Post Destory -> Release Event Ref.vi (reuse)
+Post Destory -> Unregister Event Ref.vi (reuse)
 !**NEW**! Send Has Destroyed.vi

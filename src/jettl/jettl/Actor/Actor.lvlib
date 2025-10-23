@@ -25,8 +25,9 @@
 	</Item>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
-	<Item Name="Pre Destroy.vi" Type="VI" URL="../Pre Destroy.vi"/>
-	<Item Name="Post Destroy.vi" Type="VI" URL="../Post Destroy.vi"/>
+	<Item Name="Release Address.vi" Type="VI" URL="../Release Address.vi"/>
+	<Item Name="Unregister Event Ref.vi" Type="VI" URL="../Unregister Event Ref.vi"/>
+	<Item Name="Send Has Destroyed.vi" Type="VI" URL="../Send Has Destroyed.vi"/>
 	<Item Name="Check Error.vi" Type="VI" URL="../Check Error.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Send.vi" Type="VI" URL="../Send.vi"/>
