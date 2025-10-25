@@ -145,7 +145,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Check Local Msg Set.vi" Type="VI" URL="../Check Local Msg Set.vi">
+			<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%X!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AF&amp;=H*P=C"P&gt;81!"!!!!$J!=!!?!!!H#WJF&gt;(2M,GRW&lt;'FC#U&amp;D&gt;'^S,GRW&lt;'FC$5&amp;D&gt;'^S,GRW9WRB=X-!#5&amp;D&gt;'^S)'^V&gt;!!G1(!!(A!!'1NK:82U&lt;#ZM&gt;GRJ9AN.=W=O&lt;(:D&lt;'&amp;T=Q!$48.H!$J!=!!?!!!H#WJF&gt;(2M,GRW&lt;'FC#U&amp;D&gt;'^S,GRW&lt;'FC$5&amp;D&gt;'^S,GRW9WRB=X-!#%&amp;D&gt;'^S)'FO!!"5!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"!!%!!9!"Q)!!(A!!!E!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!E!!!!!!"!!A!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
