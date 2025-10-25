@@ -556,4 +556,14 @@ This is the same philosophy used for the object IO terminals.
 
 Think more about wrapping common tasks into FUNCTIONS instead of all objects.
 
+Rule:
+Before, don’t execute `Go To Destroy` before `Create.vi`.
 
+
+Add in
+- Destroy.vi to Actor
+- Error Handler.vi to Actor
+- Finish Create.vi to Actor
+
+Create -> Start Create (both method and function)
+Setup -> Finish Create

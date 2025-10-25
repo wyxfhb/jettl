@@ -33,5 +33,8 @@
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Send.vi" Type="VI" URL="../Send.vi"/>
 	<Item Name="Find Alias.vi" Type="VI" URL="../Find Alias.vi"/>
-	<Item Name="Create.vi" Type="VI" URL="../Create.vi"/>
+	<Item Name="Start Create.vi" Type="VI" URL="../Start Create.vi"/>
+	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
+	<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi"/>
+	<Item Name="Finish Create.vi" Type="VI" URL="../Finish Create.vi"/>
 </Library>
