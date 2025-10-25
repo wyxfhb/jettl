@@ -568,16 +568,17 @@ Before, don’t execute `Go To Destroy` before `Create.vi`.
 
 
 
-Check if Local Msg -> Msg Handler
-
 Paradigm shift:
 Messages aren’t only things you receive..
 Messages are objects you can act upon with the Msg Handler. Which is why Msg Handler is everywhere throughout the application, not only in the Msg Event case.
 
-False case of Actor ACTUALLY isn’t destroy.
-That’s because an error has occurred at Finish Create, which tells us that the actor has not been created.
-So it cannot be destroyed. Instead in the case, there is the Teardown Create (which at the end also calls Teardown Init!)
+
 
 Uninit -> Teardown Init
 Teardown Create (goes in False case)
 ————-(which at the end also calls Teardown Create THEN Teardown Init)
+
+
+errors for
+- teardown init
+- teardown create

@@ -18,23 +18,44 @@
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
 	<Item Name="Base Actor.vi" Type="VI" URL="../Base Actor.vi"/>
-	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
-	<Item Name="Actor SD.vi" Type="VI" URL="../Actor SD.vi"/>
+	<Item Name="Start.vi" Type="VI" URL="../Start.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Actor SD.vi" Type="VI" URL="../Actor SD.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Count.vi" Type="VI" URL="../Count.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Send.vi" Type="VI" URL="../Send.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Can Teardown Init.vi" Type="VI" URL="../Can Teardown Init.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Can Teardown Create.vi" Type="VI" URL="../Can Teardown Create.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Can Destroy.vi" Type="VI" URL="../Can Destroy.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Release Address.vi" Type="VI" URL="../Release Address.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Unregister Event Ref.vi" Type="VI" URL="../Unregister Event Ref.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Send Has Destroyed.vi" Type="VI" URL="../Send Has Destroyed.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
-	<Item Name="Release Address.vi" Type="VI" URL="../Release Address.vi"/>
-	<Item Name="Unregister Event Ref.vi" Type="VI" URL="../Unregister Event Ref.vi"/>
-	<Item Name="Send Has Destroyed.vi" Type="VI" URL="../Send Has Destroyed.vi"/>
-	<Item Name="Check Can Uninit.vi" Type="VI" URL="../Check Can Uninit.vi"/>
-	<Item Name="Check Can Destroy.vi" Type="VI" URL="../Check Can Destroy.vi"/>
-	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
-	<Item Name="Send.vi" Type="VI" URL="../Send.vi"/>
 	<Item Name="Find Alias.vi" Type="VI" URL="../Find Alias.vi"/>
+	<Item Name="Teardown Init.vi" Type="VI" URL="../Teardown Init.vi"/>
 	<Item Name="Start Create.vi" Type="VI" URL="../Start Create.vi"/>
-	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
-	<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi"/>
 	<Item Name="Finish Create.vi" Type="VI" URL="../Finish Create.vi"/>
+	<Item Name="Teardown Create.vi" Type="VI" URL="../Teardown Create.vi"/>
+	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
+	<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi"/>
+	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
 </Library>
