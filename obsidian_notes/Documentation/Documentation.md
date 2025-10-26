@@ -191,10 +191,17 @@ In particular, when initializing the actor, take care to not create references i
 
 ---
 
-FPOOP (Functional Procedural Object Oriented Programming)
+**Test Panel (Not Complete)**
+Automatically generated test panel providing controls / necessary inputs for all messages the actor expects.
+have the test panel display payloads from messages received.
+This “Test Panel” is integrated as a part of the actor itself.
+This is to design modular Actors without dependencies of other Actors.
+Advanced: Potentially which messages the Actor is able to send and to which relative actor.
 
+**Debugging (Not Complete)**
+Debug / Unit Test class wrapping.
+Some kind of diagram disable in the developed actor `Decorator.vi`, surrounding the (yet to be made) `Debug.lvclass`.
+That way debug code does not exist in Base classes, and is held exclusively in the `Base Debug.lvclass` / `Debug.lvclass` interface.
 
+---
 
-go to destroy and two senders too.
-
-where to find in palettes, picture

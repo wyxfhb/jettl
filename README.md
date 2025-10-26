@@ -6,25 +6,19 @@
 
 *Dedicated to Stephen Loftus-Mercer for his pioneering work in introducing interfaces to the LabVIEW environment.*
 
-*Please message me with your suggestions on how I can demonstrate more clear explanations, what I can do to improve the codebase for the developers needs, and examples you'd like to see.*
-
-`jettl` is an object-oriented interface-composition based LabVIEW Actor Model library used for asynchronous processing of messages.
-The framework is based upon SOLID friendly design patterns including the Strategy Pattern and Decorator Pattern.
-SOLID principles, especially dependency inversion/injection, are used throughout the code base to encourage the developer to depend on abstractions.
-Many advanced concepts are used, but not described, for simplicity.
+`jettl` implements a SOLID-driven Actor Model architecture that unifies functional, procedural, and object-oriented paradigms.
 
 [Discord](https://discord.gg/tVkvTyBxqa)
 
 [Videos](https://www.youtube.com/@nathandavis6612)
 
-The framework is extended to work with other frameworks and design patterns.
-The source code is included for the jettl library along with the jettl Tools that help speed the process of development.
+After installation from [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/), navigate to the `Data Communication` -> `jettl` palette:
 
 ![](doc/figures/jettl-palette.png)
 
-This library is compatible with LV 2020 and beyond. If using LV2020, please consider using LV 2020 SP1 and beyond due to issues resolved here:
+And find the native tools for jettl in from the pull-down menu `Tools` -> `jettl Tools`.
 
-[LabVIEW 2020 SP1 Bug Fixes](https://www.ni.com/en/support/documentation/bugs/20/labview-2020-sp1-bug-fixes.html?srsltid=AfmBOooUbuV9waHiF74KkrteQY7SRCENumzj1XCdQMWldAIuQMDW1sM6)
+A note on LabVIEW version: This library is compatible with LV 2020 and beyond. If using LV2020, please consider using LV 2020 SP1 and beyond due to issues resolved here: [LabVIEW 2020 SP1 Bug Fixes](https://www.ni.com/en/support/documentation/bugs/20/labview-2020-sp1-bug-fixes.html?srsltid=AfmBOooUbuV9waHiF74KkrteQY7SRCENumzj1XCdQMWldAIuQMDW1sM6)
 
 ## Motivation
 
@@ -36,43 +30,30 @@ Being intimately involved with the source code of the [Actor Framework](https://
 It follows the Actor Model and takes great inspiration from the Actor Framework, Derrick Bommarito's [lv-artifex](https://github.com/illuminated-g/lv-artifex), and ideas presented in the many talks given by [Dmitry Sagatelyan](https://forums.ni.com/t5/LabVIEW-Champions-Directory/LabVIEW-Champion-Dmitry-Sagatelyan/ta-p/3536802) on the Agile Software Design Principles, SOLID principles, and Context-Agnostic Actors.
 This work would not be possible without the contributions of those developers that have come before me.
 
-## Advantage
+## Advantages
 
 - **Relative Actor Relations**.
 Every Actor in the system has itself, called `Self`.
 Along with one `Creator` and N many `Created` Actors.
 - **Address Abstaction**.
-The address of an Actor is fully abstracted away to the developer.
+The address of an Actor is abstracted away from the developer, unless more advanced testing required.
 - **Messaging**.
-Actor messaging follow a strict tree hierarchy of messaging .
+Actor messaging follow a strict tree hierarchy of messaging.
 Actors internally use events to send messages.
 These messages are exclusively interface driven messages, fully abstracting the dependence between Actors.
 - **Composition over inheritance**.
 More specifically, interface composition.
-Interface composition allows for dynamic wrapping of classes via their common interface.
-In particular, debugging, unit testing, swapping panels, etc.
+Interface composition allows for dynamic wrapping of classes via their common `Actor` interface.
+In particular, debugging, unit testing, etc.
 - **Inline Object Manipulation in Event Structure**.
 Every Actor comes with an event structure, which has the central object wire passed through it leading to a true by value design.
 
 ## Documentation
 
 Look in the `doc` folder for the `main.pdf` for the ongoing documentation for `jettl`.
-Note, this documentation will likely be outdated.
-Please refer to the [Videos](https://www.youtube.com/@nathandavis6612) linked above, for explanations.
+Note, this documentation will likely be outdated due to recent rapid development.
+Please refer to the [Videos](https://www.youtube.com/@nathandavis6612) linked above, for more recent explanations.
 
-![](doc/figures/process-method.png)
 ![](doc/figures/actor-method.png)
-
-## Test Panel (Not Complete)
-
-Automatically generated test panel providing controls / necessary inputs for all messages the actor expects.
-have the test panel display payloads from messages received.
-This “Test Panel” is integrated as a part of the actor itself.
-This is to design modular Actors without dependencies of other Actors.
-Advanced: Potentially which messages the Actor is able to send and to which relative actor.
-
-## Debugging (Not Complete)
-
-Debug / Unit Test class wrapping.
-Some kind of diagram disable in the developed actor `Decorator.vi`, surrounding the (yet to be made) `Debug.lvclass`.
-That way debug code does not exist in Base classes, and is held exclusively in the `Base Debug.lvclass` / `Debug.lvclass` interface.
+![](doc/figures/placeholder--create.png)
+![](doc/figures/placeholder--alias.png)
