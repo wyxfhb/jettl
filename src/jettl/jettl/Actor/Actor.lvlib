@@ -30,12 +30,6 @@
 	<Item Name="Send.vi" Type="VI" URL="../Send.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Can Teardown Init.vi" Type="VI" URL="../Can Teardown Init.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Can Teardown Create.vi" Type="VI" URL="../Can Teardown Create.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="Can Destroy.vi" Type="VI" URL="../Can Destroy.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>

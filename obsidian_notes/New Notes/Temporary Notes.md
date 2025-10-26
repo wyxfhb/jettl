@@ -576,16 +576,3 @@ Also, some methods should discourage extending functionality? which ones?
 
 ---
 
-Msg Handler function  
-Input: From Msg Event
-(Also done for Msg Inspect)
-
-  
-
-Error Handler
-Input: From Msg Event
-(Both)
-
-
-maybe go back and change the init and teardown to error cases since them not executing is NOT expected behavior!
-Would get rid of alot of method calls that are not necessary.

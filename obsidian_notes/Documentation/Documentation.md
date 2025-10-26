@@ -225,3 +225,8 @@ Do t call anything that is not on the palettes.
 
 ---
 
+**Important**
+Fundamentally, when an object is instantiated, there should not be an error that occurs.
+
+---
+
