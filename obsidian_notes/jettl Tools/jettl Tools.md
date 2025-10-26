@@ -23,3 +23,8 @@ We can develop some kind of analyzer test for implemented message methods that d
 
 ---
 
+all of the jettl tools belong in a common location: jettl Tools
+Of course, please place company / name specific tools in their own folder as well. But please place them in this common location, helping developers find your tool.
+
+---
+

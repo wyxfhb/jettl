@@ -574,6 +574,23 @@ Also, some methods should discourage extending functionality? which ones?
 
 
 
+
+
 called `Msg Case`?
 
 
+
+Add in Time to Sender!
+take away the library calls in palette
+
+---
+
+Msg Handler function  
+Input: From Msg Event
+(Also done for Msg Inspect)
+
+  
+
+Error Handler
+Input: From Msg Event
+(Both)

@@ -205,3 +205,23 @@ That way debug code does not exist in Base classes, and is held exclusively in t
 
 ---
 
+bleh, only the actor with the internals of actor populated can be used at the outer layer.
+
+---
+
+Feature
+Internal to jettl, there exist NO circular dependencies.
+
+---
+
+`Actor.vi`
+Yes. The actor does not need to have an output, but for testing purposes it is nice to have it be an output to look at the object after actor was done executing if ran by itself.
+Also, to ensure the object is the same throughout its lifetimes the DD output terminal ensures this to be true.
+
+---
+
+Best practice:
+Do t call anything that is not on the palettes.
+
+---
+

@@ -52,7 +52,6 @@
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
 	<Item Name="Find Alias.vi" Type="VI" URL="../Find Alias.vi"/>
 	<Item Name="Start Create.vi" Type="VI" URL="../Start Create.vi"/>
-	<Item Name="Teardown Init.vi" Type="VI" URL="../Teardown Init.vi"/>
 	<Item Name="Finish Create.vi" Type="VI" URL="../Finish Create.vi"/>
 	<Item Name="Teardown Create.vi" Type="VI" URL="../Teardown Create.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
