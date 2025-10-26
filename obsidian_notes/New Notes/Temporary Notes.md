@@ -574,15 +574,6 @@ Also, some methods should discourage extending functionality? which ones?
 
 
 
-
-
-called `Msg Case`?
-
-
-
-Add in Time to Sender!
-take away the library calls in palette
-
 ---
 
 Msg Handler function  
@@ -594,3 +585,7 @@ Input: From Msg Event
 Error Handler
 Input: From Msg Event
 (Both)
+
+
+maybe go back and change the init and teardown to error cases since them not executing is NOT expected behavior!
+Would get rid of alot of method calls that are not necessary.
