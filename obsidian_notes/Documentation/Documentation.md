@@ -9,25 +9,6 @@ If a method has an object output terminal, you should wire the output to pass th
 
 ---
 
-Revisit the priority stuff
-
-Execution of Msgs determined BEFORE While Loop:
-By definition, nothing should be overridden in Decorator
-First
-- *Pre Process*
-Second (note order not guaranteed here)
-- *Process*
-- after *Create.vi*
-
-**Note**
-	The priority of messages
-
----
-
-Put comments that are misc into the documentation
-
----
-
 ### Msg.vi
 
 NIAF. This comment is taken directly and possibly modified from the Actor Framework.
@@ -191,3 +172,29 @@ https://www.youtube.com/watch?v=AHOZ7fiuWCA
 
 ---
 
+Virtual Folders for bookkeeping:
+Actor:
+Extended
+Default
+
+Msgs:
+If you’re not extending the behavior, you do not need to implement the method. The Msg Handler will take care of this for you.
+
+---
+
+**Be careful**
+These are async processes.
+If references are created in an actor (Actor A), but used in another actor (Actor B). If Actor A is destroyed (without closing the reference), but the reference is still being used in Actor B.. the reference will be destroyed leading to confusion of the developer since they hadn’t closed the reference in the Actor B.
+Takeaway: create and destroy references in the same actor.
+This is the exact reason the Self Attributes references are created in the actor being created. Because if the creator is destroyed, the created actor will still have its references alive.
+In particular, when initializing the actor, take care to not create references in the init methods, if you expect to destroy the references in the created actor, due to reasons above. Rather, move the creation of these references to the Finish Create method override.
+
+---
+
+FPOOP (Functional Procedural Object Oriented Programming)
+
+
+
+go to destroy and two senders too.
+
+where to find in palettes, picture

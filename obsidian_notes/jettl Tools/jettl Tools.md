@@ -16,3 +16,10 @@ Tool for moving on disc
 
 ---
 
+When a interface message is implemented, but messages method is not implemented, an edit time error is generated in LabVIEW.
+
+We can develop some kind of analyzer test for implemented message methods that don’t have a —msg interface. Ie a message that cannot ever be executed.
+—msg indicator for both?
+
+---
+

@@ -1,14 +1,9 @@
-add attributes get to palette
-
----
-
 take pictures for README
 
 ---
 
-distinguish name between
-- Self Msgs
-- Msgs
+LUnit Approval Tests
+Come with the ability to create separate projects to perform unit tests.
 
-go back and change all of the Self Alias, Created Alias etc.
-where Alias shouldn't be standalone..
+---
+

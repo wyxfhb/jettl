@@ -561,8 +561,13 @@ This is the same philosophy used for the object IO terminals.
 Think more about wrapping common tasks into FUNCTIONS instead of all objects.
 
 Rule:
-Before, don’t execute `Go To Destroy` before `Create.vi`. You can, but the framework will not function correctly. There are no checks to see if the booleans are correct.
+Before, don’t execute `Go To Destroy` before `Create.vi`. You can, but the framework will not function correctly. There are no checks to see if the Booleans are correct.
 
 Paradigm shift:
 Messages aren’t only things you receive..
 Messages are objects you can act upon with the Msg Handler. Which is why Msg Handler is everywhere throughout the application, not only in the Msg Event case.
+
+Come back to this..
+kindof rule of thumb.. only append functionality AFTER the override method..?
+Also, some methods should discourage extending functionality? which ones?
+
