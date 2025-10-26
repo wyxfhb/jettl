@@ -557,9 +557,6 @@ This is the same philosophy used for the object IO terminals.
 
 # Finished
 
-
-Think more about wrapping common tasks into FUNCTIONS instead of all objects.
-
 Rule:
 Before, don’t execute `Go To Destroy` before `Create.vi`. You can, but the framework will not function correctly. There are no checks to see if the Booleans are correct.
 
@@ -570,9 +567,3 @@ Messages are objects you can act upon with the Msg Handler. Which is why Msg Han
 Come back to this..
 kindof rule of thumb.. only append functionality AFTER the override method..?
 Also, some methods should discourage extending functionality? which ones?
-
-
-
-
----
-

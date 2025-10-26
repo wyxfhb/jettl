@@ -14,6 +14,7 @@
 
 After installation from [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/), navigate to the `Data Communication` -> `jettl` palette:
 
+![](doc/figures/data-comm-pal.png)
 ![](doc/figures/jettl-palette.png)
 
 And find the native tools for jettl in from the pull-down menu `Tools` -> `jettl Tools`.
