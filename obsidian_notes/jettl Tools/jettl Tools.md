@@ -12,3 +12,19 @@ we can look at the project for XXXX.lvlib:YYYYY.lvlib:ZZZZZ.lvlib:WWWW.lvclass
 
 ---
 
+Tool for moving on disc
+
+---
+
+When a interface message is implemented, but messages method is not implemented, an edit time error is generated in LabVIEW.
+
+We can develop some kind of analyzer test for implemented message methods that don’t have a —msg interface. Ie a message that cannot ever be executed.
+—msg indicator for both?
+
+---
+
+all of the jettl tools belong in a common location: jettl Tools
+Of course, please place company / name specific tools in their own folder as well. But please place them in this common location, helping developers find your tool.
+
+---
+

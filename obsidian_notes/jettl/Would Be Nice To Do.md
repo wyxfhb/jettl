@@ -28,7 +28,7 @@ Maybe some kind of static checking where the messages you want to send to
 
 ---
 
-**Lagging messages strategy idea**
+**Logging messages strategy idea**
 
 Have some strategy pattern internal to Sender which gives user the ability to get the info of Sender Interface and log things etc.
 
@@ -42,6 +42,12 @@ class that has functionality in every method?
 ---
 
 change the TEMPLATE.vi -> TEMPLATE Msg.vi ?
+
+---
+
+Wires are off between LV2020 and LV2025 Q3
+
+![[wires_off.png]]
 
 ---
 

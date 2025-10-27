@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "ea9a5a4012a3bacc",
+        "id": "f8be665ceeb0d622",
         "type": "tabs",
         "children": [
           {
-            "id": "1f4036b57e11f0ad",
+            "id": "1aee7d6b4253e3d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "jettl/jettl.md",
+                "file": "New Notes/Temporary Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "jettl"
-            }
-          },
-          {
-            "id": "2a39bc5668dcdab2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "jettl/jettl.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "jettl"
+              "title": "Temporary Notes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,21 +166,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a39bc5668dcdab2",
+  "active": "1aee7d6b4253e3d6",
   "lastOpenFiles": [
     "Documentation/Documentation.md",
-    "Example.md",
-    "jettl/jettl.md",
     "jettl Tools/jettl Tools.md",
+    "New Notes/Temporary Notes.md",
+    "jettl Tools/Images/rt_strings.png",
+    "jettl/jettl.md",
+    "New Notes/Images/generate_error.png",
     "jettl Tools/TEMPLATE.md",
-    "Decorator Pattern.md",
+    "Documentation/Decorator Pattern.md",
+    "Documentation/Images/dec_3.jpeg",
+    "Documentation/Images/dec_2.jpeg",
+    "Documentation/Images/dec_1.jpeg",
+    "Documentation/Images/IMG_7216.jpeg",
+    "Documentation/Images/IMG_7214.jpeg",
+    "Documentation/Images/IMG_7215.jpeg",
+    "New Notes/Images/IMG_7216.jpeg",
+    "New Notes/Images/IMG_7214.jpeg",
+    "Documentation/Images",
+    "Documentation/Example.md",
     "jettl/Would Be Nice To Do.md",
     "jettl Tools/RT.md",
-    "jettl Tools/Images/rt_strings.png",
-    "jettl Tools/Images",
     "jettl Tools/Questions.md",
-    "jettl Tools/Scripting.md",
+    "jettl/Images",
     "Package Release/Package Release.md",
+    "New Notes/Images",
+    "New Notes",
+    "jettl Tools/Images",
+    "jettl Tools/Scripting.md",
     "Reuse Actors/Reuse Actors.md",
     "Documentation",
     "Ideas for Next Release.md",
