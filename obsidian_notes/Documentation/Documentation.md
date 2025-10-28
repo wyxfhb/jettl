@@ -230,3 +230,5 @@ Fundamentally, when an object is instantiated, there should not be an error that
 
 ---
 
+![[Messaging Scheme.png]]
+*Event Ref.*

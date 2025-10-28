@@ -567,3 +567,56 @@ Messages are objects you can act upon with the Msg Handler. Which is why Msg Han
 Come back to this..
 kindof rule of thumb.. only append functionality AFTER the override method..?
 Also, some methods should discourage extending functionality? which ones?
+
+
+# Working on
+
+--alias included in icon
+--create included in icon
+
+
+change Read Control Refs to red text.
+
+
+Post Finish Create.vi (DD) no error in, goes in Finish Create.vi (function)
+This goes in error structure?
+Used for functionality after Finish Create.vi, in case Finish Create throws an error.
+
+
+Finish Create.vi (function)
+Output of Event Ref
+Move error case of actor into Finish Create.vi
+That way you can Teardown Create.vi (DD) IN Finish Create.vi (function).
+
+
+Move Queue of Error into Finish Create.vi (function)
+
+
+Example with hot swappable front panels
+Where you have two created actors, and ability to toggle front panel displays.
+Think justACS AF presentation State of the Art.
+
+
+Comment about register for events:
+This first fss ensures User Event occurs before generation of event, so that generated events can be properly handled in event structure
+
+
+Documentation:  
+Actor.vi  
+dynamic terminal output is not wired to release events, on purpose, to defer to after unexecuted messages have been handled.
+
+
+Release Address:
+Cannot send anymore messages. Immediately tells actors that this actor is not accepting messages anymore, or in their point of view the actor they are trying to send to has been destroyed, but has not been updated yet about it..
+
+
+update readme with:
+--create
+--alias
+--msg?
+
+
+redo some of the banners for the msg and actors, etc.
+that way they're not blank, but have something.
+
+
