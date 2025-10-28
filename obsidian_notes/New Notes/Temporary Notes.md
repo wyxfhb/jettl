@@ -571,14 +571,6 @@ Also, some methods should discourage extending functionality? which ones?
 
 # Working on
 
-Finish Create.vi (function)
-Output of Event Ref
-Move error case of actor into Finish Create.vi
-That way you can Teardown Create.vi (DD) IN Finish Create.vi (function).
-
-
-Move Queue of Error into Finish Create.vi (function)
-
 
 Example with hot swappable front panels
 Where you have two created actors, and ability to toggle front panel displays.
@@ -596,3 +588,4 @@ redo some of the banners for the msg and actors, etc.
 that way they're not blank, but have something.
 
 
+find prefix to palette
