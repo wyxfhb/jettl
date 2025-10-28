@@ -569,23 +569,3 @@ kindof rule of thumb.. only append functionality AFTER the override method..?
 Also, some methods should discourage extending functionality? which ones?
 
 
-# Working on
-
-
-Example with hot swappable front panels
-Where you have two created actors, and ability to toggle front panel displays.
-Think justACS AF presentation State of the Art.
-
-
-update readme with:
---create
---alias
---alias included in icon
---create included in icon
-
-
-redo some of the banners for the msg and actors, etc.
-that way they're not blank, but have something.
-
-
-find prefix to palette

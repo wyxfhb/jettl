@@ -19,10 +19,6 @@ NIAF. This comment is taken directly and possibly modified from the Actor Framew
 
 ---
 
-**Is From Actor** boolean flag to tell whether a Msg has come from an Actor or has been executed as a normal method.
-
----
-
 Best practice?
 
 Messages should not be reused / forwarded.
@@ -242,3 +238,9 @@ dynamic terminal output is not wired to release events, on purpose, to defer to 
 
 ---
 
+Example with hot swappable front panels
+Where you have two created actors, and ability to toggle front panel displays.
+Think justACS AF presentation State of the Art.
+
+![[statepatternactors.png]]
+*!(The State of the Art for Actor Framework)[https://www.youtube.com/watch?v=gz_6FTE1__8&list=PLvDxiIkwuMQtGtstTGKpYpoMVi1Lj07EP&index=19] @timestamp 21:33.*
