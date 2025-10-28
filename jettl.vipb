@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-10-27 20:47:25" Creator="Erik" Comments="" ID="191d322f13fe76dfe8f690877bb0da2b">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-10-27 21:03:10" Creator="Erik" Comments="" ID="1bf989a0a0ee7f0ef3931e0ab70edc57">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl</Package_File_Name>
-    <Library_Version>4.0.0.35</Library_Version>
+    <Library_Version>4.0.0.36</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -143,6 +143,9 @@ YouTube: https://www.youtube.com/@nathandavis6612</Description>
       </Exclusions>
       <Exclusions>
         <Path>src/.gitignore</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>build</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
@@ -527,7 +530,7 @@ YouTube: https://www.youtube.com/@nathandavis6612</Description>
         <Path>Add Ons</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>19E454AE09064892CA582DC49218C545</GUID>
+      <GUID>F11764F744E633C249441E48FCEC61D6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -548,7 +551,7 @@ YouTube: https://www.youtube.com/@nathandavis6612</Description>
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>436EBC62440ACAC90BA9CCCD99AAE0A9</GUID>
+      <GUID>FD859E921EA88DCDCE984655E0CCB092</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
