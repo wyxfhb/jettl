@@ -64,3 +64,4 @@ Please refer to the [Videos](https://www.youtube.com/@nathandavis6612) linked ab
 
 An idea of making the source code bundled into a PPL is explored, but has not been tested.
 Please ignore the build folder, unless inclined to explore the `jettl.lvlibp`.
+For reference, the jettl PPL build took **9 seconds** to complete.
