@@ -58,3 +58,10 @@ Please refer to the [Videos](https://www.youtube.com/@nathandavis6612) linked ab
 ![](doc/figures/actor-method.png)
 ![](doc/figures/placeholder--create.png)
 ![](doc/figures/placeholder--alias.png)
+![](doc/figures/msg.png)
+
+## PPL Source Code Packaging
+
+An idea of making the source code bundled into a PPL is explored, but has not been tested.
+Please ignore the build folder, unless inclined to explore the `jettl.lvlibp`.
+For reference, the jettl PPL build took **9 seconds** to complete.

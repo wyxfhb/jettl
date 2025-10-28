@@ -19,10 +19,6 @@ NIAF. This comment is taken directly and possibly modified from the Actor Framew
 
 ---
 
-**Is From Actor** boolean flag to tell whether a Msg has come from an Actor or has been executed as a normal method.
-
----
-
 Best practice?
 
 Messages should not be reused / forwarded.
@@ -230,3 +226,21 @@ Fundamentally, when an object is instantiated, there should not be an error that
 
 ---
 
+![[Messaging Scheme.png]]
+*Event Ref.*
+
+---
+
+Actor.vi
+Output terminals are available primarily for testing purposes, when one wants to unit test this actor and directly get its state / error.
+
+dynamic terminal output is not wired to release events, on purpose, to defer to after unexecuted messages have been handled.
+
+---
+
+Example with hot swappable front panels
+Where you have two created actors, and ability to toggle front panel displays.
+Think justACS AF presentation State of the Art.
+
+![[statepatternactors.png]]
+*!(The State of the Art for Actor Framework)[https://www.youtube.com/watch?v=gz_6FTE1__8&list=PLvDxiIkwuMQtGtstTGKpYpoMVi1Lj07EP&index=19] @timestamp 21:33.*

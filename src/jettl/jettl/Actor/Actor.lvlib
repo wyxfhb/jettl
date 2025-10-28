@@ -17,6 +17,7 @@
 	<Item Name="Created Aliases.ctl" Type="VI" URL="../Created Aliases.ctl"/>
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
+	<Item Name="--X.ctl" Type="VI" URL="../--X.ctl"/>
 	<Item Name="Base Actor.vi" Type="VI" URL="../Base Actor.vi"/>
 	<Item Name="Start.vi" Type="VI" URL="../Start.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -33,10 +34,7 @@
 	<Item Name="Can Destroy.vi" Type="VI" URL="../Can Destroy.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Release Address.vi" Type="VI" URL="../Release Address.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Unregister Event Ref.vi" Type="VI" URL="../Unregister Event Ref.vi">
+	<Item Name="Release and Unregister.vi" Type="VI" URL="../Release and Unregister.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Send Has Destroyed.vi" Type="VI" URL="../Send Has Destroyed.vi">
@@ -44,10 +42,9 @@
 	</Item>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
-	<Item Name="Find Alias.vi" Type="VI" URL="../Find Alias.vi"/>
+	<Item Name="Find Prefix.vi" Type="VI" URL="../Find Prefix.vi"/>
 	<Item Name="Start Create.vi" Type="VI" URL="../Start Create.vi"/>
 	<Item Name="Finish Create.vi" Type="VI" URL="../Finish Create.vi"/>
-	<Item Name="Teardown Create.vi" Type="VI" URL="../Teardown Create.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi"/>
 	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
