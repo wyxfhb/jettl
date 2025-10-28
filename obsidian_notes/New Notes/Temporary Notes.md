@@ -571,15 +571,11 @@ Also, some methods should discourage extending functionality? which ones?
 
 # Working on
 
+Rename finish create -> condition finish create
 
-
-
-change Read Control Refs to red text.
-
-
-Post Finish Create.vi (DD) no error in, goes in Finish Create.vi (function)
+Finish Create.vi (DD) no error in, goes in Finish Create.vi (function)
 This goes in error structure?
-Used for functionality after Finish Create.vi, in case Finish Create throws an error.
+
 
 
 Finish Create.vi (function)
