@@ -571,8 +571,7 @@ Also, some methods should discourage extending functionality? which ones?
 
 # Working on
 
---alias included in icon
---create included in icon
+
 
 
 change Read Control Refs to red text.
@@ -614,6 +613,8 @@ update readme with:
 --create
 --alias
 --msg?
+--alias included in icon
+--create included in icon
 
 
 redo some of the banners for the msg and actors, etc.
