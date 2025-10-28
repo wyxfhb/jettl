@@ -571,13 +571,6 @@ Also, some methods should discourage extending functionality? which ones?
 
 # Working on
 
-Rename finish create -> condition finish create
-
-Finish Create.vi (DD) no error in, goes in Finish Create.vi (function)
-This goes in error structure?
-
-
-
 Finish Create.vi (function)
 Output of Event Ref
 Move error case of actor into Finish Create.vi
@@ -592,23 +585,9 @@ Where you have two created actors, and ability to toggle front panel displays.
 Think justACS AF presentation State of the Art.
 
 
-Comment about register for events:
-This first fss ensures User Event occurs before generation of event, so that generated events can be properly handled in event structure
-
-
-Documentation:  
-Actor.vi  
-dynamic terminal output is not wired to release events, on purpose, to defer to after unexecuted messages have been handled.
-
-
-Release Address:
-Cannot send anymore messages. Immediately tells actors that this actor is not accepting messages anymore, or in their point of view the actor they are trying to send to has been destroyed, but has not been updated yet about it..
-
-
 update readme with:
 --create
 --alias
---msg?
 --alias included in icon
 --create included in icon
 

@@ -15,6 +15,5 @@
 	<Item Name="Msg Not In Unified Set--error.vi" Type="VI" URL="../Msg Not In Unified Set--error.vi"/>
 	<Item Name="Sender Not Valid--error.vi" Type="VI" URL="../Sender Not Valid--error.vi"/>
 	<Item Name="Alias Not Found--error.vi" Type="VI" URL="../Alias Not Found--error.vi"/>
-	<Item Name="Finish Create--error.vi" Type="VI" URL="../Finish Create--error.vi"/>
 	<Item Name="Destroy When Creating--error.vi" Type="VI" URL="../Destroy When Creating--error.vi"/>
 </Library>
