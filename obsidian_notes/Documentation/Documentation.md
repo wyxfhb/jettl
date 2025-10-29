@@ -149,7 +149,12 @@ https://forums.ni.com/t5/VI-Analyzer-Enthusiasts/Improving-Your-LabVIEW-Code-wit
 In the future, best practice to  have SubVIs with “—[valchg.vi](http://valchg.vi/)”. Of course, this would be scripted and easily findable.
 
 (yes, LabVIEW identifies indicators as controls)
-*You may place in sub clusters (make sure they’re type refs) in the Control Refs cluster to differentiate controls, indicators, sub panels, etc.*  
+*You may place in sub clusters (make sure they’re type refs) in the Control Refs cluster to differentiate controls, indicators, sub panels, etc.*
+
+Only use when these control refs are used in message methods OR methods constrained in message methods. Otherwise, if there is a method call in the event structure, do you best to wire in the VI Server control reference to the method as an input instead of passing the entire object wire into the method.
+
+Takeaway, minimize the use of references put into the Control Refs cluster. Instead maximize their use in the event structure for better readability.
+[Your LabVIEW Code Is a Work of Art... But I Can't Read It by Darren Nattinger. GDevCon N.A. 2024](https://www.youtube.com/watch?v=AHOZ7fiuWCA)@00:45:46
 
 ---
 
@@ -244,3 +249,70 @@ Think justACS AF presentation State of the Art.
 
 ![[statepatternactors.png]]
 *!(The State of the Art for Actor Framework)[https://www.youtube.com/watch?v=gz_6FTE1__8&list=PLvDxiIkwuMQtGtstTGKpYpoMVi1Lj07EP&index=19] @timestamp 21:33.*
+
+---
+
+[Your LabVIEW Code Is a Work of Art... But I Can't Read It by Darren Nattinger. GDevCon N.A. 2024](https://www.youtube.com/watch?v=AHOZ7fiuWCA)@00:00:00-00:12:18
+
+![[clean propagation.png]]
+*Minimal bend wiring philosophy = Write code for maximum readability. Notice error wire and object verticality has plenty of room between. Object wires through for IO methods. Input only methods are a couple spaces beneath. And errors follow the method calls. All wires have minimal bends. Note even this isn't great, should instead reorganize and **please** use flat sequence structure!*
+
+---
+
+Outline Object in / out and Error in / out terminals are restricted. Therefore, only use the other 8 terminals for input / output.
+Also, follow this rule that an object in MUST be an object passed out for the same color wire horizontally across the method / function call.
+[Your LabVIEW Code Is a Work of Art... But I Can't Read It by Darren Nattinger. GDevCon N.A. 2024](https://www.youtube.com/watch?v=AHOZ7fiuWCA)@00:45:21
+
+---
+
+Yes, it is one thing to do class inheritance, another to do decorator pattern, and another to do layered intermediate checks for decorator pattern. This is how the `Msg Handler.vi` works.
+
+Show the dropping of a NES with method.
+Now what messages use with the Msg Handler to deviate to checking if in Local Msg Set and determines where to call the messages method or defer to the next decorator, and reiterating until the core conditional is called.
+
+Could have a tree of execution for this. With pictures of block diagrams with arrows
+
+---
+
+[Large LabVIEW Project Development Techniques](https://youtu.be/7zS3Q_K71XY?si=VZXcWRaCqc0C4tWh)@00:14:08
+Note on organizing virtual folder contents, very helpful with keeping name spacing consistent!!
+
+---
+
+PPLs
+I avoid PPLs because DNatt told me to.
+[GLA Summit 2022: Ludicrous Ways to Fix Broken LabVIEW Code](https://www.youtube.com/watch?v=kF_9DFPTZPc)
+[LUDICROUS ways to Fix Broken LabVIEW Code with Darren Nattinger | GDevConNA 2022](https://www.youtube.com/watch?v=HKcEYkksW_o)
+
+---
+
+**Rule: Framework will not WORK if you have Go To Destroy function or method call anywhere before messaging handling loop!**
+**DO NOT execute `Go To Destroy` before event structure.**
+
+---
+
+#### **Executable**
+[Confirm "Find Local Msg Set.vi" can function properly in the executable. #10](https://github.com/natev51/jettl/issues/10)
+Try putting an application into an exe AND with different calling of messages, display on the front panel the Local Msgs and Unified Msgs.
+This would confirm how they’re loaded into memory or not.
+
+Building executables:
+
+[GLA Summit 2022: Ludicrous Ways to Fix Broken LabVIEW Code](https://www.youtube.com/watch?v=kF_9DFPTZPc) @00:37:52-00:43:43.
+[NI Forum: project mass compile - how does it work](https://forums.ni.com/t5/LabVIEW/project-mass-compile-how-does-it-work/m-p/4266014#M1242702)
+
+![[BEFORE you play checkbox roulette.png]]
+
+Build an exe and note the time taken to do so WITH ONE ACTOR in project.
+write about exe build time in readme.
+
+[Large LabVIEW Project Development Techniques](https://www.youtube.com/watch?v=7zS3Q_K71XY)@00:32:13.
+All pictures come from the above linked presentation:
+
+![[LargeDevTech-PPLs.png]]
+![[LargeDevTech-Problem.png]]
+![[LargeDevTech-add.png]]
+![[LargeDevTech-debug.png]]
+
+---
+
