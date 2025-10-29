@@ -597,20 +597,3 @@ All pictures come from the above linked presentation:
 
 Code smell
 Reorganize folder structure for Template ordering
-Execution of what occurs / reuse / other
-
-Could take a picture of this and show boxes of what each inspection is used for. Used for overriding, etc.
-
----
-
-Documentation:
-Framework will not WORK if you have Go To Destroy function or method call anywhere before messaging handling loop!
-
-
-
-
-Enqueue element AFTER error case structure.
-
----
-
-

@@ -286,3 +286,7 @@ I avoid PPLs because DNatt told me to.
 
 ---
 
+**Rule: Framework will not WORK if you have Go To Destroy function or method call anywhere before messaging handling loop!**
+
+---
+
