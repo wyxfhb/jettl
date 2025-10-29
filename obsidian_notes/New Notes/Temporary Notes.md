@@ -595,11 +595,6 @@ All pictures come from the above linked presentation:
 
 #### TODO
 
-Get the —error name with Find Prefix for ALL
-of the error functions
-
----
-
 Code smell
 Reorganize folder structure for Template ordering
 Execution of what occurs / reuse / other
@@ -610,6 +605,7 @@ Could take a picture of this and show boxes of what each inspection is used for.
 
 Renaming for Teardown
 
+Documentation:
 Framework will not WORK if you have Go To Destroy function or method call anywhere before messaging handling loop!
 
 Remove check for Destory create—error!!!
