@@ -607,8 +607,6 @@ Documentation:
 Framework will not WORK if you have Go To Destroy function or method call anywhere before messaging handling loop!
 
 
-Place Finish Create IN no error case on right, remove the one on left
-
 Common element to
 Teardown Create
 AND
