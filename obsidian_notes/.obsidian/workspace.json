@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1aee7d6b4253e3d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "New Notes/Temporary Notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Temporary Notes"
-            }
-          },
-          {
             "id": "e5a1cd8611955328",
             "type": "leaf",
             "state": {
@@ -180,10 +166,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1aee7d6b4253e3d6",
+  "active": "e5a1cd8611955328",
   "lastOpenFiles": [
-    "Documentation/Documentation.md",
     "New Notes/Temporary Notes.md",
+    "Documentation/Documentation.md",
     "Documentation/Images/LargeDevTech-add.png",
     "Documentation/Images/LargeDevTech-debug.png",
     "Documentation/Images/LargeDevTech-Problem.png",

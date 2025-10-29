@@ -555,45 +555,9 @@ This is the same philosophy used for the object IO terminals.
 - outline in message creating that only four inputs are allowed. Two on the side, and two on the bottom.
 
 
-# Finished
-
-
-**DO NOT execute `Go To Destroy` before event structure.**
-
 Paradigm shift:
 Messages aren’t only things you receive..
 Messages are objects you can act upon with the Msg Handler. Which is why Msg Handler is everywhere throughout the application, not only in the Msg Event case.
 
 
 Some methods should discourage extending functionality? which ones?
-
-# Working on
-
-#### **Executable**
-[Confirm "Find Local Msg Set.vi" can function properly in the executable. #10](https://github.com/natev51/jettl/issues/10)
-Try putting an application into an exe AND with different calling of messages, display on the front panel the Local Msgs and Unified Msgs.
-This would confirm how they’re loaded into memory or not.
-
-Building executables:
-
-[GLA Summit 2022: Ludicrous Ways to Fix Broken LabVIEW Code](https://www.youtube.com/watch?v=kF_9DFPTZPc) @00:37:52-00:43:43.
-[NI Forum: project mass compile - how does it work](https://forums.ni.com/t5/LabVIEW/project-mass-compile-how-does-it-work/m-p/4266014#M1242702)
-
-![[BEFORE you play checkbox roulette.png]]
-
-Build an exe and note the time taken to do so WITH ONE ACTOR in project.
-write about exe build time in readme.
-
-[Large LabVIEW Project Development Techniques](https://www.youtube.com/watch?v=7zS3Q_K71XY)
-All pictures come from the above linked presentation:
-![[LargeDevTech-PPLs.png]]
-![[LargeDevTech-Problem.png]]
-![[LargeDevTech-add.png]]
-![[LargeDevTech-debug.png]]
-
-
-
-#### TODO
-
-Code smell
-Reorganize folder structure for Template ordering

@@ -287,6 +287,32 @@ I avoid PPLs because DNatt told me to.
 ---
 
 **Rule: Framework will not WORK if you have Go To Destroy function or method call anywhere before messaging handling loop!**
+**DO NOT execute `Go To Destroy` before event structure.**
+
+---
+
+#### **Executable**
+[Confirm "Find Local Msg Set.vi" can function properly in the executable. #10](https://github.com/natev51/jettl/issues/10)
+Try putting an application into an exe AND with different calling of messages, display on the front panel the Local Msgs and Unified Msgs.
+This would confirm how they’re loaded into memory or not.
+
+Building executables:
+
+[GLA Summit 2022: Ludicrous Ways to Fix Broken LabVIEW Code](https://www.youtube.com/watch?v=kF_9DFPTZPc) @00:37:52-00:43:43.
+[NI Forum: project mass compile - how does it work](https://forums.ni.com/t5/LabVIEW/project-mass-compile-how-does-it-work/m-p/4266014#M1242702)
+
+![[BEFORE you play checkbox roulette.png]]
+
+Build an exe and note the time taken to do so WITH ONE ACTOR in project.
+write about exe build time in readme.
+
+[Large LabVIEW Project Development Techniques](https://www.youtube.com/watch?v=7zS3Q_K71XY)@00:32:13.
+All pictures come from the above linked presentation:
+
+![[LargeDevTech-PPLs.png]]
+![[LargeDevTech-Problem.png]]
+![[LargeDevTech-add.png]]
+![[LargeDevTech-debug.png]]
 
 ---
 
