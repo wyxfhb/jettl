@@ -595,9 +595,9 @@ All pictures come from the above linked presentation:
 
 #### TODO
 
-- Remove PPL build from jettl project
-- Remove build folder from jettl
-- Remove PPL stuff from README
+
+
+
 
 ---
 
