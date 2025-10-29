@@ -603,8 +603,6 @@ Could take a picture of this and show boxes of what each inspection is used for.
 
 ---
 
-Renaming for Teardown
-
 Documentation:
 Framework will not WORK if you have Go To Destroy function or method call anywhere before messaging handling loop!
 
