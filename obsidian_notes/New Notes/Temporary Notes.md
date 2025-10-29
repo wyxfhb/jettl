@@ -595,12 +595,6 @@ All pictures come from the above linked presentation:
 
 #### TODO
 
-
-
-
-
----
-
 Get the —error name with Find Prefix for ALL
 of the error functions
 
