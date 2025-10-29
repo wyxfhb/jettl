@@ -606,8 +606,7 @@ Could take a picture of this and show boxes of what each inspection is used for.
 Documentation:
 Framework will not WORK if you have Go To Destroy function or method call anywhere before messaging handling loop!
 
-Remove check for Destory create—error!!!
-Remove both instances
+
 Place Finish Create IN no error case on right, remove the one on left
 
 Common element to
