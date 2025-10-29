@@ -607,13 +607,7 @@ Documentation:
 Framework will not WORK if you have Go To Destroy function or method call anywhere before messaging handling loop!
 
 
-Common element to
-Teardown Create
-AND
-Destroy..
-“Teardown.vi” (private) SD IO
-ERROR input (no output)
-Placed IN Teardown Create AND Destroy in the back.
+
 
 Enqueue element AFTER error case structure.
 
