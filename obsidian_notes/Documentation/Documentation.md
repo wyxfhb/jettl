@@ -316,3 +316,18 @@ All pictures come from the above linked presentation:
 
 ---
 
+Testing Documentation:
+Can use Actor.vi on its own in other modules
+
+---
+
+Object IO justification
+[An End to Brainless Programming - Darren Nattinger](https://www.youtube.com/watch?v=pS1UBZzKl9k)@00:23:59
+
+---
+
+Unhandled Msgs:
+Panel Close? Event, have Go To Destroy and then a Msg. See if that Msg, in Destroy was an Unhandled Msg ie 1bd with list of Msgs
+
+---
+

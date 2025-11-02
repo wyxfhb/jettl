@@ -561,3 +561,18 @@ Messages are objects you can act upon with the Msg Handler. Which is why Msg Han
 
 
 Some methods should discourage extending functionality? which ones?
+
+---
+
+Idea:
+Fundamentally, a message cannot be sent to an actor that cannot implement that msg. Also, an actor will not execute a message that it cannot implement.
+Only actors around the actor of interest can interact with that actor via messages.
+**Instead have three functions for each message with options for `Self`, `Creator`, `Created`**
+Could be easier for scripting applications
+Can find the libraries in memory for a given actor and find the associated message functions used along with which method they’re wired up to? to determine which messages would go where.
+This wiring could be hard because nodes dynamically can determine which of two messages will go where ie select vi or Send X vi wrapped in case structure. Nonetheless, must be a vi analyzer test to determine where messages are to be sent at edit time. All possible statically determined permutations for sending a message. I guess that a message can be bundled into private data so you NEVER would know which message is unbundled and sent..
+This would be interesting to determine. This tool would be used for troubleshooting and documentation.
+Also, a tool for determining if a message can be sent to sel like if there are multiple actor layers and a message sent to self but can receive locally but can in another layer
+
+---
+
