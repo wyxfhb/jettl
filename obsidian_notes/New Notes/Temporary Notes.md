@@ -562,7 +562,9 @@ Messages are objects you can act upon with the Msg Handler. Which is why Msg Han
 
 Some methods should discourage extending functionality? which ones?
 
+---
 
+Idea:
 Fundamentally, a message cannot be sent to an actor that cannot implement that msg. Also, an actor will not execute a message that it cannot implement.
 Only actors around the actor of interest can interact with that actor via messages.
 **Instead have three functions for each message with options for `Self`, `Creator`, `Created`**
@@ -574,24 +576,12 @@ Also, a tool for determining if a message can be sent to sel like if there are m
 
 ---
 
-Remove fss from Finish Create
-
----
-
-Msg on the suffix of Msgs
-
----
-
 Testing Documentation:
 Can use Actor.vi on its own in other modules
 
 ---
 
 Put comments in code for scripting
-
-
-in Msg methods (in actor)
-Future scripting, label the function call
 
 ---
 
