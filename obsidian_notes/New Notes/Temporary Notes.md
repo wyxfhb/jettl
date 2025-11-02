@@ -581,10 +581,6 @@ Can use Actor.vi on its own in other modules
 
 ---
 
-Put comments in code for scripting
-
----
-
 Object IO justification
 [An End to Brainless Programming - Darren Nattinger](https://www.youtube.com/watch?v=pS1UBZzKl9k)@00:23:59
 
