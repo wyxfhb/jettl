@@ -570,27 +570,9 @@ Only actors around the actor of interest can interact with that actor via messag
 **Instead have three functions for each message with options for `Self`, `Creator`, `Created`**
 Could be easier for scripting applications
 Can find the libraries in memory for a given actor and find the associated message functions used along with which method they’re wired up to? to determine which messages would go where.
-This wiring could be hard because nodes dynamically can determine which of two messages will go where ie select vi or Send X vi wrapped in case structure. Nonetheless, must be a man analyzer test to determine where messages are to be sent at edit time. All possible statically determined permutations for sending a message. I guess that a message can be bundled into private data so you NEVER would know which message is unbundled and sent..
+This wiring could be hard because nodes dynamically can determine which of two messages will go where ie select vi or Send X vi wrapped in case structure. Nonetheless, must be a vi analyzer test to determine where messages are to be sent at edit time. All possible statically determined permutations for sending a message. I guess that a message can be bundled into private data so you NEVER would know which message is unbundled and sent..
 This would be interesting to determine. This tool would be used for troubleshooting and documentation.
 Also, a tool for determining if a message can be sent to sel like if there are multiple actor layers and a message sent to self but can receive locally but can in another layer
 
 ---
 
-Testing Documentation:
-Can use Actor.vi on its own in other modules
-
----
-
-Object IO justification
-[An End to Brainless Programming - Darren Nattinger](https://www.youtube.com/watch?v=pS1UBZzKl9k)@00:23:59
-
----
-
-Unhandled Msgs:
-Panel Close? Event, have Go To Destroy and then a Msg. See if that Msg, in Destroy was an Unhandled Msg ie 1bd with list of Msgs
-
----
-
-Wiring in the Msg.lvclass, change the label to be Msg
-
----
