@@ -12,6 +12,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Control 5.ctl" Type="VI" URL="../Control 5.ctl"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="TEMPLATE Actor.lvlib" Type="Library" URL="../TEMPLATE Actor/TEMPLATE Actor.lvlib"/>
 		<Item Name="Update Pump State Msg.lvlib" Type="Library" URL="../Update Pump State Msg/Update Pump State Msg.lvlib"/>

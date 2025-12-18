@@ -87,32 +87,25 @@ redo interface method to have Sender on bottom.
 and:
 ![[Pasted image 20251213172537.png]]
 
-
-#### Change the function calls to have object inputs at the top if the function is intended to wrap functionality of an object specifically.
-
-#### Msg Handler function removed from palette since it is apart of scripting messages.
-
-#### Remove Send Self, Send Created, Send Creator from palette
+Remove from palette:
+- Send Self,
+- Send Created,
+- Send Creator,
+- Msg Handler
+- put destroy poly on palette (library banner?)
 
 #### Scripting which messages go to which created actor
-
-![[Pasted image 20251213161553.png]]
-*Here we can use scripting to find where the --created is called and find the associated placeholder--alias to find the name to properly understand where a message will go. If there is something between this string or there is a conditional that uses either of two --alias methods, then the scripting will not understand this. Best to be static with which messages will go where for an easier to understand actor.*
-#### redo the reply method conn pane to have Sender on bottom
-
-#### `Find Created Attributes.vi` instead of `Read Created Attributes.vi` since not necessarily a read operation.
+*Here we can use scripting to find where the `Send to Created.vi` is called and find the associated enum by traversing through the `format into string` primitive. This will find the name to properly understand where the message will go at run time, in edit time. If there is something between this string or there is a conditional that uses either of two enums, then the scripting will not understand this. Best to be static with which messages will go where for an easier to understand actor by using the `format into string` and enum.*
+#### `Find Created Attributes.vi` not named `Read Created Attributes.vi` since not necessarily a read operation and can produce an error from alias not being found.
 
 #### Style guidelines: Have methods be default private
 Maybe when jettl is installed, have an add on that changes some .ini to create methods with a default of private for methods with text red.
 ![[IMG_7575.png]]
 
-#### style guidelines: No property nodes, prefer to use read only methods and write only methods.
+#### style guidelines: Prefer to use read only methods and write only methods to property nodes read and writes
 
 Just a rule, to better see banner encapsulation, do not use property nodes for accessors.
-Also, in part since property nodes aren’t supposed for interfaces.
-
-#### style guidelines: Abolish the in/out terminology of data in and out of a function / method call? This should be assumed, but already all over the language so difficult to implement
-
+Also, in part since property nodes aren’t supported for interfaces.
 #### style guidelines: Don’t wire things on the top of the connector pane unless function is made for wrapping functionality of an object. REALLY provides for excellent readability for object based method calls to ensure data flow is followed. If there are too many inputs, create a cluster type def.
 
 #### jettl only supports 4x2x2x4 conn pane methods and functions for rescripting actions in accordance to conn pane guidelines
