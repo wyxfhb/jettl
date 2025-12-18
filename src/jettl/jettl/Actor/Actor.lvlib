@@ -39,15 +39,15 @@
 	<Item Name="Release and Unregister.vi" Type="VI" URL="../Release and Unregister.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Send Has Destroyed.vi" Type="VI" URL="../Send Has Destroyed.vi">
+	<Item Name="Send Terminated.vi" Type="VI" URL="../Send Terminated.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
 	<Item Name="Find Prefix.vi" Type="VI" URL="../Find Prefix.vi"/>
-	<Item Name="Create Created.vi" Type="VI" URL="../Create Created.vi"/>
 	<Item Name="Create.vi" Type="VI" URL="../Create.vi"/>
+	<Item Name="Setup.vi" Type="VI" URL="../Setup.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi"/>
-	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
+	<Item Name="Teardown.vi" Type="VI" URL="../Teardown.vi"/>
 </Library>

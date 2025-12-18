@@ -1,7 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <LVClass LVVersion="25008000">
-	<Property Name="NI.Lib.ContainingLib" Type="Str">jettl.lvlib:Destroy Self Msg.lvlib</Property>
-	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../Destroy Self Msg.lvlib</Property>
+	<Property Name="NI.Lib.ContainingLib" Type="Str">jettl.lvlib:Destroy Msg.lvlib</Property>
+	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../Destroy Msg.lvlib</Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">*1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(]!!!*Q(C=\&gt;8.=2."%!&lt;1BO,!62F13K&amp;45!J+I6.1=@.2+81+3E%J&gt;!J+13G9JW8+R=8Y!B21HH8,UL@T]TS\7E&gt;M\80%JXB_KXX^;@PXT\`2YLW^N`_\0&lt;XZ*@DNXY-0]8A1K6'N3G5]FHU?_=B(0P+2D\TF,7^ZSVP?]J+8P/1F,XH*5Z\SF+=]Z3H@$HH)1RZSJ,(Y7'B-/C99H6&amp;CP!T0]!T0]0A9QT-]QT-]Q[.,$-`Q$-`Q$)^B-4T$-TT$-TSGWC3T(8+?Y4&amp;^.%`T.%`T.)]FIXE;I#X7*G[49%1\W&gt;YU4`-UD\@20-X40-X40%Z(]T20]T20]RCS\5JPGM=BZT&amp;.&amp;%`R&amp;%`R&amp;)_JIXC+JXC+JXAM&amp;]640!62&amp;CS4)U1:6$K5$]640(Z&amp;]220]220]4CV8;(;&gt;O;B?2RSHO2*HO2*HO1R2320]C20]C30;3.ZEC&gt;ZEC&gt;Z,"8*ETT*ES"J5=N(GCQ.4*V3E$R_NLMFN[P5GS3X)W,&gt;P,&amp;OSFAX7[S&lt;+.&lt;.%?OCR\K9M3Z3L-W0N;GR.CP7*M4[YW+B9W&amp;C,2*L]+.DX,X?V&amp;6&gt;V&amp;G&gt;V&amp;%&gt;V&amp;\N(E.`==@\`2[XWSWOVWN=,J=YH]^R/JXC?$T'Y8#)`8Y@O^XOZ4(QR@(S10D_8(LS`L8[!`_@`Y*H9XS-(^?Q2^]!XD*J^1!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">620789760</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
@@ -14,12 +14,12 @@
 	<Property Name="NI.LVClass.EdgeWirePen" Type="Bin">*1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!6'0%.M&gt;8.U:8)_$1I]4G&amp;N:4Z1:7Y],UZB&lt;75_$1I]4H6N27RU=TYY0#^/&gt;7V&amp;&lt;(2T0AU+0&amp;5T-DY.#DR/97VF0E:P=G6H=G^V&lt;G1A1W^M&lt;X)],UZB&lt;75_$1I]6G&amp;M0D9Y.4!X.4!],V:B&lt;$Y.#DQP64-S0AU+0&amp;5T-DY.#DR/97VF0E*B9WNH=G^V&lt;G1A1W^M&lt;X)],UZB&lt;75_$1I]6G&amp;M0D%W.T=X-D)W0#^797Q_$1I],V5T-DY.#DR$&lt;(6T&gt;'6S0AU+0%ZB&lt;75_2GFM&lt;#"1982U:8*O0#^/97VF0AU+0%ZV&lt;56M&gt;(-_/$QP4H6N27RU=TY.#DR6/$Y.#DR/97VF0F*P&gt;S!Q0#^/97VF0AU+0&amp;:B&lt;$YY.4QP6G&amp;M0AU+0#^6/$Y.#DR6/$Y.#DR/97VF0F*P&gt;S!R0#^/97VF0AU+0&amp;:B&lt;$YR.T!],V:B&lt;$Y.#DQP64A_$1I]64A_$1I]4G&amp;N:4Z3&lt;X=A-DQP4G&amp;N:4Y.#DR797Q_/$5],V:B&lt;$Y.#DQP64A_$1I]64A_$1I]4G&amp;N:4Z3&lt;X=A-TQP4G&amp;N:4Y.#DR797Q_-4=Q0#^797Q_$1I],V5Y0AU+0&amp;5Y0AU+0%ZB&lt;75_5G^X)$1],UZB&lt;75_$1I]6G&amp;M0DAV0#^797Q_$1I],V5Y0AU+0&amp;5Y0AU+0%ZB&lt;75_5G^X)$5],UZB&lt;75_$1I]6G&amp;M0D%X-$QP6G&amp;M0AU+0#^6/$Y.#DR6/$Y.#DR/97VF0F*P&gt;S!W0#^/97VF0AU+0&amp;:B&lt;$YY.4QP6G&amp;M0AU+0#^6/$Y.#DR6/$Y.#DR/97VF0F*P&gt;S!X0#^/97VF0AU+0&amp;:B&lt;$YR.T!],V:B&lt;$Y.#DQP64A_$1I],U.M&gt;8.U:8)_$1I]34%W0AU+0%ZB&lt;75_6WFE&gt;'A],UZB&lt;75_$1I]6G&amp;M0D-],V:B&lt;$Y.#DQP34%W0AU+0%680AU+0%ZB&lt;75_47^E:4QP4G&amp;N:4Y.#DR$;'^J9W5_1W^Q?4QP1WBP;7.F0AU+0%.I&lt;WFD:4Z0=DQP1WBP;7.F0AU+0%.I&lt;WFD:4Z&amp;?'.M&gt;8.J&gt;G5A4X)],U.I&lt;WFD:4Y.#DR$;'^J9W5_1GFU)%.M:7&amp;S0#^$;'^J9W5_$1I]1WBP;7.F0EZP&gt;#"$&lt;X"Z0#^$;'^J9W5_$1I]1WBP;7.F0EZP&gt;#"0=DQP1WBP;7.F0AU+0%.I&lt;WFD:4Z/&lt;X)A28BD&lt;(6T;8:F)%^S0#^$;'^J9W5_$1I]1WBP;7.F0EZP&gt;#"#;81A1WRF98)],U.I&lt;WFD:4Y.#DR797Q_-$QP6G&amp;M0AU+0#^&amp;6TY.#DR&amp;4$Y.#DR/97VF0F.U?7RF0#^/97VF0AU+0%.I&lt;WFD:4Z4&lt;WRJ:$QP1WBP;7.F0AU+0%.I&lt;WFD:4Z%98.I0#^$;'^J9W5_$1I]1WBP;7.F0E2P&gt;$QP1WBP;7.F0AU+0%.I&lt;WFD:4Z%98.I)%2P&gt;$QP1WBP;7.F0AU+0%.I&lt;WFD:4Z%98.I)%2P&gt;#"%&lt;X1],U.I&lt;WFD:4Y.#DR797Q_-$QP6G&amp;M0AU+0#^&amp;4$Y.#DR&amp;4$Y.#DR/97VF0E:J&lt;'QA5H6M:4QP4G&amp;N:4Y.#DR$;'^J9W5_28:F&lt;C"0:'1],U.I&lt;WFD:4Y.#DR$;'^J9W5_6WFO:'FO:TQP1WBP;7.F0AU+0&amp;:B&lt;$YQ0#^797Q_$1I],U6-0AU+0%6-0AU+0%ZB&lt;75_27ZE)%.B=(-],UZB&lt;75_$1I]1WBP;7.F0E2F:G&amp;V&lt;(1],U.I&lt;WFD:4Y.#DR$;'^J9W5_2GRB&gt;$QP1WBP;7.F0AU+0&amp;:B&lt;$YQ0#^797Q_$1I],U6-0AU+0#^$&lt;(6T&gt;'6S0AU+!!!!!!</Property>
 	<Property Name="NI.LVClass.IsInterface" Type="Bool">true</Property>
 	<Property Name="NI.LVClass.LowestCompatibleVersion" Type="Str">1.0.0.0</Property>
-	<Item Name="Destroy Self.vi" Type="VI" URL="../Destroy Self.vi">
+	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi">
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 		<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972416</Property>
 	</Item>
 </LVClass>
