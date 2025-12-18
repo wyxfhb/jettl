@@ -295,8 +295,6 @@ The intermediate actor and the top level actor can implement the same interface 
 Teardown has input for Create or Destroy, depending where it is called, the developer can call different things depending on what part the program is doing the Teardown (either create or Destroy)
 
 
-Start Create -> Create Created
-
 Go To Destroy -> Destroy Self
 
 Has Destroyed -> Terminated
