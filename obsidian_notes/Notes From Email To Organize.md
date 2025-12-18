@@ -113,11 +113,11 @@ Also, in part since property nodes aren’t supposed for interfaces.
 
 #### style guidelines: Abolish the in/out terminology of data in and out of a function / method call? This should be assumed, but already all over the language so difficult to implement
 
-#### style guidelines: Don’t wire things on the top of the connector pane unless function is made for wrapping functionality of an object. REALLY provides for excellent readability for object based method calls to ensure data flow is followed.
+#### style guidelines: Don’t wire things on the top of the connector pane unless function is made for wrapping functionality of an object. REALLY provides for excellent readability for object based method calls to ensure data flow is followed. If there are too many inputs, create a cluster type def.
 
-#### jettl only supports 4x2x2x4 conn pane methods and functions for rescripting actions.
+#### jettl only supports 4x2x2x4 conn pane methods and functions for rescripting actions in accordance to conn pane guidelines
 
-#### Style guidelines: Functions should have zero, one, or two inputs.
+#### Style guidelines: Aside from object / error, methods / functions should have zero, one, or two inputs.
 
 Readability: Aside from the error wires (which should be moved to the back for all block diagrams), ensure no wires overlap each other for a maximally readable diagram.
 
@@ -127,91 +127,60 @@ Function: CAN use the conn pane panels on the bottom and top if necessary.
 
 Difference between function and method: method has object input (output may not be necessary since this is a return value)
 
-#### Style guidelines: Why is there the box in the default class icon? Please delete this, we change the colors of our banners and wires and rarely do we use that different colored cube as a meaningful icon. Yes, we know it is a class already. And yes, it’s distinguished since an interface doesn’t have it. They’re easy to tell apart
+#### Style guidelines: Why is there the box in the default class icon? Please delete this, we change the colors of our banners and wires and rarely do we use that different colored cube as a meaningful icon. Yes, we know it is a class already. And yes, it’s distinguished since an interface doesn’t have it. They’re already easy to tell apart
 
 #### Style Guidelines: Conn Pane
-
 The object in the top left (and top right if it exists) signifies to the developer that this object is the object that is contained in the class / interface of the banner.
-
 Note, library functions cannot be methods and furthermore cannot have objects at the top left / top right since the library function is not contained in an interface / class.
-
 Therefore only the top left and top right conn pane terminals are used for the interface / class that contains that method.
 
-#### Style Guidelines: Conn Pane
-Mutability readability
-
+Mutability readability:
 If a function / method passes out the same data type as is horizontal to the input, then this is a mutable change to that piece of data.
-
 For example, object comes in is the same object that comes out horizontally means that the object is assumed to have been mutated (whether it has been mutated or not). This is most common for the top left and top right interface / class and the bottom left and bottom right Error. 
-
 To combat this, if the object that comes in is immutable and the same object is passed OUT of the method, this is an antipattern since the object out is the same as the object in. Hence, the object at the output should not be on the connector pane output. If dataflow is required (such as serialization of the error wire), then the flat sequence structure should instead be used instead of wiring the object to the output for serialization. This same principle should carry over for the error wire. The error wire should not be used for serialization, this signifies to the developer NOT serialization but that the object at the output HAS BEEN mutated from the object at the input. Embrace the flat sequence structure for serialization!
 
-#### Messages have outputs?
+#### Future Idea: Messages should have outputs?
 
 Reason: Actors that wrap other actors can use the data output for i.e. logging for that actor itself. So if the method is executed has an output of the analyzed data, then in the next wrapped layer, this output can be used for logging.
 
 #### Code decoupling
-
-Being able to test the code without the framework is the advantage of code decoupling. This is the main reason that methods do not have protected scope, so that the framework can be used within other frameworks.
-
 [Why, When and How to Protect Your Code from the Framework - Dmitry Sagatelyan -GDevCon#5](https://www.youtube.com/watch?v=fVx8PO02fzw)
 @31:48, Anton  
 > Value in decoupling from the framework, then you can test the code without the framework, you can use the code without the framework, don't have coupling (which otherwise slows down load times)
 
+Being able to test the code without the framework is the advantage of code decoupling. This is the main reason that methods do not have protected scope, so that the framework can be used within other frameworks.
 #### Created Aliases
 
-We want a static deterministic system. Maybe it would be a good idea to hold the created actors in an enum instead of the `placeholder--alias.vi`. 
+Ideally, we want a fully static deterministic system with dynamic capabilities. For example, some things are static and predetermined, whereas the implementations can be dynamic if these static things follow the same rules.
 
-Note: If there is some actor that needs to perform compute of multiple actors, then this can be extended internally to be dynamic with maps mapping a branched enum with strings. Nonetheless, the default will be a static enum.
+> If there is some actor that needs to perform compute of multiple actors, then this can be extended internally to be dynamic with maps mapping a branched enum with strings. Nonetheless, the default will be a static enum.
 
-Now, under the hood we still use strings in the map, etc. but nonetheless, the enum is the higher level shown to the developer of the actor.
-
-Enum is for the different aliases used for created actors, but since the enum is different from actor to actor, the mechanism under the hood is a string mapping, which is internally checked to only map Enum entries to their string counterparts. This ensures only enums are used in the implemented actors code without depending on the fragility of strings.
+Under the hood we still use strings in the map, etc. but nonetheless, the enum is the higher level shown to the developer of the actor. Enum is for the different aliases used for created actors, but since the enum is different from actor to actor, the mechanism under the hood is a string mapping, which is internally checked to only map Enum entries to their string counterparts. This ensures only enums are used in the implemented actors code without depending on the fragility of strings.
 Note, the created enum should not be altered by the developer, instead use the accompanying tool to insert, remove, or rename a created actor alias. This is due to the scripting tool requiring renaming method names, etc.
-
-
 #### Style Guidelines: actor methods should be shared clone reentrant by default.
 
 #### Naming
-
-Symmetry for Create and Destroy:
-maybe do something like `Start Destroy` and `Finish Destroy` to have the same topology as `Start Create` and `Finish Create` instead of `Go To Destroy` and `Destroy`.
-Since there is not a `Create`, rather there is a `Start Create`, `Condition Create`,  and `Finish Create`.
-
-`Teardown Create.vi` function and `Teardown Destroy.vi` function
-wraps `Teardown Create.vi` and `Teardown.vi` as well as `Teardown Destroy.vi` and `Teardown.vi`
-
-In `Finish Create.vi`, replace inside method with `Teardown Create.vi`
-
-That means that you can get rid of the `Teardown.vi` SD method in the template in place for the DD `Teardown.vi`.
-Does that mean that there should be some analog for the use of `Setup` and `Teardown`?
-Where the `Setup` is used instead of `Condition Create`.
-
-You should definitely have a topology for the procedural execution of methods in a LabVIEW style sequence diagram. Could even write this in LabVIEW where the methods used on top for top actor and bottom for bottom actor showing which methods are being executed.
-
-Such as:
-
+Symmetry in:
+- Start and Finish,
+- Setup and Teardown, and
+- Create and Destroy.
+Topology for the procedural execution of methods in a LabVIEW style sequence diagram. Could even write this in LabVIEW where the methods used on top for top actor and bottom for bottom actor showing which methods are being executed such as:
 `Init` method
 `Decorator` method
-`Create` function
-	`Create` method
-		`Start` function
-			`Actor SD` function
+`Start` function
+	`Start` method
+		`Launch Actor` function
+			`Actor` function
 				`Actor` method
-					`Setup` function
+					`Create` function
 						`Setup` method
 							`Teardown` method
-						`Post Setup` method
+						`Create` method
 					`Msg Handler` function
 					`Error Handler` function
 					`Destroy` method
 					`Destroy` function
 						`Teardown`
-
-
-
-
-
 #### Style Guidelines: Boolean prefixes
 is_
 has_

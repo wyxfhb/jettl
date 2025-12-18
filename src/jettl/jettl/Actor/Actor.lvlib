@@ -17,10 +17,9 @@
 	<Item Name="Created Aliases.ctl" Type="VI" URL="../Created Aliases.ctl"/>
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
-	<Item Name="--X.ctl" Type="VI" URL="../--X.ctl"/>
-	<Item Name="Queues.ctl" Type="VI" URL="../Queues.ctl"/>
 	<Item Name="Lifecycle.ctl" Type="VI" URL="../Lifecycle.ctl"/>
 	<Item Name="Config Actor.ctl" Type="VI" URL="../Config Actor.ctl"/>
+	<Item Name="Setup.ctl" Type="VI" URL="../Setup.ctl"/>
 	<Item Name="Base Actor.vi" Type="VI" URL="../Base Actor.vi"/>
 	<Item Name="Launch Actor.vi" Type="VI" URL="../Launch Actor.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -40,12 +39,12 @@
 	<Item Name="Release and Unregister.vi" Type="VI" URL="../Release and Unregister.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Send Finish.vi" Type="VI" URL="../Send Finish.vi">
+	<Item Name="Send Finish Msgs.vi" Type="VI" URL="../Send Finish Msgs.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
-	<Item Name="Find Prefix.vi" Type="VI" URL="../Find Prefix.vi"/>
+	<Item Name="Error Prefix.vi" Type="VI" URL="../Error Prefix.vi"/>
 	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
 	<Item Name="Create.vi" Type="VI" URL="../Create.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
