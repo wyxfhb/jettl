@@ -33,7 +33,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Read Created Attributes.vi" Type="VI" URL="../Read Created Attributes.vi">
+			<Item Name="Find Created Attributes.vi" Type="VI" URL="../Find Created Attributes.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
@@ -59,11 +59,11 @@
 			</Item>
 			<Item Name="Send Created.vi" Type="VI" URL="../Send Created.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
 			</Item>
 			<Item Name="Created Aliases.vi" Type="VI" URL="../Created Aliases.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -99,11 +99,11 @@
 			</Item>
 			<Item Name="Actor.vi" Type="VI" URL="../Actor.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
 			</Item>
 			<Item Name="Write Local Msg Set.vi" Type="VI" URL="../Write Local Msg Set.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -131,19 +131,19 @@
 			</Item>
 			<Item Name="Setup.vi" Type="VI" URL="../Setup.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
 			</Item>
 			<Item Name="Teardown.vi" Type="VI" URL="../Teardown.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1342972416</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
 			</Item>
 			<Item Name="Post Setup.vi" Type="VI" URL="../Post Setup.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
