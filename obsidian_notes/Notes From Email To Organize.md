@@ -290,3 +290,15 @@ Top layer is only for the message handling and UI work, whereas the intermediate
 This way the intermediate actors are the ones being developed for their logic, independent of the UI element.
 
 The intermediate actor and the top level actor can implement the same interface for common functionality between them so that different combinations can be made effectively decoupling the UI / event handling from the business logic.
+
+
+Teardown has input for Create or Destroy, depending where it is called, the developer can call different things depending on what part the program is doing the Teardown (either create or Destroy)
+
+
+Finish Create function -> Create.vi
+
+Start Create -> Create Created
+
+Go To Destroy -> Destroy Self
+
+Has Destroyed -> Terminated
