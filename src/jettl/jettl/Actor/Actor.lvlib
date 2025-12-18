@@ -20,6 +20,7 @@
 	<Item Name="--X.ctl" Type="VI" URL="../--X.ctl"/>
 	<Item Name="Queues.ctl" Type="VI" URL="../Queues.ctl"/>
 	<Item Name="Lifecycle.ctl" Type="VI" URL="../Lifecycle.ctl"/>
+	<Item Name="Config Actor.ctl" Type="VI" URL="../Config Actor.ctl"/>
 	<Item Name="Base Actor.vi" Type="VI" URL="../Base Actor.vi"/>
 	<Item Name="Start.vi" Type="VI" URL="../Start.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
