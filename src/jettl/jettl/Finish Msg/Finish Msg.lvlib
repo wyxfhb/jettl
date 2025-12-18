@@ -10,9 +10,9 @@
 </Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="Terminated.lvclass" Type="LVClass" URL="../Terminated/Terminated.lvclass"/>
-	<Item Name="Terminated Msg.lvclass" Type="LVClass" URL="../Terminated Msg/Terminated Msg.lvclass">
+	<Item Name="Finish.lvclass" Type="LVClass" URL="../Finish/Finish.lvclass"/>
+	<Item Name="Finish Msg.lvclass" Type="LVClass" URL="../Finish Msg/Finish Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Terminated.vi" Type="VI" URL="../Terminated.vi"/>
+	<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
 </Library>

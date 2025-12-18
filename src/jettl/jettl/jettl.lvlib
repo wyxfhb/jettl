@@ -9,7 +9,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Destroy Msg.lvlib" Type="Library" URL="../Destroy Msg/Destroy Msg.lvlib"/>
-	<Item Name="Terminated Msg.lvlib" Type="Library" URL="../Terminated Msg/Terminated Msg.lvlib"/>
+	<Item Name="Finish Msg.lvlib" Type="Library" URL="../Finish Msg/Finish Msg.lvlib"/>
 	<Item Name="Msg.lvclass" Type="LVClass" URL="../Msg/Msg.lvclass"/>
 	<Item Name="Sender.lvlib" Type="Library" URL="../Sender/Sender.lvlib"/>
 	<Item Name="Attributes.lvlib" Type="Library" URL="../Attributes/Attributes.lvlib"/>

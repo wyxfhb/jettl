@@ -156,7 +156,7 @@ Being able to test the code without the framework is the advantage of code decou
 
 [Why, When and How to Protect Your Code from the Framework - Dmitry Sagatelyan -GDevCon#5](https://www.youtube.com/watch?v=fVx8PO02fzw)
 @31:48, Anton  
-> Value in decopuling from the framework, then you can test the code without the framework, you can use the code without the framework, don't have coupling (which otherwise slows down load times)
+> Value in decoupling from the framework, then you can test the code without the framework, you can use the code without the framework, don't have coupling (which otherwise slows down load times)
 
 #### Created Aliases
 
@@ -189,104 +189,60 @@ Where the `Setup` is used instead of `Condition Create`.
 
 You should definitely have a topology for the procedural execution of methods in a LabVIEW style sequence diagram. Could even write this in LabVIEW where the methods used on top for top actor and bottom for bottom actor showing which methods are being executed.
 
-What this could be:
+Such as:
 
-
-
-`Start Destroy`, `Destroy`, `Finish Destroy`.
-
-`Init`
-`Decorator`
-`Start Create`
-	`Start Create`
-		`Start`
-			`Actor SD`
-				`Actor`
-					`Finish Create`
-						`Create`
-							`Teardown Create`
-							`Teardown`
-						`Finish Create`
-							
-					`Msg Handler`
-					`Error Handler`
-					`Start Destroy` (message instead of `Go To Destroy`)
-					`Finish Destroy`
-						`Destroy`
-							`Teardown Destroy`
-							`Teardown`
-
-
-
-
-#### Local Actor and Unified Actor
-
-A local actor is a single layer wheras the unified actor is the unification of layered actors.
-This translated well to the local msg set and the unified msg set.
+`Init` method
+`Decorator` method
+`Create` function
+	`Create` method
+		`Start` function
+			`Actor SD` function
+				`Actor` method
+					`Setup` function
+						`Setup` method
+							`Teardown` method
+						`Post Setup` method
+					`Msg Handler` function
+					`Error Handler` function
+					`Destroy` method
+					`Destroy` function
+						`Teardown`
 
 
 
 
 
-
-#### Use non-strict to work around RT bug.
-comment as NIAF in *italics*. in `Actor.lvlib:Start.vi`
-
-
-
-#### Style Guidelines: Boolean prefixes:
-
+#### Style Guidelines: Boolean prefixes
 is_
 has_
 can_
 should_
 enable_
-
-
 #### Periodic Messaging
-
 An actor should not have in its own timeout way to do something periodically such as send itself a message every 100 ms.
 Instead it must create a periodic messaging actor which in its timeout sends the message to the actor that requires the periodic message. Separate the concerns.
 
 #### VI Analyzer
 
-Checks if the connector pane is correct. ie objects on top left and maybe right for containing class / interface.
+Checks if the connector pane is correct. i.e. objects on top left and maybe right for containing class / interface.
 errors on maybe bottom left and maybe bottom right.
 Discriminates other types from existing in these conn pane terminals.
 Best practice too: nothing wired on top, outputs only on right side (two terms), inputs only on left side (two) and bottom (two).
 
-#### jettl CLI tool *idea*
-
-Opens up a CLI-like tool for scripting actions.
-
-This should provide better for coding up LabVIEW stuff in the project / what is in the project
-
-For example:
-![[Pasted image 20251215103427.png]]
-
-Note that this may fall apart since there can exist spaces between words in LabVIEW. Maybe this can be a guideline naming change.
-
-#### VI Analyzer
-
-For looking at where messages can go in an application i.e. for a given actor, the analyzer knows where messages go ie creator, self, created.
-
-Therefore, this analysis can ensure that applications will not run if the relationship of two actor messages is not satisfied. This prevents messaging runtime bugs since messages cannot be sent to an actor that cannot accept them.
-
+For looking at where messages can go in an application i.e. for a given actor, the analyzer knows where messages go i.e. creator, self, created since statically dropping the polymorphic function at edit time. Therefore, this analysis can ensure that applications will not run if the relationship of two actor messages is not satisfied. This prevents messaging runtime bugs since messages cannot be sent to an actor that cannot accept them.
 > Maybe just be sure, have a case structure around the code in the `Msg.vi` in case a message is received but not implemented. This should be prevented by the framework since filtering is done upon every message execution, but in case of a bug, this will be useful for debugging.
 
 #### constructors shouldn't be able to throw errors
-
 [Errors are Values; Please Treat Them That Way - Ethan Stern](https://www.youtube.com/watch?v=8vhYLlaXaQU&list=PLvDxiIkwuMQtiOZ_WWbk6ZCXfeAKxtwo-)
-In jettl, this means that the `Init.vi` should not output any errors, and functionality that otherwise puts out errors should go into other methods such as `Setup`.
+In jettl, this means that the `Init.vi` should not output any errors, and functionality that otherwise puts out errors should go into other methods such as `Setup.vi`.
 
-#### Unique way to develop
-
+#### Unique way to develop layered actors
 Note: Top Layer, Intermediate Layer(s), Core.
-
+Local Actor and Unified Actor Definition: A local actor is a single layer whereas the unified actor is the unification of layered actors. This translated well to the local msg set and the unified msg set.
 **Decoupling the UI and event handling from the actors functionality!**
-
 Top layer is only for the message handling and UI work, whereas the intermediate layer is where the business logic exists. Since the top level doesn't need to implement the messages the intermediate layers have, then the top layer can just be a typical UI / event handling loop. For example, have two kinds of actors that developers can develop i.e. intermediate layer actors and outer layer actors. That way, some `General Outer Layer Actor` can be used to wrap intermediate actors that do not have front panels.
-
+The intermediate actor and the top level actor can implement the same interface for common functionality between them so that different combinations can be made effectively decoupling the UI / event handling from the business logic.
 This way the intermediate actors are the ones being developed for their logic, independent of the UI element.
 
-The intermediate actor and the top level actor can implement the same interface for common functionality between them so that different combinations can be made effectively decoupling the UI / event handling from the business logic.
+
+

@@ -25,7 +25,7 @@
 	<Item Name="Parent Libraries" Type="Parent Libraries">
 		<Item Name="jettl.lvlib:Actor.lvlib:Actor.lvclass" Type="Parent" URL="../../Actor/Actor.lvclass"/>
 		<Item Name="jettl.lvlib:Destroy Msg.lvlib:Destroy.lvclass" Type="Parent" URL="../../../Destroy Msg/Destroy/Destroy.lvclass"/>
-		<Item Name="jettl.lvlib:Terminated Msg.lvlib:Terminated.lvclass" Type="Parent" URL="../../../Terminated Msg/Terminated/Terminated.lvclass"/>
+		<Item Name="jettl.lvlib:Finish Msg.lvlib:Finish.lvclass" Type="Parent" URL="../../../Finish Msg/Finish/Finish.lvclass"/>
 	</Item>
 	<Item Name="Base Actor.ctl" Type="Class Private Data" URL="Base Actor.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -62,7 +62,7 @@
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 			</Item>
 			<Item Name="Send Creator.vi" Type="VI" URL="../Send Creator.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -70,7 +70,7 @@
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 			</Item>
 			<Item Name="Send Created.vi" Type="VI" URL="../Send Created.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -104,7 +104,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1082929664</Property>
 			</Item>
-			<Item Name="Create.vi" Type="VI" URL="../Create.vi">
+			<Item Name="Start.vi" Type="VI" URL="../Start.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
@@ -114,11 +114,11 @@
 			</Item>
 			<Item Name="Actor.vi" Type="VI" URL="../Actor.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">50331776</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
 			<Item Name="Write Local Msg Set.vi" Type="VI" URL="../Write Local Msg Set.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -160,7 +160,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
 			</Item>
-			<Item Name="Post Setup.vi" Type="VI" URL="../Post Setup.vi">
+			<Item Name="Create.vi" Type="VI" URL="../Create.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
@@ -202,14 +202,6 @@
 			</Item>
 		</Item>
 		<Item Name="Msg" Type="Folder">
-			<Item Name="Terminated.vi" Type="VI" URL="../Terminated.vi">
-				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
-				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
-				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
-			</Item>
 			<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
@@ -217,6 +209,14 @@
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+			</Item>
+			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi">
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
 			</Item>
 		</Item>
 	</Item>

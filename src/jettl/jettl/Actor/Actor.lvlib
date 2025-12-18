@@ -22,10 +22,10 @@
 	<Item Name="Lifecycle.ctl" Type="VI" URL="../Lifecycle.ctl"/>
 	<Item Name="Config Actor.ctl" Type="VI" URL="../Config Actor.ctl"/>
 	<Item Name="Base Actor.vi" Type="VI" URL="../Base Actor.vi"/>
-	<Item Name="Start.vi" Type="VI" URL="../Start.vi">
+	<Item Name="Launch Actor.vi" Type="VI" URL="../Launch Actor.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Actor SD.vi" Type="VI" URL="../Actor SD.vi">
+	<Item Name="Actor.vi" Type="VI" URL="../Actor.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Count.vi" Type="VI" URL="../Count.vi">
@@ -40,15 +40,15 @@
 	<Item Name="Release and Unregister.vi" Type="VI" URL="../Release and Unregister.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Send Terminated.vi" Type="VI" URL="../Send Terminated.vi">
+	<Item Name="Send Finish.vi" Type="VI" URL="../Send Finish.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
 	<Item Name="Find Prefix.vi" Type="VI" URL="../Find Prefix.vi"/>
+	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
 	<Item Name="Create.vi" Type="VI" URL="../Create.vi"/>
-	<Item Name="Setup.vi" Type="VI" URL="../Setup.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi"/>
-	<Item Name="Teardown.vi" Type="VI" URL="../Teardown.vi"/>
+	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
 </Library>
