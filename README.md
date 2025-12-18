@@ -47,7 +47,7 @@ More specifically, interface composition.
 Interface composition allows for dynamic wrapping of classes via their common `Actor` interface.
 In particular, debugging, unit testing, etc.
 - **Inline Object Manipulation in Event Structure**.
-Every Actor comes with an event structure, which has the central object wire passed through it leading to a true by value design.
+Every Actor comes with an event structure, which has the central object wire passed through it leading to a true by-value design.
 
 ## Documentation
 
