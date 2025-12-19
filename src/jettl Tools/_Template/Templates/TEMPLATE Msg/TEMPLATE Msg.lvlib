@@ -14,7 +14,7 @@
 	<Item Name="TEMPLATE Msg.lvclass" Type="LVClass" URL="../TEMPLATE Msg/TEMPLATE Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Msg Poly.vi" Type="VI" URL="../Msg Poly.vi"/>
+	<Item Name="TEMPLATE.vi" Type="VI" URL="../TEMPLATE.vi"/>
 	<Item Name="Direct.vi" Type="VI" URL="../Direct.vi"/>
 	<Item Name="Decorator.vi" Type="VI" URL="../Decorator.vi"/>
 	<Item Name="Send To Self.vi" Type="VI" URL="../Send To Self.vi"/>

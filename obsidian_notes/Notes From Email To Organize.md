@@ -47,7 +47,7 @@ What is the point to having a strongly typed messaging system where at edit time
 compile time VI analyzer tests can tell which actors can launch which actors, dependent on which messages the creator can accept and send to it's created actor and also the messages the created actor can accept and send to it's creator actor. This will cut down on run time errors, ensuring that an actor that creates another actor will abide by the contract of messages of it's created actor and vice versa.
 Further, documentation tools can be used to know exactly where what messages are passed to and from the Self.
 
-In respect to Self, there are five kind of messages:
+In respect to Self, there are five kinds of messages:
 - Self -> Self
 - Creator -> Self
 - Created (with name) -> Self
@@ -57,15 +57,6 @@ In respect to Self, there are five kind of messages:
 
 > For messages, only the two inputs are allowed for scripting. Messages are only scripted using the two left inputs, other inputs are ignored when scripting. If more than two inputs are needed, then either create a type def cluster in the message library or for bundled messages, have messages be inputs for other messages ensuring recursion of calling each others messages does not occur.
 
-![[Pasted image 20251213170904.png]]
-![[Pasted image 20251213170934.png]]
-![[Pasted image 20251213170959.png]]
-![[Pasted image 20251213171018.png]]
-![[Pasted image 20251213171115.png]]
-![[Pasted image 20251213171320.png]]
-![[Pasted image 20251213171049.png]]
-![[Pasted image 20251213171410.png]]
-![[Pasted image 20251213171424.png]]
 
 Instead have the private data Sender be the last element wired on the bottom of the conn pane such as this:
 ![[Pasted image 20251213172239.png]]
