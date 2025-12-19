@@ -14,5 +14,6 @@
 	<Item Name="Destroy Msg.lvclass" Type="LVClass" URL="../Destroy Msg/Destroy Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Msg Poly.vi" Type="VI" URL="../Msg Poly.vi"/>
 	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
 </Library>

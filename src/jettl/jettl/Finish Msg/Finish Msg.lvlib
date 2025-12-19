@@ -14,5 +14,6 @@
 	<Item Name="Finish Msg.lvclass" Type="LVClass" URL="../Finish Msg/Finish Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Msg Poly.vi" Type="VI" URL="../Msg Poly.vi"/>
 	<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
 </Library>
