@@ -12,10 +12,10 @@
 	<Item Name="Update Pump State Msg.lvclass" Type="LVClass" URL="../Update Pump State Msg/Update Pump State Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="--msg.vi" Type="VI" URL="../--msg.vi"/>
-	<Item Name="--direct.vi" Type="VI" URL="../--direct.vi"/>
-	<Item Name="--decorator.vi" Type="VI" URL="../--decorator.vi"/>
-	<Item Name="--self.vi" Type="VI" URL="../--self.vi"/>
-	<Item Name="--creator.vi" Type="VI" URL="../--creator.vi"/>
-	<Item Name="--created.vi" Type="VI" URL="../--created.vi"/>
+	<Item Name="Msg Poly.vi" Type="VI" URL="../Msg Poly.vi"/>
+	<Item Name="Direct.vi" Type="VI" URL="../Direct.vi"/>
+	<Item Name="Decorator.vi" Type="VI" URL="../Decorator.vi"/>
+	<Item Name="Send To Self.vi" Type="VI" URL="../Send To Self.vi"/>
+	<Item Name="Send To Creator.vi" Type="VI" URL="../Send To Creator.vi"/>
+	<Item Name="Send To Created.vi" Type="VI" URL="../Send To Created.vi"/>
 </Library>

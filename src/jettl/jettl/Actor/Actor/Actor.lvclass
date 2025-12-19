@@ -57,7 +57,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Send Self.vi" Type="VI" URL="../Send Self.vi">
+			<Item Name="Send To Self.vi" Type="VI" URL="../Send To Self.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
@@ -65,7 +65,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Send Creator.vi" Type="VI" URL="../Send Creator.vi">
+			<Item Name="Send To Creator.vi" Type="VI" URL="../Send To Creator.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
@@ -73,7 +73,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Send Created.vi" Type="VI" URL="../Send Created.vi">
+			<Item Name="Send To Created.vi" Type="VI" URL="../Send To Created.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
@@ -131,11 +131,11 @@
 			</Item>
 			<Item Name="Setup.vi" Type="VI" URL="../Setup.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1107821056</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
 			<Item Name="Teardown.vi" Type="VI" URL="../Teardown.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>

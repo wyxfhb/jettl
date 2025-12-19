@@ -47,20 +47,6 @@ What is the point to having a strongly typed messaging system where at edit time
 compile time VI analyzer tests can tell which actors can launch which actors, dependent on which messages the creator can accept and send to it's created actor and also the messages the created actor can accept and send to it's creator actor. This will cut down on run time errors, ensuring that an actor that creates another actor will abide by the contract of messages of it's created actor and vice versa.
 Further, documentation tools can be used to know exactly where what messages are passed to and from the Self.
 
-In `Name Msg.lvclass`, include
-`Name.vi`
-`Msg Polymorphic.vi`
-`Self.vi`
-`Creator.vi`
-`Created.vi`
-
-In Actor Class:
-`Name.vi` (Created DAQ) (private?)
-`Name Created.vi` (private?)
-
-
-**should we avoid the -- flag?**
-
 In respect to Self, there are five kind of messages:
 - Self -> Self
 - Creator -> Self
@@ -87,7 +73,7 @@ redo interface method to have Sender on bottom.
 and:
 ![[Pasted image 20251213172537.png]]
 
-Remove from palette:
+#### Remove from palette:
 - Send Self,
 - Send Created,
 - Send Creator,
