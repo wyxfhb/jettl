@@ -16,4 +16,9 @@
 	</Item>
 	<Item Name="Msg Poly.vi" Type="VI" URL="../Msg Poly.vi"/>
 	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
+	<Item Name="Direct.vi" Type="VI" URL="../Direct.vi"/>
+	<Item Name="Decorator.vi" Type="VI" URL="../Decorator.vi"/>
+	<Item Name="Send To Self.vi" Type="VI" URL="../Send To Self.vi"/>
+	<Item Name="Send To Creator.vi" Type="VI" URL="../Send To Creator.vi"/>
+	<Item Name="Send To Created.vi" Type="VI" URL="../Send To Created.vi"/>
 </Library>
