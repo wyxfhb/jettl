@@ -173,8 +173,6 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 Finish message method private?
 
-Instead of Create placeholder, have it be Start placeholder
-
 Create function config input recommended
 
 Config Actor.ctl:
