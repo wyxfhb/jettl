@@ -57,13 +57,6 @@ In respect to Self, there are five kinds of messages:
 
 > For messages, only the two inputs are allowed for scripting. Messages are only scripted using the two left inputs, other inputs are ignored when scripting. If more than two inputs are needed, then either create a type def cluster in the message library or for bundled messages, have messages be inputs for other messages ensuring recursion of calling each others messages does not occur.
 
-#### Remove from palette:
-- Send Self,
-- Send Created,
-- Send Creator,
-- Msg Handler
-- put destroy poly on palette (library banner?)
-
 #### Scripting which messages go to which created actor
 *Here we can use scripting to find where the `Send to Created.vi` is called and find the associated enum by traversing through the `format into string` primitive. This will find the name to properly understand where the message will go at run time, in edit time. If there is something between this string or there is a conditional that uses either of two enums, then the scripting will not understand this. Best to be static with which messages will go where for an easier to understand actor by using the `format into string` and enum.*
 #### `Find Created Attributes.vi` not named `Read Created Attributes.vi` since not necessarily a read operation and can produce an error from alias not being found.
