@@ -57,13 +57,6 @@ In respect to Self, there are five kinds of messages:
 
 > For messages, only the two inputs are allowed for scripting. Messages are only scripted using the two left inputs, other inputs are ignored when scripting. If more than two inputs are needed, then either create a type def cluster in the message library or for bundled messages, have messages be inputs for other messages ensuring recursion of calling each others messages does not occur.
 
-
-Instead have the private data Sender be the last element wired on the bottom of the conn pane such as this:
-![[Pasted image 20251213172239.png]]
-redo interface method to have Sender on bottom.
-and:
-![[Pasted image 20251213172537.png]]
-
 #### Remove from palette:
 - Send Self,
 - Send Created,
