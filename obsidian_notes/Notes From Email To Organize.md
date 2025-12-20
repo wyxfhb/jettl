@@ -171,3 +171,22 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 
 
+Finish message method private?
+
+Instead of Create placeholder, have it be Start placeholder
+
+Create function config input recommended
+
+Config Actor.ctl:
+Change name to Setup.ctl? Since eventually goes to Setup?
+
+Read and write Actor methods DD
+For Decorator, put inside the read/write methods
+Replace all bundle by name unbundle by name Actor with methods
+
+In Start, can replace with Find Created Attributes, and if an error, then alias not found (don’t need to wire indicator)!
+
+Reply as message poly
+Remove from palettes
+“Sender” and “Is Priority”
+
