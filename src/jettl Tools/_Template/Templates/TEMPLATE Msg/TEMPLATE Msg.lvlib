@@ -20,4 +20,5 @@
 	<Item Name="Send To Self.vi" Type="VI" URL="../Send To Self.vi"/>
 	<Item Name="Send To Creator.vi" Type="VI" URL="../Send To Creator.vi"/>
 	<Item Name="Send To Created.vi" Type="VI" URL="../Send To Created.vi"/>
+	<Item Name="Reply.vi" Type="VI" URL="../Reply.vi"/>
 </Library>

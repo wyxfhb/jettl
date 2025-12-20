@@ -173,12 +173,6 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 Finish message method private?
 
-Read and write Actor methods DD
-For Decorator, put inside the read/write methods
-Replace all bundle by name unbundle by name Actor with methods
-
-In Start, can replace with Find Created Attributes, and if an error, then alias not found (don’t need to wire indicator)!
-
 Reply as message poly
 Remove from palettes
 “Sender” and “Is Priority”
