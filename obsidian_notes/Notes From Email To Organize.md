@@ -173,7 +173,14 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 Finish message method private?
 
-Reply as message poly
-Remove from palettes
-“Sender” and “Is Priority”
 
+start -> create
+setup
+create -> start
+destroy -> stop
+teardown
+finish -> destroy
+
+private data: Stop
+Can Stop.vi
+Stop Message
