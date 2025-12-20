@@ -173,9 +173,6 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 Finish message method private?
 
-Config Actor.ctl:
-Change name to Setup.ctl? Since eventually goes to Setup?
-
 Read and write Actor methods DD
 For Decorator, put inside the read/write methods
 Replace all bundle by name unbundle by name Actor with methods
