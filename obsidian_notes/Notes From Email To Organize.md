@@ -173,8 +173,6 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 Finish message method private?
 
-Create function config input recommended
-
 Config Actor.ctl:
 Change name to Setup.ctl? Since eventually goes to Setup?
 
