@@ -195,21 +195,14 @@ Decorate Base.vi (Init and Decorator)
 
 Base Actor: Init.vi (input of Eldest)
 
-Replace and delete Base Actor.vi with Init.vi
-
 Eldest in Attributes!
 
 Lifecycle
 Stop cannot occur directly in Init, spawn, setup, start
 
-Init
-Spawn
-Setup (function)
-Start
-Stop
-Teardown (can occur after setup in case of error) (function)
-Terminate
-
 Alias -> UID
 
 Write Local Msg Set -> _____ Local Msg Set
+
+
+Tell.vi, replace places to not have input be where error in is.
