@@ -175,6 +175,3 @@ Finish message method private?
 
 
 
-Have a conditional Boolean to disable the checking in the mass handler
-In case this is necessary for Network Streams later?
-Default is True: “Check Within Unified Msg Set”

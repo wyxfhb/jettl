@@ -15,10 +15,22 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="TEMPLATE.vi" Type="VI" URL="../TEMPLATE.vi"/>
-	<Item Name="Direct.vi" Type="VI" URL="../Direct.vi"/>
-	<Item Name="Decorator.vi" Type="VI" URL="../Decorator.vi"/>
-	<Item Name="Tell Self.vi" Type="VI" URL="../Tell Self.vi"/>
-	<Item Name="Tell Parent.vi" Type="VI" URL="../Tell Parent.vi"/>
-	<Item Name="Tell Child.vi" Type="VI" URL="../Tell Child.vi"/>
-	<Item Name="Tell Reply.vi" Type="VI" URL="../Tell Reply.vi"/>
+	<Item Name="Direct Call.vi" Type="VI" URL="../Direct Call.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Component.vi" Type="VI" URL="../Component.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Tell Self.vi" Type="VI" URL="../Tell Self.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Tell Parent.vi" Type="VI" URL="../Tell Parent.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Tell Child.vi" Type="VI" URL="../Tell Child.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Tell Reply.vi" Type="VI" URL="../Tell Reply.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 </Library>
