@@ -18,6 +18,7 @@
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
 	<Item Name="Lifecycle.ctl" Type="VI" URL="../Lifecycle.ctl"/>
+	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl"/>
 	<Item Name="Spawn.ctl" Type="VI" URL="../Spawn.ctl"/>
 	<Item Name="Setup.ctl" Type="VI" URL="../Setup.ctl"/>
 	<Item Name="Actor.vi" Type="VI" URL="../Actor.vi">

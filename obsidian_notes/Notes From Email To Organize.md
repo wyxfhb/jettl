@@ -185,8 +185,6 @@ Default is True: “Check Within Unified Msg Set”
 
 
 
-Write Local Msg Set -> _____ Local Msg Set
-
 Tell.vi, replace places to not have input be where error in is.
 
 write attributes create cluster for this.
