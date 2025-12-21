@@ -186,5 +186,3 @@ Default is True: “Check Within Unified Msg Set”
 
 
 Tell.vi, replace places to not have input be where error in is.
-
-write attributes create cluster for this.
