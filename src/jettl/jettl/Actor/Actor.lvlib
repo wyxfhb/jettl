@@ -14,40 +14,37 @@
 	<Item Name="Base Actor.lvclass" Type="LVClass" URL="../Base Actor/Base Actor.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Created Aliases.ctl" Type="VI" URL="../Created Aliases.ctl"/>
+	<Item Name="Child UIDs.ctl" Type="VI" URL="../Child UIDs.ctl"/>
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
 	<Item Name="Lifecycle.ctl" Type="VI" URL="../Lifecycle.ctl"/>
-	<Item Name="Start.ctl" Type="VI" URL="../Start.ctl"/>
+	<Item Name="Spawn.ctl" Type="VI" URL="../Spawn.ctl"/>
 	<Item Name="Setup.ctl" Type="VI" URL="../Setup.ctl"/>
-	<Item Name="Base Actor.vi" Type="VI" URL="../Base Actor.vi"/>
-	<Item Name="Launch Actor.vi" Type="VI" URL="../Launch Actor.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="Actor.vi" Type="VI" URL="../Actor.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Count.vi" Type="VI" URL="../Count.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Send.vi" Type="VI" URL="../Send.vi">
+	<Item Name="Tell.vi" Type="VI" URL="../Tell.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Can Destroy.vi" Type="VI" URL="../Can Destroy.vi">
+	<Item Name="Can Stop.vi" Type="VI" URL="../Can Stop.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Release and Unregister.vi" Type="VI" URL="../Release and Unregister.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Send Finish Msgs.vi" Type="VI" URL="../Send Finish Msgs.vi">
+	<Item Name="Tell Terminate Msgs.vi" Type="VI" URL="../Tell Terminate Msgs.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
 	<Item Name="Error Prefix.vi" Type="VI" URL="../Error Prefix.vi"/>
-	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
-	<Item Name="Create.vi" Type="VI" URL="../Create.vi"/>
+	<Item Name="Decorate Base.vi" Type="VI" URL="../Decorate Base.vi"/>
+	<Item Name="Spawn.vi" Type="VI" URL="../Spawn.vi"/>
+	<Item Name="Setup.vi" Type="VI" URL="../Setup.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi"/>
-	<Item Name="Destroy.vi" Type="VI" URL="../Destroy.vi"/>
+	<Item Name="Teardown.vi" Type="VI" URL="../Teardown.vi"/>
 </Library>

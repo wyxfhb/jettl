@@ -174,13 +174,42 @@ This way the intermediate actors are the ones being developed for their logic, i
 Finish message method private?
 
 
-start -> create
-setup
-create -> start
-destroy -> stop
-teardown
-finish -> destroy
 
-private data: Stop
-Can Stop.vi
-Stop Message
+Have a conditional Boolean to disable the checking in the mass handler
+In case this is necessary for Network Streams later?
+Default is True: “Check Within Unified Msg Set”
+
+Decorator replace with Write Actor
+
+Absorb Launch into Start. Delete Launch (private).
+
+Self, Parent, Child
+
+Tell, Tell Reply
+
+Sender -> Teller
+
+Convenience functions:
+Decorate Base.vi (Init and Decorator)
+“Spawn Eldest.vi” (Init and Spawn with Boolean true i.e. Internal flag for “Eldest”)
+
+Base Actor: Init.vi (input of Eldest)
+
+Replace and delete Base Actor.vi with Init.vi
+
+Eldest in Attributes!
+
+Lifecycle
+Stop cannot occur directly in Init, spawn, setup, start
+
+Init
+Spawn
+Setup (function)
+Start
+Stop
+Teardown (can occur after setup in case of error) (function)
+Terminate
+
+Alias -> UID
+
+Write Local Msg Set -> _____ Local Msg Set

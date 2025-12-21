@@ -17,8 +17,8 @@
 	<Item Name="TEMPLATE.vi" Type="VI" URL="../TEMPLATE.vi"/>
 	<Item Name="Direct.vi" Type="VI" URL="../Direct.vi"/>
 	<Item Name="Decorator.vi" Type="VI" URL="../Decorator.vi"/>
-	<Item Name="Send To Self.vi" Type="VI" URL="../Send To Self.vi"/>
-	<Item Name="Send To Creator.vi" Type="VI" URL="../Send To Creator.vi"/>
-	<Item Name="Send To Created.vi" Type="VI" URL="../Send To Created.vi"/>
-	<Item Name="Reply.vi" Type="VI" URL="../Reply.vi"/>
+	<Item Name="Tell Self.vi" Type="VI" URL="../Tell Self.vi"/>
+	<Item Name="Tell Parent.vi" Type="VI" URL="../Tell Parent.vi"/>
+	<Item Name="Tell Child.vi" Type="VI" URL="../Tell Child.vi"/>
+	<Item Name="Tell Reply.vi" Type="VI" URL="../Tell Reply.vi"/>
 </Library>
