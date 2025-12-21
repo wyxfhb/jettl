@@ -185,6 +185,14 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
+			<Item Name="Not In Unified Msg Set.vi" Type="VI" URL="../Not In Unified Msg Set.vi">
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">16777353</Property>
+				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
+			</Item>
 			<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
