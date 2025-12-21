@@ -41,6 +41,7 @@
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
 	<Item Name="Error Prefix.vi" Type="VI" URL="../Error Prefix.vi"/>
+	<Item Name="Spawn Eldest.vi" Type="VI" URL="../Spawn Eldest.vi"/>
 	<Item Name="Decorate Base.vi" Type="VI" URL="../Decorate Base.vi"/>
 	<Item Name="Spawn.vi" Type="VI" URL="../Spawn.vi"/>
 	<Item Name="Setup.vi" Type="VI" URL="../Setup.vi"/>

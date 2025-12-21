@@ -179,30 +179,14 @@ Have a conditional Boolean to disable the checking in the mass handler
 In case this is necessary for Network Streams later?
 Default is True: “Check Within Unified Msg Set”
 
-Decorator replace with Write Actor
 
-Absorb Launch into Start. Delete Launch (private).
 
-Self, Parent, Child
 
-Tell, Tell Reply
 
-Sender -> Teller
 
-Convenience functions:
-Decorate Base.vi (Init and Decorator)
-“Spawn Eldest.vi” (Init and Spawn with Boolean true i.e. Internal flag for “Eldest”)
-
-Base Actor: Init.vi (input of Eldest)
-
-Eldest in Attributes!
-
-Lifecycle
-Stop cannot occur directly in Init, spawn, setup, start
-
-Alias -> UID
 
 Write Local Msg Set -> _____ Local Msg Set
 
-
 Tell.vi, replace places to not have input be where error in is.
+
+write attributes create cluster for this.
