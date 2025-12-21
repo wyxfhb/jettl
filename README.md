@@ -56,7 +56,5 @@ Note, this documentation will likely be outdated due to recent rapid development
 Please refer to the [Videos](https://www.youtube.com/@nathandavis6612) linked above, for more recent explanations.
 
 ![](doc/figures/actor-method.png)
-![](doc/figures/placeholder--create.png)
-![](doc/figures/placeholder--alias.png)
 ![](doc/figures/placeholder--error.png)
 ![](doc/figures/msg.png)
