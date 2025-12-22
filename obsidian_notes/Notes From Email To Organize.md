@@ -174,7 +174,7 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 
 
-Change Elder to Root
+
 
 Base Actor -> Core Actor
 
