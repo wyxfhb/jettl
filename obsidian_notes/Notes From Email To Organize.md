@@ -173,12 +173,8 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 
 
-`Actor.vi` (SD IO) Comment to say this is only used since async start doesn't allow starting DD methods, no a SD method is used.
-
-
-
 Init.vi  
-"Stop When Parent Terminated”:bool  
+"Stop When Parent Stopped”:bool  
 TRUE set as default
 
 
@@ -193,3 +189,6 @@ Change Elder to Root
 
 
 Non message .vi, have Msg input just like the Msg Handler.
+
+
+terminate -> stopped

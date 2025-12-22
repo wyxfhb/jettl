@@ -36,14 +36,14 @@
 	<Item Name="Release and Unregister.vi" Type="VI" URL="../Release and Unregister.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Tell Terminate Msgs.vi" Type="VI" URL="../Tell Terminate Msgs.vi">
+	<Item Name="Tell Stopped.vi" Type="VI" URL="../Tell Stopped.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
 	<Item Name="Error Prefix.vi" Type="VI" URL="../Error Prefix.vi"/>
-	<Item Name="Spawn Eldest.vi" Type="VI" URL="../Spawn Eldest.vi"/>
-	<Item Name="Decorate Base.vi" Type="VI" URL="../Decorate Base.vi"/>
+	<Item Name="Spawn Root.vi" Type="VI" URL="../Spawn Root.vi"/>
+	<Item Name="Decorate Core Actor.vi" Type="VI" URL="../Decorate Core Actor.vi"/>
 	<Item Name="Spawn.vi" Type="VI" URL="../Spawn.vi"/>
 	<Item Name="Setup.vi" Type="VI" URL="../Setup.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
