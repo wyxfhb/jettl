@@ -19,46 +19,21 @@ General Best Practice: If a function has output object, it SHOULD be wired.
 
 ---
 
-Since `Actor.vi` is NOT a decorator method, that means only the outer local actor 'Actor.vi' will be executed!
+Advice: Since `Actor.vi` is NOT a decorator method, that means only the outer local actor 'Actor.vi' will be executed!
 
 ---
 
-
-### Style Best Practice
-
-Only have top two conn panes are Object in / Object out
+General Best Practice: Only have top left and top right conn panes as Object in / Object out
 
 ---
 
-### Key Features
-
-All Boolean logic is positive logic.
+'jettl': All Boolean logic is positive logic.
 
 ---
 
-Justify execution for each method in it's description
+jettl: 'Actor.vi' Sets up and Tears down all references in the same call.
 
 ---
-
-Base Actor Creates and Destroys all references in the same method call.
-In particular, Queue and Event references.
-
----
-
-
-### Edits
-
-`Actor.vi`
-Delete
-- Set Self Attributes
-- Set Creator Attributes
-Instead wire in the inputs to Process
-
-`Write VI Server.vi` -> `Write Attibutes.vi`
-
----
-
-### Error
 
 Errors signify that
 - intended operation could not be performed, otherwise said also that
@@ -66,14 +41,16 @@ Errors signify that
 
 [https://youtu.be/00TZxeyt8_A?si=C3kbhPJ4HtcmhOfk](https://youtu.be/00TZxeyt8_A?si=C3kbhPJ4HtcmhOfk)
 
+An example of intermediate actors:
 Since each error that can occur in a method is known, an Actor decorator, for example, can override this behavior by clearing errors as necessary. It is the default behavior to put all jettl errors on the error wire to expose the API to the developer, and the developer can decide which errors to ignore for each individual method.
-For example, clearing errors that come from the Send methods if an Address is not registered anymore.
-expected error list with possible reasons the error was created.
-All errors that can happen in jettl are documented in `jettl.lvlib:Error.lvlib`
+For example, clearing errors that come from the Tell methods if an Address is not registered anymore.
 
-Errors should be handled with the method that generates that error. For example, when an error occurs in a method, DO NOT handle the error in a global method call after the method has finished executing. Rather, handle the error as necessary during execution of the method call (this means in decorated methods too, think in a decorated layer of actor, handling errors that come out of Create.vi in another layer)
+Best Practice: Errors should be handled with the method that generates that error. For example, when an error occurs in a method, it is best to NOT handle the error in 'Error Handler.vi'. Rather, handle the error as necessary during execution of the method call (this means in decorated methods too, think in a decorated layer of actor, handling errors that come out of Create.vi in another layer).
+This can be company specific intermediate actors.
 
-For EVERY method / function call, you SHOULD KNOW EVERY ERROR that will come out of that method / function, and document it for the developer. Otherwise, the error *likely* was passed from a previous method / method. You will know this by the call chain.
+'jettl': All know errors that can happen in jettl are documented in `jettl.lvlib:Error.lvlib`
+
+Best Practice: For EVERY method / function call, you SHOULD KNOW EVERY ERROR that will come out of that method / function, and document it for the developer. Otherwise, the error *likely* was passed from a previous method / method. You will know this by the call chain.
 
 [https://forums.ni.com/t5/Actor-Framework-Discussions/Actor-Stopping-Error-Handling/m-p/3632216#M5189](https://forums.ni.com/t5/Actor-Framework-Discussions/Actor-Stopping-Error-Handling/m-p/3632216#M5189)
 
@@ -87,129 +64,34 @@ An error wire input and output tells the developer that the error can be modifie
 ---
 
 
-### Logging Wrapper
+### Hierarchy Monitor Intermediate Actor
 
-Initialization for Actor tdms Logger.
-Requires:
+Initialization requires:
 - Self Attributes
-- Creator Attributes
-**Note**
-	Created is redundant information, since can construct everything with Self and Creator Attributes
+- Parent Attributes
+Note: Child information is redundant information since can construct everything with Self and Parent Attributes.
 
-**Cleanup Time** can be wrapper addition for.. logging
-
-After sending message, logs to file the **Send Time**
+After sending message, logs to file the **Tell Time**
 After receiving message, logs to file the **Receive Time**
 
-**Create Time**
-This logging should go into **Create.vi** wrapper actor
+**Start Time**
+This logging should go into **Start.vi** wrapper actor
 
 ---
 
-Wrapper Actor Logging  
-EACH Actor has event logger.
+Intermediate Actor Logging  
+EACH Actor can have an event logger.
 
-TDMS file is created for EACH Actor in a central application directory, and a time stamp with a call chain / object hierarchy are logged with events etc. This way we can easily stream these values to disk as an internal actor logger.
+File is created for EACH Actor in a central temp application directory, and a time stamp with a call chain / object hierarchy are logged with events etc. This way we can easily stream these values to disk as an internal actor logger.
 
----
-
-### Palette
-
-Advanced Palette (in Actor)
-Includes the Actor.vi, Send.vi, etc.
-
-> Should include otherwise advanced functions, outside of normal use in jettl.
-
-> Maybe this isn't *Advanced*, but some other name for otherwise *discouraged in practical use*.
-
-Advanced palettes for EACH of the libraries exposed to the developer, in case they want to use dangerous functionality.
-
----
-
-Best practice:
-Do not put the Msg methods in the palette since they are never called directly.
-
----
-
-
-
-### Enqueue and Dequeue
-
-Comment
-Enqueue: Fundamentally will not output an error since the queue is guaranteed to be open.
-Dequeue: Fundamentally will not output an error since the queue is guaranteed to be open.
-
-### Boolean prefixes
-
-Is, Can, Has, Should, Was
-
-### Process.vi
-
-**Process.vi**
-Register for Events before **Process.vi** override
-
-> No need for comment about releasing event references
-
-Increase the size
-
----
-
-Take away decorator. Not a decorator.
-
----
-
-`Panel Close?` event with default of `Mark For Destroy.vi` function
-
----
-
-`Process.vi`
-After `Write Attributes`
-`Was Created.vi`
-AND
-`Can Proceed.vi`
-
----
-
-Actor Refs
-Placeholder Application Ref in Actor Refs
-Wire in default in `Actor.vi`
 ### Wrappers
 
-Inner Actor  
-Middle Actors
-Outer Actor
+Advice: when decorating actors, they don’t know about each other, but decorated actoes can interact with common method calls between layers, this includes data defined by messages!
 
 ---
 
-There is some beatify here in wrapping actors
-A blanket statement: You are always separating concerns when designing an actor!
-Remember, when wrapping actors, they don’t know about each other, but wrappers can interact with common method calls between layers this includes data defined by messages! In particular.. logging. When a message is received to an actor, one of the layers can be logging which implements a message that logs the same message to file.
-
----
-
-Best practice:
-Decoupling Msgs between layers
-sending a message defined in an internal layer but not decorating the base actor with this internal actor means the message may not be implemented in the “Unified Msg Set”.. throwing an error..
-This is a coupling issue that makes unit testing actors difficult if there are messages defined on internal layers.
-
----
-
-For the internal wrapping actors, do not include messages within them? Of course you can, but leads to subtle coupling of actor not being able to execute messages if the outer actor does not implement that functionality.
-
----
-
-- Core Actor
-- Non-Process Actor
-- Process Actor
-- Non-Process Actor (MHL wouldn’t wrap messages on the outer layer, or it can, but be careful because messages in that layer will not be able to execute)
-
----
-
-
-Wrapper can have
-Init.vi
-Boolean flag for “Destroy on Creator `Has Destroyed`”
-TRUE set as default
+'jettl': Msgs are decoupled between layers
+sending a message defined in an internal layer but not the outer actor or corr actor still means the message will be in the 'Unified Msg Set'.
 
 ---
 
