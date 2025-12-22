@@ -84,6 +84,11 @@ EACH Actor can have an event logger.
 
 File is created for EACH Actor in a central temp application directory, and a time stamp with a call chain / object hierarchy are logged with events etc. This way we can easily stream these values to disk as an internal actor logger.
 
+Wrapper
+For the Errors generated in the program..
+In some actor layer, can override this default behavior by decorating the actor
+This Actor Wrapper can come native as a reuse library.
+
 ### Wrappers
 
 Advice: when decorating actors, they don’t know about each other, but decorated actoes can interact with common method calls between layers, this includes data defined by messages!
@@ -95,62 +100,20 @@ sending a message defined in an internal layer but not the outer actor or corr a
 
 ---
 
-Wrapper
-For the Errors generated in the program..
-In some actor layer, can override this default behavior by decorating the actor
-This Actor Wrapper can come native as a reuse library.
-Error function, and unbundle to get the `code`
-
----
-
 Unit Testing idea
 Other idea about unit testing:
 The actor object can be logged before and after method execution, along with its inputs to determine potential use case unit tests to be tested for!
 
 ---
 
-The `Read` / `Write` accessors never put out errors. That goes for the decorators as well. They should also not put out errors.
-
----
-
 Sub Panels
-After Create, access to Created Attributes, which has Actor Ref, so can easily put this into a Sub Panel here. And further, can modularize where front panels are in Process front panel of self i.e. changing around panels since you directly have access to the Actor Ref of the Created Attributes.
+After 'Spawn.vi', access to Child Attributes, which has Actor Ref, so can easily put this into a Sub Panel here. And further, can modularize where front panels are in Actor front panel of Self i.e. changing around panels since you directly have access to the Actor Ref of the Child Attributes.
 
 ---
 
-For typical overrides to functionality.
-One thing is for `Has Destroyed` where the Error that was in an Actor.. how to handle, well there is default functionality in the Example Internal Actor that appends these errors to the creators object wire AND if from a creator, Destroys itself.
-### Msg methods
-
-1. Drop messages method
-2. Wire to Msg Input
-3. Wire in Sender
-4. Wire in inputs
-
----
-
-All Msg methods have DD out since some of the common method calls in jettl have DD out and it is heavily encouraged to wire all outputs of a function, especially the DD out
-
----
-
-Msg methods have DD out because more often than not, they’re generating errors within
-
----
-
-messages named by the actor that sent the Msg
-i.e.
-Final Msg
-
----
-### Destroy
-
-`Mark For Destroy.vi` (Msg)
-`Is Marked For Destroy` (Boolean in PD)
-`Destroy.vi` (happens right before `Has Destroyed`)
-
-`Marked For Destroy`
+`Stop.vi'
 - always starts as `False`
-- only be changed to `True` in  `Mark For Destroy.vi`
+- only be changed to `True` in  `Stop.vi`
 - can never be changed to `False`
 
 ### Can Proceed.vi
