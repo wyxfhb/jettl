@@ -16,51 +16,12 @@ At the end with further topics, list them with already made videos links for all
 
 
 
-**Style Guidelines**
-
-Have methods be default private
-Maybe change LabVIEW .ini files to create methods with a default of private with methods having read text.
-
-Prefer to use read only methods and write only methods to property nodes read and writes
-
-Just a rule, to better see banner encapsulation, do not use property nodes for accessors.
-Also, in part since property nodes aren’t supported for interfaces.
-
-Don’t wire things on the top of the connector pane unless function is made for wrapping functionality of an object. REALLY provides for excellent readability for object based method calls to ensure data flow is followed. If there are too many inputs, create a cluster type def.
-
-Only supports 4x2x2x4 conn pane methods and functions for rescripting actions in accordance to conn pane guidelines
-
-Aside from object / error terminals methods / functions should have zero, one, or two inputs.
-
-Readability: Aside from the error wires (which should be moved to the back for all block diagrams), ensure no wires overlap each other for a maximally readable diagram.
-
-Why is there the box in the default class icon? Please delete this, we change the colors of our banners and wires and rarely do we use that different colored cube as a meaningful icon. Yes, we know it is a class already. And yes, it’s distinguished since an interface doesn’t have it. They’re already easy to tell apart
 
 
 
+Add a Safe Boolean (recommended) to the Stop message
+safe stop boolean in private data.
 
-
-
-**Idea: Messages with outputs**
-
-Only available in the component. but wired through the interface message.
-Application reason: Actors that wrap other actors can use the data output for i.e. logging for that actor itself. So if the method is executed has an output of the analyzed data, then in the next wrapped layer, this output can be used for logging.
-
-
-
-
-
-**Value in Code decoupling**
-
-The value in decoupling from the framework, then you can test the code without the framework, you can use the code without the framework, don't have coupling (which otherwise slows down load times). Being able to test the code without the framework is the advantage of code decoupling. This is the main reason that methods are public is so that the framework can be used within other frameworks.
-
-**actor methods should be shared clone reentrant by default.**
-
-**Any additional methods / functions created by the developer should be private to the actor. The only methods/functions that should be public are the actor API and messages.**
-
-**Constructors (`Init.vi`) shouldn't be able to throw errors**
-[Errors are Values; Please Treat Them That Way - Ethan Stern](https://www.youtube.com/watch?v=8vhYLlaXaQU&list=PLvDxiIkwuMQtiOZ_WWbk6ZCXfeAKxtwo-)
-This means that the `Init.vi` should not output any errors, and functionality that otherwise puts out errors should go into other methods such as `Setup.vi`.
 
 
 
@@ -153,7 +114,12 @@ Two-lane sequence diagram (Actor lane and Spawning Actor) with message arrows.
 - A **unified actor** represents the unification of multiple layers into one logical actor.
 - This maps cleanly to having both a **local message set** (per layer) and a **unified message set** (across the unified actor).
 
-#### Decouple UI and event handling from actor functionality
+
+
+
+
+
+#### Decoupling the UI and event handling from actor functionality
 
 A primary goal is to separate **UI/event handling concerns** from **business logic**.
 
@@ -355,3 +321,104 @@ Prefer strong, static structure and clear boundaries. Keep components modular an
 **Q1:** **How should we handle sequencing when we need strict execution order but want to avoid implying mutation on a class/interface wire?**
 **Q2:** **What connector pane patterns do you recommend for methods that are logically “queries” (read-only) versus “commands” (mutating) in LabVIEW OOP?**
 **Q3:** **Where should we draw the line between using explicit sequencing structures and restructuring code to preserve natural dataflow without serialization wires?**
+
+### Style Guidelines
+
+#### Method access scope
+
+- **Default all new methods to Private.**
+    
+- Update the LabVIEW configuration (e.g., `.ini`/template/scripting defaults) so that newly created methods are **Private by default**.
+    
+- Change a method to **Public/Protected only when it is part of the intended API**.
+    
+
+#### Properties and accessors
+
+- **Do not use property nodes as public/caller-facing accessors.** Avoid placing property nodes on the caller’s block diagram for “get/set” behavior.
+    
+- Prefer **explicit accessor methods** that encapsulate any property node usage internally:
+    
+    - `Read <Property>` methods perform **property-node reads** internally.
+        
+    - `Write <Property>` methods perform **property-node writes** internally.
+        
+- Rationale: improves encapsulation visibility at the call site and avoids issues where **property nodes are not supported for interfaces**.
+    
+
+#### Connector panes and method signatures
+
+- Standardize rescripted methods/functions on the **4x2x2x4 connector pane** pattern, consistent with connector pane guidelines.
+    
+- Keep signatures small: **excluding the object reference and error terminals**, methods/functions should have **0–2 inputs**.
+    
+- If additional inputs are required, **bundle them into a typedef’d cluster** rather than expanding the connector pane.
+    
+
+#### Terminal placement and wiring conventions
+
+- **Do not wire terminals on the top row of the connector pane** unless the VI is explicitly a thin wrapper intended to forward/wrap object functionality.
+    
+- Readability rules for all block diagrams:
+    
+    - Route **error wires behind** other wires (back layer).
+        
+    - Ensure **no wire overlaps**—layout should make dataflow easy to follow at a glance.
+        
+
+#### Icons
+
+- Remove the default **cube/box element** from class icons.
+    
+- Rely on **banner and wire color conventions** for identification; the cube provides minimal semantic value and is not needed to distinguish classes from interfaces.
+    
+
+**Q1:** Can you propose a consistent naming convention (including prefixes/suffixes) for `Read/Write` accessor methods across our class hierarchy?  
+**Q2:** Can you define a standard terminal mapping for our 4x2x2x4 connector pane (which terminals go where) so everyone scripts and wires consistently?  
+**Q3:** Can you provide a few canonical block diagram layout patterns for common OOP call chains that keep error wires in the back and avoid wire overlap?
+
+### Idea: Messages with outputs
+
+This capability is implemented at the component level, but exposed through the interface message contract.
+
+Rationale: It enables wrapper actors (actors that delegate to other actors) to capture and reuse a callee’s output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data.
+
+**Q1:** How should the interface message represent outputs (typed payload, metadata, or both), and what guarantees do we want around schema stability?  
+**Q2:** Should outputs be available only on success, or also on partial failure (e.g., best-effort outputs plus error details)?  
+**Q3:** What constraints do we need to prevent sensitive outputs from being logged or propagated across wrapper layers unintentionally?
+
+### Value of code decoupling
+
+Decoupling business logic from the framework creates three concrete benefits:
+
+* **Testability:** you can unit test the logic without standing up the framework runtime.
+* **Reusability:** the same logic can be reused in other contexts (including other frameworks) without refactoring.
+* **Performance and maintainability:** reduced coupling typically reduces framework-driven dependencies and overhead (for example, unnecessary load-time work tied to framework initialization).
+
+In practice, the most immediate payoff is **being able to test logic independently of the framework**. A secondary payoff is that keeping framework-facing boundaries clean makes it easier to integrate with other frameworks.
+
+### Actor methods should be shared-clone, reentrant by default
+
+Actor methods should be **shared clone** and **reentrant** by default to support concurrency and avoid unintended serialization or contention across instances.
+
+### Public vs. private methods
+
+* **Public:** only the **actor’s API surface**—i.e., **messages and actor API methods** that define how other components interact with the actor.
+* **Private:** any additional helper methods or functions created to implement behavior should be **private to the actor**.
+
+This keeps the actor’s contract small and stable while allowing implementation details to evolve without breaking callers.
+
+### Constructors (`Init.vi`) should not throw errors
+
+Constructors should not throw errors. In particular:
+
+* `Init.vi` **should not output errors**.
+* Any work that might fail (I/O, resource acquisition, configuration validation, etc.) should be moved into a separate method such as `Setup.vi`, where failures can be handled explicitly as part of the actor’s startup workflow.
+
+This aligns with the principle that **errors are values** and should be modeled and handled intentionally, rather than being emitted from constructors in a way that complicates initialization semantics.
+
+Reference: *Errors are Values; Please Treat Them That Way* (Ethan Stern) — [https://www.youtube.com/watch?v=8vhYLlaXaQU&list=PLvDxiIkwuMQtiOZ_WWbk6ZCXfeAKxtwo-](https://www.youtube.com/watch?v=8vhYLlaXaQU&list=PLvDxiIkwuMQtiOZ_WWbk6ZCXfeAKxtwo-)
+
+**Q1:** How should `Setup.vi` report failures—return an error value, publish a failure message, or transition the actor into a “failed” state?
+**Q2:** What criteria should determine whether a method belongs in the public actor API versus remaining private helper logic?
+**Q3:** What are the best patterns for testing actor logic in isolation (e.g., pure functions, dependency injection, message simulation) in this framework?
