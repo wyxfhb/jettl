@@ -150,104 +150,19 @@ Target combo box:
 
 'jettl': 'Terminate` Msg sent to both parent and all children
 
-# Need to Sort
-
-`Init.vi` (TEMPLATE Actor)
-`Has Error.vi`
-You have not even created yet, so don’t ever call `Go To Destroy.vi` here.
-
-`Uninit.vi` (outside `Init.vi`)
-
-`Decorator.vi`
-
-`Create.vi`
-Checks if the Actor input `Must Destroy.vi`, otherwise, throw an error that operation could not continue.
-
-`Actor SD.vi` (SD IO) Comment to say this is only used since async start doesn't allow starting DD methods, no a SD method is used.
-Panel Stuff:
-Include the `Count.vi` T and F with fss
-To insert into a sub panel, need to first have standard front panel displayed?
-*Can have hidden FP on RT?*
-Can just run Hidden FP for all actors, then don’t need the `Count.vi`?
-
-`Actor.vi` (replaces `Actor.vi`) (DD IO)
-Documentation:
+Testing:
 `Actor.vi` has output for potential debugging done outside of the scope of the framework ie for testing, running the `Actor.vi` on its own.
-Delete `Process.vi`
-Comment:
-In part, it is fine to have `Actor SD.vi` for our case because we want to ensure the actor object wire is never changed throughout it's lifetime. So having a DD output terminal on the `Actor.vi` minimizes runtime errors preventing the object wire from changing AND for testing, by running the `Actor.vi` in isolation to gain insights to an actor without starting it up asynchronously.
 
-`Write Attributes.vi`
-Create Address
-Creates Event Ref
-Creates Unified Msg Set
-Fundamentally should not put out an error. This error will be sent back to the Creator via the enqueue.
-Execute `Must Destroy.vi` after this method to check if the `Write Attributes.vi` internally creates an error (framework error). It sends the error back to the creator and puts the error on the object wire. These are only framework errors.
-*Write Attributes may only signal errors related to the structural identity of the Actor. Behavioral errors belong to message handling.*
+Testing:
+So having a DD output terminal on the `Actor.vi` minimizes runtime errors preventing the object wire from changing AND for testing, by running the `Actor.vi` in isolation to gain insights to an actor without starting it up asynchronously.
 
-`Pre Loop.vi`
-Output
-	Event Ref
-(release events if an error / destroy after `Pre Loop.vi`
+---
 
-`Pre Handle.vi`
-
-`Handle.vi`
-
-`Post Handle.vi`
-`Was Msg` (True ONLY for Message Case)
-
-`Post Loop.vi`
-This is where the drop messages can be handled
-
-`Destroy.vi`
-unconditionally called.
-Release Address unconditionally, in case Post Loop has not been called since not created.
-This is the only place the `Event Ref` is released.
-Internally, checks `Has Created` flag to see if `Has Destroyed should be sent`
-
-`Read Unhandled Msgs.vi` (Function)
-Note
-	Should be used after override of Post Loop, this is because `Destroy` includes the release of references.
-
-`Is Marked For Destroy` (boolean internal)
-
-`Must Destroy.vi`
-	`Error` or `Is Marked For Destroy`
-
-
-Read methods for all private data!
-`Has Error.vi`
-
-
-create references in Actor.vi since other wise they would be released from memory is the creator is destroyed.
-
-
-Error on IO
+Error:
 Don’t have terminals on error IO unless they are errors.
 This is the same philosophy used for the object IO terminals.
-- Edit the scripting tools to not include Error in OR, BUT ALWAYS includes Error out
-- outline in message creating that only four inputs are allowed. Two on the side, and two on the bottom.
-
-
-Paradigm shift:
-Messages aren’t only things you receive..
-Messages are objects you can act upon with the Msg Handler. Which is why Msg Handler is everywhere throughout the application, not only in the Msg Event case.
-
-
-Some methods should discourage extending functionality? which ones?
 
 ---
 
-Idea:
-Fundamentally, a message cannot be sent to an actor that cannot implement that msg. Also, an actor will not execute a message that it cannot implement.
-Only actors around the actor of interest can interact with that actor via messages.
-**Instead have three functions for each message with options for `Self`, `Creator`, `Created`**
-Could be easier for scripting applications
-Can find the libraries in memory for a given actor and find the associated message functions used along with which method they’re wired up to? to determine which messages would go where.
-This wiring could be hard because nodes dynamically can determine which of two messages will go where ie select vi or Send X vi wrapped in case structure. Nonetheless, must be a vi analyzer test to determine where messages are to be sent at edit time. All possible statically determined permutations for sending a message. I guess that a message can be bundled into private data so you NEVER would know which message is unbundled and sent..
-This would be interesting to determine. This tool would be used for troubleshooting and documentation.
-Also, a tool for determining if a message can be sent to sel like if there are multiple actor layers and a message sent to self but can receive locally but can in another layer
-
----
-
+Fundamentally, a message cannot be sent to an actor that cannot implement that msg.
+Also, a tool for determining if a message can be sent to sel like if there are multiple actor layers and a message sent to self but can receive locally but can in another layer.
