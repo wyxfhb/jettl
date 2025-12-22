@@ -176,11 +176,6 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 
 
-Base Actor -> Core Actor
-
-
-
-
 
 
 
