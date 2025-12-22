@@ -1,32 +1,25 @@
 Advice: The control terminal label signifies how that control terminal is used in the function. NOT how it relates to how the calling code calls that function.
 
-### Best Practice
+---
 
-Not all actors need to be individual. Some Actors are made to couple tightly with other Actors.
-
-Because it is emphasized to not branch the actor objects wire, it is encouraged to create an actor that acts as a helper loop. Note that of course the messaging mechanism between them should still be actor messages, though `Has Destroyed` overrides etc. could contain information for the particular actor that was created. i.e. for a popup configuration box, this can be a private actor which returns its class contents which can be unbundled in `Has Destroyed` to easily get the configuration parameters.
+Best Practice: Because it is emphasized to not branch the actor object wire, it is encouraged to create an actor that acts as a helper loop instead of a parallel while loop within the actor. Note that of course the messaging mechanism between them should still be actor messages.
 
 ---
 
-Do not release the Event Ref, unless after the loop in Process
+Advice: Always assume you cannot control the order messages execute.
 
 ---
 
-Always assume you cannot control the order messages execute!
+Advice: Msgs can be sent to Self and Parent in `Setup.vi`, only after the decorator method since register for events in the `Setup.vi` Base Actor method.
 
 ---
 
-Msgs can be sent in `Pre Loop.vi` since register for events before the `Pre Loop.vi` execution
+General Best Practice: If a function has output object, it SHOULD be wired.
+> VI analyzer test that looks if that terminal has an associated wire connection.
 
 ---
 
-If a method has output object, it SHOULD be wired.
-VI analyzer test that looks if that terminal has an associated wire connection.
-
----
-
-Since `Process.vi` is NOT a decorator method, that means only the top level process will be executed!
-Get rid of any layer outside of the actor with a process.
+Since `Actor.vi` is NOT a decorator method, that means only the outer local actor 'Actor.vi' will be executed!
 
 ---
 
