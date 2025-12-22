@@ -1,30 +1,18 @@
 for actor and msg renaming:
-
-take the library(s) it is contained in and properly put them in a hierarchical map where the (with an Is Public boolean) names are in fact unique depending on their path?
-
-or maybe not path, but rather the place hierarchy of library(s)?
+take the library(s) it is contained in and properly put them in a hierarchical map where the names are in fact unique depending on their path/hierarchy of library(s).
 
 ---
 
-for the public and private
-
-we can look at the project for XXXX.lvlib:YYYYY.lvlib:ZZZZZ.lvlib:WWWW.lvclass
+Tool for moving on disc.
 
 ---
 
-Tool for moving on disc
+VI Analyzer
+For implemented message methods that class doesn't implemnt the interface i.e. a message that cannot ever be executed.
+When a interface message is implemented, but messages method is not implemented.
 
 ---
 
-When a interface message is implemented, but messages method is not implemented, an edit time error is generated in LabVIEW.
-
-We can develop some kind of analyzer test for implemented message methods that don’t have a —msg interface. Ie a message that cannot ever be executed.
-—msg indicator for both?
-
----
-
-all of the jettl tools belong in a common location: jettl Tools
-Of course, please place company / name specific tools in their own folder as well. But please place them in this common location, helping developers find your tool.
-
----
-
+Note for jettl Tools:
+all of the jettl tools belong in the common location: jettl Tools.
+Of course, please place company / name specific tools in their own folder as well if further credit should be given to your tool. But please place them in this common location, helping developers find your tool easily!
