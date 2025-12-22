@@ -10,11 +10,11 @@
 </Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="Terminate.lvclass" Type="LVClass" URL="../Terminate/Terminate.lvclass"/>
-	<Item Name="Terminate Msg.lvclass" Type="LVClass" URL="../Terminate Msg/Terminate Msg.lvclass">
+	<Item Name="Stopped.lvclass" Type="LVClass" URL="../Stopped/Stopped.lvclass"/>
+	<Item Name="Stopped Msg.lvclass" Type="LVClass" URL="../Stopped Msg/Stopped Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Terminate.vi" Type="VI" URL="../Terminate.vi"/>
+	<Item Name="Stopped.vi" Type="VI" URL="../Stopped.vi"/>
 	<Item Name="Direct Call.vi" Type="VI" URL="../Direct Call.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>

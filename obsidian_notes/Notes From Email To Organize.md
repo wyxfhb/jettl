@@ -179,10 +179,6 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 
 
-
-Non message .vi, have Msg input just like the Msg Handler.
-
-
 terminate -> stopped
 
 
