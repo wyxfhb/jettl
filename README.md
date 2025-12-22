@@ -35,7 +35,7 @@ This work would not be possible without the contributions of those developers th
 
 - **Relative Actor Relations**.
 Every Actor in the system has itself, called `Self`.
-Along with one `Creator` and N many `Created` Actors.
+Along with one `Parent` and N many `Child` Actors.
 - **Address Abstaction**.
 The address of an Actor is abstracted away from the developer, unless more advanced testing required.
 - **Messaging**.
