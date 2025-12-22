@@ -116,46 +116,14 @@ After 'Spawn.vi', access to Child Attributes, which has Actor Ref, so can easil
 - only be changed to `True` in  `Stop.vi`
 - can never be changed to `False`
 
-### Can Proceed.vi
+### Can Stop.vi
 
-`Is Marked For Destroy` = TRUE
+`Stop` = TRUE
 OR
-Error
-outputs `Can Proceed`
+Error (then Stops)
+outputs `Can Stop` = True
 
----
-
-Duality of Destruction!
-Either You're moving to Destroy because the `Mark For Destroy.vi` has executed or an unhandled error has occurred and the system cannot continue, hence Destroy will commence.
-These currently are two separate entities.
-
----
-
-
-
-### Has Destroyed (Msg)
-
-At end of Actor, DO
-Have two Actor objects going to flat sequence.
-
----
-
-**Was Created** boolean, this tells if the **Has Destroyed** should be sent or not.
-
----
-
-Don’t need checker in front, but comment, could execute zero times.  
-
-Use flat sequence for Has Destroyed and Release Address?
-
----
-
-
-### Was Created
-
-Only TRUE when no errors AND marked for destroy = false
-
----
+Note: unhandled error has occurred and the system cannot continue, hence Stop will be directly called.
 
 ### Write Attributes.vi
 
