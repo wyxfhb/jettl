@@ -1,11 +1,7 @@
 #### Introduction to jettl
 
-Download on VIPM:
-
-![[Pasted image 20251213105633.png]]
-*VIPM search `jettl`.*
-
-> A note on LabVIEW version: This library is compatible with LV 2020 and beyond. If using LV2020, please consider using LV 2020 SP1 and beyond due to issues resolved here: [LabVIEW 2020 SP1 Bug Fixes](https://www.ni.com/en/support/documentation/bugs/20/labview-2020-sp1-bug-fixes.html?srsltid=AfmBOooUbuV9waHiF74KkrteQY7SRCENumzj1XCdQMWldAIuQMDW1sM6)
+**picture of VIPM jettl package, most recent.**
+*Download on VIPM, search `jettl`.*
 
 **Resources of Inspiration**
 - [GLA Summit 2025: Introduction to Actor Framework by Casey May and Dan Hooks](https://www.youtube.com/watch?v=bTydOIjY84E)
@@ -13,57 +9,16 @@ Download on VIPM:
 
 Please check out the github, VIPM, and youtube for more information.
 
-At the end with advanced topics, list them with already made videos links for all
-
-#### Decisions Behind the Design
-
-Sender and Attributes libraries that include interfaces and classes, instead of just type def clusters:
-Classes encapsulate private data. With the `Init.vi`, the classes private data can be instantiated only once and multiple read only methods are available to read the private data. This is expected behavior. This combats the developer from modifying otherwise type def cluster data.
-
-Keep interfaces methods for read only access enforced, clusters cannot do that.
-
-It is somewhat best practice to NOT use clusters, and rather use objects with accessor methods to easily find accessors.
-On this note of accessors, these are not property nodes but rather method calls.
-
-It is common that `jettl` can be used without messages.
+At the end with advanced topics, list them with already made videos links for all.
 
 #### Rules of Thumb for LabVIEW
 
 A LabVIEW project should only contain one target. When developing with real time targets, these should exist in their own projects.
 
-#### Philosophical
 
-Start from an abstract perspective. During architecture work, high-level structure matters more than low-level implementation details. The goal is to define modular components and how they fit together into a cohesive system.
-
-A common design decomposition includes **acquisition**, **analysis**, **presentation/display**, and **logging**. These concerns are often orchestrated in a sequence, but they should remain **decoupled**: each has a distinct responsibility and should not require the others to function. This allows you to define system behavior (contracts) before committing to specific implementations.
-
-Design **from interfaces to classes**. Begin by specifying interfaces that capture the required behavior, then implement those interfaces with concrete classes.
-
-Favor strong, static structure and clear boundaries. Keep components modular and independent wherever possible. Dependencies between objects are inevitable, but you should make those dependencies point to **abstractions** (interfaces), since abstractions are less likely to change than concrete implementations.
-
-#### Static Typed Messages
-
-What is the point to having a strongly typed messaging system where at edit time the message destination is known?
-compile time VI analyzer tests can tell which actors can launch which actors, dependent on which messages the creator can accept and send to it's created actor and also the messages the created actor can accept and send to it's creator actor. This will cut down on run time errors, ensuring that an actor that creates another actor will abide by the contract of messages of it's created actor and vice versa.
-Further, documentation tools can be used to know exactly where what messages are passed to and from the Self.
-
-In respect to Self, there are five kinds of messages:
-- Self -> Self
-- Creator -> Self
-- Created (with name) -> Self
-- ~~Self <- Self (redundant)~~
-- Creator <- Self
-- Created (with name) <- Self
-
-> For messages, only the two inputs are allowed for scripting. Messages are only scripted using the two left inputs, other inputs are ignored when scripting. If more than two inputs are needed, then either create a type def cluster in the message library or for bundled messages, have messages be inputs for other messages ensuring recursion of calling each others messages does not occur.
-
-#### Scripting which messages go to which created actor
-*Here we can use scripting to find where the `Send to Created.vi` is called and find the associated enum by traversing through the `format into string` primitive. This will find the name to properly understand where the message will go at run time, in edit time. If there is something between this string or there is a conditional that uses either of two enums, then the scripting will not understand this. Best to be static with which messages will go where for an easier to understand actor by using the `format into string` and enum.*
-#### `Find Created Attributes.vi` not named `Read Created Attributes.vi` since not necessarily a read operation and can produce an error from alias not being found.
 
 #### Style guidelines: Have methods be default private
 Maybe when jettl is installed, have an add on that changes some .ini to create methods with a default of private for methods with text red.
-![[IMG_7575.png]]
 
 #### style guidelines: Prefer to use read only methods and write only methods to property nodes read and writes
 
@@ -73,31 +28,18 @@ Also, in part since property nodes aren’t supported for interfaces.
 
 #### jettl only supports 4x2x2x4 conn pane methods and functions for rescripting actions in accordance to conn pane guidelines
 
-#### Style guidelines: Aside from object / error, methods / functions should have zero, one, or two inputs.
+Style guidelines: Aside from object / error terminals methods / functions should have zero, one, or two inputs.
 
 Readability: Aside from the error wires (which should be moved to the back for all block diagrams), ensure no wires overlap each other for a maximally readable diagram.
 
-Method: ONLY use the conn pane panels to the side.
-
-Function: CAN use the conn pane panels on the bottom and top if necessary.
-
-Difference between function and method: method has object input (output may not be necessary since this is a return value)
-
 #### Style guidelines: Why is there the box in the default class icon? Please delete this, we change the colors of our banners and wires and rarely do we use that different colored cube as a meaningful icon. Yes, we know it is a class already. And yes, it’s distinguished since an interface doesn’t have it. They’re already easy to tell apart
 
-#### Style Guidelines: Conn Pane
-The object in the top left (and top right if it exists) signifies to the developer that this object is the object that is contained in the class / interface of the banner.
-Note, library functions cannot be methods and furthermore cannot have objects at the top left / top right since the library function is not contained in an interface / class.
-Therefore only the top left and top right conn pane terminals are used for the interface / class that contains that method.
 
-Mutability readability:
-If a function / method passes out the same data type as is horizontal to the input, then this is a mutable change to that piece of data.
-For example, object comes in is the same object that comes out horizontally means that the object is assumed to have been mutated (whether it has been mutated or not). This is most common for the top left and top right interface / class and the bottom left and bottom right Error. 
-To combat this, if the object that comes in is immutable and the same object is passed OUT of the method, this is an antipattern since the object out is the same as the object in. Hence, the object at the output should not be on the connector pane output. If dataflow is required (such as serialization of the error wire), then the flat sequence structure should instead be used instead of wiring the object to the output for serialization. This same principle should carry over for the error wire. The error wire should not be used for serialization, this signifies to the developer NOT serialization but that the object at the output HAS BEEN mutated from the object at the input. Embrace the flat sequence structure for serialization!
 
-#### Future Idea: Messages should have outputs?
+#### Idea: Messages can have outputs
 
-Reason: Actors that wrap other actors can use the data output for i.e. logging for that actor itself. So if the method is executed has an output of the analyzed data, then in the next wrapped layer, this output can be used for logging.
+Only available in the component. but wired through the interface message.
+Application reason: Actors that wrap other actors can use the data output for i.e. logging for that actor itself. So if the method is executed has an output of the analyzed data, then in the next wrapped layer, this output can be used for logging.
 
 #### Code decoupling
 [Why, When and How to Protect Your Code from the Framework - Dmitry Sagatelyan -GDevCon#5](https://www.youtube.com/watch?v=fVx8PO02fzw)
@@ -105,69 +47,225 @@ Reason: Actors that wrap other actors can use the data output for i.e. logging f
 > Value in decoupling from the framework, then you can test the code without the framework, you can use the code without the framework, don't have coupling (which otherwise slows down load times)
 
 Being able to test the code without the framework is the advantage of code decoupling. This is the main reason that methods do not have protected scope, so that the framework can be used within other frameworks.
-#### Created Aliases
 
-Ideally, we want a fully static deterministic system with dynamic capabilities. For example, some things are static and predetermined, whereas the implementations can be dynamic if these static things follow the same rules.
-
-> If there is some actor that needs to perform compute of multiple actors, then this can be extended internally to be dynamic with maps mapping a branched enum with strings. Nonetheless, the default will be a static enum.
-
-Under the hood we still use strings in the map, etc. but nonetheless, the enum is the higher level shown to the developer of the actor. Enum is for the different aliases used for created actors, but since the enum is different from actor to actor, the mechanism under the hood is a string mapping, which is internally checked to only map Enum entries to their string counterparts. This ensures only enums are used in the implemented actors code without depending on the fragility of strings.
-Note, the created enum should not be altered by the developer, instead use the accompanying tool to insert, remove, or rename a created actor alias. This is due to the scripting tool requiring renaming method names, etc.
 #### Style Guidelines: actor methods should be shared clone reentrant by default.
 
-#### Naming
-Symmetry in:
-- Start and Finish,
-- Setup and Teardown, and
-- Create and Destroy.
-Topology for the procedural execution of methods in a LabVIEW style sequence diagram. Could even write this in LabVIEW where the methods used on top for top actor and bottom for bottom actor showing which methods are being executed such as:
-`Init` method
-`Decorator` method
-`Start` function
-	`Start` method
-		`Launch Actor` function
-			`Actor` function
-				`Actor` method
-					`Create` function
-						`Setup` method
-							`Teardown` method
-						`Create` method
-					`Msg Handler` function
-					`Error Handler` function
-					`Destroy` method
-					`Destroy` function
-						`Teardown`
-#### Style Guidelines: Boolean prefixes
-is_
-has_
-can_
-should_
-enable_
-#### Periodic Messaging
-An actor should not have in its own timeout way to do something periodically such as send itself a message every 100 ms.
-Instead it must create a periodic messaging actor which in its timeout sends the message to the actor that requires the periodic message. Separate the concerns.
-
-#### VI Analyzer
-
-Checks if the connector pane is correct. i.e. objects on top left and maybe right for containing class / interface.
-errors on maybe bottom left and maybe bottom right.
-Discriminates other types from existing in these conn pane terminals.
-Best practice too: nothing wired on top, outputs only on right side (two terms), inputs only on left side (two) and bottom (two).
-
-For looking at where messages can go in an application i.e. for a given actor, the analyzer knows where messages go i.e. creator, self, created since statically dropping the polymorphic function at edit time. Therefore, this analysis can ensure that applications will not run if the relationship of two actor messages is not satisfied. This prevents messaging runtime bugs since messages cannot be sent to an actor that cannot accept them.
-> Maybe just be sure, have a case structure around the code in the `Msg.vi` in case a message is received but not implemented. This should be prevented by the framework since filtering is done upon every message execution, but in case of a bug, this will be useful for debugging.
-
-#### constructors shouldn't be able to throw errors
+#### Constructors (`Init.vi`) shouldn't be able to throw errors
 [Errors are Values; Please Treat Them That Way - Ethan Stern](https://www.youtube.com/watch?v=8vhYLlaXaQU&list=PLvDxiIkwuMQtiOZ_WWbk6ZCXfeAKxtwo-)
 In jettl, this means that the `Init.vi` should not output any errors, and functionality that otherwise puts out errors should go into other methods such as `Setup.vi`.
 
-#### Unique way to develop layered actors
-Note: Top Layer, Intermediate Layer(s), Core.
-Local Actor and Unified Actor Definition: A local actor is a single layer whereas the unified actor is the unification of layered actors. This translated well to the local msg set and the unified msg set.
-**Decoupling the UI and event handling from the actors functionality!**
-Top layer is only for the message handling and UI work, whereas the intermediate layer is where the business logic exists. Since the top level doesn't need to implement the messages the intermediate layers have, then the top layer can just be a typical UI / event handling loop. For example, have two kinds of actors that developers can develop i.e. intermediate layer actors and outer layer actors. That way, some `General Outer Layer Actor` can be used to wrap intermediate actors that do not have front panels.
-The intermediate actor and the top level actor can implement the same interface for common functionality between them so that different combinations can be made effectively decoupling the UI / event handling from the business logic.
-This way the intermediate actors are the ones being developed for their logic, independent of the UI element.
+
+
+
+
+
+### Connector Pane Best Practices
+
+Confirm that a VI adheres to `jettl` connector-pane layout matches the expected pattern:
+* **Object terminals (class/interface terminals)**: top-left (and top-right, if the framework requires in/out object terminals).
+* **Error terminals**: bottom-left (**error in**) and/or bottom-right (**error out**).
+* **Typical inputs**: two left middle and/or bottom middle terminals. Place **inputs** on the **left side** (typically two terminals) and **bottom** (typically two terminals).
+* **Object Specific Inputs**: top middle inputs for functions/methods specifically designed to wrap functionality of an object.
+* **Outputs**: right middle terminals. Place **outputs** on the **right side** (typically two terminals).
+
+Static Analyzer can ensure those reserved terminals contain **only** the expected types (e.g., prevents unrelated controls/indicators from occupying the object/error positions).
+
+### Message Destination Best Practices
+
+Actor messages are only sent to valid recipients:
+* Determines where messages are allowed to go for a given actor (e.g., **self**, **parent**, **child**) based on static selection a polymorphic message destination at edit time. Uses that knowledge to prevent invalid message paths if the relationship required by a message is not satisfied, an error will be generated at runtime preventing runtime messaging errors.
+
+A Static Analyzer test can eliminate these runtime errors where a message is sent to an actor that cannot handle it.
+##### Defensive implementation recommendation
+
+Even if the framework filters messages correctly at runtime, add a defensive fallback in `Not In Unified Msg Set.vi`: Wrap the message-handling code in a case structure that safely handles “received but not implemented” messages. This should never occur under normal operation, but it provides a clear debugging signal if a framework or configuration defect allows an unexpected message through.
+
+
+
+
+
+
+
+
+### Child UIDs
+
+The goal is a fully static, deterministic system that still supports dynamic behavior. In practice, that means the *set of child UIDs* is static and predetermined, while the *implementation* can remain flexible as long as it follows the same rules.
+
+> If an actor needs to perform compute on behalf of multiple actors, this can be extended internally using dynamic maps (e.g., mapping a branched enum to strings). Even in that case, the default remains a static enum.
+
+Under the hood, we still store identifiers as strings (e.g., in maps), but the enum is the developer-facing abstraction. The enum represents the different UIDs used for child actors. Because each actor defines its own child UID enum, the runtime mechanism is a string mapping that is validated to ensure it only maps enum entries to their corresponding string values.
+
+This provides two benefits:
+
+* Actor code uses enums exclusively, avoiding the fragility of stringly-typed identifiers.
+* The internal string representation remains compatible with serialization/mapping needs.
+
+The child UID enum should not be edited manually. Use the accompanying tool to insert, remove, or rename a child actor UID. The tooling depends on controlling these edits so it can safely rename method names and apply other required refactors.
+
+**Q1:** How should the system handle backward compatibility when a child UID is renamed (e.g., aliases, migration rules, or versioned enums)?
+**Q2:** What guarantees do we want around determinism when “dynamic maps” are used—do we require stable ordering, stable hashing, or explicit keys?
+**Q3:** Should child UID enums be generated from a single source of truth (schema/config) to prevent drift between enum definitions and the underlying string mapping?
+
+
+
+
+
+
+
+### Lifecycle
+
+Maintain symmetry across the key lifecycle pairs:
+
+* **Start ↔ Finish** (outer boundary of execution)
+* **Setup ↔ Teardown** (resource acquisition and release)
+* **Create ↔ Stop** (construction/activation and termination)
+
+This gives you a predictable, auditable flow—especially useful when documenting (or implementing) the topology as a LabVIEW-style sequence.
+
+---
+
+#### Procedural topology (LabVIEW-style call flow)
+
+Below is the same content reorganized into a clean call tree, preserving intent while making the execution order explicit.
+
+```text
+Top Actor
+├─ Init (method)
+├─ Decorator (method)
+└─ Start (function)
+   └─ Start (method)
+      └─ Launch Actor (function)
+         └─ Actor (function)              ← Bottom Actor entry point
+            └─ Actor (method)
+               ├─ Create (function)
+               │  ├─ Setup (method)
+               │  ├─ Create (method)
+               │  └─ Teardown (method)    ← pairs with Setup
+               ├─ Msg Handler (function)
+               ├─ Error Handler (function)
+               ├─ Stop (method)           ← pairs with Create
+               └─ Teardown (function)
+                  └─ Teardown (method)    ← final teardown / shutdown cleanup
+```
+
+---
+
+#### Same flow, expressed as “phases” (alternative view)
+
+**Top Actor (bootstrap):**
+
+1. `Init` (method)
+2. `Decorator` (method)
+3. `Start` (function) → `Start` (method) → `Launch Actor` (function)
+
+**Bottom Actor (run + shutdown):**
+4. `Actor` (function) → `Actor` (method)
+5. `Create` (function)
+
+* `Setup` (method)
+* `Create` (method)
+* `Teardown` (method) *(paired with `Setup`)*
+
+6. `Msg Handler` (function)
+7. `Error Handler` (function)
+8. `Stop` (method) *(paired with `Create`)*
+9. `Teardown` (function) → `Teardown` (method) *(final shutdown cleanup)*
+
+---
+
+**Q1:** **Do you want `Teardown (method)` inside `Create (function)` to run only on error, or always (i.e., `finally` semantics)?**
+**Q2:** **Should `Finish` be an explicit step mirroring `Start`, and if so, where should it sit relative to `Stop` and the final `Teardown`?**
+**Q3:** **Do you want this rendered as a two-lane sequence diagram (Top Actor lane vs Bottom Actor lane) with message arrows, or is the call-tree view sufficient for your documentation?**
+
+
+
+
+
+
+
+### A structured approach for developing layered actors
+
+**Layers:** Top Layer, Intermediate Layer(s), Core
+
+**Local vs. Unified Actor**
+
+- A **local actor** represents a single layer.
+    
+- A **unified actor** represents the composition (unification) of multiple layers into one logical actor.
+    
+- This maps cleanly to having both a **local message set** (per layer) and a **unified message set** (across the composed actor).
+    
+
+---
+
+#### Decouple UI and event handling from actor functionality
+
+The primary goal is to separate **UI/event handling concerns** from **business logic**.
+
+**Top Layer responsibilities**
+
+- Owns **message handling** and **UI work**.
+    
+- Does not need to implement messages that belong exclusively to intermediate layers.
+    
+- Can therefore be implemented as a standard **UI/event loop** that forwards or translates messages as needed.
+    
+
+**Intermediate Layer responsibilities**
+
+- Contains the **business logic**.
+    
+- Is developed independently of any UI surface or front panel concerns.
+    
+
+---
+
+#### Two actor types for development
+
+To reinforce separation of concerns, support two kinds of actors:
+
+1. **Intermediate-layer actors**
+    
+    - Pure business logic.
+        
+    - No front panel requirement.
+        
+2. **Outer/top-layer actors**
+    
+    - UI and event handling wrappers.
+        
+    - Responsible for user interaction, message routing, and presentation concerns.
+        
+
+A reusable **General Outer Layer Actor** can wrap intermediate actors that do not have a front panel, providing a consistent UI/event-handling shell without contaminating the intermediate layer with UI requirements.
+
+---
+
+#### Interface alignment for composability
+
+To enable flexible combinations:
+
+- The **intermediate actor** and **top-layer actor** can implement a shared interface for common functionality.
+    
+- This makes it easy to compose and swap layers while keeping UI/event handling decoupled from business logic.
+    
+
+---
+
+#### Result
+
+Intermediate actors can be designed and iterated on strictly for correctness and domain behavior, while top-layer actors handle UI and event orchestration—allowing both layers to evolve independently.
+
+**Q1:** How would the unified message set be derived from local message sets—union, translation layer, or explicit adapter mapping?  
+**Q2:** What rules should determine whether a message belongs to the top layer versus an intermediate layer (e.g., “UI-only,” “domain-only,” “cross-cutting”)?  
+**Q3:** Should the shared interface be minimal (e.g., lifecycle + routing) or richer (e.g., state queries, diagnostics, capability discovery), and what tradeoffs come with each?
+
+
+
+
+
+
+
 
 
 

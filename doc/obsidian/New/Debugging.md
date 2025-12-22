@@ -1,5 +1,3 @@
-Debugging
-
 incorporate the ping message and the debug / base debug libraries as intermediate actor.
 
 At runtime, 
