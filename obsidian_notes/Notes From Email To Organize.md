@@ -173,17 +173,14 @@ This way the intermediate actors are the ones being developed for their logic, i
 
 
 
-Init.vi  
-"Stop When Parent Stopped”:bool  
-TRUE set as default
 
-
+Change Elder to Root
 
 Base Actor -> Core Actor
 
 
 
-Change Elder to Root
+
 
 
 
@@ -192,3 +189,6 @@ Non message .vi, have Msg input just like the Msg Handler.
 
 
 terminate -> stopped
+
+
+add read parent stoopped method to palettes
