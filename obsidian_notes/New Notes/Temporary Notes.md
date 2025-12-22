@@ -125,28 +125,9 @@ outputs `Can Stop` = True
 
 Note: unhandled error has occurred and the system cannot continue, hence Stop will be directly called.
 
-### Write Attributes.vi
-
-(mirror the connector pane for Process)
-Inputs of
-- `Queue of Actor` (unbundle the Actor for it's contents)
-- `Creator Attributes`
-- `All individual Self Attributes`
-`Init.vi` (Attributes)
-`Was Created` = True
-Enqueue Self Attributes to creator.
-### Project Style
-
-Move to Actor Utilities!  
-- Msg Execute.vi
-- Msg Layer Checker.vi (change name?)
-
----
-
-
 ### jettl Tools
 
-Tool that allows actor to implement message interface AND auto populates that interfaces message method with Msg Execute.vi, the function, and necessary wiring.
+Tool that allows actor to implement message interface AND auto populates that interfaces message method with 'Component.vi' and necessary wiring.
 https://forums.ni.com/t5/LabVIEW/Programmatically-add-a-parent-interface-to-a-class/td-p/4239580
 
 ---
@@ -166,67 +147,8 @@ Target combo box:
 - Template
 - Rename
 
----
 
-
-### Msg Set
-
-“Msgs” -> “Msg Set”
-
----
-
-Msg Execute.vi
-“Element of Unified Msg Set.vi” (boolean output)
-cs
-“Msg Recurse Layers.vi”
-
----
-
-Replace the Msgs Unbundle with the proper accessor method!
-
----
-
-Msgs -> Msg Set  
-Unified Msg Set
-Local Msg Set
-
----
-
-`Msg Output.vi` -> `Add To Msg Sets.vi`
-
-`Find Local Msg Set.vi`, then
-- Bundle into `Local Msg Set`
-- Union into `Unified Msg Set`
-
-Delete
-- `Write Local Msg Set`
-- `Read Local Msg Set`
-
----
-
-### Contains Msg.vi
-
-output `Contains Msg` Boolean
-Inputs
-- Msg Set
-- Msg
-(Unified Sets Error in case structure)
-
-# Miscellaneous
-
-### jettl Feature  
-
-`Has Destroyed` Msg sent to both creator and created
-
----
-
-Distinguishes messages in different layers
-
----
-
-jettl does not require ever modifying class inheritance since class inheritance is not recommended. Recommended practice is using interface implementation for all classes mixed with dependency inversion.
-
-
+'jettl': 'Terminate` Msg sent to both parent and all children
 
 # Need to Sort
 
