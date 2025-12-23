@@ -1,29 +1,27 @@
-**Introduction to jettl**
 
-**picture of VIPM jettl package, most recent.**
-*Download on VIPM, search `jettl`.*
-
-**Resources of Inspiration**
-- [GLA Summit 2025: Introduction to Actor Framework by Casey May and Dan Hooks](https://www.youtube.com/watch?v=bTydOIjY84E)
-- [Introduction to DQMH](https://www.youtube.com/@ShireyStudios1)
-
-Please check out the github, VIPM, and youtube for more information.
-
-At the end with further topics, list them with already made videos links for all.
-
-
-
-
-
-
-
-
+---
+---
 
 Add a Safe Boolean (recommended) to the Stop message
 safe stop boolean in private data.
 
 
 
+
+
+**Messages can have outputs**
+
+This capability is implemented at the component level, but exposed through the interface message contract.
+
+Rationale: It enables wrapper actors (actors that delegate to other actors) to capture and reuse a callee’s output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data.
+
+**Q1:** How should the interface message represent outputs (typed payload, metadata, or both), and what guarantees do we want around schema stability?  
+**Q2:** Should outputs be available only on success, or also on partial failure (e.g., best-effort outputs plus error details)?  
+**Q3:** What constraints do we need to prevent sensitive outputs from being logged or propagated across wrapper layers unintentionally?
+
+
+---
+---
 
 
 
@@ -38,6 +36,12 @@ Confirm that a VI adheres to connector-pane layout matches the expected pattern:
 * **Outputs**: right middle terminals. Place **outputs** on the **right side** (typically two terminals).
 
 A Static Analyzer can ensure those reserved terminals contain **only** the expected types (e.g., prevents unrelated controls/indicators from occupying the object/error positions).
+
+Follow this rule that an object in MUST be an object passed out for the same color wire horizontally across the method / function call.
+[Your LabVIEW Code Is a Work of Art... But I Can't Read It by Darren Nattinger. GDevCon N.A. 2024](https://www.youtube.com/watch?v=AHOZ7fiuWCA)@00:45:21
+
+Input and output on conn pane:
+[An End to Brainless Programming - Darren Nattinger](https://www.youtube.com/watch?v=pS1UBZzKl9k)@00:23:59
 
 ***Message Destination Best Practices***
 
@@ -377,15 +381,6 @@ Prefer strong, static structure and clear boundaries. Keep components modular an
 **Q2:** Can you define a standard terminal mapping for our 4x2x2x4 connector pane (which terminals go where) so everyone scripts and wires consistently?  
 **Q3:** Can you provide a few canonical block diagram layout patterns for common OOP call chains that keep error wires in the back and avoid wire overlap?
 
-### Idea: Messages with outputs
-
-This capability is implemented at the component level, but exposed through the interface message contract.
-
-Rationale: It enables wrapper actors (actors that delegate to other actors) to capture and reuse a callee’s output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data.
-
-**Q1:** How should the interface message represent outputs (typed payload, metadata, or both), and what guarantees do we want around schema stability?  
-**Q2:** Should outputs be available only on success, or also on partial failure (e.g., best-effort outputs plus error details)?  
-**Q3:** What constraints do we need to prevent sensitive outputs from being logged or propagated across wrapper layers unintentionally?
 
 ### Value of code decoupling
 
@@ -394,6 +389,8 @@ Decoupling business logic from the framework creates three concrete benefits:
 * **Testability:** you can unit test the logic without standing up the framework runtime.
 * **Reusability:** the same logic can be reused in other contexts (including other frameworks) without refactoring.
 * **Performance and maintainability:** reduced coupling typically reduces framework-driven dependencies and overhead (for example, unnecessary load-time work tied to framework initialization).
+
+`Actor.vi` is public so that it is encouraged to use this in other frameworks, including testing.
 
 In practice, the most immediate payoff is **being able to test logic independently of the framework**. A secondary payoff is that keeping framework-facing boundaries clean makes it easier to integrate with other frameworks.
 
@@ -414,6 +411,8 @@ Constructors should not throw errors. In particular:
 
 * `Init.vi` **should not output errors**.
 * Any work that might fail (I/O, resource acquisition, configuration validation, etc.) should be moved into a separate method such as `Setup.vi`, where failures can be handled explicitly as part of the actor’s startup workflow.
+
+Fundamentally, when an object is instantiated, there should not be an error that occurs.
 
 This aligns with the principle that **errors are values** and should be modeled and handled intentionally, rather than being emitted from constructors in a way that complicates initialization semantics.
 
