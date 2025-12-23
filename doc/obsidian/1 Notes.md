@@ -2,9 +2,6 @@
 ---
 ---
 
-Add a Safe Boolean (recommended) to the Stop message
-safe stop boolean in private data.
-
 Add safe stop to the palettes.
 
 
