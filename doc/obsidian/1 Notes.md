@@ -10,10 +10,6 @@ This capability is implemented at the component level, but exposed through the i
 
 Rationale: It enables wrapper actors (actors that delegate to other actors) to capture and reuse a callee’s output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data.
 
-**Q1:** How should the interface message represent outputs (typed payload, metadata, or both), and what guarantees do we want around schema stability?  
-**Q2:** Should outputs be available only on success, or also on partial failure (e.g., best-effort outputs plus error details)?  
-**Q3:** What constraints do we need to prevent sensitive outputs from being logged or propagated across wrapper layers unintentionally?
-
 
 ---
 ---
