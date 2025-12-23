@@ -2,13 +2,30 @@
 ---
 ---
 
+
+Anemic Setup
+Anemic Spawn
+No clusters available to developers
+
+Add in the necessary Read/Write methods for the TEMPLATE Actor
+Local Msg Set has to be DD in Actor, but not decorator.
+
+The Union method in TEMPLATE, replace with a function.
+
+Core Msg Handler (function)
+Decorator Msg Handler (function)
+
+
+
 **Messages can have outputs**
 
 direct call and component.
 
 This capability is implemented at the component level, but exposed through the interface message contract.
 
-Rationale: It enables wrapper actors (actors that delegate to other actors) to capture and reuse a callee’s output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data.
+Rationale: It enables wrapper actors (actors that delegate to other layered actors) to capture and reuse a callee’s output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data.
+
+error output is special
 
 
 ---
