@@ -121,6 +121,22 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
 			</Item>
+			<Item Name="Read Local Msg Set.vi" Type="VI" URL="../Read Local Msg Set.vi">
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+			</Item>
+			<Item Name="Write Local Msg Set.vi" Type="VI" URL="../Write Local Msg Set.vi">
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+			</Item>
 			<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
@@ -130,14 +146,6 @@
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
 			<Item Name="Union Unified Msg Set.vi" Type="VI" URL="../Union Unified Msg Set.vi">
-				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
-				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
-				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
-			</Item>
-			<Item Name="Read Local Msg Set.vi" Type="VI" URL="../Read Local Msg Set.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
@@ -155,11 +163,11 @@
 			</Item>
 			<Item Name="Teardown.vi" Type="VI" URL="../Teardown.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1115685376</Property>
 			</Item>
 			<Item Name="Start.vi" Type="VI" URL="../Start.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -177,23 +185,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 			</Item>
-			<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi">
-				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
-				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
-				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
-			</Item>
-			<Item Name="Not In Unified Msg Set.vi" Type="VI" URL="../Not In Unified Msg Set.vi">
-				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-				<Property Name="NI.ClassItem.Flags" Type="Int">16777353</Property>
-				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">1</Property>
-				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-				<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
-			</Item>
-			<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi">
+			<Item Name="Can Stop.vi" Type="VI" URL="../Can Stop.vi">
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 				<Property Name="NI.ClassItem.InvokeUsage" Type="UInt">5</Property>

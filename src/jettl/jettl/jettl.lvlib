@@ -11,6 +11,7 @@
 	<Item Name="Stop Msg.lvlib" Type="Library" URL="../Stop Msg/Stop Msg.lvlib"/>
 	<Item Name="Stopped Msg.lvlib" Type="Library" URL="../Stopped Msg/Stopped Msg.lvlib"/>
 	<Item Name="Msg.lvclass" Type="LVClass" URL="../Msg/Msg.lvclass"/>
+	<Item Name="Msg Output.lvclass" Type="LVClass" URL="../Msg Output/Msg Output.lvclass"/>
 	<Item Name="Teller.lvlib" Type="Library" URL="../Teller/Teller.lvlib"/>
 	<Item Name="Attributes.lvlib" Type="Library" URL="../Attributes/Attributes.lvlib"/>
 	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib"/>

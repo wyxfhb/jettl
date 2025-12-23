@@ -15,10 +15,10 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Stop.vi" Type="VI" URL="../Stop.vi"/>
-	<Item Name="Direct Call.vi" Type="VI" URL="../Direct Call.vi">
+	<Item Name="Call.vi" Type="VI" URL="../Call.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Component.vi" Type="VI" URL="../Component.vi">
+	<Item Name="Recurse.vi" Type="VI" URL="../Recurse.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Tell Self.vi" Type="VI" URL="../Tell Self.vi">

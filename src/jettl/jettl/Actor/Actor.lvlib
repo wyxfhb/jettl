@@ -33,14 +33,20 @@
 	<Item Name="Release and Unregister.vi" Type="VI" URL="../Release and Unregister.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Do Local Msg Set.vi" Type="VI" URL="../Do Local Msg Set.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Error Prefix.vi" Type="VI" URL="../Error Prefix.vi"/>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
+	<Item Name="Union Unified Msg Set.vi" Type="VI" URL="../Union Unified Msg Set.vi"/>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi"/>
 	<Item Name="Spawn Root.vi" Type="VI" URL="../Spawn Root.vi"/>
 	<Item Name="Decorate Core Actor.vi" Type="VI" URL="../Decorate Core Actor.vi"/>
 	<Item Name="Spawn.vi" Type="VI" URL="../Spawn.vi"/>
 	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
-	<Item Name="Receive.vi" Type="VI" URL="../Receive.vi"/>
 	<Item Name="Can Stop.vi" Type="VI" URL="../Can Stop.vi"/>
 	<Item Name="Stop.vi" Type="VI" URL="../Stop.vi"/>
+	<Item Name="Call.vi" Type="VI" URL="../Call.vi"/>
+	<Item Name="Recurse.vi" Type="VI" URL="../Recurse.vi"/>
+	<Item Name="Execute Msg Or Recurse.vi" Type="VI" URL="../Execute Msg Or Recurse.vi"/>
 </Library>
