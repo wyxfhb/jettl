@@ -5,11 +5,13 @@
 Add a Safe Boolean (recommended) to the Stop message
 safe stop boolean in private data.
 
-
+Add safe stop to the palettes.
 
 
 
 **Messages can have outputs**
+
+direct call and component.
 
 This capability is implemented at the component level, but exposed through the interface message contract.
 
