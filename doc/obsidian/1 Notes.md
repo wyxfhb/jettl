@@ -2,10 +2,6 @@
 ---
 ---
 
-Add safe stop to the palettes.
-
-
-
 **Messages can have outputs**
 
 direct call and component.

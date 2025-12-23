@@ -6,7 +6,7 @@
 
 *Dedicated to Stephen Loftus-Mercer for his pioneering work in introducing interfaces to the LabVIEW environment.*
 
-`jettl` implements a SOLID-driven Actor Model architecture that unifies functional, procedural, and object-oriented paradigms.
+`jettl` implements an event based SOLID-driven Actor Model architecture that unifies functional, procedural, and object-oriented paradigms.
 
 [Discord](https://discord.gg/tVkvTyBxqa)
 
