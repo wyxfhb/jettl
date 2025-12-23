@@ -17,7 +17,7 @@
 	<Item Name="Child UIDs.ctl" Type="VI" URL="../Child UIDs.ctl"/>
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
-	<Item Name="Lifecycle.ctl" Type="VI" URL="../Lifecycle.ctl"/>
+	<Item Name="Teardown Location.ctl" Type="VI" URL="../Teardown Location.ctl"/>
 	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl"/>
 	<Item Name="Spawn.ctl" Type="VI" URL="../Spawn.ctl"/>
 	<Item Name="Setup.ctl" Type="VI" URL="../Setup.ctl"/>
@@ -45,8 +45,8 @@
 	<Item Name="Spawn Root.vi" Type="VI" URL="../Spawn Root.vi"/>
 	<Item Name="Decorate Core Actor.vi" Type="VI" URL="../Decorate Core Actor.vi"/>
 	<Item Name="Spawn.vi" Type="VI" URL="../Spawn.vi"/>
-	<Item Name="Setup.vi" Type="VI" URL="../Setup.vi"/>
+	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
 	<Item Name="Msg Handler.vi" Type="VI" URL="../Msg Handler.vi"/>
 	<Item Name="Error Handler.vi" Type="VI" URL="../Error Handler.vi"/>
-	<Item Name="Teardown.vi" Type="VI" URL="../Teardown.vi"/>
+	<Item Name="Stop.vi" Type="VI" URL="../Stop.vi"/>
 </Library>
