@@ -4,17 +4,15 @@
 
 spawn and setup anemic?
 
+Transport Interface
+Event Transport
+
+Maybe have the "Msg Event Ref" in TEMPLATE Actor and some means to write to it in 'Setup.vi'
+SD Private 'Read Msg Event Ref.vi'
+
 **Messages can have outputs**
 
-direct call and component.
-
-This capability is implemented at the component level, but exposed through the interface message contract.
-
-Rationale: It enables wrapper actors (actors that delegate to other layered actors) to capture and reuse a callee’s output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data.
-
-
-add read local msg set to palettes
-read actor too
+Rationale: It enables layered actors (actors that delegate to other layered actors) to use another inner layers output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data or have to tell that data to a different actor.
 
 
 ---
