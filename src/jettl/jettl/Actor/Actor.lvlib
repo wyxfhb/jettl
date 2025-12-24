@@ -33,9 +33,6 @@
 	<Item Name="Release and Unregister.vi" Type="VI" URL="../Release and Unregister.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Do Local Msg Set.vi" Type="VI" URL="../Do Local Msg Set.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="Error Prefix.vi" Type="VI" URL="../Error Prefix.vi"/>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Union Unified Msg Set.vi" Type="VI" URL="../Union Unified Msg Set.vi"/>
