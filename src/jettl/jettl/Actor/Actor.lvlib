@@ -18,7 +18,6 @@
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
 	<Item Name="Teardown Location.ctl" Type="VI" URL="../Teardown Location.ctl"/>
-	<Item Name="Transport Type.ctl" Type="VI" URL="../Transport Type.ctl"/>
 	<Item Name="Actor.vi" Type="VI" URL="../Actor.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
