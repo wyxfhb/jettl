@@ -2,15 +2,12 @@
 ---
 ---
 
-change to not include event based in description
+Since can come from a Queue, Instead of ‘From Msg Event’ flag, have it be be something else like: ‘Received’
 
-spawn and setup anemic
+change to not include event based in description, have event and queue
 
-Transport Interface
-Event Transport
 
-Maybe have the "Msg Event Ref" in TEMPLATE Actor and some means to write to it in 'Setup.vi'
-SD Private 'Read Msg Event Ref.vi'
+
 
 **Messages can have outputs**
 
