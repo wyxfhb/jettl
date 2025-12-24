@@ -1,12 +1,9 @@
-Advice: The control terminal label signifies how that control terminal is used in the function. NOT how it relates to how the calling code calls that function.
+
+Best Practice: Instead of helper loops, it is encouraged to spawn a child actor that acts as a helper loop. Fhis maintains a single loop within an actor. This emphasizes to not branch the actor object to different loops.
 
 ---
 
-Best Practice: Because it is emphasized to not branch the actor object wire, it is encouraged to create an actor that acts as a helper loop instead of a parallel while loop within the actor. Note that of course the messaging mechanism between them should still be actor messages.
-
----
-
-Advice: Always assume you cannot control the order messages execute.
+Advice: Always assume you cannot control the order that messages execute.
 
 ---
 
