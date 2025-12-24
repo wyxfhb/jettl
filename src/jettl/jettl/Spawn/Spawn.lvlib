@@ -13,4 +13,5 @@
 	<Item Name="Base Spawn.lvclass" Type="LVClass" URL="../Base Spawn/Base Spawn.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Spawn.ctl" Type="VI" URL="../Spawn.ctl"/>
 </Library>

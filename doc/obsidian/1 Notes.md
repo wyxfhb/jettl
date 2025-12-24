@@ -2,7 +2,9 @@
 ---
 ---
 
-spawn and setup anemic?
+change to not include event based in description
+
+spawn and setup anemic
 
 Transport Interface
 Event Transport

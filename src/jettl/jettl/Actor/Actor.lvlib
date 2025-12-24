@@ -18,19 +18,10 @@
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
 	<Item Name="Teardown Location.ctl" Type="VI" URL="../Teardown Location.ctl"/>
-	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl"/>
-	<Item Name="Spawn.ctl" Type="VI" URL="../Spawn.ctl"/>
-	<Item Name="Setup.ctl" Type="VI" URL="../Setup.ctl"/>
 	<Item Name="Actor.vi" Type="VI" URL="../Actor.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Count.vi" Type="VI" URL="../Count.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Priority Convert.vi" Type="VI" URL="../Priority Convert.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Release and Unregister.vi" Type="VI" URL="../Release and Unregister.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Error Prefix.vi" Type="VI" URL="../Error Prefix.vi"/>
