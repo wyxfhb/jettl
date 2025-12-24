@@ -411,7 +411,7 @@ Fundamentally, when an object is instantiated, there should not be an error that
 
 This aligns with the principle that **errors are values** and should be modeled and handled intentionally, rather than being emitted from constructors in a way that complicates initialization semantics.
 
-Reference: *Errors are Values; Please Treat Them That Way* (Ethan Stern) — [https://www.youtube.com/watch?v=8vhYLlaXaQU&list=PLvDxiIkwuMQtiOZ_WWbk6ZCXfeAKxtwo-](https://www.youtube.com/watch?v=8vhYLlaXaQU&list=PLvDxiIkwuMQtiOZ_WWbk6ZCXfeAKxtwo-)
+Reference: *Errors are Values; Please Treat Them That Way* (Ethan Stern) — [https://www.youtube.com/watch?v=8vhYLlaXaQU&list=PLvDxiIkwuMQtiOZ_WWbk6ZCXfeAKxtwo-](https://www.youtube.com/watch?v=8vhYLlaXaQU&list=PLvDxiIkwuMQtiOZ_WWbk6ZCXfeAKxtwo-)@17:28
 
 **Q1:** How should `Setup.vi` report failures—return an error value, publish a failure message, or transition the actor into a “failed” state?
 **Q2:** What criteria should determine whether a method belongs in the public actor API versus remaining private helper logic?
