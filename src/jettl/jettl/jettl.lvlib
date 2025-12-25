@@ -13,10 +13,10 @@
 	<Item Name="Msg.lvclass" Type="LVClass" URL="../Msg/Msg.lvclass"/>
 	<Item Name="Msg Output.lvclass" Type="LVClass" URL="../Msg Output/Msg Output.lvclass"/>
 	<Item Name="Teller.lvlib" Type="Library" URL="../Teller/Teller.lvlib"/>
-	<Item Name="Attributes.lvlib" Type="Library" URL="../Attributes/Attributes.lvlib"/>
-	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib"/>
-	<Item Name="Actor.lvlib" Type="Library" URL="../Actor/Actor.lvlib"/>
 	<Item Name="Spawn.lvlib" Type="Library" URL="../Spawn/Spawn.lvlib"/>
 	<Item Name="Setup.lvlib" Type="Library" URL="../Setup/Setup.lvlib"/>
+	<Item Name="Attributes.lvlib" Type="Library" URL="../Attributes/Attributes.lvlib"/>
 	<Item Name="Transport.lvlib" Type="Library" URL="../Transport/Transport.lvlib"/>
+	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib"/>
+	<Item Name="Actor.lvlib" Type="Library" URL="../Actor/Actor.lvlib"/>
 </Library>

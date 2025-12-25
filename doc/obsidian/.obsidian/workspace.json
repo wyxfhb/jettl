@@ -20,20 +20,6 @@
               "icon": "lucide-file",
               "title": "1 Notes"
             }
-          },
-          {
-            "id": "60c1963d3405e8e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2 Notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2 Notes"
-            }
           }
         ]
       }
@@ -92,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5,
-    "collapsed": true
+    "width": 243.5
   },
   "right": {
     "id": "88c5f5880d00b322",
@@ -184,6 +169,7 @@
   "active": "abf726814069cd5e",
   "lastOpenFiles": [
     "2 Notes.md",
+    "jettl/Reuse Actors/Panel Actor.md",
     "1 Notes.md",
     "jettl/Introduction To jettl.md",
     "jettl/Reuse Actors/Periodic Msg Actor.md",
@@ -227,7 +213,6 @@
     "jettl Tools/Images",
     "Decorator Pattern",
     "Ideas for Next Release.md",
-    "jettl/Reuse Actors",
-    "Welcome.md"
+    "jettl/Reuse Actors"
   ]
 }

@@ -16,6 +16,12 @@
 		<Item Name="Event Transport.vi" Type="VI" URL="../Event Transport.vi"/>
 		<Item Name="Read Event Ref.vi" Type="VI" URL="../Read Event Ref.vi"/>
 	</Item>
-	<Item Name="Queue" Type="Folder"/>
+	<Item Name="Queue" Type="Folder">
+		<Item Name="Queue Transport.lvclass" Type="LVClass" URL="../Queue Transport/Queue Transport.lvclass">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
+		<Item Name="Queue Transport.vi" Type="VI" URL="../Queue Transport.vi"/>
+		<Item Name="Receive.vi" Type="VI" URL="../Receive.vi"/>
+	</Item>
 	<Item Name="Transport.lvclass" Type="LVClass" URL="../Transport/Transport.lvclass"/>
 </Library>

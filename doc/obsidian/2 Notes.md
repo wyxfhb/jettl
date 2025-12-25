@@ -163,3 +163,21 @@ This is the same philosophy used for the object IO terminals.
 
 Fundamentally, a message cannot be sent to an actor that cannot implement that msg.
 Also, a tool for determining if a message can be sent to sel like if there are multiple actor layers and a message sent to self but can receive locally but can in another layer.
+
+---
+
+Instead of class inheritance, the decorator pattern already has the methods overridden with functionality. So you don’t have to create a new override method, just move the method to the extended virtual folder (for developer experience) and append functionality as necessary.
+jettl does not require ever modifying class inheritance since class inheritance is not recommended. Recommended practice is using interface implementation for all classes mixed with dependency inversion.
+
+---
+
+Standardize on Network Streams for LabVIEW communication between applications
+Gives rise also to distributed system design having multiple hierarchies communicating with each other through their lowest created actors.
+
+---
+
+Revert back to 2020 (not SP1!)
+
+---
+
+jettl is a typed frameworks, you cannot send a message not in the msg set of the receiving actor (the type system prevents it)
