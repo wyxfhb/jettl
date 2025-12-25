@@ -2,11 +2,16 @@
 ---
 ---
 
-Since can come from a Queue, Instead of ‘From Msg Event’ flag, have it be be something else like: ‘Received’
+is there a way to replace the msg set function calls to be in the start and stop?
+spawn and setup read accessrors, add to palette.
+
+queueu address as DVR
+
+in attributes, functions to determine what type of actor is being used. ie.e  enum for queue or event?
 
 change to not include event based in description, have event and queue
 
-
+add  Read Listened t o Msg
 
 
 **Messages can have outputs**

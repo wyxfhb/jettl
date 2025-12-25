@@ -9,19 +9,7 @@
 </Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="Event" Type="Folder">
-		<Item Name="Event Transport.lvclass" Type="LVClass" URL="../Event Transport/Event Transport.lvclass">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		</Item>
-		<Item Name="Event Transport.vi" Type="VI" URL="../Event Transport.vi"/>
-		<Item Name="Read Event Ref.vi" Type="VI" URL="../Read Event Ref.vi"/>
-	</Item>
-	<Item Name="Queue" Type="Folder">
-		<Item Name="Queue Transport.lvclass" Type="LVClass" URL="../Queue Transport/Queue Transport.lvclass">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		</Item>
-		<Item Name="Queue Transport.vi" Type="VI" URL="../Queue Transport.vi"/>
-		<Item Name="Receive.vi" Type="VI" URL="../Receive.vi"/>
-	</Item>
 	<Item Name="Transport.lvclass" Type="LVClass" URL="../Transport/Transport.lvclass"/>
+	<Item Name="Event.lvlib" Type="Library" URL="../Event/Event.lvlib"/>
+	<Item Name="Queue.lvlib" Type="Library" URL="../Queue/Queue.lvlib"/>
 </Library>
