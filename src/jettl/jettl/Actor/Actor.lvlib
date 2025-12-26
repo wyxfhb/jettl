@@ -30,7 +30,6 @@
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Error Prefix.vi" Type="VI" URL="../Error Prefix.vi"/>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Union Unified Msg Set.vi" Type="VI" URL="../Union Unified Msg Set.vi"/>
 	<Item Name="Spawn Root.vi" Type="VI" URL="../Spawn Root.vi"/>
