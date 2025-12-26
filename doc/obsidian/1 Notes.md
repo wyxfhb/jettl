@@ -2,7 +2,8 @@
 ---
 ---
 
-Actor Type Enum as Transport?
+dvr for the event as well.
+
 spawn and setup read accessors, add to palette.
 
 change to not include event based in description, have event, queue, and notifier.

@@ -31,6 +31,10 @@
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Enum Map.ctl" Type="VI" URL="../Enum Map.ctl">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Convert Enum.vi" Type="VI" URL="../Convert Enum.vi"/>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Union Unified Msg Set.vi" Type="VI" URL="../Union Unified Msg Set.vi"/>
 	<Item Name="Spawn Root.vi" Type="VI" URL="../Spawn Root.vi"/>
