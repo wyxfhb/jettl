@@ -10,7 +10,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Transport.lvclass" Type="LVClass" URL="../Transport/Transport.lvclass"/>
-	<Item Name="Event.lvlib" Type="Library" URL="../Event/Event.lvlib"/>
 	<Item Name="Queue.lvlib" Type="Library" URL="../Queue/Queue.lvlib"/>
+	<Item Name="Event.lvlib" Type="Library" URL="../Event/Event.lvlib"/>
 	<Item Name="Notifier.lvlib" Type="Library" URL="../Notifier/Notifier.lvlib"/>
 </Library>

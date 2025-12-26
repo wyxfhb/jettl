@@ -2,10 +2,10 @@
 ---
 ---
 
-is there a way to replace the msg set function calls to be in the start and stop?
+Actor Type Enum as Transport?
 spawn and setup read accessors, add to palette.
 
-change to not include event based in description, have event and queue
+change to not include event based in description, have event, queue, and notifier.
 
 add  Read Listened t o Msg
 
@@ -13,9 +13,9 @@ add  Read Listened t o Msg
 **Messages can have outputs!**
 Rationale: It enables layered actors (actors that delegate to other layered actors) to use another inner layers output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data or have to tell that data to a different actor.
 
-I would consider having a common output for all messages, such as a log interface output that can be dependency injected for the particular logging a developer would like to implement i.e. they would write their own concrete implementation.
+> I would consider having a common output for all messages, such as a log interface output, on terminal 1, that can be dependency injected for the particular logging a developer would like to implement i.e. they would write their own concrete implementation.
 
-Of course Queue Actors can have front panels. Though, there shouldn't be control and indicator terminals since this would be functionality specific for an event actor. Instead, the Queue Actor would primarily have subpanel control references.
+Of course Queue Actors and Notifier Actors can have front panels. Though, there shouldn't be control and indicator terminals since this would be functionality specific for an event actor. Instead, the Queue Actor would primarily have subpanel control references.
 
 ---
 ---
