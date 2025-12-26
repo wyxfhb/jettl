@@ -2,8 +2,6 @@
 ---
 ---
 
-dvr for the event as well.
-
 time delayed send message. Could be some actor that is created that periodically sends out a trigger message with some kind of unique data input that signifies to the parent that this is the action that needs to be taken for periodic message handling.
 This way the concerns are separated and the handling of messages is strictly governed by the parent actor itself.
 
