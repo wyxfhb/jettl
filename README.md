@@ -1,14 +1,16 @@
 # jettl
 
-[![Image](https://www.vipm.io/package/nathan_davis_lib_jettl/badge.svg?metric=installs)](https://www.vipm.io/package/nathan_davis_lib_jettl/) [![Image](https://www.vipm.io/package/nathan_davis_lib_jettl/badge.svg?metric=stars)](https://www.vipm.io/package/nathan_davis_lib_jettl/)
-
-*Dedicated to [Stephen Loftus-Mercer](https://www.linkedin.com/in/stephen-loftus-mercer/) for his pioneering work in introducing interfaces to the LabVIEW environment. This work would not be possible without this feature.*
+[![Image](https://www.vipm.io/package/nathan_davis_lib_jettl/badge.svg?metric=installs)](https://www.vipm.io/package/nathan_davis_lib_jettl/)
+[![Image](https://www.vipm.io/package/nathan_davis_lib_jettl/badge.svg?metric=stars)](https://www.vipm.io/package/nathan_davis_lib_jettl/)
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.gg/tVkvTyBxqa)
 
 A modern LabVIEW Actor Model implementation for building scalable applications.
 
+*Dedicated to [Stephen Loftus-Mercer](https://www.linkedin.com/in/stephen-loftus-mercer/) for his pioneering work in introducing interfaces to the LabVIEW environment. This work would not be possible without this feature.*
+
 ## Installation
 
-**Install the most recent published package on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/).**
+**Install the published package on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/).**
 
 Navigate to the `Data Communication` -> `jettl` palette and the pull-down menu to find tools in `Tools` -`jettl Tools`.
 
@@ -53,10 +55,6 @@ Please refer to the [Videos](https://www.youtube.com/@nathandavis6612), for more
 
 ![](doc/figures/msg.png)
 *Recursive message implementaion.*
-
-## Socials
-
-[Discord](https://discord.gg/tVkvTyBxqa), [Videos](https://www.youtube.com/@nathandavis6612)
 
 ## Motivation
 
