@@ -1,7 +1,6 @@
 
 ---
 ---
-add in queue, event, and notifier
 
 dvr for the event as well.
 
