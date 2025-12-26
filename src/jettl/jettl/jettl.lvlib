@@ -19,4 +19,26 @@
 	<Item Name="Transport.lvlib" Type="Library" URL="../Transport/Transport.lvlib"/>
 	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib"/>
 	<Item Name="Actor.lvlib" Type="Library" URL="../Actor/Actor.lvlib"/>
+	<Item Name="Actor Type.ctl" Type="VI" URL="../Actor Type.ctl"/>
+	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Equal To Core Actor.vi" Type="VI" URL="../Equal To Core Actor.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Default Instance.vi" Type="VI" URL="../Default Instance.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Transport To Actor Type.vi" Type="VI" URL="../Transport To Actor Type.vi"/>
+	<Item Name="Spawn Root.vi" Type="VI" URL="../Spawn Root.vi"/>
+	<Item Name="Decorate Core Actor.vi" Type="VI" URL="../Decorate Core Actor.vi"/>
+	<Item Name="Spawn.vi" Type="VI" URL="../Spawn.vi"/>
+	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
+	<Item Name="Can Stop.vi" Type="VI" URL="../Can Stop.vi"/>
+	<Item Name="Stop.vi" Type="VI" URL="../Stop.vi"/>
+	<Item Name="Call.vi" Type="VI" URL="../Call.vi"/>
+	<Item Name="Recurse.vi" Type="VI" URL="../Recurse.vi"/>
+	<Item Name="Execute Msg Or Recurse.vi" Type="VI" URL="../Execute Msg Or Recurse.vi"/>
+	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
+	<Item Name="Union Unified Msg Set.vi" Type="VI" URL="../Union Unified Msg Set.vi"/>
 </Library>

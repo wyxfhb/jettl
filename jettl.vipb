@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-12-23 17:09:34" Creator="Erik" Comments="" ID="c561ebbfce7fdce8d5a055f29203f883">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-12-26 09:35:49" Creator="Erik" Comments="" ID="5f25ab302d33d6c188caa2e764826a1d">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl</Package_File_Name>
-    <Library_Version>6.2.0.52</Library_Version>
+    <Library_Version>6.3.0.52</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -27,14 +27,10 @@
     </Custom_Action_VIs>
     <VI_Package_Configuration_File>jettl.vipc</VI_Package_Configuration_File>
     <Description>
-      <One_Line_Description_Summary>jettl implements an event based SOLID-driven Actor Model architecture that unifies functional, procedural, and object-oriented paradigms.</One_Line_Description_Summary>
-      <Description>jettl implements a SOLID-driven Actor Model architecture that unifies functional, procedural, and object-oriented paradigms.
+      <One_Line_Description_Summary>A modern LabVIEW Actor Model implementation for building scalable applications.</One_Line_Description_Summary>
+      <Description>A modern LabVIEW Actor Model implementation for building scalable applications.
 
-Please visit for documentation, examples, discussion, and learning material.
-
-GitHub: https://github.com/natev51/jettl
-Discord: https://discord.gg/tVkvTyBxqa
-YouTube: https://www.youtube.com/@nathandavis6612</Description>
+GitHub: https://github.com/natev51/jettl</Description>
       <Copyright/>
       <Packager>Nathan Davis</Packager>
       <URL>https://github.com/natev51/jettl</URL>
@@ -241,7 +237,7 @@ YouTube: https://www.youtube.com/@nathandavis6612</Description>
           <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>src\jettl\jettl\Actor\Spawn.vi</Path>
+        <Path>src\jettl\jettl\Spawn.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -255,7 +251,7 @@ YouTube: https://www.youtube.com/@nathandavis6612</Description>
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>src\jettl\jettl\Actor\Spawn Root.vi</Path>
+        <Path>src\jettl\jettl\Spawn Root.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -269,7 +265,7 @@ YouTube: https://www.youtube.com/@nathandavis6612</Description>
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>src\jettl\jettl\Actor\Decorate Core Actor.vi</Path>
+        <Path>src\jettl\jettl\Decorate Core Actor.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -395,21 +391,7 @@ YouTube: https://www.youtube.com/@nathandavis6612</Description>
           <Column>7</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>src\jettl\jettl\Attributes\Attributes\Read Address.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>Read Event Ref.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>4</Row>
-          <Column>8</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>src\jettl\jettl\Attributes\Attributes\Read Event Ref.vi</Path>
+        <Path>src\jettl\jettl\Transport\Notifier\Read Address.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -580,7 +562,7 @@ YouTube: https://www.youtube.com/@nathandavis6612</Description>
         <Path>src\jettl\jettl\Actor\Actor\Find Child UIDs.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>16E44433EBF9DF6D69D86C3B9293534C</GUID>
+      <GUID>881F2BC5744A8BBD8EA9E3A30786B25D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -601,7 +583,7 @@ YouTube: https://www.youtube.com/@nathandavis6612</Description>
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>C14B5A08C99A48466E3CFAD468BB7FB8</GUID>
+      <GUID>A354145E2AAF0C4B6738865013014830</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

@@ -12,6 +12,11 @@ change to not include event based in description, have event, queue, and notifie
 
 add  Read Listened t o Msg
 
+add an advanced to palette.
+
+time delayed send message. Could be some actor that is created that periodically sends out a trigger message with some kind of unique data input that signifies to the parent that this is the action that needs to be taken for periodic message handling.
+This way the concerns are separated and the handling of messages is strictly governed by the parent actor itself.
+
 
 **Messages can have outputs!**
 Rationale: It enables layered actors (actors that delegate to other layered actors) to use another inner layers output. For example, if an inner actor executes a method and produces analyzed data as its output, the wrapper layer can consume that output for purposes such as logging, auditing, metrics, or trace enrichment—without requiring the wrapper to re-compute or re-derive the same data or have to tell that data to a different actor.
