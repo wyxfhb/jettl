@@ -4,20 +4,22 @@
 [![Image](https://www.vipm.io/package/nathan_davis_lib_jettl/badge.svg?metric=stars)](https://www.vipm.io/package/nathan_davis_lib_jettl/)
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.gg/tVkvTyBxqa)
 
-A modern LabVIEW Actor Model implementation for building scalable applications.
+**A modern LabVIEW Actor Model implementation for building scalable applications.**
 
-*Dedicated to [Stephen Loftus-Mercer](https://www.linkedin.com/in/stephen-loftus-mercer/) for his pioneering work in introducing interfaces to the LabVIEW environment. This work would not be possible without this feature.*
+*Dedicated to [Stephen Loftus-Mercer](https://www.linkedin.com/in/stephen-loftus-mercer/) for his pioneering work in introducing interfaces to the LabVIEW environment.*
+*This work would not be possible without this feature.*
 
 ## Installation
 
-**Install the published package on [VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/).**
+Install the published package on **[VIPM](https://www.vipm.io/package/nathan_davis_lib_jettl/)**.
 
 Navigate to the `Data Communication` -> `jettl` palette and the pull-down menu to find tools in `Tools` -`jettl Tools`.
 
 ![](doc/figures/jettl-palette.png)
-*jettl palette.*
+*Palette.*
 
-*A note on LabVIEW version: This library is compatible with LV 2020 and beyond. If using LV2020, please consider using LV 2020 SP1 and beyond due to issues resolved here: [LabVIEW 2020 SP1 Bug Fixes](https://www.ni.com/en/support/documentation/bugs/20/labview-2020-sp1-bug-fixes.html?srsltid=AfmBOooUbuV9waHiF74KkrteQY7SRCENumzj1XCdQMWldAIuQMDW1sM6)*
+This library is compatible with **LV 2020 and beyond**.
+Note: If using LV2020, please consider using *LV 2020 SP1* and due to issues resolved here: [LabVIEW 2020 SP1 Bug Fixes](https://www.ni.com/en/support/documentation/bugs/20/labview-2020-sp1-bug-fixes.html?srsltid=AfmBOooUbuV9waHiF74KkrteQY7SRCENumzj1XCdQMWldAIuQMDW1sM6).
 
 ## Advantages
 
@@ -43,6 +45,8 @@ Messages have scripted outputs, such as message inputs, used for transporting da
 There currently three actors that distinguish between Queue, Event, and Notifier messaging.
 - **Statically Typed Messaging**.
 All messages are interface coupled and statically determined execution provides for ease in understanding the relative actor system messaging.
+- **Child Actor UID Mapping**.
+Internally, Child Actor UIDs (Unique Identifiers) are automatically inserted into a map.
 
 ## Documentation
 
@@ -50,11 +54,20 @@ Look in the `doc` folder for the `main.pdf` for the ongoing documentation.
 Due to recent rapid development, this documentation will likely be outdated.
 Please refer to the [Videos](https://www.youtube.com/@nathandavis6612), for more recent explanations.
 
-![](doc/figures/actor-method.png)
+![](doc/figures/queue-actor.png)
+*Queue Actor.*
+
+![](doc/figures/event-actor.png)
 *Event Actor.*
 
+![](doc/figures/notifier-actor.png)
+*Notifier Actor.*
+
+![](doc/figures/msg-poly.png)
+*Polymorphic Message.*
+
 ![](doc/figures/msg.png)
-*Recursive message implementaion.*
+*Message implementaion.*
 
 ## Motivation
 

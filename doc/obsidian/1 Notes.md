@@ -1,14 +1,11 @@
 
 ---
 ---
+add in queue, event, and notifier
 
 dvr for the event as well.
 
-the enum control and the method call for converting need to be renamed.
-
 spawn and setup read accessors, add to palette.
-
-change to not include event based in description, have event, queue, and notifier.
 
 add  Read Listened t o Msg
 
