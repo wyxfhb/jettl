@@ -14,11 +14,14 @@
 	<Item Name="TEMPLATE Msg.lvclass" Type="LVClass" URL="../TEMPLATE Msg/TEMPLATE Msg.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="TEMPLATE.vi" Type="VI" URL="../TEMPLATE.vi"/>
-	<Item Name="Direct Call.vi" Type="VI" URL="../Direct Call.vi">
+	<Item Name="TEMPLATE Msg Output.lvclass" Type="LVClass" URL="../TEMPLATE Msg Output/TEMPLATE Msg Output.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Component.vi" Type="VI" URL="../Component.vi">
+	<Item Name="TEMPLATE.vi" Type="VI" URL="../TEMPLATE.vi"/>
+	<Item Name="Call.vi" Type="VI" URL="../Call.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Recurse.vi" Type="VI" URL="../Recurse.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Tell Self.vi" Type="VI" URL="../Tell Self.vi">

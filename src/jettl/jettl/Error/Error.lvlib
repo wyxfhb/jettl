@@ -15,4 +15,5 @@
 	<Item Name="Msg Not In Unified Set--error.vi" Type="VI" URL="../Msg Not In Unified Set--error.vi"/>
 	<Item Name="Teller Not Valid--error.vi" Type="VI" URL="../Teller Not Valid--error.vi"/>
 	<Item Name="UID Not Found--error.vi" Type="VI" URL="../UID Not Found--error.vi"/>
+	<Item Name="Error Prefix.vi" Type="VI" URL="../Error Prefix.vi"/>
 </Library>

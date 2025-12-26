@@ -1,4 +1,0 @@
-![[rt_strings.png]]
-
----
-
