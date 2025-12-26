@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 Notes.md",
+                "file": "jettl Tools/Ideas To Incorporate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 Notes"
+              "title": "Ideas To Incorporate"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 243.5,
+    "collapsed": true
   },
   "right": {
     "id": "88c5f5880d00b322",
@@ -169,10 +170,11 @@
   "active": "abf726814069cd5e",
   "lastOpenFiles": [
     "2 Notes.md",
-    "jettl/Reuse Actors/Panel Actor.md",
     "1 Notes.md",
-    "jettl/Introduction To jettl.md",
+    "jettl/Msg.md",
+    "jettl/Reuse Actors/Panel Actor.md",
     "jettl/Reuse Actors/Periodic Msg Actor.md",
+    "jettl/Introduction To jettl.md",
     "jettl Tools/Images/target_names.png",
     "jettl Tools/Ideas To Incorporate.md",
     "jettl/To Organize.md",
@@ -212,7 +214,6 @@
     "New Notes",
     "jettl Tools/Images",
     "Decorator Pattern",
-    "Ideas for Next Release.md",
     "jettl/Reuse Actors"
   ]
 }
