@@ -9,11 +9,6 @@ This should be another field of entry to put in the Actor Library to put the Msg
 
 ---
 
-For implemented message methods that class doesn't implement the interface i.e. a message that cannot ever be executed.
-When a interface message is implemented, but messages method is not implemented.
-
----
-
 Building more jettl Tools:
 All external jettl Tools belong in the same common location: Tools -> jettl Tools.
 Please place them in this common location, helping developers find your tool easily!
@@ -22,7 +17,8 @@ Of course, please place company / name specific tools in their own folder as wel
 
 ---
 
-Necessary to use the save all project function call? This will otherwise speed up the scripting.
+Necessary to use the save all project function call?
+This will otherwise speed up the scripting.
 
 ---
 
@@ -34,16 +30,3 @@ Have target drop down menu for project:
 Msg Rescripting -> Msg.vi:
 Clean Up Wire
 invoke node, wire, CleanUpWire
-
----
-
-public and private distinguish name space
-
-Have got to find a way to distinguish messages that are private vs public for the naming conventions
-- maybe with holding library as prefix?
-- maybe just look at their relative path maybe to distinguish, this can be a double check.
-- checking privacy for the containing library?
-
----
-
-TEMPLATE: change the type to be an enum selection

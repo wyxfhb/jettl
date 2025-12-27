@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "VI Analyzer/VI Analyzer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "VI Analyzer"
+            }
+          },
+          {
+            "id": "b68a89c9945ea337",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "jettl Tools/Ideas To Incorporate.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +35,8 @@
               "title": "Ideas To Incorporate"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5,
-    "collapsed": true
+    "width": 243.5
   },
   "right": {
     "id": "88c5f5880d00b322",
@@ -167,8 +181,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "abf726814069cd5e",
+  "active": "b68a89c9945ea337",
   "lastOpenFiles": [
+    "VI Analyzer/VI Analyzer.md",
+    "jettl Tools/Ideas To Incorporate.md",
+    "VI Analyzer",
     "2 Notes.md",
     "1 Notes.md",
     "jettl/Msg.md",
@@ -176,7 +193,6 @@
     "jettl/Reuse Actors/Periodic Msg Actor.md",
     "jettl/Introduction To jettl.md",
     "jettl Tools/Images/target_names.png",
-    "jettl Tools/Ideas To Incorporate.md",
     "jettl/To Organize.md",
     "Decorator Pattern/Documentation.md",
     "Decorator Pattern/Decorator Pattern.md",
@@ -209,11 +225,9 @@
     "Images From Email",
     "Decorator Pattern/Images",
     "jettl/Images",
-    "Package Release/Package Release.md",
     "New Notes/Images",
     "New Notes",
     "jettl Tools/Images",
-    "Decorator Pattern",
-    "jettl/Reuse Actors"
+    "Decorator Pattern"
   ]
 }
