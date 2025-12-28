@@ -26,4 +26,6 @@
 	<Item Name="Tree.lvlib" Type="Library" URL="../Tree/Tree.lvlib"/>
 	<Item Name="Project Stuff.lvclass" Type="LVClass" URL="../Project Stuff/Project Stuff.lvclass"/>
 	<Item Name="Panel.lvlib" Type="Library" URL="../Panel/Panel.lvlib"/>
+	<Item Name="Name Specs.lvclass" Type="LVClass" URL="../Name Specs/Name Specs.lvclass"/>
+	<Item Name="Name Stuff.ctl" Type="VI" URL="../Name Stuff.ctl"/>
 </Library>
