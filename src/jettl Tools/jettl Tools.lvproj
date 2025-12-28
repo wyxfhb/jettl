@@ -21,7 +21,6 @@
 		<Item Name="_Msg Rescript.lvlib" Type="Library" URL="../_Msg Rescript/_Msg Rescript.lvlib"/>
 		<Item Name="Msg Rescript.vi" Type="VI" URL="../Msg Rescript.vi"/>
 		<Item Name="_Shared.lvlib" Type="Library" URL="../_Shared/_Shared.lvlib"/>
-		<Item Name="Tree Control Example.vi" Type="VI" URL="../Tree Control Example.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -9,21 +9,13 @@ This should be another field of entry to put in the Actor Library to put the Msg
 
 ---
 
-Building more jettl Tools:
+jettl Tools
+Building Tools of your own:
+
 All external jettl Tools belong in the same common location: Tools -> jettl Tools.
 Please place them in this common location, helping developers find your tool easily!
 
 Of course, please place company / name specific tools in their own folder as well if further credit should be given to your tool i.e. Tools -> jettl Tools -> YOURNAME -> YOURTOOLNAME.
-
----
-
-Necessary to use the save all project function call?
-This will otherwise speed up the scripting.
-
----
-
-Have target drop down menu for project:
-![[target_names.png]]
 
 ---
 
