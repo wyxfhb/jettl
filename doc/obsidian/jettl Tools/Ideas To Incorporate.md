@@ -25,3 +25,6 @@ invoke node, wire, CleanUpWire
 
 ---
 
+Documentation:
+For Conn Pane Terminals: Msg Control
+Only the left two inputs, possible Error in, and the Teller which is always in 6.
