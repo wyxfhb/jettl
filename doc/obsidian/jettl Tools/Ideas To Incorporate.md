@@ -28,3 +28,13 @@ invoke node, wire, CleanUpWire
 Documentation:
 For Conn Pane Terminals: Msg Control
 Only the left two inputs, possible Error in, and the Teller which is always in 6.
+
+---
+
+msg rescript
+instead of the two maps and two clusters, just have one map and one cluster. Further, use the `condition indicator To Control.vi` for the mapped control index.
+
+---
+
+msg rescript.
+don't enable the OK, after every selection, enable the OK.
