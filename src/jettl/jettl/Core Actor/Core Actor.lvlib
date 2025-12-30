@@ -14,6 +14,5 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Default Object.vi" Type="VI" URL="../Default Object.vi"/>
-	<Item Name="Decorate Root.vi" Type="VI" URL="../Decorate Root.vi"/>
-	<Item Name="Decorate.vi" Type="VI" URL="../Decorate.vi"/>
+	<Item Name="Init.vi" Type="VI" URL="../Init.vi"/>
 </Library>
