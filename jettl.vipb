@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-12-28 09:15:57" Creator="Erik" Comments="" ID="2b81970bf41441bb0dea1873ed572f19">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-12-29 09:43:33" Creator="Erik" Comments="" ID="d0b9fd64d4e984d2215c1af6e4ca0ce1">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl</Package_File_Name>
-    <Library_Version>6.5.0.55</Library_Version>
+    <Library_Version>6.5.0.56</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -786,7 +786,7 @@ GitHub: https://github.com/natev51/jettl</Description>
         <Path>src\jettl\jettl\Attributes\Attributes\Read UID.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D7EE776869AF4C6054BBB6FEC387D461</GUID>
+      <GUID>4F4555B7BDC6B10BFF81066AB8328D73</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -807,7 +807,7 @@ GitHub: https://github.com/natev51/jettl</Description>
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>EE622A4B43A66A1C15A87C4CB6BF215F</GUID>
+      <GUID>E50B3749F5F5135755F85E5D90B02E5E</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
