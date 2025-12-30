@@ -31,10 +31,28 @@ Only the left two inputs, possible Error in, and the Teller which is always in 6
 
 ---
 
-msg rescript
-instead of the two maps and two clusters, just have one map and one cluster. Further, use the `condition indicator To Control.vi` for the mapped control index.
+Rename
+Actor cannot be named
+- TEMPLATE
+- Core
+Msg cannot be named
+- Call
+- Recurse
+- Tell Self
+- Tell Parent
+- Tell Child
+- Tell Reply
 
 ---
 
-msg rescript.
-don't enable the OK, after every selection, enable the OK.
+Core Actor library.
+
+make sure to properly use the correct Init of Default Object (don't use the decorate method anywhere!)
+
+---
+
+AF reentrancy for async call?
+what about the SD function call.. look at reentrancy here too.
+
+---
+

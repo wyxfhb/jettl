@@ -13,5 +13,5 @@
 	<Item Name="TEMPLATE Actor.lvclass" Type="LVClass" URL="../TEMPLATE Actor/TEMPLATE Actor.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="TEMPLATE Actor.vi" Type="VI" URL="../TEMPLATE Actor.vi"/>
+	<Item Name="Decorate.vi" Type="VI" URL="../Decorate.vi"/>
 </Library>
