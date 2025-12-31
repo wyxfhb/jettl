@@ -31,35 +31,6 @@ Only the left two inputs, possible Error in, and the Teller which is always in 6
 
 ---
 
-Rename
-Actor cannot be named
-- TEMPLATE
-- Core
-Msg cannot be named
-- Call
-- Recurse
-- Tell Self
-- Tell Parent
-- Tell Child
-- Tell Reply
-
-add function for "Actor Excluded Names.vi" and "Msg Excluded Names.vi" which looks if the name is used and returns a Boolean for "Valid"
-
----
-
+Actor Rescript Tool:
 could be a actor rescript for rescripting the Init.vi to Init.vi where the inputs are the same.
-
----
-
-have the core actor virtual folders the same as the template actor.
-
----
-
-Consider renaming methods as Init.vi!!!!!!!!!!!!!!!!!!!
-
----
-
-Get rid of the Stopped Override in template.
-
----
-
+Only used for the Actor rescript.
