@@ -34,6 +34,9 @@
 	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Spawn Logic.ctl" Type="VI" URL="../Spawn Logic.ctl">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
@@ -41,6 +44,9 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Default Instance.vi" Type="VI" URL="../Default Instance.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Spawn Logic.vi" Type="VI" URL="../Spawn Logic.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Spawn Root.vi" Type="VI" URL="../Spawn Root.vi"/>
