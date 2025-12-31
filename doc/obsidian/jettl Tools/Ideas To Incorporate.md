@@ -9,25 +9,13 @@ This should be another field of entry to put in the Actor Library to put the Msg
 
 ---
 
-For implemented message methods that class doesn't implement the interface i.e. a message that cannot ever be executed.
-When a interface message is implemented, but messages method is not implemented.
+jettl Tools
+Building Tools of your own:
 
----
-
-Building more jettl Tools:
 All external jettl Tools belong in the same common location: Tools -> jettl Tools.
 Please place them in this common location, helping developers find your tool easily!
 
 Of course, please place company / name specific tools in their own folder as well if further credit should be given to your tool i.e. Tools -> jettl Tools -> YOURNAME -> YOURTOOLNAME.
-
----
-
-Necessary to use the save all project function call? This will otherwise speed up the scripting.
-
----
-
-Have target drop down menu for project:
-![[target_names.png]]
 
 ---
 
@@ -37,13 +25,12 @@ invoke node, wire, CleanUpWire
 
 ---
 
-public and private distinguish name space
-
-Have got to find a way to distinguish messages that are private vs public for the naming conventions
-- maybe with holding library as prefix?
-- maybe just look at their relative path maybe to distinguish, this can be a double check.
-- checking privacy for the containing library?
+Documentation:
+For Conn Pane Terminals: Msg Control
+Only the left two inputs, possible Error in, and the Teller which is always in 6.
 
 ---
 
-TEMPLATE: change the type to be an enum selection
+Actor Rescript Tool:
+could be a actor rescript for rescripting the Init.vi to Init.vi where the inputs are the same.
+Only used for the Actor rescript.
