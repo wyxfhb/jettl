@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-12-31 09:59:15" Creator="Erik" Comments="" ID="c94f1f85f8b2134f38a0ecb9a9047d0a">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-08-18 10:28:19" Modified_Date="2025-12-31 11:37:16" Creator="Erik" Comments="" ID="0fadf4e30979e0393c23ada7fe400045">
   <Library_General_Settings>
     <Package_File_Name>Nathan_Davis_lib_jettl</Package_File_Name>
-    <Library_Version>6.5.6.65</Library_Version>
+    <Library_Version>6.5.8.67</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -464,7 +464,7 @@ GitHub: https://github.com/natev51/jettl</Description>
         <Path>src\jettl\jettl\Stop Msg\Stop.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2CC23285359DE87F23D4E525DCC65B27</GUID>
+      <GUID>1384ECA7E57AE4BE4C6ED9B050D8ABB6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -485,7 +485,7 @@ GitHub: https://github.com/natev51/jettl</Description>
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>3F5903B4D2DC4B39942515A931829D67</GUID>
+      <GUID>0D5FC82A051BCABDBF9EC968F404E3AE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -814,7 +814,7 @@ GitHub: https://github.com/natev51/jettl</Description>
         <Path>src\jettl\jettl\Teller\Teller\Read Time.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>88AB3121C99644CEC1A54095468BEE05</GUID>
+      <GUID>8BF3F5315F812414A5AF315D0B4530D7</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

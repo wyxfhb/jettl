@@ -42,3 +42,24 @@ Msg cannot be named
 - Tell Parent
 - Tell Child
 - Tell Reply
+
+add function for "Actor Excluded Names.vi" and "Msg Excluded Names.vi" which looks if the name is used and returns a Boolean for "Valid"
+
+---
+
+could be a actor rescript for rescripting the Init.vi to Init.vi where the inputs are the same.
+
+---
+
+have the core actor virtual folders the same as the template actor.
+
+---
+
+Consider renaming methods as Init.vi!!!!!!!!!!!!!!!!!!!
+
+---
+
+Get rid of the Stopped Override in template.
+
+---
+
