@@ -16,4 +16,7 @@
 	<Item Name="Init.vi" Type="VI" URL="../Init.vi"/>
 	<Item Name="Listen For Msg.vi" Type="VI" URL="../Listen For Msg.vi"/>
 	<Item Name="Read Address.vi" Type="VI" URL="../Read Address.vi"/>
+	<Item Name="Palette.vi" Type="VI" URL="../Palette.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 </Library>

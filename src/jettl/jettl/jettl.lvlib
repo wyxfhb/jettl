@@ -54,7 +54,6 @@
 	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
 	<Item Name="Can Stop.vi" Type="VI" URL="../Can Stop.vi"/>
 	<Item Name="Stop.vi" Type="VI" URL="../Stop.vi"/>
-	<Item Name="Transport To Actor Type.vi" Type="VI" URL="../Transport To Actor Type.vi"/>
 	<Item Name="Call.vi" Type="VI" URL="../Call.vi"/>
 	<Item Name="Recurse.vi" Type="VI" URL="../Recurse.vi"/>
 	<Item Name="Execute Msg Or Recurse.vi" Type="VI" URL="../Execute Msg Or Recurse.vi"/>
