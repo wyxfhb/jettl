@@ -1,5 +1,3 @@
-
-
 **Connector Pane Best Practices**
 
 Confirm that a VI adheres to connector-pane layout matches the expected pattern:
