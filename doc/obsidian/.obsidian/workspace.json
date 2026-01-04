@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 jettl Guide/Tools/Tools.md",
+                "file": "Further Ideas/To Organize.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tools"
+              "title": "To Organize"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 Notes.md",
+                "file": "1 jettl Guide/Immediate Changes/Immediate Changes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 Notes"
+              "title": "Immediate Changes"
             }
           }
         ],
@@ -181,18 +181,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3aeb4fc3914cc269",
+  "active": "dbbd9d2709042f21",
   "lastOpenFiles": [
-    "2 Notes.md",
-    "1 Notes.md",
-    "Further Ideas/To Organize.md",
     "1 jettl Guide/Things That Have Not Been Implemented/General Would Be Cool.md",
+    "1 jettl Guide/Tools/Tools.md",
+    "Further Ideas/To Organize.md",
+    "1 Notes.md",
+    "1 jettl Guide/Design Patterns/State Pattern/State Pattern.md",
+    "1 jettl Guide/Overview/Overview.md",
+    "1 jettl Guide/Design Patterns/State Pattern",
+    "2 Notes.md",
     "1 jettl Guide/Things That Have Not Been Implemented/Observer",
     "1 jettl Guide/Things That Have Not Been Implemented/Static Analysis/General.md",
     "1 jettl Guide/Things That Have Not Been Implemented/Msg Transport.md",
     "1 jettl Guide/Things That Have Not Been Implemented/Dynamic Analysis/General.md",
     "1 jettl Guide/Things That Have Not Been Implemented/Dynamic Analysis",
-    "1 jettl Guide/Tools/Tools.md",
     "jettl Tools/Ideas To Incorporate.md",
     "1 jettl Guide/Tools/Best Practices/Best Practices.md",
     "1 jettl Guide/Tools/Future Tools/Future Tools.md",
@@ -209,7 +212,6 @@
     "1 jettl Guide/Things That Have Not Been Implemented",
     "1 jettl Guide/Design Patterns/Decorator Pattern/Decorator Pattern.md",
     "1 jettl Guide/Design Patterns",
-    "1 jettl Guide/Overview",
     "jettl/To Organize.md",
     "Further Ideas/Images/State Pattern.png",
     "Further Ideas/Images/IMG_7835.png",
@@ -223,7 +225,6 @@
     "jettl/LUnit.md",
     "jettl/Introduction To jettl.md",
     "jettl/Debugging.md",
-    "jettl/Building Executables.md",
     "jettl/Images/statepatternactors.png",
     "jettl/Images/clean propagation.png",
     "Further Ideas/Images/Msg Forward.png",

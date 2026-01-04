@@ -26,7 +26,6 @@ take the library(s) it is contained in and properly put them in a hierarchical m
 ### Actor Rescript
 
 could be a actor rescript for rescripting the Init.vi to Init.vi where the inputs are the same.
-Only used for the Actor rescript.
 
 ### Disk Moving
 
