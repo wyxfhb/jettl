@@ -8,7 +8,3 @@ Attributes includes Parent Attributes: That way these static attributes can be s
 
 how msg forwarding can be implemented to parent:
 An actor can recurse through it's parents parents parents, etc at look each parents unified msg set.
-
----
-
-look back into `call.vi`
