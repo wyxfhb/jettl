@@ -13,6 +13,5 @@
 	<Item Name="Core Actor.lvclass" Type="LVClass" URL="../Core Actor/Core Actor.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Default Object.vi" Type="VI" URL="../Default Object.vi"/>
 	<Item Name="Init.vi" Type="VI" URL="../Init.vi"/>
 </Library>

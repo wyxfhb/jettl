@@ -68,8 +68,6 @@ input before Setup and Start allows for the Parent to have access to the Actor R
 
 ---
 
-Add a private Msg and private Actor virtual folder to template.
-
 Private messages
 Putting library as private to Private Msg folder
 (Private Actor folder too)
@@ -179,12 +177,6 @@ So actor is launched for timing, but the actor that spawned it holds the truth f
 
 ---
 
-Actor override function call,
-
-Could be depreciated for just normal functionality that is copied and pasted from palettes!
-
----
-
 TDMS idea from CButch
 
 I mostly use TDSM internally, but one thing to possibly note is that it sends a message periodically - that doesn't imply that they are executed periodically. In particular, if the duration of the message execution can become long, or the Actor might be busy with other things (consider, perhaps, sporadically unavailable hardware with a significant timeout period for messaging, which you want to reconnect to when available), then you might have a very large queue allocated before you reconnect. That has consequences for memory usage and also the time taken to process a large number of messages (even if individually quick) once reconnected or whatever.
@@ -239,7 +231,7 @@ Our method depends on the Msg being created by the scripting tools and put in th
 
 ---
 
-Ability for other actors to be spawned in setup!!!!!!!!!!
+jettl Feature: Ability for other actors to be spawned in setup!!!!!!!!!!
 
 ---
 
@@ -257,7 +249,7 @@ Wherever possible, decouple your RT actors from the hardware and RT APIs - wrap 
 ---
 
 Reentry section:
-Everything is harder clone except for:
+Everything is shared clone except for:
 `………`
 
 Notable methods that deal with reentry to be talked about:
