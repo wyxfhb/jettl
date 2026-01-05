@@ -20,7 +20,6 @@
 	<Item Name="Attributes.lvlib" Type="Library" URL="../Attributes/Attributes.lvlib"/>
 	<Item Name="Transport.lvlib" Type="Library" URL="../Transport/Transport.lvlib"/>
 	<Item Name="Error.lvlib" Type="Library" URL="../Error/Error.lvlib"/>
-	<Item Name="Actor Type.ctl" Type="VI" URL="../Actor Type.ctl"/>
 	<Item Name="Child UIDs.ctl" Type="VI" URL="../Child UIDs.ctl"/>
 	<Item Name="Relation.ctl" Type="VI" URL="../Relation.ctl"/>
 	<Item Name="Msg Set.ctl" Type="VI" URL="../Msg Set.ctl"/>
@@ -34,9 +33,6 @@
 	<Item Name="Attributes.ctl" Type="VI" URL="../Attributes.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Spawn Logic.ctl" Type="VI" URL="../Spawn Logic.ctl">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
 	<Item Name="Within Msg Set.vi" Type="VI" URL="../Within Msg Set.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
@@ -46,7 +42,7 @@
 	<Item Name="Default Instance.vi" Type="VI" URL="../Default Instance.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Spawn Logic.vi" Type="VI" URL="../Spawn Logic.vi">
+	<Item Name="Layers To Decorate.vi" Type="VI" URL="../Layers To Decorate.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Spawn Root.vi" Type="VI" URL="../Spawn Root.vi"/>
@@ -54,10 +50,14 @@
 	<Item Name="Start.vi" Type="VI" URL="../Start.vi"/>
 	<Item Name="Can Stop.vi" Type="VI" URL="../Can Stop.vi"/>
 	<Item Name="Stop.vi" Type="VI" URL="../Stop.vi"/>
-	<Item Name="Transport To Actor Type.vi" Type="VI" URL="../Transport To Actor Type.vi"/>
 	<Item Name="Call.vi" Type="VI" URL="../Call.vi"/>
 	<Item Name="Recurse.vi" Type="VI" URL="../Recurse.vi"/>
 	<Item Name="Execute Msg Or Recurse.vi" Type="VI" URL="../Execute Msg Or Recurse.vi"/>
 	<Item Name="Find Local Msg Set.vi" Type="VI" URL="../Find Local Msg Set.vi"/>
 	<Item Name="Union Unified Msg Set.vi" Type="VI" URL="../Union Unified Msg Set.vi"/>
+	<Item Name="Tell Self.vi" Type="VI" URL="../Tell Self.vi"/>
+	<Item Name="Tell Parent.vi" Type="VI" URL="../Tell Parent.vi"/>
+	<Item Name="Tell Child.vi" Type="VI" URL="../Tell Child.vi"/>
+	<Item Name="Tell Reply.vi" Type="VI" URL="../Tell Reply.vi"/>
+	<Item Name="Listen To Msg.vi" Type="VI" URL="../Listen To Msg.vi"/>
 </Library>
