@@ -15,11 +15,10 @@ revisit `listened to msg` boolean to properly set to false at the end at `Can St
 Maybe listened to msg is a `write listened to msg.vi` which happens only before calling the call method.
 that means take away from `inspect.vi` and `call.vi`
 
+---
+
+
 
 ---
 
-replace with functions for:
-tell self
-tell parent
-tell child
-tell reply
+look back into `call.vi`
