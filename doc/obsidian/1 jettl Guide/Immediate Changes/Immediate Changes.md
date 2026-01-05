@@ -11,14 +11,4 @@ An actor can recurse through it's parents parents parents, etc at look each pare
 
 ---
 
-revisit `listened to msg` boolean to properly set to false at the end at `Can Stop.vi` function.
-Maybe listened to msg is a `write listened to msg.vi` which happens only before calling the call method.
-that means take away from `inspect.vi` and `call.vi`
-
----
-
-
-
----
-
 look back into `call.vi`
